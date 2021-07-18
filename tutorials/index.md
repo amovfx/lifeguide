@@ -1,5 +1,5 @@
 
-# Tutorials for every technologist
+# The jouney begins with a change of mindset.
 
 Learn about all these great technologies:
 
