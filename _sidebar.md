@@ -3,10 +3,38 @@
 
 * [HOME](./)
 
-* [Mindset](./tutorials/index)
-  * [Tomcat](./tutorials/tomcat/index)
-  * [Cloud](./tutorials/cloud/index)
-  * [Java](./tutorials/java/index)
+* [Mindset](./001_mindest/mindset.md)
+  * [Vision](./tutorials/tomcat/index)
+  * [Grit](./tutorials/cloud/index)
+  * [Curiosity](./tutorials/java/index)
+  
+*[Health]
+  * [Extended Pyramid of Needs]
+  * [Ikigai]
+  * [Facets]
+    * [Emotional]
+    * [Social]
+    * [Occupational]
+    * [Intellectual]
+    * [Physical]
+      * [Diet]
+      * [Sleep]
+      * [Exercise]
+  
+
+  
+* [Agency](./002_selfdev/index)
+
+  * [Environment Management]
+  * [Habits]
+
+  
+* [Mastery]
+
+* [Purpose]
+
+* [Resources]
+  
 
 * [About](./about/index)
 
