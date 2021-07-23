@@ -9,6 +9,7 @@
   * [Vision](./001_mindest/vision.md)
   * [Grit](./001_mindest/grit.md)
   * [Curiosity](./001_mindest/curiosity.md)
+  * [Humility](./001_mindest/humilty.md)
   
 *[Health]
   * [Extended Pyramid of Needs]
