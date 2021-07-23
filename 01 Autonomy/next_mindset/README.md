@@ -1,6 +1,6 @@
 # Mindset
 
-![alt text](../images/davinci.jpg)
+![alt text](../../images/davinci.jpg)
 
 This is the most important step in the journey. The first step you need to take is to reorient
 your mindset from a fixed-mindset to a growth oriented mindset.
