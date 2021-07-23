@@ -3,10 +3,12 @@
 
 * [HOME](./)
 
+* [Understanding one's self](./002_selfdev/psychometrics.md)
+
 * [Mindset](./001_mindest/mindset.md)
-  * [Vision](./tutorials/tomcat/index)
-  * [Grit](./tutorials/cloud/index)
-  * [Curiosity](./tutorials/java/index)
+  * [Vision](./001_mindest/vision.md)
+  * [Grit](./001_mindest/grit.md)
+  * [Curiosity](./001_mindest/curiosity.md)
   
 *[Health]
   * [Extended Pyramid of Needs]

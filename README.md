@@ -2,7 +2,7 @@
 
 This site was created using [**Docsify**](https://docsify.js.org), which is an open source documentation site generator, and imported in GitHub page.
 
-
+This is a summary of over 70 books that the author read and has applied successfully to achieve financial independence at 32 and live a purpose driven life.
 
 The formula for a fullfilling life is agency, mastery and purpose. What this guide
 is meant to do is to build you up in a layered approach so you may reach your full potential. 
