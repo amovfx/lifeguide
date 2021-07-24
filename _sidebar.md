@@ -1,42 +1,17 @@
 <!-- docs/_sidebar.md -->
 
+* [HOME](./)
 
+* [Autonomy](./01_Autonomy/README.md)
 
+  * [Introspection](./01_Autonomy/current_mindset/index.md)
 
-*[Understanding one's self](./01 Autonomy/current_mindset/)
-
-*[Mindset](./01 Autonomy/next_mindset/README.md)
-
+  * [Mindset](./01_Autonomy/next_mindset/README.md)
   
-*[Health]
-  * [Extended Pyramid of Needs]
-  * [Ikigai]
-  * [Facets]
-    * [Emotional]
-    * [Social]
-    * [Occupational]
-    * [Intellectual]
-    * [Physical]
-      * [Diet]
-      * [Sleep]
-      * [Exercise]
-  
+* [Mastery](./02_mastery/index.md)
 
-  
-* [Agency](./002_selfdev/index)
 
-  * [Environment Management]
-  * [Habits]
+* [Purpose](./03_purpose/index.md)
 
-  
-* [Mastery]
 
-* [Purpose]
-
-* [Resources]
-  
-
-* [About](./about/index)
-
-* [Contact](./contact/index)
 
