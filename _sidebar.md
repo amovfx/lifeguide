@@ -6,7 +6,7 @@
 
   * [Introspection](./01_Autonomy/current_mindset/index.md)
 
-  * [Mindset](./01_Autonomy/next_mindset/README.md)
+  * [Mindset](01_Autonomy/next_mindset/index.md)
   
 * [Mastery](./02_mastery/index.md)
 
