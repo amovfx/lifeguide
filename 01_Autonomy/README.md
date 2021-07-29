@@ -13,3 +13,7 @@ Psychologists have developed some tests that provide insight into your character
 
 We need to identify the lies we tell ourselves and face the challenges we have been avoiding.
 
+There is an inner drive that leads to passion and dedication.
+That passion and dedication leads to a feeling of meaningfulness.
+Self-determination from autonomy promotes intrinsic motivation.
+
