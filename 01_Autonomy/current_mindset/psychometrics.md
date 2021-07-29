@@ -1,5 +1,12 @@
 # Psychometric testing
 
+The most important thing you know about personality tests is that they are psuedo science.
+They are about accurate as a horrorscope. 
+What they do give insight into is a wide variety of behaviours. When you do them, you will identify
+some behabviours you do and help you label your actions with emotions.
+
+Personality is not fixed in birth.
+
 There are a vareity of tests that you can do to learn more about yourself.
 
 These have been developed by psychologists measureing personality attributes.
