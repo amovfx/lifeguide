@@ -12,5 +12,6 @@
    * [Grit](./01_Autonomy/next_mindset/grit.md)
    * [Humility](./01_Autonomy/next_mindset/humility.md)
    * [Curiosity](./01_Autonomy/next_mindset/curiosity.md)
+   * [Patience](./01_Autonomy/next_mindset/patience.md)
     
 
