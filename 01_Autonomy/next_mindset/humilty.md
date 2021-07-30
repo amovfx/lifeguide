@@ -1,7 +1,5 @@
 # Humility
 
-Compound advantage.
-
 Humility is an attitude of spiritual modesty that comes from understanding our place in the larger order of things. It entails not taking our desires, successes, or failings too seriously.
 
  They have established fascinating links between humility and our ability to learn and be effective leaders, and our readiness to engage in prosocial behavior.
