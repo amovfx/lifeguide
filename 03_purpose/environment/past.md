@@ -26,6 +26,8 @@ The important one to pay attention to is how humanity keeps records and break th
 Explain how writing enabled our ability to build abstractions upon our collective immagination.
 
 
+#Resources
 
+Jeremy Rifkin and Homo Sapiens author
 
 

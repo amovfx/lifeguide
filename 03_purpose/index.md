@@ -8,6 +8,21 @@ Use your vision to guide humanity into unknown territory.
 Purpose lifts the moral of those around you and pushes humanity forward.
 Doing good things for other people without expecting anything in return feels good.
 
+Discover your purpose in life through haveing unified goals and the reslove to put them into action.
+
+THis is where you create your own meaning. You now have the tools to write your own story.
+You are now in control of your life to make your mark upon the universe 
+as you see fit.
+
+once you estabilish your goal, you use what you ahve learned in previous chapters
+with strong intention and resolution.
+
+This is where you take control of yourself away from the irrational external rewards 
+or the opinions of others that are ubiquitous in our society.
+
+It is time to immerse yourself into a task that will benefit others without
+expecting anything in return.
+
 Drive - Daniel Pink
 
 Self-Determination and Intrinsic Motivation in Human Behavior - Edward Deci and Richard Ryan

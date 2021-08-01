@@ -43,3 +43,8 @@ Tasks that can be delegated.
 Tasks that are getting in the way and need to be eliminated.
 
 If you are doing something that isn't moving yourself towards your goal, you have to stop. You need to recognize distractions for what they are.
+
+
+#Resources
+
+All of David Allen's books. 

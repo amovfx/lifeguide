@@ -2,6 +2,10 @@
 
 After you have made the decision that you can do anything, you must start visualizing the life you want to live.
 
+https://thepsychologist.bps.org.uk/volume-26/edition-11/new-voices-imagining-our-futureand-changing-it
+
+
+
 The human brain isn't wired to think past one or two years from evolution of our development.
 But like anything, this is something that can be practiced and learned.
 

@@ -12,3 +12,7 @@ Exercise causes micro tears, which triggers the release of testosterone and HGH.
 
 Set goals and track progress.
 
+https://www.psychologytoday.com/us/blog/what-works-and-why/201803/how-your-mental-health-reaps-the-benefits-exercise
+
+Life lessons from a brain surgeon.
+

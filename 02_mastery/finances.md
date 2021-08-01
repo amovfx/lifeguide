@@ -1,6 +1,8 @@
 # Financial Management
 
 This is probably the most important section. You pay yourself first.
+Once you get a nest egg in place, you get a saftey net under you which reduces your fear
+and will allow you to take risks.
 
 Start with saving 1% of your gross income and increase it from there. Practise saving more and spending less.
 
@@ -16,6 +18,17 @@ Make a budget to track spending.
 Save as much as you can and view paying off debts as a form of investment.
 
 Diversify your investments.
+
+Resources:
+The psychology of money.
+
+The wealthy barber
+
+https://www.mrmoneymustache.com/the-mmm-reading-list/
+
+
+
+
 
 
 

@@ -19,3 +19,6 @@ Reinvest at least 10% of your time and energy into yourself.
 Pay it forward, once you develop these skills help others to develop them. 
 
 Don’t be afraid to give up power.
+
+#Resources
+Seven habits of highly effective people

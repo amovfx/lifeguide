@@ -49,5 +49,8 @@ Visible rewards makes us overestimate the benefits of instant gratification and 
 Pushing aside temptations makes the craving stronger. Use the “I will” component to drown out the “I wont”. Ex. I will eat healthy instead of “I won’t”.
 Willpower is contagious. Practicing it socially increases the likelihood of success from 24% to 66%.
 
+Something to keep in mind about will power, willpower is weak, you will have much more success
+rearanging your environment. We will talk more about that in a later chapter.
+
 
 

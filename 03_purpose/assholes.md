@@ -22,3 +22,8 @@ Build emotional distance with any asshole you encounter.
 Assholes need to go because negative actions have 5x times the effect over positive ones.
 
 Champion a no asshole policy wherever you go. We as a species have to clean up their mess.
+
+#Resources 
+
+The No Asshole Rule
+

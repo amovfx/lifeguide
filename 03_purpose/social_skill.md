@@ -10,3 +10,6 @@ Call attention to other people’s mistakes indirectly.
 Be kind, brave, honest and devoted to your beliefs.
 Surround yourself with good people.
 Life’s joys are in becoming a more loving, humble person, not material possessions or social status.
+
+#Resources
+How to win friends and influence people.

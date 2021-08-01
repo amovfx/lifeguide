@@ -21,3 +21,13 @@ Alcohol prevents entering REM, the stage responsible for memory processing.
 Magnesium is responsible for 300 biochemical reactions for your body and calms the nervous system, balances blood sugar levels, optimizes blood pressure and relaxes muscles. Meditate regularly. 
 
 Make where you sleep a sanctuary of peace. English Ivy is the best air filtering plant. “Mother in Law’s tongue” converts Co2 to oxygen at night.
+
+# Resources
+
+Life lessons from a brain surgeon.
+
+The upward spiral
+
+
+
+
