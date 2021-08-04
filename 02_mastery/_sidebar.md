@@ -9,4 +9,5 @@
   * [Nutrition](./02_mastery/nutrition.md)
   * [Focus](./02_mastery/focus.md)
   * [Fear](./02_mastery/fear.md)
-  * [Time](./02_mastery/time.md)
+  * [Time](./02_mastery/time_management.md)
+  * [Data Management](./02_mastery/data_management.md)
