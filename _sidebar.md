@@ -21,6 +21,9 @@
   * [Assholes](./03_purpose/assholes.md)
   * [Teamwork](./03_purpose/teamwork.md)
   * [Social Skills](./03_purpose/social_skill.md)
+  * [Communication](./03_purpose/communication.md)
+  * [Relationships](./03_purpose/relationships.md)
+  * [Trust](./03_purpose/trust.md)
 
 
 
