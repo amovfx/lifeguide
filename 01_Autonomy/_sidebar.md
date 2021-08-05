@@ -7,7 +7,7 @@
     * [Cognitive Biases](./01_Autonomy/current_mindset/cognitive_biases.md)
     
 
-* [Next mindset](./01_Autonomy/next_mindset/README.md)
+* [Next mindset](./01_Autonomy/next_mindset/index.md)
    * [Vision](./01_Autonomy/next_mindset/vision.md)
    * [Grit](./01_Autonomy/next_mindset/grit.md)
    * [Humility](./01_Autonomy/next_mindset/humility.md)

@@ -25,5 +25,5 @@
   * [Relationships](./03_purpose/relationships.md)
   * [Trust](./03_purpose/trust.md)
 
-* [Mugen] (./04_mugen/index.md)
+* [Mugen](./04_mugen/index.md)
 
