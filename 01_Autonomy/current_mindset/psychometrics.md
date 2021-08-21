@@ -1,4 +1,4 @@
-# Psychometric testing
+#Psychometric testing
 
 Psychometric testing is simply a fancy way of saying “personality test.” As stated earlier, 
 it’s practically full-blown pseudoscience. However, what they do give insight into is a wide variety of personality 
