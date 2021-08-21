@@ -20,7 +20,6 @@ Every evening, write down what you would like to do the next day and visualize y
 
 Of course, this vision should be in line with your intrinsic motivators and identity. Write down your current projects and tasks to be completed. We will get more into that later. 
 
-
 https://thepsychologist.bps.org.uk/volume-26/edition-11/new-voices-imagining-our-futureand-changing-it
 
 

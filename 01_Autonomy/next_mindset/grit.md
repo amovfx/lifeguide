@@ -1,12 +1,15 @@
 # Grit
 
 We have now defined a vision of where we want to go. The key to achieving it is grit. Grit is having the perseverance, passion, and determination to keep your word to yourself and others, whether that be in sticking to your values under pressure or setting and following through with your goals. 
+
 Grit can also be applied to learning. Creating a satisfying, fulfilled life is a journey of learning, and you have already decided you can learn anything but that doesn't mean that it is easy.
 Learning is just one single step, but it can be hard if you don’t have grit. If you want to learn anything, many times you must hit your head against the problem until you understand what it is that you are learning. That takes grit. That is the key to mastery.
-When you decide to do something, commit to it through thick and thin. Do not give up. Seek out challenges above your skill level to improve your grit. Set yourself a task, define its length and deadline. Plan what you must do to stay on track. Repeat and build it into a habit as a cornerstone of your identity.
-You should indeed do something that you love, but you will always hit rough patches. Hard work can lead to procrastination and doubt and that’s where grit comes in. With determination and resolve, you can motivate yourself to keep working toward your goals and persevere through the toughest of times. 
-Grit can be built; it is like a muscle. Take on a challenge to practice it. Take an achievable task, define its length and deadline. Plan what you need to do each day to stay on track. Rinse and repeat until you get awesome at this. 
 
+When you decide to do something, commit to it through thick and thin. Do not give up. Seek out challenges above your skill level to improve your grit. Set yourself a task, define its length and deadline. Plan what you must do to stay on track. Repeat and build it into a habit as a cornerstone of your identity.
+
+You should indeed do something that you love, but you will always hit rough patches. Hard work can lead to procrastination and doubt and that’s where grit comes in. With determination and resolve, you can motivate yourself to keep working toward your goals and persevere through the toughest of times. 
+
+Grit can be built; it is like a muscle. Take on a challenge to practice it. Take an achievable task, define its length and deadline. Plan what you need to do each day to stay on track. Rinse and repeat until you get awesome at this. 
 
 
 ### Willpower
