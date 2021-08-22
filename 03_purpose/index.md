@@ -1,27 +1,28 @@
 # Purpose
 
-By developing a set of moral ideas to live and work by. This should drive your choice and path of mastery.
-If you are driven by discovery you will take responsibility for your actions.
-Lead by excellence and nurture the virtues that will lead you to the best job you can do.
-Strive to create the greatest possible happiness for the largest number of people.
-Use your vision to guide humanity into unknown territory.
-Purpose lifts the moral of those around you and pushes humanity forward.
-Doing good things for other people without expecting anything in return feels good.
+The basis of life is freedom. The purpose of life is the joy of creating our own reality. And the result of life 
+is expansion of who we are as human beings. But one of the most important aspects of our purpose is having uplifting, positive relationships with others.
+Imagine, for a moment, what life would be like if you were the only one left on planet earth. All of earth’s 
+resources, all the money, all the riches, all the land, oceans, islands, gold, and diamonds were all yours and 
+only yours…
+At first, you may enjoy it! But quickly, you would become very lonely and all the money in the world, all the 
+riches in the world, and all the time in the world wouldn’t matter because no one else was there to share it all 
+with… 
+The point is that relationships are a very important aspect of our lives – arguably, the most important just after 
+health. 
+When you engage with friends, family, and your community, you satisfy the deep desire that we all have to connect 
+well with others – to have meaningful and satisfying relationships. It is vital for your self-expression, 
+happiness, and growth.
+To create a fulfilling, purposeful life, strive to create the greatest possible happiness for the largest 
+number of people. Lead by excellence and nurture the virtues that will lead you to the best job you can do. Use your vision to guide humanity into unknown territory. Purpose lifts the morale of those around you and pushes humanity forward. Doing good things for other people without expecting anything in return feels good.
+Discover your purpose in life through having unified goals and the resolve to put them into action. 
+This is where you create your own meaning. For a meaningful purpose, you must understand your world. 
+You will want to understand where we came from, who you are, where we are, and where we are going. 
+But none of that matters without relationships. 
+And now, for this last and final part regarding “Purpose,” we are going to cover every aspect there is on the 
+topic of relationships. 
+Your purpose greatly depends upon it…
 
-Discover your purpose in life through haveing unified goals and the reslove to put them into action.
-
-THis is where you create your own meaning. You now have the tools to write your own story.
-You are now in control of your life to make your mark upon the universe 
-as you see fit.
-
-once you estabilish your goal, you use what you ahve learned in previous chapters
-with strong intention and resolution.
-
-This is where you take control of yourself away from the irrational external rewards 
-or the opinions of others that are ubiquitous in our society.
-
-It is time to immerse yourself into a task that will benefit others without
-expecting anything in return.
 
 Drive - Daniel Pink
 
