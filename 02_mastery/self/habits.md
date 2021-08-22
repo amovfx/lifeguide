@@ -1,64 +1,103 @@
 # Habits
 
-Habits are the key to your success, they save you time and free up your brainpower to focus on longer term goals.
-What we want to do is to learn about habits, how they work and how to build them. The problem that we have, is identifying and awknowledging bad habits and working to replace them.
+Habits are the key to your success; they save you time and free up your brainpower to focus on longer-term goals. 
+What we want to do is to learn about habits, how they work and how to build the good ones into your daily routine. 
+The problem that we have is identifying and acknowledging bad habits and working to replace them.
 
-Habits are simple cue-routine-reward loops that are stored in the basal ganglia, specifically the stratium.
+Habits are simple cue-routine-reward loops that save effort. A cue is a spike or trigger in your brain from an 
+external source as your brain decides which habit is appropriate for the situation. Routine is the activity 
+you’re used to performing when faced with a particular cue. The reward is the feeling of success; you get a 
+spike in brain activity as you register the completion of the activity that reinforces the link between the 
+cue and the routine.
 
-A cue is an external stimulus that causes a spike in your brain.
-
-A routine is the set of actions that the basal ganglia picks to get it’s reward.
-
-A reward is the feeling of success form completing the activity. The accompanying spike in brain activity reinforces the link between cue and routine.
+Habits are incredibly resilient. They are stored in the basal ganglia, a small neurological structure deep in 
+the brain. It can operate even if other parts of the brain are damaged. In other words, habits can’t be stopped. 
+They can only be replaced.
 
 ### Changing Habits
 
-Habits are incredibly resilient and can operate even if your brain is severely damaged.
+To change a bad habit, you must recognize the cue or routine and then replace the old routine with a good habit. 
+But also, you must first believe that the change is important, and then show grit and determination to change. 
 
-Habit’s can’t be stopped. They can only be replaced.
+Keystone habits are small habits that stack up to have a larger impact on your life. You are the sum of your small,
+daily habits and that is why it’s so important to make sure they are good ones. 
+It used to be said that it only takes 21 days to create a good habit. Some said 30. Others said 40. 
+But the University College London’s research shows that it takes quite a bit longer than originally thought. 
+66 Days to Change
 
-To change, recognize the cue, replace the old routine with another and believe in the change.
+Their research revealed that it takes an average of 66 days for a person to develop a good habit. 
+They also found a large deviation between the clinical trial participants – some took only about 10 days to 
+form a good habit, and some over 250 days. The point is that you shouldn’t aim for a certain number of days, 
+but instead, commit to permanently keep the good habit no matter how long it takes. 
+Steady progress and patience will get you where you want to be…
 
-Keystone habits are small habits that stack up to have a larger impact on your life.
+Start by creating very small habits. There are many good books out there on how to create mini habits. 
+The idea is simple…
 
-It takes about 40 days to cement a habit.
+### The Power of Mini Habits
 
-Steady progress and patience will get you where you want to be.
+Don’t worry about progress – instead, make the goal to create the good habit first, and then work to 
+improve the good habit. In the book “Mini Habits: Smaller Habits, Bigger Results,” Stephen Guise talks 
+about this. He says that if you want to do push-ups every day, make it your goal to do only one! The focus 
+of the goal, in the beginning, is to create the good habit first. By setting your expectations super low, 
+you’ll do the goal and develop the good habit. Then, before you know it, you’ll be “hooked” in a good way 
+and you’ll be doing 10, 20, or 30+ push-ups every day. This idea of just doing one push-up works well for 
+when you don’t feel like doing push-ups at all, if you are sick, or don’t have the time. If your goal is only 
+one, you’ll still be able to do it. 
 
-Start by creating very small habits. Like making your bed first thing in the morning and build from there.
-Doing so builds momentum.
+### Start Your Day Right
 
-If you want to start a habit, attach it to current one you have. Starting to read while you exercise.
+How many of us get up without making our beds, only to sometimes go back to bed realizing that we never made 
+it up all day long? Since it must be done anyway, why don’t we get into the habit of making it right after 
+getting up? It’s a great way to discipline yourself to get into good habits, and it builds momentum for the rest 
+of your day. 
 
-If you would like to start a habit, work to reduce the ‘activation time’. It should be under 20 seconds.
+Another suggestion to develop good habits is to attach them to a current one you have. For example, 
+if you already get on a treadmill every day and you want to develop the good habit of reading a book, 
+plop that book on your treadmill and do both at once. 
 
-If you would like to end a habit, increase the ‘activation time’ of the activity.
+### Make the Habit Easy to Start
+
+Still, another suggestion to start a good habit is to work to reduce the “activation time.” The habit activation 
+time means the amount of time it takes for you to start the habit. It should be under 20 seconds.
+Shawn Anchor, in his book “The Happiness Advantage,” says that the less “activation time” that it 
+takes you to start and complete your good habit, the better. And he says that the more activation time 
+that it takes to start and complete your bad habit, the better…
+
+For example, Shawn wanted to get into the good habit of learning to play his guitar. But he found that he 
+just couldn’t get himself to do it. What he realized was that the real problem was that he didn’t have quick 
+and easy access to get to his guitar. He timed it and it took him an extra 20 seconds just to get his guitar 
+from its stored location and start playing. 
+
+To solve the problem, he put his guitar in a strategic location with easy and quick access. When he did that, 
+it was easy for him to develop that good habit. 
+
+### Make the Bad Habit Hard to Start
+
+Conversely, he wanted to stop the bad habit of watching too much TV. So, what he did was he took the batteries 
+out of the TV remote and placed them in a location where it would take him more than 20 seconds of activation 
+time to get to them. 
+
+He would forget that he did this, pick up the remote, and try to turn the TV on. When it didn’t turn on, 
+because he knew it would take him time and energy to replace the batteries, he would not watch TV. Bad habit 
+stopped easily! 
+
+In other words, make it easy as possible to start good habits, and make it difficult to continue the bad ones… 
+
+
 
 ### Habits aren't just for people
 
-Groups such as corporations, societies and cultures have habits as well.
+Groups such as corporations, societies, and cultures have habits as well. Some of them could be good, and some of 
+them could be bad. 
+Habits of organizations can be dangerous but can be changed in times of crisis. Strong social group ties combined 
+with peer pressure and new habits can start a movement.
+Companies take advantage of habits in their marketing. Most people turn right as they enter department stores. 
+Movements are born from strong ties, peer pressure, and new habits. WE BEAR THE RESPONSIBILITY OF CHANGING OUR 
+HABITS.
 
-Habits of organizations can be dangerous but can be changed in times of crisis.
-Strong social group ties combined with peer pressure and new habits can start a movement.
-
-Habits are simple cue-routine-rward loops that save effort. 
-Cue is a spike in your brain from an external source as your brain decides which habit is appropriate for the situation.
-Routine - The activity your used to performing when faced with a particular cue. 
-Reward - The feeling of success, you get  a spike in brain activity as you register the completion of the activity that reinforces the link between the cue and the routine.
-
-Habits are incredibly resilient. They are stored in the basal ganglia, a small neurological structure deep in the brain. It can operate even if other parts of the brain are damaged.
-
-Habits stick because they create craving.
-To change a habit, substitute the routine for another and believe in the change.
-Change can be achieved by cofusing on keystone habits and acheieing small wins.
-Willpower is the most important keystone habit. Look up the marshmellow test.
-Organizational habits can be dangerous, but a crisis can change them.
-Companies take advantage of habits in their marketing. Target example. Most people turn right as they enter department stores.
-Movements are born from strong ties, peer pressure and new habits.
-WE BEAR THE RESPONSIBILITY FOR CHANGING OUR HABITS.
-
-Following habits is not only a key part of our lives but also a key part of organizations and companies. All habits comprise of a cue-routine-reward loop and the easiest way to change this is to substitute something else for the routine while keeping the cue and reward the same, Achieveing lasting change in life is difficult, but it can be done by focusing on important keystone habits such as will power.
-
-Actionable advice: Make your bed every morning. Science shows that this can increase your well being and boost your overall productivity. Habits are built on top of each other.
-
+Achieving lasting change in life is difficult, but it can be done by focusing on important keystone habits such 
+as willpower.
+Actionable Advice: Make your bed every morning. Science shows that this can increase your well-being and boost 
+your overall productivity. Habits are built on top of each other.
 

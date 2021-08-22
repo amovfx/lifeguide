@@ -1,7 +1,12 @@
 # Humility
 
-Humility is an attitude of spiritual modesty that comes from understanding our place in the larger order of things. It entails not taking our desires, successes, or failings too seriously.
-There are fascinating links between humility and our ability to learn and be effective leaders, and our readiness to engage in prosocial behavior. For example, the humble person has more accurate self-perception and self-portrayal. They possess other-oriented relational stances such as a willingness to see themselves truthfully and an accurate perception of their place in the world. They also can acknowledge their mistakes and limitations. 
+Humility is an attitude of spiritual modesty that comes from understanding our place in the larger order of things. 
+It entails not taking our desires, successes, or failings too seriously.
+There are fascinating links between humility and our ability to learn and be effective leaders, 
+and our readiness to engage in prosocial behavior. For example, the humble person has more accurate 
+self-perception and self-portrayal. They possess other-oriented relational stances such as a willingness
+to see themselves truthfully and an accurate perception of their place in the world. 
+They also can acknowledge their mistakes and limitations. 
 
 Additional characteristic benefits of being humble are that the humble person is more open and has an appreciation of the value of all things. They are also more self-aware, adaptable to change, and therefore more aware of their environment and others’ problems, feelings, and emotions.
  Many successful people who are not humble claim to be “self-made.” But that is a myth. No one becomes successful without help and assistance along the way in one way or another. But still, the “self-made” man or woman remains a very popular myth.
