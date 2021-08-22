@@ -35,7 +35,7 @@ Write it down.
 Find a solution to the worst-case scenario.
 Do everything in your power to avoid the worst-case scenario.
 
-Mastering Failure
+### Mastering Failure
 
 Failure has gotten such a bad rap. It starts in school. All of us are graded on a scale from A to F, where F stands for failure. It’s the worst level a person could be. And so, the educational system has brainwashed and conditioned us to believe that failing at anything at any time is a catastrophe. 
 And yet, failure is such an integral part of life!
@@ -45,7 +45,7 @@ Not at all…
 She tries and tries again until she can walk. 
 And yet, technically speaking, she failed over and over again before she could walk.
 
-Failure as the Way
+### Failure as the Way
 
 Failure is part of the journey to success. Failure is inevitable and is a critical part of moving forward.
 But also, failure opens up new opportunities. When one door closes, another one is open. 
