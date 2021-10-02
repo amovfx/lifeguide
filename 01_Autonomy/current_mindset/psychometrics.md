@@ -13,7 +13,7 @@ Even though they are a bit like reading a horoscope, you
 can use these to gain insight into your strengths and weaknesses. They are helpful for identifying and labeling your behaviour.
 You can search for tests like the “Ocean Model”, RHETI or Meyers Briggs. 
 
-Keep in mind, personality is not fixed, it is fluid and you can shape yourself into who you want to be.
+Keep in mind, personality is not fixed, it is fluid and you can shape yourself into whom you want to be.
 
 
 
