@@ -30,7 +30,7 @@ Willpower is contagious. Practicing it, with others, increases the likelihood of
 Remember that willpower is weak and you have limited reserve. 
 
 
-#Add resrouces
+###Resrouces
 
 Grit - Angela Duckworth
 
