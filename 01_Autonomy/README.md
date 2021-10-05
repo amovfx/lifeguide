@@ -1,45 +1,18 @@
 # Autonomy
 
-Autonomy is about having the capacity to think independently and to be objective about yourself, others, and reality. 
-It’s also about respecting one’s ability to make decisions and judgment calls on their own without 
-needing close oversight, and without having to be coerced. For example, an autonomous worker is a worker who does not 
-need a boss micro-managing the work. 
+Autonomy is about having the ability to make your own decisions. It is to define your life as a result of your actions, values, feelings and desires. This is a manual is for leveling up the right skills for you to achieve this.
 
-Viewing a person as autonomous is also supposed to be how the medical field views 
-their patients – as autonomous beings who have the right to make their own healthcare decisions. 
-Being objective about oneself is an important characteristic of the autonomous person. An example of this is that of the 
-entrepreneur. To be successful, the entrepreneur must have the ability to be objective about their strengths and 
-weaknesses to build a business that not only can survive but thrive. The point is that becoming autonomous should be 
-one of your first goals, but it’s much more of an inside job than an outside one. In other words, you must develop the 
-right mindset to become autonomous. 
+Being objective about oneself is an important characteristic of the autonomous person. Autonomy is a long term goal. Getting it is much more of an inside job than an outside one. You must develop the right mindset to become autonomous.
 
-To first achieve autonomy, we must free ourselves from ourselves meaning freeing ourselves from the shackles 
-of both idealistic thinking and disbelief too. Autonomy is about being balanced – it’s about balancing creativity and 
-dreams with reality in a way that leverages the power of oneself and that of others to create the vision. Balance is the 
-key, along with having the determination and focus to create the reality that you want. 
+To first achieve autonomy, we must free ourselves from the lies we tell ourselves. Autonomy is about being responsible. Leave blame behind.
 
-It begins with introspection and identifying our strengths and weaknesses so we can strive for an objective 
-understanding of reality. We need to identify our bad habits and replace them with good ones. We must master ourselves 
-before we begin to master aspects of our environment. This is an important key to success and fulfillment.
-But major cognitive biases can hold us back. The objective, autonomous person is mindful that she may have biases, and 
-so chooses to listen more and come to instant conclusions less. If we don't understand our extrinsic motivations, we 
-become enslaved to them and easily manipulated. 
+It begins with introspection and identifying your strengths and weaknesses. From this, you identify your bad habits and then replace them with good ones. We must master ourselves before we begin to master aspects of our environment. This is an important key to success and fulfillment.
 
-Psychologists have developed some tests that provide insight into your character. We will cover this in the first chapter. 
-The point is that we need to identify the lies we tell ourselves and face the challenges we have been avoiding.
+Major cognitive biases can hold us back. The autonomous person is mindful of their biases. They chooses to listen more and come to instant conclusions less. We bias ourselves towards our extrinsic motivations. These are things like money, power, knowledge, social status and sex. If we don't understand this, we risk enslaving ourselves to them. Cognitive biases can damage your reputation. The "self-serving" bias is when you take credit for success and blame for failures. Look no further than politics to see this on full display. People LOVE this bias. Look no further than politics to see it on display.  Failing isn't weakness, it is you discovering your knowledge boundary.
 
-To become an autonomous person, you must develop an inner drive that leads to passion and dedication. That passion and 
-dedication lead to a feeling of meaningfulness, happiness, and fulfillment. Self-determination from autonomy promotes 
-intrinsic motivation. Intrinsic motivation is about lighting a fire within oneself instead of reacting to external 
-heat to get you motivated. As one basketball coach said, it is better to light a fire in the heart of a player than to 
-light a fire under his feet…
+To become an autonomous person, you must develop your passion and dedication. That leads to a feeling of meaningfulness, happiness, and fulfillment. Self-determination from autonomy promotes intrinsic motivation. Intrinsic motivation is about lighting a fire within oneself. Extrinsic motivation is reactionary. As one basketball coach said, it is better to light a fire in the heart of a player than to light a fire under his feet…
 
-Now we will cover the introspection that you need to be objective about yourself. It’s about examining your current 
-mindset, not from a place of judgment and condemnation, but the grounded place of reality. The first step to progress 
-in anything is first admitting that there may be a problem…
+Now we will cover the introspection that you need to be objective about yourself. Examine your current mindset without judgment and condemnation. The first step to progress is acknowledging the problem…
 
-“Houston, we have a problem!” 
-
-Don’t wait until it’s almost too late. Learn how to develop autonomy by first examining where you are, and then under 
-Chapter 2: The Autonomous Mindset, we will get into the best mindset to become autonomous.
+[Let's learn about motivation next.](./current_mindset/motivations.md)
 
