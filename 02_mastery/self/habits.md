@@ -2,37 +2,29 @@
 
 Habits are the key to your success; they save you time and free up your brainpower to focus on longer-term goals. 
 What we want to do is to learn about habits, how they work and how to build the good ones into your daily routine. 
-The problem that we have is identifying and acknowledging bad habits and working to replace them.
+The problem that we have is identifying bad habits and working to replace them.
 
 Habits are simple cue-routine-reward loops that save effort. A cue is a spike or trigger in your brain from an 
 external source as your brain decides which habit is appropriate for the situation. Routine is the activity 
-you’re used to performing when faced with a particular cue. The reward is the feeling of success; you get a 
-spike in brain activity as you register the completion of the activity that reinforces the link between the 
+you’re used to performing when faced with a particular cue. When completed, you get a spike in brain activity. That is the feeling of success. This spike, a dopamine hit, reinforces the link between the 
 cue and the routine.
 
-Habits are incredibly resilient. They are stored in the basal ganglia, a small neurological structure deep in 
-the brain. It can operate even if other parts of the brain are damaged. In other words, habits can’t be stopped. 
-They can only be replaced.
+Habits are resilient. They live in the basal ganglia, a small neurological structure deep in 
+the mid-brain. It can operate even when there is brain damage in other areas of your brain. You can't stop a habit, you have to replace it.
 
 ### Changing Habits
 
-To change a bad habit, you must recognize the cue or routine and then replace the old routine with a good habit. 
-But also, you must first believe that the change is important, and then show grit and determination to change. 
+To change a bad habit, you must first believe that the change is possible, and put your grit and focus to work. Recognize the cue or routine and then decide the healthier replacement.
 
 Keystone habits are small habits that stack up to have a larger impact on your life. You are the sum of your small,
 daily habits and that is why it’s so important to make sure they are good ones. 
-It used to be said that it only takes 21 days to create a good habit. Some said 30. Others said 40. 
-But the University College London’s research shows that it takes quite a bit longer than originally thought. 
-66 Days to Change
+University College London’s research shows that it takes 66 days to form a habit. Spend that time well.
 
-Their research revealed that it takes an average of 66 days for a person to develop a good habit. 
-They also found a large deviation between the clinical trial participants – some took only about 10 days to 
+They also found a large deviation between the clinical trial participants. Some took only about 10 days to 
 form a good habit, and some over 250 days. The point is that you shouldn’t aim for a certain number of days, 
-but instead, commit to permanently keep the good habit no matter how long it takes. 
-Steady progress and patience will get you where you want to be…
+but instead, commit to keep the good habit no matter how long it takes. Grit and patience will turn you into who you want to be.
 
-Start by creating very small habits. There are many good books out there on how to create mini habits. 
-The idea is simple…
+Start by creating very small habits and build yourself up in layers oof good habits. You want to crawl, walk and run. The idea is simple but difficult.
 
 ### The Power of Mini Habits
 
@@ -41,14 +33,14 @@ improve the good habit. In the book “Mini Habits: Smaller Habits, Bigger Resul
 about this. He says that if you want to do push-ups every day, make it your goal to do only one! The focus 
 of the goal, in the beginning, is to create the good habit first. By setting your expectations super low, 
 you’ll do the goal and develop the good habit. Then, before you know it, you’ll be “hooked” in a good way 
-and you’ll be doing 10, 20, or 30+ push-ups every day. This idea of just doing one push-up works well for 
+and you’ll be doing 10, 20, or 30+ push-ups every day. This idea of doing one push-up works well for 
 when you don’t feel like doing push-ups at all, if you are sick, or don’t have the time. If your goal is only 
-one, you’ll still be able to do it. 
+one, you’ll still be able to do it. This is also called a no zero day policy.
 
 ### Start Your Day Right
 
 How many of us get up without making our beds, only to sometimes go back to bed realizing that we never made 
-it up all day long? Since it must be done anyway, why don’t we get into the habit of making it right after 
+it all day long? Since it takes so little time to start, why don’t we get into the habit of making it right after 
 getting up? It’s a great way to discipline yourself to get into good habits, and it builds momentum for the rest 
 of your day. 
 
@@ -65,8 +57,8 @@ takes you to start and complete your good habit, the better. And he says that th
 that it takes to start and complete your bad habit, the better…
 
 For example, Shawn wanted to get into the good habit of learning to play his guitar. But he found that he 
-just couldn’t get himself to do it. What he realized was that the real problem was that he didn’t have quick 
-and easy access to get to his guitar. He timed it and it took him an extra 20 seconds just to get his guitar 
+couldn’t get himself to do it. What he realized was that the real problem was that he didn’t have quick 
+and easy access to get to his guitar. He timed it and it took him an extra 20 seconds to get his guitar 
 from its stored location and start playing. 
 
 To solve the problem, he put his guitar in a strategic location with easy and quick access. When he did that, 
@@ -74,15 +66,17 @@ it was easy for him to develop that good habit.
 
 ### Make the Bad Habit Hard to Start
 
-Conversely, he wanted to stop the bad habit of watching too much TV. So, what he did was he took the batteries 
+Shawn also wanted to stop the bad habit of watching too much TV. So, what he did was he took the batteries 
 out of the TV remote and placed them in a location where it would take him more than 20 seconds of activation 
 time to get to them. 
 
 He would forget that he did this, pick up the remote, and try to turn the TV on. When it didn’t turn on, 
 because he knew it would take him time and energy to replace the batteries, he would not watch TV. Bad habit 
-stopped easily! 
+stopped! 
 
 In other words, make it easy as possible to start good habits, and make it difficult to continue the bad ones… 
+
+This is how you change your behavior.
 
 
 
@@ -90,14 +84,11 @@ In other words, make it easy as possible to start good habits, and make it diffi
 
 Groups such as corporations, societies, and cultures have habits as well. Some of them could be good, and some of 
 them could be bad. 
-Habits of organizations can be dangerous but can be changed in times of crisis. Strong social group ties combined 
+Habits of organizations can be dangerous but can change in times of crisis. Strong social group ties combined 
 with peer pressure and new habits can start a movement.
 Companies take advantage of habits in their marketing. Most people turn right as they enter department stores. 
 Movements are born from strong ties, peer pressure, and new habits. WE BEAR THE RESPONSIBILITY OF CHANGING OUR 
 HABITS.
 
-Achieving lasting change in life is difficult, but it can be done by focusing on important keystone habits such 
-as willpower.
-Actionable Advice: Make your bed every morning. Science shows that this can increase your well-being and boost 
-your overall productivity. Habits are built on top of each other.
+This is what this book is about, teaching people to build good habits, so those people get together and form good organizational habits, and then those organizations build good habits for our civilization.
 
