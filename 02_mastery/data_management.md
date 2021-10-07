@@ -1,31 +1,22 @@
 # Data Management
 
-In todays world we are inundated with emails, social media, messages, and zoom calls. These things break
-flow and run risk context switching making you less productive.
+Today's world overloads us with emails, social media, messages, and zoom calls. These interrupt flow and run risk context switching making you less productive. 
+You can only have so many things on your mind at once. Optimizing them gives you more mental energy for the most demanding creative work. Focus on the fewest possible things.
 
-When you impliment these tasks, it frees up your brain width. You can only have so many things
-on your mind at once. When you optimize for this, you have more mental energy for creative work
-which takes the bulk of your mental horse power.
-
-To maximize creativity get all your ideas and plans out of your head and down on paper.
-
+To maximize creativity, get all your ideas and plans out of your head and down on paper.
 Being aware of your job goals and current tasks will enable you to make good decisions about the
 work to come.
-
 These tactics help you prepare for difficulties and interuptions ahead of time.
- 
 Being well organized allows you to achieve more in less time.
 
 This is a balancing act, you dont want to over do it to the point it's keeping you
 from making progress on your creative ambitions.
 
-For these tactics we turn to David Allen. 
-
+For these tactics we turn to David Allen.
 To reach your long term goals, translate them into short term action steps.
-
 Once you get good at this, you can spread these ideas to your team to improve communicaiton.
 
-Tactics
+###Tactics
 
 Your brain is great at thinking but terrible at remembering things.
 To fully implement the GTD system, you need the right workplace, tools and filing system.
