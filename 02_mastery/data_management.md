@@ -12,9 +12,9 @@ Being well organized allows you to achieve more in less time.
 This is a balancing act, you dont want to over do it to the point it's keeping you
 from making progress on your creative ambitions.
 
-For these tactics we turn to David Allen.
 To reach your long term goals, translate them into short term action steps.
 Once you get good at this, you can spread these ideas to your team to improve communicaiton.
+For more of these tactics we turn to David Allen.
 
 ###Tactics
 
