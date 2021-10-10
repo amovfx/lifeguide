@@ -1,8 +1,9 @@
 # Time management
 
-In today’s world, we are inundated with emails, social media, messages, and zoom calls. These are all distractions and as you have learned, just one distraction can derail your concentration. It then usually takes 25 minutes to get back on track with your important task. These things break our flow and we run the risk of context switching, making you less productive.
-Your brain is terrible at remembering things. Your short-term memory only holds 5 to 6 things. This is why you need to make sure you have the right tools to capture all your tasks, ideas, and reminders. 
-There are many tools out there to manage and master your time. One of the best ones is by productivity consultant David Allen and it is called Getting Things Done, or the GTD method for short. 
+In today’s world, emails, social media, messages, and zoom calls bombard us. These distractions usually cost us 25 minutes to get refocus. These things break our flow and we run the risk of context switching, making you less productive.
+
+Your brain is terrible at remembering things. Your short-term memory only holds 5 to 6 things. This is why you need to make sure you have the right tools to capture all your tasks, ideas, and reminders. Write things down. Make lists.
+There are many tools out there to manage and master your time. One of the best ones is by productivity consultant David Allen and it is called Getting Things Done, or the GTD method for short.
 
 ### The GTD Method
 
