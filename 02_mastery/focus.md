@@ -1,13 +1,8 @@
 # Focus and discipline
 
-What is the scarcest commodity in the 21st century? Is it gold? Silver? Platinum? 
-No. 
-It’s focus. It’s the ability to focus in a world inundated with information and social media that is designed to 
-(as the creators of one major social media platform admitted to publicly) keep us as addicted and distracted as 
-possible. 
+The most valuable resource you have is time. So you need the ability to focus in a world where social media is designed to  keep us as addicted. Social media platforms are in the business of human futures. They sell the advertisers how likely you are to click an add. They sell certainty. They sell you.
 
-It’s no joke. The ability to focus is a serious problem that is important to understand and overcome. 
-Why? 
+It’s no joke. The ability to focus on building a better life for yourself is not in the best interest some of the most profitable businesses ever built. It is a serious problem that is important to understand and overcome. Every service out there wants you to consume their content, not produce your own.
 
 ### The Focus and Happiness Link
 Research shows that your happiness is dependent upon it. In the article When the Mind Wanders, Happiness also Strays,
@@ -16,7 +11,7 @@ up the research saying,
 “Whatever people were doing, whether it was having sex or reading or shopping, they tended to be happier if they 
 focused on the activity instead of thinking about something else.”
 The bottom line? 
-Your happiness and your ability to accomplish your goals is getting silently and not so silently attacked by 
+Your happiness and your ability to achieve your goals is getting  attacked by 
 distractions… 
 
 ### The High Cost of Distraction
@@ -26,10 +21,10 @@ research at the Human-Computer Interaction Institute at Carnegie Mellon Universi
 worker gets distracted every 3 minutes. 
 Every 3 minutes!
 But here’s the important point they make…
-It takes 25 minutes just to regain focus after being distracted!
-This is why getting distracted is so frustrating to those of us who experience it. We intuitively know how 
+It takes 25 minutes to regain focus after a distraction!
+This is why getting distracted is so frustrating to those of us who experience it. We know how 
 detrimental it is to progress, but many others have a hard time understanding why. Now, you can tell them why! 
-To be mentally present, you have to avoid distractions at all costs. 
+To be mentally present, you have to avoid distractions at all costs.
 
 ### Why Distractions Win
 
@@ -37,7 +32,7 @@ Here’s the real problem according to the above-noted research…
 Distractions trigger our fight/flight response. We can’t help it. It is the natural reaction of our brains to 
 danger. So, when you hear a loud, unfamiliar noise, our brains say something like, “This book we are working 
 on is not important! This loud noise could be dangerous!” Or “This software program that we are working on 
-isn’t nearly as important as what could be a potential threat to our very existence!” 
+isn’t as important as what could be a potential threat to our very existence!” 
 It doesn’t matter if the distraction is a noise or a co-worker/employee entering our cubicle/office with a 
 question – a distraction is a distraction, and it will take you 25 minutes to get back on track! What a waste of 
 productivity… 
@@ -65,7 +60,7 @@ The good news is that the more that you work to master focus, the easier it will
 
 
 
-#Resources
+###Resources
 
 https://observer.com/2017/02/science-stay-focused-psychology-slow-habits-chewing-gum-productivity/
 
@@ -76,6 +71,5 @@ Flow by
 THe organized mind
 
 https://www.psychologytoday.com/us/blog/the-brain-and-emotional-intelligence/201310/the-four-basic-moves-strengthen-focus
-
 
 https://www.psychologytoday.com/us/blog/the-integrationist/202008/8-effective-tools-staying-focused-and-getting-stuff-done
