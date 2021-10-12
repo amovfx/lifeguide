@@ -44,7 +44,7 @@ other people’s mistakes indirectly. Be kind, brave, honest, and devoted to you
 good people. Life’s joys are in becoming a more loving, humble person – not in gaining material possessions or 
 social status. Read the book “How to Win Friends and Influence People” by Dale Carnegie. 
 
-Dealing with Assholes
+##Dealing with Assholes
 
 When you master something and become a leading expert, you will lose all the benefits of all your effort if 
 you can't retain humility. You need to work with people to accomplish tasks that are bigger than what you can 
@@ -82,8 +82,10 @@ to go because negative actions have 5 times the effect over positive ones.
 Champion a no-asshole policy wherever you go. If you are in a leadership position and have a high performing asshole.
 Write them a stellar letter recommendation and ship them to the competition. You will see a productivity increase.
 
+If you are an asshole, you need to stop.
 
-#Resources
+
+###Resources
 How to win friends and influence people.
 
 The No Asshole Rule.
