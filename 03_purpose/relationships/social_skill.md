@@ -79,8 +79,13 @@ But what if you don’t have a choice?
 Build emotional distance between any asshole you encounter and yourself. In other words, deal with them on 
 only a purely necessary level and don’t invite them into your life in any way, shape, or form. Assholes need 
 to go because negative actions have 5 times the effect over positive ones.
-Champion a no-asshole policy wherever you go. 
+Champion a no-asshole policy wherever you go. If you are in a leadership position and have a high performing asshole.
+Write them a stellar letter recommendation and ship them to the competition. You will see a productivity increase.
 
 
 #Resources
 How to win friends and influence people.
+
+The No Asshole Rule.
+
+Moral Mazes
