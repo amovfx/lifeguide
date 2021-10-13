@@ -1,32 +1,16 @@
 # Motivation
 
-What is the difference between extrinsic and intrinsic motivation? 
-Extrinsic motivation is taking action because of an external force, power, or influence and not for the enjoyment of the action. 
-For example, the child who studies to avoid getting punished is said to be extrinsically motivated. The parents are the external power. 
-You might be surprised at how many of us have created an entire life around extrinsic motivation...
-The son who chose a career because of what his parents wanted and not what he wanted was extrinsically motivated. Or the wife of a husband who does all she can to please her husband at the expense of her happiness is extrinsically motivated. Or the person who gives up doing what they want to do for a living because of peer pressure from friends is extrinsically motivated. 
-However, in-trinsic motivation is actually in-spiration because the desire and passion are in-ternal.
+There are two different types of motivation. Intrinsic and extrinsic.
 
-When you are intrinsically motivated or inspired from with-in, your journey through life will have a much greater chance 
-of success and will be more fulfilling. 
-Money, power, sex, social status, and knowledge are all extrinsic motivators. But are all extrinsic motivators bad? 
-Not at all. Sometimes you must be extrinsically motivated to set yourself up for intrinsic satisfaction. 
-For example, you must gain knowledge to obtain self-mastery. It’s not always fun to gain knowledge and it takes time, 
-dedication, and persistence. But the intrinsic reward will be that you will understand and master your subject matter 
-and your environment. This will help you to acquire money, which will bring you social status in a capitalist society, 
-and this can even lead to power and sex! 
-The idea is to focus your energy on the one intrinsic thing that you really want and then the rest are just a by-product 
-of excellence. Money seeks out excellence. 
-The short-term pleasure of achieving luxury goods gives us external pleasure, but not enjoyment which is more difficult 
-to obtain. Enjoyment involves stretching past the apparent limitation of our genes and enables us to gain control over 
-our lives. 
+Intrinsic motivation is doing an activity for its inherit satisfaction. It is when you do something because it is fun and/or challenging to please your creativity.
 
-What is incredibly important to know is that extrinsic motivators can destroy intrinsic motivation. An example of this 
-is the artist who, because she is paid for just one hour of work, quits after the hour is up but before the work is complete. 
-That’s extrinsic motivation.
+Extrinsic motivation is reward-driven behavior. It is when you do something for praise, money, power, sex, social status or knowledge.
 
+It is important to realize the link betweeh intrinsic and extrinsic motivations. Extrinsic rewards kill intrinsic motivation. This discovery came from seperating two groups of children that liked to draw. The researchers paid one group and not the other to draw for one hour. After the hour was complete, the researchers told both groups to stop. The paid group put all their pencils down. The unpaid group continued to draw.
 
-The point of all of this is to help you to become aware of your own motivational factors so they don't control you.
-Your intrinsic motivators are extremely powerful. Stay true to them. Don't lie to yourself to advance extrinsic motivators.
-Build your life where your engange your intrinsic motivators that bring external rewards. Awareness is key.
+Your intrinsic motivators are stronger than your extrinsic motivators. Be aware of your situation and make sure you don't lose track of what you love to do. Make sure you are satisfying your intrinsic motivators before your extrinsic.
+###Resources
 
+Minset - Carol Dweck
+
+Drive - Daniel Pink
