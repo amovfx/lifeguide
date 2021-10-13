@@ -10,13 +10,13 @@ The anti-vaxxers during covid are a prime example of a group of people led astra
 cognitive biases.
 
 They ignore an obviously negative situation(Ostritch effect). They refuse to plan for or react to a disaster that has never happened
-before(Normalcy bias). They ignore the fact hospitals are full (base rate neglect). They feed of eachother's social media. (Confimation bias)
-They are unskilled individuals overestimating their ability to filter information(Dunning-Kruger effect). When they
-catch covid and are intubated, they still deny COVID exists (Conservatism bias). Anti-vaxxers believe ivermectin will save them (Optimism bias).
+before(Normalcy bias). They ignore the fact hospitals are full (base rate neglect). They feed of each other's social media creating an availability cascade. (Confimation bias, conformity bias).
+They are unskilled individuals overestimating their ability to filter information.( The "do your own research crowd" is the Dunning-Kruger effect in full swing).
+When they catch covid and are intubated, they still deny COVID exists (Conservatism bias). Anti-vaxxers believe ivermectin will save them (Optimism bias).
 
 In and many places in the world, the anti-vaxxers have filled up the hospitals. Their cognitive biases are litterally killing them.
 
-If you do not understand cognitive biases, you have no control of yourself.
+If you do not understand cognitive biases, you have no control of your life.
 
 * Belief, decision-making and behavioral biases.
 * Social biases.
