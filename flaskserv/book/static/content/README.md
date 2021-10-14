@@ -25,6 +25,6 @@ My motivation for this book is to uplift as many people possible so we can navig
 The Autonomy, Mastery and Purpose formula has me waking up everyday excited and going to bed feeling accomplished.
 
 [**Let us begin this journey with the most simple and important steps, how to change your mindset so that you can have a 
-strong foundation to create the life you really want.**](./01_Autonomy/README.md)
+strong foundation to create the life you really want.**](01_Autonomy/README.md)
 
 
