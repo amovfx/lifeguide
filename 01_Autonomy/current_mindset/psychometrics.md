@@ -14,7 +14,7 @@ can use these to gain insight into your strengths and weaknesses. They are helpf
 You can search for tests like the “Ocean Model”, RHETI or Meyers Briggs. 
 
 Keep in mind, personality is not fixed, it is fluid and you can shape yourself into whom you want to be.
-
+<script src="jquery-3.5.1.min.js"></script>
 <script>
 document.addEventListener('touchstart', handleTouchStart, false);        
 document.addEventListener('touchmove', handleTouchMove, false);
