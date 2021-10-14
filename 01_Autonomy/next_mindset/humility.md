@@ -15,7 +15,7 @@ Everyone gets along better with humble people, and cooperation leads to success.
 Those who are not humble should be, and those who are humble have an advantage. To be humble, is to be honest with oneself.
 
 
-[Source](https://positivepsychology.com/humility/)
+
 
 #Compound Advantage
 
@@ -23,10 +23,12 @@ Humility helps you recognize your advantages. How you were raised has a radical 
 Where you come from geographically and culturally can have a particularly large effect on what you achieve. Cultural legacy provides a large influence in this.
 If we can recognize the uneven playing field, we can start to level it.
 
-Extraordinary sucess is often the result of an unlikey series of opportunities. Lucky breaks and occurrences combine to create conditions that allow for great achievement. The author mis-spelled a search on Reddit and was introduced to bitcoin by the error's recommendation in 2011.
+Extraordinary success is often the result of an un-likey series of opportunities. Lucky breaks and occurrences combine to create conditions that allow for great achievement. I mis-spelled a search on Reddit and was introduced to bitcoin by the error's recommendation in 2011.
 
 ###Resrouces
 
 Outsiders - Malcom Gladwell
 
 The Compound Effect - Darren Hardy
+
+[Humility @ Positive Psychology](https://positivepsychology.com/humility/)
