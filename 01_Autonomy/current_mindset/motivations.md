@@ -11,6 +11,6 @@ It is important to realize the link betweeh intrinsic and extrinsic motivations.
 Your intrinsic motivators are stronger than your extrinsic motivators. Be aware of your situation and make sure you don't lose track of what you love to do. Make sure you are satisfying your intrinsic motivators before your extrinsic.
 ###Resources
 
-Minset - Carol Dweck
+Mindset - Carol Dweck
 
 Drive - Daniel Pink
