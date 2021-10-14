@@ -14,9 +14,11 @@ before(Normalcy bias). They ignore the fact hospitals are full (base rate neglec
 They are unskilled individuals overestimating their ability to filter information.( The "do your own research crowd" is the Dunning-Kruger effect in full swing).
 When they catch covid and are intubated, they still deny COVID exists (Conservatism bias). Anti-vaxxers believe ivermectin will save them (Optimism bias).
 
+What can be said about climate change deniers?
+
 In and many places in the world, the anti-vaxxers have filled up the hospitals. Their cognitive biases are litterally killing them.
 
-If you do not understand cognitive biases, you have no control of your life.
+If you do not understand cognitive biases, the ones that do control of your life.
 
 * Belief, decision-making and behavioral biases.
 * Social biases.
