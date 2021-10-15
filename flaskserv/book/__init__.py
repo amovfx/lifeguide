@@ -1,5 +1,5 @@
 from flask import Blueprint
-
+import pathlib
 def create_bp(name):
     return Blueprint(name,
                      __name__,
@@ -9,6 +9,7 @@ def create_bp(name):
                      url_prefix=f'/book')
 
 book_bp = create_bp('/book')
+book_bp.files = [ x.as_posix() for x in pathlib.Path(book_bp.static_folder).rglob("*/*.md")]
 
 
 
