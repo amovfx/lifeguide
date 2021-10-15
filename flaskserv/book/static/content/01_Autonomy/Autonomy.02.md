@@ -7,5 +7,5 @@ Being objective about oneself is an important characteristic of the autonomous p
 To first achieve autonomy, we must free ourselves from the lies we tell ourselves. Autonomy is about being responsible. Leave blame behind. Next, reflect upon your strengths and weaknesses. From this, you will identify your motivations, cofnitive biases and bad habits. This will prevent external sources from manipulating you. 
 
 The first step is understanding the difference between fixed and growth oriented mindsets. We must master ourselves before we begin to master our environment.
-[Motivations, biases and psychometric testing.](current_mindset/index.md)
+[Motivations, biases and psychometric testing.](current_mindset/current_mindset.03.md)
 

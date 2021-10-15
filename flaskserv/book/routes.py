@@ -35,7 +35,7 @@ def page(page_num):
     if request.cookies.get('acceptCookies') == 'true':
 
         expire_date = datetime.datetime.now()
-        expire_date = expire_date + datetime.timedelta(days=365)
+        expire_date = expire_date + datetime.timedelta(days=366)
 
         res.set_cookie('page_num',
                        str(page_num), expires=expire_date)

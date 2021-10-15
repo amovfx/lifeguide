@@ -7,6 +7,7 @@ def create_app():
 
     from ..book import book_bp
     app.register_blueprint(book_bp)
-    Misaka(app)
+
+    Misaka(app, autolink=True)
 
     return app
