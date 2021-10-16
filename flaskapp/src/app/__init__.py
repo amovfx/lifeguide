@@ -25,7 +25,7 @@ def create_app():
 
     #blueprints
     from ..book import book_bp
-    from error_handlers import error_handler_bp
+    from .error_handlers import error_handler_bp
 
     app.register_blueprint(book_bp)
     app.register_blueprint(error_handler_bp)

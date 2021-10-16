@@ -3,8 +3,6 @@ from . import book_bp
 from flask_misaka import markdown
 
 import datetime
-import pathlib
-import random
 
 from flask import render_template, make_response, request
 
