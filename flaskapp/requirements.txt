@@ -1,0 +1,13 @@
+certifi==2021.10.8
+cffi==1.15.0
+click==8.0.3
+Flask==2.0.2
+Flask-Misaka==1.0.0
+gunicorn==20.1.0
+itsdangerous==2.0.1
+Jinja2==3.0.2
+MarkupSafe==2.0.1
+misaka==2.1.0
+pycparser==2.20
+Werkzeug==2.0.2
+
