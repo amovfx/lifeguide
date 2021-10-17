@@ -20,7 +20,3 @@ services:
           - flask
         volumes:
           - /etc/:/etc/letsencrypt:/nginx/certs
-
-volumes:
-    certbot-cert:
-        external: true
