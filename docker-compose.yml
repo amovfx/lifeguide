@@ -19,4 +19,4 @@ services:
         depends_on:
           - flask
         volumes:
-          - /etc/letsencrypt/live/www.kaizens.guide:/ssl
+          - /etc/letsencrypt/live/www.kaizens.guide/:/ssl
