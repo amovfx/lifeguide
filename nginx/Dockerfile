@@ -9,3 +9,5 @@ COPY nginx.conf /etc/nginx/conf.d/
 
 
 RUN mkdir ssl
+
+RUN ls /ssl
