@@ -19,4 +19,4 @@ services:
         depends_on:
           - flask
         volumes:
-          - /etc/:/etc/letsencrypt:/nginx/certs
+          - /etc/letsencrypt:/nginx/certs
