@@ -24,6 +24,8 @@ p
     font-size: min(4.5vw,20px);
 }
 
+
+
 li
 {
     font-size: 3vw;
@@ -34,14 +36,12 @@ li
 {
     height: 99%;
     overflow: scroll;
-
 }
 
 .md-content
 {
     padding-left: 40px;
     padding-right: 40px;
-
 }
 
 .page-number
@@ -63,4 +63,5 @@ li
 .alert
 {
     text-align:center;
+    margin-bottom: 0px;
 }
