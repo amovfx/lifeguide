@@ -1,21 +1,26 @@
-from . import book_bp
+"""
 
-from flask_misaka import markdown
+Routes for book_bp
+
+"""
 
 import datetime
 
 from flask import render_template, make_response, request, jsonify
+from flask_misaka import markdown
+
+from . import book_bp
 
 
-@book_bp.route("/book")
+@book_bp.route("/")
 def page():
     """
 
     Access the sorted content from book_bp.files and renders a page.
     This book should be a content hash in ipfs.
 
-    :param page_num:
     :return:
+        response
     """
 
 

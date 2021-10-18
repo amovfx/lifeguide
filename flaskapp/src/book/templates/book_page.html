@@ -11,11 +11,16 @@
     <link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.css')}}">
     <link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.mobile.css')}}">
 
-    <title id="title">Title</title>
+    <title id="title">Kaizen's Guide</title>
+
 </head>
 <body>
-<div class="alert alert-warning" role="alert">
-  This website is in beta
+<div id="beta-warning" class="alert alert-warning" role="alert">
+    <div class="banner-text">
+            This website is in beta.
+            <span id="alert-toggle" class="alert-toggle">Hide this.</span>
+    </div>
+
 </div>
 <div class="page">
     <div id="page-contents" class="md-content unselectable">
@@ -127,12 +132,12 @@ function handleTouchMove(evt) {
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
-            let next = (page_num - 1) % page_count;
-            page_num -= 1;
-            get_page(next);
-        } else {
             let next = (page_num + 1) % page_count;
             page_num += 1;
+            get_page(next);
+        } else {
+            let next = (page_num - 1) % page_count;
+            page_num -= 1;
             get_page(next);
         }
     } else {
@@ -152,4 +157,11 @@ function handleTouchMove(evt) {
     });
 
 
+
+
+</script>
+<script>
+    $("#alert-toggle").click(function(){
+        $("#beta-warning").hide();
+    });
 </script>
