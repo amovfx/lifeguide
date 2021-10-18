@@ -21,7 +21,7 @@ h3
 
 p
 {
-    font-size: min(3vw,30px);
+    font-size: min(4.5vw,20px);
 }
 
 li
@@ -39,7 +39,8 @@ li
 
 .md-content
 {
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 
 }
 
