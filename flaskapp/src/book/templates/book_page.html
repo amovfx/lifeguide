@@ -15,13 +15,7 @@
 
 </head>
 <body>
-<div id="beta-warning" class="alert alert-warning" role="alert">
-    <div class="banner-text">
-            This website is in beta.
-            <span id="alert-toggle" class="alert-toggle">Hide this.</span>
-    </div>
-
-</div>
+{% include "includes/beta_warning.html" %}
 <div class="page">
     <div id="page-contents" class="md-content unselectable">
     </div>
@@ -159,9 +153,4 @@ function handleTouchMove(evt) {
 
 
 
-</script>
-<script>
-    $("#alert-toggle").click(function(){
-        $("#beta-warning").hide();
-    });
 </script>
