@@ -33,6 +33,17 @@ def page():
 
 @book_bp.get("/content/<page_num>")
 def page_content(page_num):
+    """
+
+    Returns a book page to be injected into the webpage.
+
+    :param page_num:
+        The page number of the book.
+
+    :return:
+        json book content
+
+    """
     page_num = int(page_num)
 
     read_file = open(book_bp.files[page_num], "r")
