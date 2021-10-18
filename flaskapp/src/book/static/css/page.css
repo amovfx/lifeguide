@@ -1,0 +1,65 @@
+body
+{
+    height: 99%;
+}
+
+h1
+{
+    font-size: min(6vw,80px);
+    font-weight: bolder;
+    padding-bottom: 20px;
+    font-max-size: 10px;
+
+}
+
+h3
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: min(4vw,40px);
+}
+
+p
+{
+    font-size: min(3vw,30px);
+}
+
+li
+{
+    font-size: 3vw;
+    padding-left: 10px;
+}
+
+.page
+{
+    height: 99%;
+    overflow: scroll;
+
+}
+
+.md-content
+{
+    padding-left: 20px;
+
+}
+
+.page-number
+{
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom:40px;
+}
+
+.unselectable
+{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.alert
+{
+    text-align:center;
+}

@@ -1,0 +1,7 @@
+
+
+class PageTurner
+{
+    constructor(f) {
+    }
+}

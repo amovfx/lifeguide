@@ -4,31 +4,22 @@ from flask_misaka import markdown
 
 import datetime
 
-from flask import render_template, make_response, request
+from flask import render_template, make_response, request, jsonify
 
 
-@book_bp.route("/<page_num>")
-def page(page_num):
+@book_bp.route("/book")
+def page():
     """
 
     Access the sorted content from book_bp.files and renders a page.
+    This book should be a content hash in ipfs.
 
     :param page_num:
     :return:
     """
-    page_num = int(page_num)
 
-    read_file = open(book_bp.files[page_num], "r")
-    md_template_string = markdown(read_file.read())
 
-    next_page = int(page_num+1) % len(book_bp.files)
-    prev_page = int(page_num-1) % len(book_bp.files)
-
-    res = make_response(render_template("book_page.html",
-                                        text=md_template_string,
-                                        cur_page =page_num,
-                                        next_page=next_page,
-                                        prev_page=prev_page))
+    res = make_response(render_template("book_page.html", page_count = len(book_bp.files)))
 
     if request.cookies.get('acceptCookies') == 'true':
 
@@ -36,6 +27,16 @@ def page(page_num):
         expire_date = expire_date + datetime.timedelta(days=366)
 
         res.set_cookie('page_num',
-                       str(page_num), expires=expire_date)
+                       "0", expires=expire_date)
 
     return res
+
+@book_bp.get("/content/<page_num>")
+def page_content(page_num):
+    page_num = int(page_num)
+
+    read_file = open(book_bp.files[page_num], "r")
+    md_template_string = markdown(read_file.read())
+
+
+    return jsonify(md_template_string)
