@@ -2,7 +2,7 @@
 
 This site was created using [**Docsify**](https://docsify.js.org), which is an open source documentation site generator, and imported in GitHub page.
 
-## Introduction
+### Introduction
 
 The goal of this book is to provide a blueprint for success. It is a summary of over 100 self help books that I have read and applied.
 
