@@ -23,6 +23,7 @@ And now, for this last and final part regarding “Purpose,” we are going to c
 topic of relationships. 
 Your purpose greatly depends upon it…
 
+### Resources
 
 Drive - Daniel Pink
 
