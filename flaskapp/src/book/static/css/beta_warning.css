@@ -1,0 +1,21 @@
+.alert
+{
+
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self:flex-start;
+    width: 100%;
+    vertical-align: baseline;
+    background-color: #ffaa00;
+    color: white;
+    font-weight: bolder;
+    font-size: 4vw;
+
+}
+
+.alert-toggle
+{
+    text-decoration: underline;
+}

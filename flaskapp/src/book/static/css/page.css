@@ -1,6 +1,6 @@
 body
 {
-    height: 100%;
+    height: 99%;
 }
 
 h1
@@ -48,7 +48,7 @@ li
     padding-top: 40px;
     text-align: center;
     padding-bottom:40px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .unselectable
@@ -60,24 +60,4 @@ li
     -o-user-select: none;
 }
 
-.alert
-{
 
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self:flex-start;
-    width: 100%;
-    vertical-align: baseline;
-    background-color: #ffaa00;
-    color: white;
-    font-weight: bolder;
-    font-size: 4vw;
-
-}
-
-.alert-toggle
-{
-    text-decoration: underline;
-}

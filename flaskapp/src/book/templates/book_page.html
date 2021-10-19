@@ -7,7 +7,7 @@
     <script   src="https://code.jquery.com/jquery-3.6.0.slim.min.js"   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="   crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+
     <link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.css')}}">
     <link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.mobile.css')}}">
 
@@ -23,29 +23,15 @@
         <p id="page-number-text">
         </p>
     </div>
-
-    <div class="alert text-center cookiealert" role="alert">
-        <b>The only cookie we store is to remember what page you are on.</b>
-
-        <button type="button" class="btn btn-primary btn-sm acceptcookies">
-            Remember my page!
-        </button>
-            <button type="button" class="btn btn-warning btn-sm acceptcookies">
-            No!
-        </button>
-    </div>
 </div>
-
+{% include "includes/cookie_warning.html" %}
 </body>
 </html>
 
+<script src="{{ url_for('/book/static', filename='js/page.base.js')}}"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-<script>
-window.addEventListener("cookieAlertAccept", function() {
 
-})
-</script>
+
 <script>
     var page_num = 0;
     var page_count = {{ page_count | safe }};
@@ -56,14 +42,18 @@ window.addEventListener("cookieAlertAccept", function() {
     let startX;
     let startY;
 
+    function mod(n, m) {
+        return ((n % m) + m) % m;
+    }
+
     document.addEventListener('mousedown', function (event) {
       startX = event.pageX;
       startY = event.pageY;
     });
 
-    function get_page(page_num)
+    function set_page_data(page_number)
     {
-        fetch(`/book/content/${page_num}`).then
+        fetch(`/book/content/${page_number}`).then
         (
             (response) =>
             {
@@ -74,7 +64,7 @@ window.addEventListener("cookieAlertAccept", function() {
 
             }
         )
-        $("#page-number-text").html(page_num);
+        $("#page-number-text").html(page_number);
     }
 
     document.addEventListener('mouseup', function (event) {
@@ -83,15 +73,15 @@ window.addEventListener("cookieAlertAccept", function() {
       {
             if (Math.sign(dX) < 0)
             {
-                let next = (page_num + 1) % page_count;
-                page_num += 1;
-                get_page(next);
+                let next = mod((page_num + 1),page_count);
+                page_num = next;
+                set_page_data(next);
             }
             else
             {
-                let prev = (page_num - 1) % page_count;
-                page_num -= 1;
-                get_page(prev);
+                let prev = mod((page_num - 1),page_count);
+                page_num = prev;
+                set_page_data(prev);
             }
       }
     });
@@ -128,11 +118,11 @@ function handleTouchMove(evt) {
         if ( xDiff > 0 ) {
             let next = (page_num + 1) % page_count;
             page_num += 1;
-            get_page(next);
+            set_page_data(next);
         } else {
             let next = (page_num - 1) % page_count;
             page_num -= 1;
-            get_page(next);
+            set_page_data(next);
         }
     } else {
         if ( yDiff > 0 ) {
@@ -147,7 +137,7 @@ function handleTouchMove(evt) {
 };
 
     window.addEventListener("load", function(){
-        get_page(0);
+        set_page_data(0);
     });
 
 
