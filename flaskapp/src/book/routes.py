@@ -23,7 +23,6 @@ def page():
         response
     """
 
-    print (len(book_bp.files))
     res = make_response(render_template("book_page.html", page_count = len(book_bp.files)))
 
     if request.cookies.get('acceptCookies') == 'true':
@@ -33,7 +32,7 @@ def page():
 
         res.set_cookie('page_num',
                        "0", expires=expire_date)
-    print (res)
+
     return res
 
 @book_bp.get("/content/<page_num>")
