@@ -4,10 +4,19 @@
 <div class="page">
     <div id="page-contents" class="md-content unselectable">
     </div>
+
     <div class="page-number">
         <p id="page-number-text">
         </p>
     </div>
+    <div class="navigation">
+        <div class="page-turn" id="prev-page">Prev</div>
+        <div class="page-turn" id="next-page">Next</div>
+    </div>
+    <div>
+    </div>
+
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
@@ -24,5 +33,16 @@
     {
         Page_Manager = new PageDesktop( page_count );
     }
+
+    $("#prev-page").click(() => {
+        Page_Manager.turn_page(-1);
+        console.log("Prev Page")
+    })
+    $("#next-page").click(() => {
+        Page_Manager.turn_page(1);
+    })
+
+
+
 
 </script>

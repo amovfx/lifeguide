@@ -76,7 +76,7 @@ class PageManagerAbstract
 
     turn_page(dX)
     {
-        if (Math.abs(dX) > 1)
+        if (Math.abs(dX) > .5)
         {
             this.page_num -= Math.sign(dX);
             let next = mod((this.page_num), this.page_count);
