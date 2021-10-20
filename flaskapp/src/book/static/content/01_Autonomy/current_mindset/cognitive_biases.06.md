@@ -24,4 +24,4 @@ If you do not understand cognitive biases, the ones that do control of your life
 * Social biases.
 * Memory biases.
 
-![alt text](../../images/cognitive-bias-1070.jpg)
+![alt text]({{ url_for(static_path, filename='/content/images/cognitive-bias-1070.jpg') }})
