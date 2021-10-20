@@ -13,15 +13,53 @@ function set_page_data(page_num)
     )
     $("#page-number-text").html(page_num);
 }
+
+class PageCookieManager
+{
+    getCookie(cname)
+    {
+        let name = cname + "=";
+        let ca = document.cookie.split(';');
+        for(let i = 0; i < ca.length; i++)
+        {
+            let c = ca[i];
+            while (c.charAt(0) == ' ')
+            {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0)
+            {
+              return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    setPageCookie(page)
+    {
+        if (this.getCookie("acceptCookies") == "true")
+        {
+            document.cookie = `page=${page}`;
+        }
+    }
+}
+
+
 class PageManagerAbstract
 {
-    constructor(page_count, event_down_name="mousedown", event_up_name="mouseup") {
-
+    constructor(page_count, event_down_name="mousedown", event_up_name="mouseup")
+    {
         this.startX;
         this.page_num = 0;
         this.page_count = page_count;
         this.event_down_name = event_down_name;
         this.event_up_name = event_up_name;
+        this.Page_Cookie_Manager = new PageCookieManager();
+    }
+
+    get_page_num()
+    {
+        return this.page_num;
     }
 
     turn_page(dX)
@@ -31,6 +69,7 @@ class PageManagerAbstract
             this.page_num -= Math.sign(dX);
             let next = mod((this.page_num), this.page_count);
             set_page_data(next);
+            this.Page_Cookie_Manager.setPageCookie(next);
         }
     }
     down_event(event)
@@ -56,9 +95,6 @@ class PageManagerAbstract
     {
         event.currentTarget.load_page(0);
     }
-
-
-
 }
 
 class PageDesktop extends PageManagerAbstract
@@ -95,8 +131,6 @@ class PageMobile extends PageManagerAbstract
         {
             super.turn_page(event.touches[0].clientX - this.startX);
         }
-
-
     }
     getTouches(event)
     {
@@ -104,3 +138,4 @@ class PageMobile extends PageManagerAbstract
              event.originalEvent.touches; // jQuery
     }
 }
+

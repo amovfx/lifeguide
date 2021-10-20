@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.css')}}">
+<link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.mobile.css')}}">
+
+<div class="page">
+    <div id="page-contents" class="md-content unselectable">
+    </div>
+    <div class="page-number">
+        <p id="page-number-text">
+        </p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
+<script src="{{ url_for('/book.static', filename='js/page.base.js')}}"></script>
+<script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    var page_count = {{ page_count | safe }};
+    var Page_Manager;
+    if (md.mobile() !=null)
+    {
+        Page_Manager = new PageMobile(page_count);
+    }
+    else
+    {
+        Page_Manager = new PageDesktop( page_count );
+    }
+
+</script>
