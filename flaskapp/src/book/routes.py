@@ -4,7 +4,7 @@ Routes for book_bp
 
 """
 
-from flask import render_template, make_response, request, jsonify, render_template_string
+from flask import render_template, make_response, jsonify, render_template_string
 from flask_misaka import markdown
 
 from . import book_bp
