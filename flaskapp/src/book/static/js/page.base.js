@@ -35,11 +35,22 @@ class PageCookieManager
         return "";
     }
 
-    setPageCookie(page)
+    set_page_cookie_value(page)
     {
         if (this.getCookie("acceptCookies") == "true")
         {
             document.cookie = `page=${page}`;
+        }
+    }
+    get_page_cookie_value()
+    {
+        if (this.getCookie("page"))
+        {
+            return this.getCookie("page")
+        }
+        else
+        {
+            return 0;
         }
     }
 }
@@ -50,11 +61,12 @@ class PageManagerAbstract
     constructor(page_count, event_down_name="mousedown", event_up_name="mouseup")
     {
         this.startX;
-        this.page_num = 0;
+        this.Page_Cookie_Manager = new PageCookieManager();
+        this.page_num = this.Page_Cookie_Manager.get_page_cookie_value();
         this.page_count = page_count;
         this.event_down_name = event_down_name;
         this.event_up_name = event_up_name;
-        this.Page_Cookie_Manager = new PageCookieManager();
+
     }
 
     get_page_num()
@@ -69,7 +81,7 @@ class PageManagerAbstract
             this.page_num -= Math.sign(dX);
             let next = mod((this.page_num), this.page_count);
             set_page_data(next);
-            this.Page_Cookie_Manager.setPageCookie(next);
+            this.Page_Cookie_Manager.set_page_cookie_value(next);
         }
     }
     down_event(event)
@@ -87,13 +99,10 @@ class PageManagerAbstract
         document.addEventListener(this.event_down_name, this.down_event, false);
         document.addEventListener(this.event_up_name, this.up_event, false );
 
-        window.addEventListener("load", this.load_event)
-        window.load_page = set_page_data
-    }
+        window.addEventListener("load", () => {
+            set_page_data(this.Page_Cookie_Manager.get_page_cookie_value())
+        })
 
-    load_event(event)
-    {
-        event.currentTarget.load_page(0);
     }
 }
 
