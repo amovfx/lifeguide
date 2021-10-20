@@ -22,9 +22,12 @@
 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
 <script src="{{ url_for('/book.static', filename='js/page.base.js')}}"></script>
 <script>
+
     var md = new MobileDetect(window.navigator.userAgent);
+
     var page_count = {{ page_count | safe }};
     var Page_Manager;
+
     if (md.mobile() !=null)
     {
         Page_Manager = new PageMobile(page_count);
@@ -36,8 +39,8 @@
 
     $("#prev-page").click(() => {
         Page_Manager.turn_page(-1);
-        console.log("Prev Page")
     })
+
     $("#next-page").click(() => {
         Page_Manager.turn_page(1);
     })
