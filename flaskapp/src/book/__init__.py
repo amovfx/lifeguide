@@ -5,7 +5,7 @@ def create_bp(name):
     return Blueprint(name,
                      __name__,
                      template_folder='templates',
-                     static_url_path=f'/{name}/static',
+                     static_url_path=f'/static',
                      static_folder='static',
                      url_prefix=f'/book')
 

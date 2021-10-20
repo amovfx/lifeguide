@@ -1,7 +1,6 @@
 from flask import (Blueprint,
                       redirect,
-                      url_for,
-                      request)
+                      url_for)
 
 error_handler_bp = Blueprint('error_handlers', __name__)
 
@@ -14,4 +13,4 @@ def handle404(e):
     :param e:
     :return:
     """
-    return redirect(url_for('/book.page'))
+    return redirect(url_for('/book.cover'))
