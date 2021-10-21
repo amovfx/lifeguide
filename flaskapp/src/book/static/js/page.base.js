@@ -99,11 +99,12 @@ class PageManagerAbstract
     {
         document.addEventListener(this.event_down_name, this.down_event, false);
         document.addEventListener(this.event_up_name, this.up_event, false );
-
+    }
+    init_load_event_listeners()
+    {
         window.addEventListener("load", () => {
             set_page_data(this.Page_Cookie_Manager.get_page_cookie_value())
         })
-
     }
 }
 
@@ -135,7 +136,7 @@ class PageDesktop extends PageManagerAbstract
         {
             this.turn_page(event.pageX - this.startX);
         }
-        this.init_event_listeners()
+        this.init_load_event_listeners()
     }
 }
 
@@ -154,6 +155,7 @@ class PageMobile extends PageManagerAbstract
         {
             super.turn_page(event.touches[0].clientX - this.startX);
         }
+        this.init_load_event_listeners()
     }
     getTouches(event)
     {

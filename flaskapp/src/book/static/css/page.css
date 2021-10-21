@@ -108,7 +108,13 @@ li
     -moz-border-radius: 18px 18px 18px 18px;
     -webkit-border-radius: 18px;
     border-radius: 18px 18px 18px 18px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+}
 
+.instructions
+{
+    text-align:center;
+    padding:10px;
 }
 
 

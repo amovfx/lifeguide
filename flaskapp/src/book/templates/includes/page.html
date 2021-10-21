@@ -25,7 +25,7 @@
 
     </div>
     <div class="instructions">
-        Click and drag to turn the page.
+        <h3>Click and drag to turn the page.</h3>
     </div>
 </div>
 
@@ -34,33 +34,7 @@
 <script>
 
     var md = new MobileDetect(window.navigator.userAgent);
-
-    var page_count = {{ page_count | safe }};
-    var Page_Manager;
-
-    if (md.mobile() !=null)
-    {
-        Page_Manager = new PageMobile(page_count);
-    }
-    else
-    {
-        Page_Manager = new PageDesktop( page_count );
-    }
-
-    $("#prev-page").click(() => {
-        Page_Manager.turn_page(-1);
-    })
-
-    $("#next-page").click(() =>
-    {
-        Page_Manager.turn_page(1);
-    })
-
-    $("#overlay-gudie").click( () =>
-        {
-            $("#overlay-guide").hide();
-        }
-    )
+    var accepted = 0;
 
     function buttonclick()
     {
@@ -89,7 +63,42 @@
             });
         };
         tweenBlur('#page', 10, 0);
+
+        if (accepted === 0) {
+            Page_Manager.init_event_listeners();
+        }
     }
+
+    console.log("activating page managers");
+    var page_count = {{ page_count | safe }};
+    var Page_Manager;
+
+    if (md.mobile() !=null)
+    {
+        Page_Manager = new PageMobile(page_count);
+    }
+    else
+    {
+        Page_Manager = new PageDesktop( page_count );
+    }
+
+    $("#prev-page").click(() => {
+        Page_Manager.turn_page(-1);
+    })
+
+    $("#next-page").click(() =>
+    {
+        Page_Manager.turn_page(1);
+    })
+
+    $("#overlay-gudie").click( () =>
+        {
+            $("#overlay-guide").hide();
+        }
+    )
+
+
+
 
 
 
