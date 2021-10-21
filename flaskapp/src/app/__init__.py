@@ -2,8 +2,9 @@
 import secrets
 
 from flask import Flask
-from cache import cache
 from flask_misaka import Misaka
+
+from .cache import cache
 
 def create_app():
     """
