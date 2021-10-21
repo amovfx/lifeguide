@@ -1,3 +1,6 @@
+
+var delta = 6;
+
 function mod(n, m) {
     return ((n % m) + m) % m;
 }
@@ -77,7 +80,7 @@ class PageManagerAbstract
 
     turn_page(dX)
     {
-        if (Math.abs(dX) > .5)
+        if (Math.abs(dX) >= delta)
         {
             this.page_num -= Math.sign(dX);
             let next = mod((this.page_num), this.page_count);
