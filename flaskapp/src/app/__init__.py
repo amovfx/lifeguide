@@ -2,6 +2,7 @@
 import secrets
 
 from flask import Flask
+from cache import cache
 from flask_misaka import Misaka
 
 def create_app():
@@ -22,6 +23,9 @@ def create_app():
 
     #plugins
     Misaka(app, autolink=True)
+
+
+    cache.init_app(app)
 
     #blueprints
     from ..book import book_bp
