@@ -73,7 +73,7 @@
     var page_count = {{ page_count | safe }};
     var Page_Manager;
 
-    if (md.mobile() !=null)
+    if (md.mobile() != null)
     {
         Page_Manager = new PageMobile(page_count);
         $("#tutorial-image").attr('src',"{{ url_for('/book.static', filename='images/touch_swipe.png') }}");
