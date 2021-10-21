@@ -146,7 +146,7 @@ class PageDesktop extends PageManagerAbstract
 class PageMobile extends PageManagerAbstract
 {
     constructor(page_val) {
-        super(page_val, "touchstart", "touchmove");
+        super(page_val, "touchstart", "touchend");
 
         //sad ass attempt at overriding
         this.down_event = (event) =>
