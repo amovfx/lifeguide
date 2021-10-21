@@ -1,4 +1,4 @@
-### Willpower
+# Willpower
 
 Willpower is the ability to do what you dislike in the present for the long-term benefit and gain. 
 “I will” is a powerful statement, hence the word, “willpower.” “I will” is a statement of strong intention but without grit, it loses strength. 
