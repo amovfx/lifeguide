@@ -151,19 +151,15 @@ class PageMobile extends PageManagerAbstract
         //sad ass attempt at overriding
         this.down_event = (event) =>
         {
-            const firstTouch = this.getTouches(event)[0];
-            this.startX = firstTouch.clientX;
+            console.log("poopy")
+            this.startX = event.changedTouches[0].screenX;
         }
         this.up_event = (event) =>
         {
-            super.turn_page(event.touches[0].clientX - this.startX);
+            super.turn_page(event.changedTouches[0].screenX - this.startX);
         }
         this.init_load_event_listeners()
     }
-    getTouches(event)
-    {
-      return event.touches ||             // browser API
-             event.originalEvent.touches; // jQuery
-    }
+
 }
 
