@@ -32,22 +32,33 @@ li
 
 .page
 {
-    height: 99%;
     overflow: scroll;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+
 }
 
-.md-content
+.page-content
 {
+    display: table-cell;
     padding-left: 40px;
     padding-right: 40px;
 }
 
+.page-info
+{
+    flex-direction: column;
+
+}
 .page-number
 {
     padding-top: 40px;
     text-align: center;
     padding-bottom:15px;
+
 }
 
 .unselectable
