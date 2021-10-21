@@ -1,15 +1,31 @@
 <link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.css')}}">
 <link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.mobile.css')}}">
 
-<div class="page">
-    <div id="page-contents" class="page-content unselectable"></div>
+<div id="page" class="page blur">
+    <div id="page-contents" class="page-content unselectable"></div> <!-- Page Manager stuffs this -->
 
+
+
+    <!-- optimize this, maybe collapse page-info and navigation, remove page-number div -->
     <div class="page-info">
         <div class="navigation">
             <div class="page-turn" id="prev-page">Prev</div>
             <div class="page-number"><p id="page-number-text"></p></div>
             <div class="page-turn" id="next-page">Next</div>
         </div>
+    </div>
+
+
+</div>
+
+
+<div id="overlay-div" class="swipe-guide-overlay" onclick="buttonclick()">
+    <div >
+        <img  src="{{ url_for('/book.static', filename='images/click_swipe.png') }}">
+
+    </div>
+    <div>
+        Click and drag to turn the page.
     </div>
 </div>
 
@@ -35,9 +51,49 @@
         Page_Manager.turn_page(-1);
     })
 
-    $("#next-page").click(() => {
+    $("#next-page").click(() =>
+    {
         Page_Manager.turn_page(1);
     })
+
+    $("#overlay-gudie").click( () =>
+        {
+            $("#overlay-guide").hide();
+        }
+    )
+
+    function buttonclick()
+    {
+        $(".swipe-guide-overlay").hide()
+            var setBlur = function(ele, radius) {
+            $(ele).css({
+               "-webkit-filter": "blur("+radius+"px)",
+                "filter": "blur("+radius+"px)"
+           });
+       }
+
+       // Generic function to tween blur radius
+       var tweenBlur = function(ele, startRadius, endRadius) {
+            $({blurRadius: startRadius}).animate({blurRadius: endRadius}, {
+                duration: 200,
+                easing: 'swing', // or "linear"
+                                 // use jQuery UI or Easing plugin for more options
+                step: function() {
+                    setBlur(ele, this.blurRadius);
+                },
+                callback: function() {
+                    // Final callback to set the target blur radius
+                     // jQuery might not reach the end value
+                     setBlur(ele, endRadius);
+                }
+            });
+        };
+        tweenBlur('#page', 10, 0);
+
+
+    }
+
+
 
 
 

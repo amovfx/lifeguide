@@ -1,6 +1,7 @@
 function mod(n, m) {
     return ((n % m) + m) % m;
 }
+
 function set_page_data(page_num)
 {
     fetch(`/book/content/${page_num}`).then
@@ -103,6 +104,19 @@ class PageManagerAbstract
             set_page_data(this.Page_Cookie_Manager.get_page_cookie_value())
         })
 
+    }
+}
+
+class DocumentEventStrategy
+{
+    constructor(event_name, event) {
+        this.event_name = event_name;
+        this.event_fn = event;
+    }
+
+    init_doc_event_listener()
+    {
+        document.addEventListener(this.event_down_name, this.event_fn, false);
     }
 }
 
