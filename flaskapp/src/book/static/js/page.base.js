@@ -147,6 +147,9 @@ class PageMobile extends PageManagerAbstract
 {
     constructor(page_val) {
         super(page_val, "touchstart", "touchend");
+        document.getElementById('demo').addEventListener('touchmove', () => {
+            this.isSwiping = true;
+        });
 
         //sad ass attempt at overriding
         this.down_event = (event) =>
