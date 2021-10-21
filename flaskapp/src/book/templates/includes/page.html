@@ -21,7 +21,7 @@
 
 <div id="overlay-div" class="swipe-guide-overlay" onclick="buttonclick()">
     <div >
-        <img  src="{{ url_for('/book.static', filename='images/click_swipe.png') }}">
+        <img id="tutorial-image">
 
     </div>
     <div class="instructions">
@@ -76,10 +76,12 @@
     if (md.mobile() !=null)
     {
         Page_Manager = new PageMobile(page_count);
+        $("#tutorial-image").attr('src',"{{ url_for('/book.static', filename='images/touch_swipe.png') }}");
     }
     else
     {
         Page_Manager = new PageDesktop( page_count );
+        $("#tutorial-image").attr('src',"{{ url_for('/book.static', filename='images/click_swipe.png') }}");
     }
 
     $("#prev-page").click(() => {
