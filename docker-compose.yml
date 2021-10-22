@@ -9,7 +9,7 @@ services:
         expose:
           - 8080
         volumes:
-          - ./src:/src
+          - ./flaskapp/src:/app/src
 
 
     nginx:
