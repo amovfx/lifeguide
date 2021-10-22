@@ -6,7 +6,7 @@ FROM python:3.7.2-stretch
 
 # Copy the current directory contents into the container at /app
 WORKDIR /app
-COPY . /app
+ADD . /app
 
 
 
