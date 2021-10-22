@@ -8,6 +8,8 @@ services:
           - APP_NAME=MyFlaskApp
         expose:
           - 8080
+        volumes:
+          - ./src:/src
 
 
     nginx:
