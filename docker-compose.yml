@@ -1,13 +1,18 @@
-version: '3.3'
+version: '3.6'
+
 services:
     flask:
         build: ./flaskapp
         container_name: flask
         restart: always
+        network_mode: host
+        privileged: true
         environment:
           - APP_NAME=MyFlaskApp
         expose:
           - 8080
+        volumes:
+          - .:/app
 
     nginx:
         build: ./nginx
@@ -21,3 +26,4 @@ services:
         volumes:
           - /etc/letsencrypt/live/www.kaizens.guide/cert.pem:/ssl/cert.pem
           - /etc/letsencrypt/live/www.kaizens.guide/privkey.pem:/ssl/privkey.pem
+
