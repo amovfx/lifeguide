@@ -9,7 +9,7 @@ services:
         expose:
           - 8080
         volumes:
-          - .:/app
+          - ./src:/app/src
 
     nginx:
         build: ./nginx
