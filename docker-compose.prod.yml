@@ -1,10 +1,21 @@
 version: '3.3'
 services:
 
+  flask:
+    extends:
+      file: docker-compose.yml
+      service: flask
+
   nginx:
     extends:
       file: docker-compose.yml
       service: nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.prod
+
+    depends_on:
+      - flask
     environment:
       - NGINX_CONF_FILE=nginx.prod.conf
     volumes:

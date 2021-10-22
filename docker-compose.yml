@@ -14,12 +14,11 @@ services:
 
 
     nginx:
-        build: ./nginx
+        build:
+          context: ./nginx
+          dockerfile: Dockerfile
         container_name: nginx
         restart: always
-        environment:
-          - "DEV=DEVELOPMENT"
-          - "NGINX_CONF_FILE=nginx.conf"
         ports:
           - "80:80"
           - "443:443"
