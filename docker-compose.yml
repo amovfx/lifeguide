@@ -6,6 +6,7 @@ services:
         restart: always
         environment:
           - APP_NAME=MyFlaskApp
+          - DEV=DEVELOPMENT
         expose:
           - 8080
         volumes:
@@ -16,11 +17,13 @@ services:
         build: ./nginx
         container_name: nginx
         restart: always
+        environment:
+          - "DEV=DEVELOPMENT"
+          - "NGINX_CONF_FILE=nginx.conf"
         ports:
           - "80:80"
           - "443:443"
         depends_on:
           - flask
-        volumes:
-          - /etc/letsencrypt/live/www.kaizens.guide/cert.pem:/ssl/cert.pem
-          - /etc/letsencrypt/live/www.kaizens.guide/privkey.pem:/ssl/privkey.pem
+
+

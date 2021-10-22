@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+
+  nginx:
+    extends:
+      file: docker-compose.yml
+      service: nginx
+    environment:
+      - NGINX_CONF_FILE=nginx.prod.conf
+    volumes:
+      - /etc/letsencrypt/live/www.kaizens.guide/cert.pem:/ssl/cert.pem
+      - /etc/letsencrypt/live/www.kaizens.guide/privkey.pem:/ssl/privkey.pem
