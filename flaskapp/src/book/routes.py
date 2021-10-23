@@ -25,7 +25,6 @@ def cover():
     return make_response(render_template("book_page.html", page_count = len(book_bp.files)))
 
 @book_bp.get("/content/<page_num>")
-@cache.memoize()
 def page_content(page_num):
     """
 

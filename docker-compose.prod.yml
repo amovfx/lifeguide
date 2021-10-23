@@ -5,6 +5,8 @@ services:
     extends:
       file: docker-compose.yml
       service: flask
+    environment:
+      FLASK_DEBUG: 0
 
   nginx:
     extends:

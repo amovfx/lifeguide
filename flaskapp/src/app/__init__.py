@@ -18,7 +18,7 @@ def create_app():
     app = Flask(__name__)
 
     app.config.update(
-        SECRET_KEY=secrets.token_hex(128)
+        SECRET_KEY=secrets.token_hex(512)
     )
 
 

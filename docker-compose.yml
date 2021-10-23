@@ -5,8 +5,8 @@ services:
         container_name: flask
         restart: always
         environment:
-          - APP_NAME=MyFlaskApp
-          - DEV=DEVELOPMENT
+          APP_NAME: FlaskBookApp
+          FLASK_DEBUG: 1
         expose:
           - 8080
         volumes:
