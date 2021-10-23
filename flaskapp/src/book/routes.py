@@ -22,7 +22,7 @@ def cover():
         response
     """
 
-    return make_response(render_template("book_page.html", page_count = len(book_bp.files)))
+    return render_template("book_page.html", page_count = len(book_bp.files))
 
 @book_bp.get("/content/<page_num>")
 def page_content(page_num):
@@ -38,6 +38,10 @@ def page_content(page_num):
 
     """
     page_num = int(page_num)
+
+    #turn this into a error handler.
+    if page_num > len(book_bp.files):
+        return "Page does not exist for this book", 404
 
     md_file = open(book_bp.files[page_num], "r")
     text = md_file.read()
