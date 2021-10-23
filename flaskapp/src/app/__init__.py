@@ -1,9 +1,14 @@
+"""
+
+App factory/
+
+"""
+
 from flask import Flask
 from flask_misaka import Misaka
 from flaskapp.src.app.config import *
 
 from .cache import cache
-
 from .config import DevelopmentConfig, TestConfig, ProductionConfig
 
 ENV_CONFIGS = {
@@ -11,7 +16,6 @@ ENV_CONFIGS = {
     "testing": TestConfig,
     "production": ProductionConfig,
 }
-
 
 def set_config(app, env_name: str = os.environ.get("FLASK_ENV")) -> None:
 
@@ -33,8 +37,11 @@ def set_config(app, env_name: str = os.environ.get("FLASK_ENV")) -> None:
         else:
             raise ValueError("Config class not available.")
 
+
     else:
         raise ValueError("Env not available.")
+
+    return None
 
 
 def create_app():
