@@ -1,10 +1,30 @@
-
-import secrets
-
 from flask import Flask
 from flask_misaka import Misaka
+from flaskapp.src.app.config import *
 
 from .cache import cache
+
+from .config import (DevelopmentConfig,
+                     TestConfig,
+                     ProductionConfig)
+
+ENV_CONFIGS = {'development': DevelopmentConfig,
+               'testing': TestConfig,
+               'production': ProductionConfig}
+
+def set_config(app, env_name:str =os.environ.get("FLASK_ENV")) -> None:
+
+
+    if (env_name):
+        if (config_class := ENV_CONFIGS.get(env_name)):
+            app.config.from_object(config_class)
+            return config_class
+        else:
+            raise ValueError("Config class not available.")
+
+    else:
+        raise ValueError("Env not available.")
+
 
 def create_app():
     """
@@ -17,9 +37,8 @@ def create_app():
     """
     app = Flask(__name__)
 
-    app.config.update(
-        SECRET_KEY=secrets.token_hex(512)
-    )
+    #set configuration
+    set_config(app)
 
 
     #plugins
