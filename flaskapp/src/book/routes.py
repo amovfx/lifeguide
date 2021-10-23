@@ -4,14 +4,15 @@ Routes for book_bp
 
 """
 
-from flask import render_template, make_response, jsonify, render_template_string
+from flask import render_template, jsonify, render_template_string
+
 from flask_misaka import markdown
 
 from ..app.cache import cache
 from . import book_bp
 
 @book_bp.route("/")
-@cache.cache()
+@cache.cached()
 def cover():
     """
 
@@ -25,7 +26,6 @@ def cover():
     return render_template("book_page.html", page_count = len(book_bp.files))
 
 @book_bp.get("/content/<page_num>")
-@cache.memoize(timeout=50000)
 def page_content(page_num):
     """
 
