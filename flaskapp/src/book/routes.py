@@ -11,7 +11,7 @@ from ..app.cache import cache
 from . import book_bp
 
 @book_bp.route("/")
-@cache.memoize()
+@cache.cache()
 def cover():
     """
 
@@ -25,6 +25,7 @@ def cover():
     return render_template("book_page.html", page_count = len(book_bp.files))
 
 @book_bp.get("/content/<page_num>")
+@cache.memoize(timeout=50000)
 def page_content(page_num):
     """
 
