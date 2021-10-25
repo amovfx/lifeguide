@@ -11,6 +11,7 @@ from flask_misaka import markdown
 from ..app.cache import cache
 from . import book_bp
 
+
 @book_bp.route("/")
 @cache.cached()
 def cover():
@@ -23,7 +24,8 @@ def cover():
         response
     """
 
-    return render_template("book_page.html", page_count = len(book_bp.files))
+    return render_template("book_page.html", page_count=len(book_bp.files))
+
 
 @book_bp.get("/content/<page_num>")
 def page_content(page_num):
@@ -40,19 +42,14 @@ def page_content(page_num):
     """
     page_num = int(page_num)
 
-    #turn this into a error handler.
+    # turn this into a error handler.
     if page_num > len(book_bp.files):
         return "Page does not exist for this book", 404
 
-    with open(book_bp.files[page_num],
-                   "r",
-                   encoding="utf-8") as md_file:
-
+    with open(book_bp.files[page_num], "r", encoding="utf-8") as md_file:
         text = md_file.read()
 
-
-    template_string = render_template_string(text,
-                                             static_path='/book.static' )
+    template_string = render_template_string(text, static_path="/book.static")
     md_template_string = markdown(template_string)
 
     return jsonify(md_template_string)
