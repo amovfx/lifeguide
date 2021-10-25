@@ -44,12 +44,15 @@ def page_content(page_num):
     if page_num > len(book_bp.files):
         return "Page does not exist for this book", 404
 
-    md_file = open(book_bp.files[page_num], "r")
-    text = md_file.read()
-    md_file.close()
+    with open(book_bp.files[page_num],
+                   "r",
+                   encoding="utf-8") as md_file:
+
+        text = md_file.read()
+
 
     template_string = render_template_string(text,
-                                             static_path=f'/book.static' ) #we use this to properly render images in our md files.
+                                             static_path='/book.static' )
     md_template_string = markdown(template_string)
 
     return jsonify(md_template_string)
