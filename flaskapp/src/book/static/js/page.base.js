@@ -111,19 +111,6 @@ class PageManagerAbstract
     }
 }
 
-class DocumentEventStrategy
-{
-    constructor(event_name, event) {
-        this.event_name = event_name;
-        this.event_fn = event;
-    }
-
-    init_doc_event_listener()
-    {
-        document.addEventListener(this.event_down_name, this.event_fn, false);
-    }
-}
-
 class PageDesktop extends PageManagerAbstract
 {
     constructor(page_val)
