@@ -18,6 +18,19 @@ function set_page_data(page_num)
     $("#page-number-text").html(page_num);
 }
 
+function load_ipfs_book_contents(content_hash)
+{
+    fetch(`https://ipfs.io/ipfs/${content_hash}`)
+        .then((response) =>
+        {
+            response.json().then((data) => {
+                return data;
+            })
+        })
+}
+
+modules.exports = load_ipfs_book_contents
+
 class PageCookieManager
 {
     getCookie(cname)
