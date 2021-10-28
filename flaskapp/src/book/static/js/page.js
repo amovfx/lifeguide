@@ -29,7 +29,12 @@ function load_ipfs_book_contents(content_hash)
         })
 }
 
-modules.exports = load_ipfs_book_contents
+function js_add(a,b)
+{
+    return a + b;
+}
+module.exports = js_add
+
 
 class PageCookieManager
 {
