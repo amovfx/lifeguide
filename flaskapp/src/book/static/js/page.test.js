@@ -1,6 +1,10 @@
 //const js_add = require("./page")
-import js_add from "./page.js"
+import {IPFSBook, js_add } from "./page.js"
 
+const axios = require('../../../../jest/node_modules/axios').default;
+import request from './../../../../jest/node_modules/request';
+
+jest.setTimeout(10000)
 
 beforeEach(() => {
     //run this code before each
@@ -28,6 +32,21 @@ describe("test_basket", () => {
     it("test_module_export", () => {
         let result = js_add(5,6);
         expect(result).toEqual(11);
+    })
+})
+
+describe("Testing IPFS Book", () =>
+{
+    it("Fetching contents", async () =>
+    {
+        const response = await axios.get('https://ipfs.io/ipfs/QmXY68cNw16ASk2crFRG2nv6GVU8AaSfrwr9wGosqsgW8R')
+        expect(response.status).toBe(200)
+        expect(response.data[0]['Intro.01.md']).toBe("QmTDnfTQ37682djSgujCDhaW4k9Fw4ZdtBJHZpqyQfXwfr")
+    })
+    it("Initialize book", () =>
+    {
+        let ipfs_book = new IPFSBook([]);
+        expect(ipfs_book).isPrototypeOf(IPFSBook);
     })
 })
 

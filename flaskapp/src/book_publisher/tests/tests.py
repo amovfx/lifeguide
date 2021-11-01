@@ -31,7 +31,7 @@ class IPFSTest(TestCase):
         self.assertEqual(generic_string, zlib.decompress(self.book_publisher.client.get_json(hash)).decode())
 
     def test_get_content(self):
-        self.book_publisher.get_files()
-        print (self.book_publisher.contents_hash)
+        self.book_publisher.publish()
+        print (self.book_publisher.get_table_of_contents_hash())
 
 

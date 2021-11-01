@@ -14,23 +14,6 @@ import re
 
 from ..book import book_bp
 
-
-class BookContents:
-    pass
-
-class BookImage:
-    pass
-
-class BookPage:
-    def __init__(self, file):
-        self._file = file
-        self._file
-
-url_for_to_ipfs()
-
-
-
-
 class Publisher:
 
     def __init__(self):
@@ -40,7 +23,7 @@ class Publisher:
             print(str(IPFSConnectionError))
 
 
-    def get_files(self):
+    def publish(self):
         self.files = [x.as_posix() for x in pathlib.Path(book_bp.static_folder).rglob("*/*.md") if
                  re.search(r'\d{2}\.md$', x.as_posix())]
 
@@ -56,6 +39,9 @@ class Publisher:
         self.json_data = [{response['Name']: response['Hash']} for response in self.contents]
 
         self.contents_hash = self.client.add_json(self.json_data)
+
+    def get_table_of_contents_hash(self):
+        return self.contents_hash
 
     def pubilsh_file(self):
         pass

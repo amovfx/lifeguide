@@ -5,11 +5,51 @@ function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
+class IPFSBook
+{
+    //Contains pages
+    constructor(table_of_contents) {
+        this.page = 0;
+        this.pages = new Array(table_of_contents.length)
+        //register event listeners
+    }
+
+}
+
+module.exports.IPFSBook = IPFSBook
+
+class Page // page
+{
+    constructor(data) {
+        this.title = data["Name"];
+        this.ipfs_hash = data["Hash"];
+        this.page_num;
+    }
+
+    set_page_num(page_num)
+    {
+        this.page_num = page_num;
+    }
+
+    async load_hash()
+    {
+        const response = await fetch(`https://ipfs.io/ipfs/${this.ipfs_hash}`)
+        const data = response.json()
+        this.data = this.process( data )
+    }
+    async process()
+    {
+        //convert md to appropriate links start loading links
+        //cache data
+        //populate data on page
+    }
+}
+
 class ContentDataManager {
 
     endpoint_map = {
         'local' : (page_num) => {return `/book/content/${page_num}`},
-        'ipfs' : (content_hash) => { return`https://ipfs.io/ipfs/${content_hash}`}
+        'ipfs' : () => { return`https://ipfs.io/ipfs/QmXY68cNw16ASk2crFRG2nv6GVU8AaSfrwr9wGosqsgW8R`}
     }
     constructor(data_source)
     {
@@ -180,7 +220,7 @@ class PageManager
     
 }
 
-function CreatePageLoadEventListener()
+
 
 class PageTurnEventListeners
 {
@@ -244,5 +284,5 @@ function js_add(a,b)
 {
     return a + b;
 }
-module.exports = js_add
+module.exports.js_add = js_add
 
