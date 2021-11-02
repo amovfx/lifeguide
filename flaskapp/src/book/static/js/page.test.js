@@ -1,8 +1,8 @@
 //const js_add = require("./page")
 import {IPFSBook, js_add } from "./page.js"
 
-const axios = require('../../../../jest/node_modules/axios').default;
-import request from './../../../../jest/node_modules/request';
+const axios = require('axios').default;
+
 
 jest.setTimeout(10000)
 
