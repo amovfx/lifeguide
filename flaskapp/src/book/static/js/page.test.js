@@ -3,9 +3,6 @@ import {IPFSBook, js_add } from "./page.js"
 
 const axios = require('axios').default;
 
-
-jest.setTimeout(10000)
-
 beforeEach(() => {
     //run this code before each
     //setup data before tests
