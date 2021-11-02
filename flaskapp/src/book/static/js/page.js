@@ -1,11 +1,42 @@
+const {default: axios} = require("axios");
 
 var delta = 6;
 
 function mod(n, m) {
     return ((n % m) + m) % m;
 }
+//build resolver to return data
+class IPFS_Data_Resolver
+{
+    constructor()
+    {
+        this.endpoint = "https://ipfs.io/ipfs/"
+    }
+    get_data = async (route) =>
+    {
 
-class IPFSBook
+        let response = await axios.get(`${this.endpoint}${route}`);
+        if (response.status == 200)
+        {
+            return response;
+        }
+        else
+        {
+            throw Error(`${this.endpoint}${route} does not exist.`)
+        }
+    }
+}
+module.exports.IPFS_Data_Resolver = IPFS_Data_Resolver
+
+class Data_Respolver
+{
+    constructor()
+    {
+        this.endpoint = ""
+    }
+}
+
+class Book
 {
     //Contains pages
     constructor(table_of_contents) {
@@ -14,16 +45,43 @@ class IPFSBook
         //register event listeners
     }
 
+    create_page(data)
+    {
+        new Page(data)
+    }
+
 }
 
-module.exports.IPFSBook = IPFSBook
+module.exports.IPFSBook = Book
 
 class Page // page
 {
-    constructor(data) {
+    constructor(data, data_resolver)
+    {
+        this.data_resolver = data_resolver
         this.title = data["Name"];
         this.ipfs_hash = data["Hash"];
         this.page_num;
+    }
+
+    set_page_meta_data()
+    {
+
+    }
+
+    load_page()
+    {
+        this.data_resolver.get_data();
+    }
+
+    cache_page()
+    {
+
+    }
+
+    render_page()
+    {
+
     }
 
     set_page_num(page_num)
