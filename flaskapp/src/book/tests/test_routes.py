@@ -3,7 +3,8 @@
 Testing for the book_bp
 """
 
-from ddt import ddt, idata
+from ddt import ddt, idata, unpack
+import json
 from ...app.tests.test import TestBaseCase
 from .. import book_bp
 
@@ -65,11 +66,27 @@ class TestRoutes(TestBaseCase):
         """
 
         Test for testing book page. This is going to need to be redone.
-        :param value:
+            :param value:
         :return:
         """
         value += len(book_bp.files) + 1
         response = self.client.get(f'/book/content/{value}', content_type='html/text')
         self.assertEqual(404, response.status_code)
+
+    @idata(zip(('Intro.01.md', 'Autonomy.02.md', 'current_mindset.03.md'), range(3)))
+    @unpack
+    def test_book_contenets(self, key, value):
+        """
+
+        Test for testing book table of contents route.
+
+        :param value:
+        :return:
+        """
+        response = self.client.get('/book/contents', content_type='json')
+        first_entry = json.loads(response.data)[value]
+        self.assertIn(key, first_entry)
+        self.assertEqual(f'www.kaizens.guide/book/content/{value}', first_entry[key])
+
 
 
