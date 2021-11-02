@@ -3,7 +3,6 @@ const config = {
   transform: {
    '.js': 'jest-esm-transformer',
   },
-
 };
 
 module.exports = config;
