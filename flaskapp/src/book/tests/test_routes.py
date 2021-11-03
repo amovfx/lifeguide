@@ -10,7 +10,6 @@ Notes:
 """
 
 from ddt import ddt, idata, unpack
-import inspect
 import json
 from tabulate import tabulate
 from ...app.tests.test import TestBaseCase
