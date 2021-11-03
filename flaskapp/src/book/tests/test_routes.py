@@ -10,20 +10,18 @@ Notes:
 """
 
 from ddt import ddt, idata, unpack
+import inspect
 import json
+from tabulate import tabulate
 from ...app.tests.test import TestBaseCase
 from .. import book_bp
 
-def Annotation(list_in):
-    class _Annotation(list):
-        pass
-
-    test_list = _Annotation(list_in)
 
 
 
-
-
+def annotate(expected, actual):
+    msg = tabulate([["Expected:", expected], ["Actual: ", actual]])
+    print(msg)
 
 @ddt
 class TestRoutes(TestBaseCase):
@@ -33,17 +31,27 @@ class TestRoutes(TestBaseCase):
 
     """
 
+
+
+
+
     def test_home(self):
         """
 
+        Testing Home Route. This route should allows redirect to <domain>/book.
+
         response.status_code == 302
-        :return:
+        response.location == 'http://localhost/book/'
+
         """
 
         response = self.client.get('/', content_type='html/text')
+        annotate("response.status_code = 302", f"{response.status_code = }")
+        annotate("response.location = 'http://localhost/book/'", f'{response.location = }')
+
         self.assertEqual(302, response.status_code)
-        print(f"302 == {response.status_code = }")
         self.assertRedirects(response, '/book/')
+
 
     @idata(range(5))
     def test_badroutes(self, value):
@@ -52,7 +60,7 @@ class TestRoutes(TestBaseCase):
         Tests reroute with error handles to the book page.
         :return:
         """
-
+        self.longMessage = True
         response = self.client.get(f'/{value}', content_type='html/text')
         self.assertEqual(302, response.status_code)
         self.assertRedirects(response, '/book/')
@@ -92,7 +100,7 @@ class TestRoutes(TestBaseCase):
 
     @idata(zip(('Intro.01.md', 'Autonomy.02.md', 'current_mindset.03.md'), range(3)))
     @unpack
-    def test_book_contenets(self, key, value):
+    def test_book_contents(self, key, value):
         """
 
         Test for testing book table of contents route.
@@ -100,10 +108,13 @@ class TestRoutes(TestBaseCase):
         :param value:
         :return:
         """
+        print('\n')
+        print(f'Testing book contents {value}...')
         response = self.client.get('/book/contents', content_type='json')
         first_entry = json.loads(response.data)[value]
         self.assertIn(key, first_entry)
-        self.assertEqual(f'www.kaizens.guide/book/content/{value}', first_entry[key])
+        self.assertEqual(f'/book/content/{value}', first_entry[key])
+        print(f'Expected: /book/content/{value} Acctual: {first_entry[key]}')
 
 
 
