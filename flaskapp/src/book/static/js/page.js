@@ -88,19 +88,6 @@ class Page // page
     {
         this.page_num = page_num;
     }
-
-    async load_hash()
-    {
-        const response = await fetch(`https://ipfs.io/ipfs/${this.ipfs_hash}`)
-        const data = response.json()
-        this.data = this.process( data )
-    }
-    async process()
-    {
-        //convert md to appropriate links start loading links
-        //cache data
-        //populate data on page
-    }
 }
 
 class ContentDataManager {

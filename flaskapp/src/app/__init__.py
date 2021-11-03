@@ -61,7 +61,7 @@ def create_app():
     # plugins
     Misaka(app, autolink=True)
 
-    cache.init_app(app)
+    #cache.init_app(app)
 
     # blueprints
     from ..book import book_bp

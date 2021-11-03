@@ -14,7 +14,7 @@ from . import book_bp
 
 
 @book_bp.route("/")
-@cache.cached()
+
 def cover():
     """
 

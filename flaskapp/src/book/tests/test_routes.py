@@ -1,12 +1,28 @@
 """
 
 Testing for the book_bp
+
+Notes:
+    -Convert output to the test to a string
+    -Have an expected string
+    -Every Test works the same way
+
 """
 
 from ddt import ddt, idata, unpack
 import json
 from ...app.tests.test import TestBaseCase
 from .. import book_bp
+
+def Annotation(list_in):
+    class _Annotation(list):
+        pass
+
+    test_list = _Annotation(list_in)
+
+
+
+
 
 
 @ddt
@@ -20,12 +36,13 @@ class TestRoutes(TestBaseCase):
     def test_home(self):
         """
 
-        Tests reroute with error handles to the book page.
+        response.status_code == 302
         :return:
         """
 
         response = self.client.get('/', content_type='html/text')
         self.assertEqual(302, response.status_code)
+        print(f"302 == {response.status_code = }")
         self.assertRedirects(response, '/book/')
 
     @idata(range(5))
