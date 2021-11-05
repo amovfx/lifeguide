@@ -28,14 +28,27 @@ class IPFS_Data_Resolver
 }
 module.exports.IPFS_Data_Resolver = IPFS_Data_Resolver
 
-class Data_Respolver
+class Data_Resolver
 {
-    constructor()
+    constructor(endpoint)
     {
-        this.endpoint = ""
+        this.endpoint = endpoint;
+    }
+
+    get_data = async (route) =>
+    {
+        let response = await axios.get(`${this.endpoint}${route}`)
+        if (response.status == 200)
+        {
+            return response;
+        }
+        else
+        {
+            throw Error(`${this.endpoint}${route} does not exist.`)
+        }
     }
 }
-
+module.exports.Data_Resolver = Data_Resolver
 class Book
 {
     //Contains pages

@@ -5,7 +5,7 @@ Routes for book_bp
 """
 import os.path
 
-from flask import render_template, jsonify, render_template_string
+from flask import render_template, jsonify, render_template_string, url_for
 
 from flask_misaka import markdown
 
@@ -34,9 +34,10 @@ def book_contents():
     Return a books' table of contents
 
     """
-    return jsonify([{os.path.basename(v) : f'www.kaizens.guide/book/content/{i}'} for i, v in enumerate(book_bp.files)])
+    page_content_url = url_for('/book.page_content')
+    return jsonify([{os.path.basename(v) : f'{page_content_url}{i}'} for i, v in enumerate(book_bp.files)])
 
-
+@book_bp.get('/content/', defaults={'page_num': 0})
 @book_bp.get("/content/<page_num>")
 def page_content(page_num):
     """
