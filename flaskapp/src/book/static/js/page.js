@@ -34,7 +34,6 @@ class Data_Resolver
     {
         this.endpoint = endpoint;
     }
-}
 
     get_data = async (route) =>
     {
@@ -45,7 +44,7 @@ class Data_Resolver
         }
         else
         {
-            throw Error(`${this.endpoint}${route} does not exist.`)
+            throw Error(`${this.endpoint}${route} does not exist.`);
         }
     }
 }
@@ -56,24 +55,39 @@ class Book
     //Contains pages
     constructor(table_of_contents) {
         this.current_page = 0;
-        this.pages = new Array(table_of_contents.length)
+        this.table_of_contents = table_of_contents;
+        this.pages = new Array(table_of_contents.length);
         // await Promise.all(files.map(async (file) => {
         // const contents = await fs.readFile(file, 'utf8')
         // console.log(contents)
         // }));
+
+        //create first page and load it.
+        let first_page = this.make_page(table_of_contents[0], 0);
+        first_page.load_page_data();
+        first_page.set_page_data();
+        this.pages[0] = first_page;
+
+
         table_of_contents.forEach((item, index) => {
-            let title = Object.keys(item)[0];
-            let route = item[title];
-            let data_resolver = new Data_Resolver(route);
-            this.pages[index] = new Page(data_resolver, title, index);
-        })
+
+            this.pages[index] = this.make_page(item, index);
+        });
         //register event listeners
+    }
+
+    make_page = (item, index) =>
+    {
+        let title = Object.keys(item)[0];
+        let route = item[title];
+        let data_resolver = DataResolver(route);
+        return new Page(data_resolver, title, index);
     }
 
     async load_neighbors()
     {
-        await this.pages[this.current_page + 1].load_page()
-        await this.pages[this.current_page - 1].load_page()
+        await this.pages[this.current_page + 1].load_page_data()
+        await this.pages[this.current_page - 1].load_page_data()
     }
 
     turn_page(direction)
@@ -86,6 +100,11 @@ class Book
 }
 
 module.exports.IPFSBook = Book
+
+class TableOfContents
+{
+
+}
 
 class Page // page
 {
