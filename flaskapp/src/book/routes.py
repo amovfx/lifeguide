@@ -3,6 +3,7 @@
 Routes for book_bp
 
 """
+import os.path
 
 from flask import render_template, jsonify, render_template_string
 
@@ -13,7 +14,7 @@ from . import book_bp
 
 
 @book_bp.route("/")
-@cache.cached()
+
 def cover():
     """
 
@@ -25,6 +26,15 @@ def cover():
     """
 
     return render_template("book_page.html", page_count=len(book_bp.files))
+
+@book_bp.get("/contents")
+def book_contents():
+    """
+
+    Return a books' table of contents
+
+    """
+    return jsonify([{os.path.basename(v) : f'www.kaizens.guide/book/content/{i}'} for i, v in enumerate(book_bp.files)])
 
 
 @book_bp.get("/content/<page_num>")
