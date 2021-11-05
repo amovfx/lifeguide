@@ -34,6 +34,7 @@ class Data_Resolver
     {
         this.endpoint = endpoint;
     }
+}
 
     get_data = async (route) =>
     {
@@ -49,58 +50,83 @@ class Data_Resolver
     }
 }
 module.exports.Data_Resolver = Data_Resolver
+
 class Book
 {
     //Contains pages
     constructor(table_of_contents) {
-        this.page = 0;
+        this.current_page = 0;
         this.pages = new Array(table_of_contents.length)
+        // await Promise.all(files.map(async (file) => {
+        // const contents = await fs.readFile(file, 'utf8')
+        // console.log(contents)
+        // }));
+        table_of_contents.forEach((item, index) => {
+            let title = Object.keys(item)[0];
+            let route = item[title];
+            let data_resolver = new Data_Resolver(route);
+            this.pages[index] = new Page(data_resolver, title, index);
+        })
         //register event listeners
     }
 
-    create_page(data)
+    async load_neighbors()
     {
-        new Page(data)
+        await this.pages[this.current_page + 1].load_page()
+        await this.pages[this.current_page - 1].load_page()
     }
 
+    turn_page(direction)
+    {
+        //check if load is complete
+        this.current_page += Math.sign(direction);
+        return this.current_page.load_page()
+
+    }
 }
 
 module.exports.IPFSBook = Book
 
 class Page // page
 {
-    constructor(data, data_resolver)
+    constructor(data_resolver, title, page_num)
     {
         this.data_resolver = data_resolver
-        this.title = data["Name"];
-        this.ipfs_hash = data["Hash"];
-        this.page_num;
-    }
-
-    set_page_meta_data()
-    {
-
-    }
-
-    load_page()
-    {
-        this.data_resolver.get_data();
-    }
-
-    cache_page()
-    {
-
-    }
-
-    render_page()
-    {
-
-    }
-
-    set_page_num(page_num)
-    {
         this.page_num = page_num;
+        this.title = title;
     }
+
+    set_page_data = () =>
+    {
+        if (this.page_data)
+        {
+            $("#page-contents").html(this.page_data);
+            $("#page-number").html(this.page_num);
+            $("#page-title").html(this.title);
+        }
+        else
+        {
+            throw new Error("page_data is not available.")
+        }
+    }
+
+    load_page_data = () =>
+    {
+        //render this data to html
+        this.page_data = this.data_resolver.get_data()
+    }
+
+    get_page_num = () =>
+    {
+        return this.page_num;
+    }
+
+    get_title = () =>
+    {
+        return this.title;
+    }
+
+
 }
 
 class ContentDataManager {
