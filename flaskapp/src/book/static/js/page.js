@@ -1,4 +1,5 @@
-const {default: axios} = require("axios");
+
+import {Data_Resolver} from "./data_resolver";
 
 var delta = 6;
 
@@ -8,75 +9,6 @@ function mod(n, m) {
 //build resolver to return data
 
 
-class Data_Resolver
-{
-
-    static Local_Resolver()
-    {
-        let local_resolver = new Data_Resolver()
-        local_resolver.set_domain('http://127.0.0.1:5000');
-        local_resolver.set_route('/book/contents');
-        return local_resolver;
-    }
-
-    static IPFS_Resolver()
-    {
-        let ipfs_resolver = new Data_Resolver();
-        ipfs_resolver.set_domain('https://ipfs.io/ipfs/');
-        ipfs_resolver.set_route('QmXY68cNw16ASk2crFRG2nv6GVU8AaSfrwr9wGosqsgW8R')
-        return ipfs_resolver;
-    }
-
-    static Web2_Resolver()
-    {
-        let web2_resolver = new Data_Resolver();
-        web2_resolver.set_domain('https://kaizens.guide');
-        web2_resolver.set_route('/book/contents');
-        return web2_resolver;
-    }
-    clone(route)
-    {
-        let resolvver = this;
-        this.set_route();
-        return resolver;
-    }
-    set_domain(domain)
-    {
-        this.domain = domain;
-    }
-
-    set_route(route)
-    {
-        this.route = route;
-    }
-
-    get_route = () =>
-    {
-        return this.route;
-    }
-
-    async async_load ()
-    {
-        //add browser cache management here.
-        if (this.route !== undefined)
-        {
-            let response = await axios.get(`${this.domain}${this.route}`)
-            if (response.status == 200)
-            {
-                return response['data'];
-            }
-            else
-            {
-                throw Error(`${this.domain}${route} does not exist.`);
-            }
-        }
-        else
-        {
-            throw Error(`${route} is undefined.`);
-        }
-    }
-}
-module.exports.Data_Resolver = Data_Resolver
 
 class Table_of_Contents
 {
@@ -106,9 +38,14 @@ class Table_of_Contents
         return new Table_of_Contents(data, web2_resolver);
     }
 
-    get_page(index)
+    build_page(index)
     {
         return new Page(this.resolver, this.chapters[index]);
+    }
+
+    count()
+    {
+        return this.chapters.length;
     }
 }
 module.exports.Table_of_Contents = Table_of_Contents
@@ -125,14 +62,7 @@ class Page // page
         this.title = split_title[0];
         this.page_num = parseInt(split_title[1]);
 
-        let route = data[title];
-        this.resolver.set_route(route);
-    }
-
-    static build(table_of_contents, index)
-    {
-        let page_data = table_of_contents[index];
-        return new Page(table_of_contents.resolver, page_data);
+        this.resolver.set_route(data[title]);
     }
 
     set_page_data = () =>
@@ -191,56 +121,39 @@ module.exports.Page = Page
 class Book
 {
     //Contains pages
-    constructor(table_of_contents) {
+    constructor(table_of_contents)
+    {
         this.table_of_contents = table_of_contents;
-
-        this.pages = new Array(this.table_of_contents.length);
-
-        let first_page = this.make_page(this.table_of_contents, 0);
-        first_page.load_page_data();
-        first_page.set_page_data();
-        this.pages[0] = first_page;
-
-        this.make_pages()
-    }
-    dupe (table_of_contents) {
-        this.current_page = 0;
-        this.table_of_contents = table_of_contents;
-
-        // await Promise.all(files.map(async (file) => {
-        // const contents = await fs.readFile(file, 'utf8')
-        // console.log(contents)
-        // }));
-
-        //create first page and load it.
-        let first_page = this.make_page(table_of_contents[0], 0);
-        first_page.load_page_data();
-        first_page.set_page_data();
-        this.pages[0] = first_page;
-
-
-
-        //register event listeners
+        this.pages = new Array(this.table_of_contents.count());
+        this.set_first_page();
+        this.make_pages();
     }
 
-    load_page()
+    set_first_page()
     {
+        this.set_page(0).then();
+    }
+
+    build_page(index)
+    {
+        return new Page(this.table_of_contents.resolver,
+            this.table_of_contents.chapters[index]);
+    }
+
+
+    async set_page(page_num)
+    {
+        this.current_page = page_num;
+        let first_page = this.table_of_contents.build_page(this.current_page);
+        await first_page.async_load();
+        this.pages[this.current_page] = first_page
 
     }
 
-    make_page = (item, index) =>
+    make_pages = () =>
     {
-        let title = Object.keys(item)[0];
-        let route = item[title];
-        let data_resolver = this.data_resolver;
-        data_resolver.set_route(route);
-        return new Page(data_resolver, title, index);
-    }
-
-    make_pages = (table_of_contents) =>
-    {
-        table_of_contents.forEach((item, index) => {
-            this.pages[index] = this.make_page(item, index);
+        this.table_of_contents.chapters.forEach((item, index) => {
+            this.pages[index] = this.table_of_contents.build_page(index);
         });
     }
 
