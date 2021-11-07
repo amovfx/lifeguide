@@ -6,33 +6,37 @@ function mod(n, m) {
     return ((n % m) + m) % m;
 }
 //build resolver to return data
-class IPFS_Data_Resolver
-{
-    constructor()
-    {
-        this.endpoint = "https://ipfs.io/ipfs/"
-    }
-    get_data = async (route) =>
-    {
 
-        let response = await axios.get(`${this.endpoint}${route}`);
-        if (response.status == 200)
-        {
-            return response;
-        }
-        else
-        {
-            throw Error(`${this.endpoint}${route} does not exist.`)
-        }
-    }
-}
-module.exports.IPFS_Data_Resolver = IPFS_Data_Resolver
 
 class Data_Resolver
 {
-    constructor(endpoint)
+
+    static Local_Resolver()
     {
-        this.endpoint = endpoint;
+        let local_resolver = new Data_Resolver()
+        local_resolver.set_domain('http://127.0.0.1:5000');
+        local_resolver.set_route('/book/contents');
+        return local_resolver;
+    }
+
+    static IPFS_Resolver()
+    {
+        let ipfs_resolver = new Data_Resolver();
+        ipfs_resolver.set_domain('https://ipfs.io/ipfs/');
+        ipfs_resolver.set_route('QmXY68cNw16ASk2crFRG2nv6GVU8AaSfrwr9wGosqsgW8R')
+        return ipfs_resolver;
+    }
+
+    static Web2_Resolver()
+    {
+        let web2_resolver = new Data_Resolver();
+        web2_resolver.set_domain('https://kaizens.guide');
+        web2_resolver.set_route('/book/contents');
+        return web2_resolver;
+    }
+    set_domain(domain)
+    {
+        this.domain = domain;
     }
 
     set_route(route)
@@ -47,16 +51,17 @@ class Data_Resolver
 
     get_data = async () =>
     {
+        //add browser cache management here.
         if (this.route !== undefined)
         {
-            let response = await axios.get(`${this.endpoint}${this.route}`)
+            let response = await axios.get(`${this.domain}${this.route}`)
             if (response.status == 200)
             {
                 return response['data'];
             }
             else
             {
-                throw Error(`${this.endpoint}${route} does not exist.`);
+                throw Error(`${this.domain}${route} does not exist.`);
             }
         }
         else
@@ -67,16 +72,117 @@ class Data_Resolver
 }
 module.exports.Data_Resolver = Data_Resolver
 
+class Table_of_Contents
+{
+    constructor(chapters, resolver) {
+        this.chapters = chapters;
+        this.resolver = resolver;
+    }
+
+    static async local()
+    {
+        let local_resolver = Data_Resolver.Local_Resolver()
+        let data = await local_resolver.get_data();
+        return new Table_of_Contents(data, local_resolver);
+    }
+
+    static async ipfs()
+    {
+        let ipfs_resolver = Data_Resolver.IPFS_Resolver()
+        let data = await ipfs_resolver.get_data();
+        return new Table_of_Contents(data, ipfs_resolver);
+    }
+
+    static async web2()
+    {
+        let web2_resolver = Data_Resolver.Web2_Resolver();
+        let data = await web2_resolver.get_data();
+        return new Table_of_Contents(data, web2_resolver);
+    }
+}
+module.exports.Table_of_Contents = Table_of_Contents
+
+class Page // page
+{
+    constructor(data_resolver, title, page_num)
+    {
+        this.data_resolver = data_resolver
+        this.page_num = page_num;
+        this.title = title;
+    }
+
+    set_page_data = () =>
+    {
+        if (this.page_data)
+        {
+            $("#page-contents").html(this.page_data);
+            $("#page-number").html(this.page_num);
+            $("#page-title").html(this.title);
+        }
+        else
+        {
+            throw new Error("page_data is not available.")
+        }
+    }
+
+    load_page_data = async () =>
+    {
+        //render this data to html
+        this.page_data = await this.data_resolver.get_data()
+    }
+    get_page_data= () =>
+    {
+        return this.page_data;
+    }
+
+    get_page_num = () =>
+    {
+        return this.page_num;
+    }
+
+    set_page_num = (page_num) =>
+    {
+        this.page_num = page_num;
+        $("#page-number").html(this.page_num);
+
+    }
+
+    get_title = () =>
+    {
+        return this.title;
+    }
+
+    set_title(title)
+    {
+        this.title = title;
+        $("#page-number").html(this.page_num);
+    }
+
+
+}
+module.exports.Page = Page
+
+
+
 class Book
 {
     //Contains pages
-    constructor(data_resolver) {
-        this.data_resolver = data_resolver;
+    constructor(table_of_contents) {
+        this.table_of_contents = table_of_contents;
+
+        this.pages = new Array(this.table_of_contents.length);
+
+        let first_page = this.make_page(this.table_of_contents, 0);
+        first_page.load_page_data();
+        first_page.set_page_data();
+        this.pages[0] = first_page;
+
+        this.make_pages()
     }
     dupe (table_of_contents) {
         this.current_page = 0;
         this.table_of_contents = table_of_contents;
-        this.pages = new Array(table_of_contents.length);
+
         // await Promise.all(files.map(async (file) => {
         // const contents = await fs.readFile(file, 'utf8')
         // console.log(contents)
@@ -91,6 +197,11 @@ class Book
 
 
         //register event listeners
+    }
+
+    load_page()
+    {
+
     }
 
     make_page = (item, index) =>
@@ -126,68 +237,11 @@ class Book
 
 module.exports.Book = Book
 
-class TableOfContents
-{
-
-}
-
-class Page // page
-{
-    constructor(data_resolver, title, page_num)
-    {
-        this.data_resolver = data_resolver
-        this.page_num = page_num;
-        this.title = title;
-    }
-    static table_of_contents(data_resolver)
-    {
-        return new Page(data_resolver, "Table of Contents", -1);
-    }
-
-    set_page_data = () =>
-    {
-        if (this.page_data)
-        {
-            $("#page-contents").html(this.page_data);
-            $("#page-number").html(this.page_num);
-            $("#page-title").html(this.title);
-        }
-        else
-        {
-            throw new Error("page_data is not available.")
-        }
-    }
-
-    load_page_data = async () =>
-    {
-        //render this data to html
-        this.page_data = await this.data_resolver.get_data()
-        console.log(this.page_data)
-    }
-    get_page_data= () =>
-    {
-        return this.page_data;
-    }
-
-    get_page_num = () =>
-    {
-        return this.page_num;
-    }
-
-    get_title = () =>
-    {
-        return this.title;
-    }
-
-    set_title(title)
-    {
-        this.title = title;
-    }
 
 
-}
 
-module.exports.Page = Page
+
+
 
 class ContentDataManager {
 
