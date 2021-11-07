@@ -34,12 +34,14 @@ describe("Testing centralized Data_Resolver", () =>
 
         it ("Testing Page", async () => {
             let table_of_contents = await Table_of_Contents.local();
-            let new_page = table_of_contents.get_page(0);
+            let new_page = table_of_contents.build_page(0);
             expect(new_page.get_title()).toBe("Intro");
             expect(new_page.get_page_num()).toBe(0);
         })
 
-        it ("Testing Page Datta", () => {
+        it ("Testing Page Data", async () => {
+            let table_of_contents = await Table_of_Contents.local();
+
 
         })
 
