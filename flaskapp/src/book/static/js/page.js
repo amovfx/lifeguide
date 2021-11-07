@@ -35,16 +35,33 @@ class Data_Resolver
         this.endpoint = endpoint;
     }
 
-    get_data = async (route) =>
+    set_route(route)
     {
-        let response = await axios.get(`${this.endpoint}${route}`)
-        if (response.status == 200)
+        this.route = route;
+    }
+
+    get_route = () =>
+    {
+        return this.route;
+    }
+
+    get_data = async () =>
+    {
+        if (this.route !== undefined)
         {
-            return response;
+            let response = await axios.get(`${this.endpoint}${this.route}`)
+            if (response.status == 200)
+            {
+                return response['data'];
+            }
+            else
+            {
+                throw Error(`${this.endpoint}${route} does not exist.`);
+            }
         }
         else
         {
-            throw Error(`${this.endpoint}${route} does not exist.`);
+            throw Error(`${route} is undefined.`);
         }
     }
 }
@@ -53,7 +70,10 @@ module.exports.Data_Resolver = Data_Resolver
 class Book
 {
     //Contains pages
-    constructor(table_of_contents) {
+    constructor(data_resolver) {
+        this.data_resolver = data_resolver;
+    }
+    dupe (table_of_contents) {
         this.current_page = 0;
         this.table_of_contents = table_of_contents;
         this.pages = new Array(table_of_contents.length);
@@ -69,10 +89,7 @@ class Book
         this.pages[0] = first_page;
 
 
-        table_of_contents.forEach((item, index) => {
 
-            this.pages[index] = this.make_page(item, index);
-        });
         //register event listeners
     }
 
@@ -80,8 +97,16 @@ class Book
     {
         let title = Object.keys(item)[0];
         let route = item[title];
-        let data_resolver = DataResolver(route);
+        let data_resolver = this.data_resolver;
+        data_resolver.set_route(route);
         return new Page(data_resolver, title, index);
+    }
+
+    make_pages = (table_of_contents) =>
+    {
+        table_of_contents.forEach((item, index) => {
+            this.pages[index] = this.make_page(item, index);
+        });
     }
 
     async load_neighbors()
@@ -99,7 +124,7 @@ class Book
     }
 }
 
-module.exports.IPFSBook = Book
+module.exports.Book = Book
 
 class TableOfContents
 {
@@ -113,6 +138,10 @@ class Page // page
         this.data_resolver = data_resolver
         this.page_num = page_num;
         this.title = title;
+    }
+    static table_of_contents(data_resolver)
+    {
+        return new Page(data_resolver, "Table of Contents", -1);
     }
 
     set_page_data = () =>
@@ -129,10 +158,15 @@ class Page // page
         }
     }
 
-    load_page_data = () =>
+    load_page_data = async () =>
     {
         //render this data to html
-        this.page_data = this.data_resolver.get_data()
+        this.page_data = await this.data_resolver.get_data()
+        console.log(this.page_data)
+    }
+    get_page_data= () =>
+    {
+        return this.page_data;
     }
 
     get_page_num = () =>
@@ -145,8 +179,15 @@ class Page // page
         return this.title;
     }
 
+    set_title(title)
+    {
+        this.title = title;
+    }
+
 
 }
+
+module.exports.Page = Page
 
 class ContentDataManager {
 

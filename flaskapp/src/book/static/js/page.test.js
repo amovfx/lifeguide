@@ -1,8 +1,8 @@
 //const js_add = require("./page")
-import {IPFSBook, js_add, IPFS_Data_Resolver, Data_Resolver } from "./page.js"
+import {IPFSBook, js_add, IPFS_Data_Resolver, Data_Resolver, Page, Book } from "./page.js"
 
 const axios = require('axios').default;
-
+jest.setTimeout(50000)
 
 describe("Testing Data Resolvers", () =>
 {
@@ -33,7 +33,7 @@ describe("Testing Data Resolvers", () =>
 *
  */
 
-describe("Testing centralized data resolvers", () =>
+describe("Testing centralized Data_Resolver", () =>
 {
     let centralized_endpoint = "http://127.0.0.1:5000";
     describe("Data Resolver", () =>
@@ -46,10 +46,49 @@ describe("Testing centralized data resolvers", () =>
         })
 
         it("get data", async () => {
-                let response = await data_resolver.get_data('/book/contents');
-                console.log(response.data);
-                expect(response.data[0]).toMatchObject({"Intro.01.md": "/book/content/0"});
-            });
+            data_resolver.set_route('/book/contents')
+            let response = await data_resolver.get_data();
+            expect(response[0]).toMatchObject({"Intro.01.md": "/book/content/0"});
+
+
+        });
+
+        describe("Testing Page", () => {
+
+            var table_of_contents = undefined;
+            it("Check data_resolver for table of contents", async () => {
+                let response = await data_resolver.get_data();
+                expect(response[0]).toMatchObject({"Intro.01.md": "/book/content/0"});
+            })
+
+            it ("Initialize Table of Contents", () => {
+                table_of_contents = Page.table_of_contents(data_resolver);
+                expect(table_of_contents.get_page_num()).toBe(-1);
+                expect(table_of_contents.get_title()).toBe("Table of Contents");
+            })
+
+            it ("Getting data", async () => {
+                await table_of_contents.load_page_data();
+                let data = table_of_contents.get_page_data()[0];
+                expect(data).toMatchObject({"Intro.01.md": "/book/content/0"})
+            })
+
+            it ("Making the first page.", async () =>
+            {
+                console.log("Making first page")
+                let pages = table_of_contents.get_page_data()[0];
+                console.log(pages)
+                let book = new Book(data_resolver);
+                let Page = book.make_page(pages, 0);
+                await Page.load_page_data();
+                console.log(Page.get_page_data());
+                let test_data = Page.get_page_data().split(/\r?\n/)[0]
+                expect(test_data).toBe("<h1>Welcome to the life guide!</h1>");
+            })
+
+
+
+        })
 
     })
 })
@@ -60,7 +99,7 @@ describe("Testing IPFS Book", () =>
     var ipfs_data_response;
     beforeAll( async () => {
         ipfs_data_response = await axios.get('https://ipfs.io/ipfs/QmXY68cNw16ASk2crFRG2nv6GVU8AaSfrwr9wGosqsgW8R');
-        console.log(ipfs_data_response.data);
+
     })
 
     it("Fetching contents", async () =>
