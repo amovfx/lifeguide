@@ -34,6 +34,12 @@ class Data_Resolver
         web2_resolver.set_route('/book/contents');
         return web2_resolver;
     }
+    clone(route)
+    {
+        let resolvver = this;
+        this.set_route();
+        return resolver;
+    }
     set_domain(domain)
     {
         this.domain = domain;
@@ -49,7 +55,7 @@ class Data_Resolver
         return this.route;
     }
 
-    get_data = async () =>
+    async async_load ()
     {
         //add browser cache management here.
         if (this.route !== undefined)
@@ -82,33 +88,51 @@ class Table_of_Contents
     static async local()
     {
         let local_resolver = Data_Resolver.Local_Resolver()
-        let data = await local_resolver.get_data();
+        let data = await local_resolver.async_load();
         return new Table_of_Contents(data, local_resolver);
     }
 
     static async ipfs()
     {
         let ipfs_resolver = Data_Resolver.IPFS_Resolver()
-        let data = await ipfs_resolver.get_data();
+        let data = await ipfs_resolver.async_load();
         return new Table_of_Contents(data, ipfs_resolver);
     }
 
     static async web2()
     {
         let web2_resolver = Data_Resolver.Web2_Resolver();
-        let data = await web2_resolver.get_data();
+        let data = await web2_resolver.async_load();
         return new Table_of_Contents(data, web2_resolver);
+    }
+
+    get_page(index)
+    {
+        return new Page(this.resolver, this.chapters[index]);
     }
 }
 module.exports.Table_of_Contents = Table_of_Contents
 
 class Page // page
 {
-    constructor(data_resolver, title, page_num)
+    constructor(resolver, data)
     {
-        this.data_resolver = data_resolver
-        this.page_num = page_num;
-        this.title = title;
+        this.resolver = resolver;
+
+        let title = Object.keys(data);
+        let split_title = title.split(".");
+
+        this.title = split_title[0];
+        this.page_num = parseInt(split_title[1]);
+
+        let route = data[title];
+        this.resolver.set_route(route);
+    }
+
+    static build(table_of_contents, index)
+    {
+        let page_data = table_of_contents[index];
+        return new Page(table_of_contents.resolver, page_data);
     }
 
     set_page_data = () =>
@@ -125,10 +149,10 @@ class Page // page
         }
     }
 
-    load_page_data = async () =>
+    async_load = async () =>
     {
         //render this data to html
-        this.page_data = await this.data_resolver.get_data()
+        this.page_contents = await this.resolver.async_load()
     }
     get_page_data= () =>
     {
