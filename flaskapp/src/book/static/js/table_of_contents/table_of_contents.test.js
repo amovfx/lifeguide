@@ -27,14 +27,14 @@ describe("Table of Contents",  () => {
         it ("Resolver", async () => {
             let table_of_contents = await Table_of_Contents.IPFS();
             expect(table_of_contents.resolver.get_domain()).toBe('https://ipfs.io/ipfs/');
-            expect(table_of_contents.chapters[0]).toMatchObject({"Intro.01.md": "QmTDnfTQ37682djSgujCDhaW4k9Fw4ZdtBJHZpqyQfXwfr"});
-            expect(table_of_contents.count()).toBe(27);
         })
+
         it ("Chapter's data", async () => {
             let table_of_contents = await Table_of_Contents.IPFS();
             expect(table_of_contents.chapters[0]).toMatchObject({"Intro.01.md": "QmTDnfTQ37682djSgujCDhaW4k9Fw4ZdtBJHZpqyQfXwfr"});
 
         })
+
         it ("Count", async () => {
             let table_of_contents = await Table_of_Contents.IPFS();
             expect(table_of_contents.count()).toBe(27);
