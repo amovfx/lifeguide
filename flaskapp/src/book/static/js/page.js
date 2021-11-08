@@ -160,11 +160,8 @@ class PageManager
     {
         self.event_strategy = event_strategy;
         self.data_manager = data_manager;
-        
         self.cookie_manager = new PageCookieManager();
     }
-    
-    
 }
 
 
@@ -225,11 +222,4 @@ class PageMobile extends PageManagerAbstract
     }
 
 }
-
-
-function js_add(a,b)
-{
-    return a + b;
-}
-module.exports.js_add = js_add
 
