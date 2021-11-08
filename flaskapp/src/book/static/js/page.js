@@ -1,6 +1,6 @@
 
-import {Data_Resolver} from "./data_resolver";
-import Table_of_Contents from "./table_of_contents";
+import {Data_Resolver} from "./data_resolver/data_resolver";
+import Table_of_Contents from "./table_of_contents/table_of_contents";
 
 var delta = 6;
 
