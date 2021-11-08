@@ -1,8 +1,9 @@
-const {Data_Resolver} = require("./data_resolver");
+
 
 import {Data_Resolver} from "./data_resolver";
+import Page from "./page";
 
-class Table_of_Contents
+export default class Table_of_Contents
 {
     constructor(chapters, resolver) {
         this.chapters = chapters;
@@ -40,4 +41,3 @@ class Table_of_Contents
         return this.chapters.length;
     }
 }
-module.exports.Table_of_Contents = Table_of_Contents

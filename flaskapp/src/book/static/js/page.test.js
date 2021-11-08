@@ -1,5 +1,6 @@
 
-import {  Data_Resolver, Page, Book, Table_of_Contents } from "./page.js"
+import Table_of_Contents from "./table_of_contents";
+
 
 const axios = require('axios').default;
 jest.setTimeout(50000)
@@ -36,7 +37,7 @@ describe("Testing centralized Data_Resolver", () =>
             let table_of_contents = await Table_of_Contents.local();
             let new_page = table_of_contents.build_page(0);
             expect(new_page.get_title()).toBe("Intro");
-            expect(new_page.get_page_num()).toBe(0);
+            expect(new_page.get_page_num()).toBe(1);
         })
 
         it ("Testing Page Data", async () => {

@@ -24,7 +24,7 @@ export default class Page // page
     {
         this.resolver = resolver;
 
-        let title = Object.keys(data);
+        let title = Object.keys(data)[0];
         let split_title = title.split(".");
 
         this.title = split_title[0];
