@@ -1,6 +1,7 @@
 
 
-import {Data_Resolver} from "./data_resolver";
+import Data_Resolver from "./data_resolver";
+
 import Page from "./page";
 
 export default class Table_of_Contents

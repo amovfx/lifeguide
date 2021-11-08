@@ -42,8 +42,6 @@ describe("Testing centralized Data_Resolver", () =>
 
         it ("Testing Page Data", async () => {
             let table_of_contents = await Table_of_Contents.local();
-
-
         })
 
 

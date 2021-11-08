@@ -1,6 +1,6 @@
 
 
-export default class BookManager
+export default class BookInterface
 {
     constructor(book)
     {
@@ -27,12 +27,6 @@ export default class BookManager
         $("#page-title").html(Page.title);
     }
 
-    //remove this
-    init_load_event_listeners = () =>
-    {
-        window.addEventListener("load", async () => {
-            await this.book.set_page(this.Page_Cookie_Manager.get_page_number())
-        })
-    }
+
 
 }

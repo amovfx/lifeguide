@@ -1,6 +1,6 @@
 const {default: axios} = require("axios");
 
-class Data_Resolver
+export default class Data_Resolver
 {
 
     static Local_Resolver()
@@ -30,6 +30,11 @@ class Data_Resolver
     set_domain(domain)
     {
         this.domain = domain;
+    }
+
+    get_domain()
+    {
+        return this.domain;
     }
 
     set_route(route)
@@ -63,5 +68,3 @@ class Data_Resolver
         }
     }
 }
-
-module.exports.Data_Resolver = Data_Resolver
