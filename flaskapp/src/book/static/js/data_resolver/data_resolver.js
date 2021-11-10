@@ -1,7 +1,7 @@
 const {default: axios} = require("axios");
 
 
-const DOMAIN = {
+const DOMAINS = {
     LOCAL: 'http://127.0.0.1:5000',
     WEB2: 'https://kaizens.guide',
     IFPS: 'https://ipfs.io/ipfs/'
@@ -10,10 +10,23 @@ const DOMAIN = {
 export default class Data_Resolver
 {
 
+    static from_domain(domain)
+    {
+        switch(domain)
+        {
+            case DOMAINS.LOCAL:
+                return Data_Resolver.Local_Resolver();
+            case DOMAINS.WEB2:
+                return Data_Resolver.Web2_Resolver();
+            case DOMAINS.IPFS:
+                return Data_Resolver.IPFS_Resolver();
+        }
+    }
+
     static Local_Resolver()
     {
         let local_resolver = new Data_Resolver()
-        local_resolver.set_domain(DOMAIN.LOCAL);
+        local_resolver.set_domain(DOMAINS.LOCAL);
         local_resolver.set_route('/book/contents');
         return local_resolver;
     }
@@ -21,7 +34,7 @@ export default class Data_Resolver
     static IPFS_Resolver()
     {
         let ipfs_resolver = new Data_Resolver();
-        ipfs_resolver.set_domain(DOMAIN.IFPS);
+        ipfs_resolver.set_domain(DOMAINS.IFPS);
         ipfs_resolver.set_route('QmXY68cNw16ASk2crFRG2nv6GVU8AaSfrwr9wGosqsgW8R')
         return ipfs_resolver;
     }
@@ -29,14 +42,9 @@ export default class Data_Resolver
     static Web2_Resolver()
     {
         let web2_resolver = new Data_Resolver();
-        web2_resolver.set_domain(DOMAIN.WEB2);
+        web2_resolver.set_domain(DOMAINS.WEB2);
         web2_resolver.set_route('/book/contents');
         return web2_resolver;
-    }
-
-    set_type = (type) =>
-    {
-        this.type = type;
     }
 
     set_domain = (domain) =>
