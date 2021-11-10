@@ -1,14 +1,16 @@
-import Data_Resolver from "./data_resolver";
+import {Data_Resolver, DOMAINS} from "./data_resolver";
 
 
-import * as https from 'https';
-https.globalAgent.options.rejectUnauthorized = false
+//import * as https from 'https';
+//https.globalAgent.options.rejectUnauthorized = false
+
+
 
 describe("Testing centralized Data_Resolver", () => {
     describe("Local", () => {
         it ("Getters", () => {
             let local_resolver = Data_Resolver.Local_Resolver();
-            expect(local_resolver.get_domain()).toBe('http://127.0.0.1:5000');
+            expect(local_resolver.get_domain()).toBe(DOMAINS.LOCAL);
             expect(local_resolver.get_route()).toBe(('/book/contents'))
         })
 
@@ -37,6 +39,7 @@ describe("Testing centralized Data_Resolver", () => {
         it("Loading", async () => {
             let ipfs_resolver = Data_Resolver.IPFS_Resolver();
             let data = await ipfs_resolver.async_load();
+            console.log(data)
             expect(data[0]).toMatchObject({"Intro.01.md": "QmTDnfTQ37682djSgujCDhaW4k9Fw4ZdtBJHZpqyQfXwfr"})
         })
     })

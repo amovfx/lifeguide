@@ -34,7 +34,7 @@ export class Data_Resolver
         return web2_resolver;
     }
 
-    static from_domain(domain)
+    static Build_From_Domain(domain)
     {
         switch(domain)
         {
@@ -72,7 +72,7 @@ export class Data_Resolver
         //add browser cache management here.
         if (this.route !== undefined)
         {
-            console.log(this.domain, this.route)
+
             let response = await axios.get(`${this.domain}${this.route}`)
             if (response.status == 200)
             {
