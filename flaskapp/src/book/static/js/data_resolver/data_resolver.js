@@ -32,12 +32,12 @@ export default class Data_Resolver
         this.domain = domain;
     }
 
-    get_domain()
+    get_domain = () =>
     {
         return this.domain;
     }
 
-    set_route(route)
+    set_route = (route) =>
     {
         this.route = route;
     }
@@ -47,11 +47,12 @@ export default class Data_Resolver
         return this.route;
     }
 
-    async async_load ()
+    async_load  = async () =>
     {
         //add browser cache management here.
         if (this.route !== undefined)
         {
+            console.log(this.domain, this.route)
             let response = await axios.get(`${this.domain}${this.route}`)
             if (response.status == 200)
             {

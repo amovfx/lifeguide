@@ -1,6 +1,6 @@
 
-import Page from "./page";
-import PageCookieManager from "./cookie_manager";
+import Page from "../page";
+import PageCookieManager from "../cookie_manager";
 
 export default class Book
 {
@@ -8,12 +8,12 @@ export default class Book
     constructor(table_of_contents)
     {
         this.table_of_contents = table_of_contents;
-        this.pages = new Array(this.table_of_contents.count());
-        this.build_page(0).then(() => {
-            this.make_pages();
-        });
-        this.Page_Cookie_Manager = new PageCookieManager();
-        this.set_page(this.Page_Cookie_Manager.get_page_number);
+        this.pages = new Array(table_of_contents.count());
+        //this.build_page(0);
+        this.make_pages();
+
+        //this.Page_Cookie_Manager = new PageCookieManager();
+        //this.set_page(this.Page_Cookie_Manager.get_page_number);
     }
 
     build_page(index)
@@ -23,13 +23,10 @@ export default class Book
     }
 
 
-    async set_page(page_num)
+    set_page = async (page_num) =>
     {
         this.current_page = page_num;
-        let first_page = this.build_page(this.current_page);
-        await first_page.async_load();
-        this.pages[this.current_page] = first_page
-
+        await this.pages[page_num].async_load();
     }
 
     turn_page(dX)
@@ -53,7 +50,7 @@ export default class Book
     make_pages = () =>
     {
         this.table_of_contents.chapters.forEach((item, index) => {
-            this.pages[index] = this.table_of_contents.build_page(index);
+            this.pages[index] = this.build_page(index);
         });
     }
 

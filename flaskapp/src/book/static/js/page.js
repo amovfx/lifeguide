@@ -22,18 +22,16 @@ export default class Page // page
 {
     constructor(data_resolver, data)
     {
-        this.resolver = data_resolver;
+        this.resolver = { ...data_resolver};
 
         let title = Object.keys(data)[0];
         let split_title = title.split(".");
-
         this.title = split_title[0];
         this.page_num = parseInt(split_title[1]);
-
         this.resolver.set_route(data[title]);
     }
 
-    async_load = async () =>
+    async async_load()
     {
         //render this data to html
         this.page_contents = await this.resolver.async_load()

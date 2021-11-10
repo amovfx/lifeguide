@@ -28,10 +28,10 @@ export default class Table_of_Contents
 
     constructor(chapters, resolver) {
         this.chapters = chapters;
-        this.resolver = resolver;
+        this.resolver = {...resolver};
     }
 
-    count()
+    count = () =>
     {
         return this.chapters.length;
     }
