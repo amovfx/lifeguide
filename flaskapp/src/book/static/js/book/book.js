@@ -1,72 +1,61 @@
 
 import Page from "../page";
 import PageCookieManager from "../cookie_manager";
+import {Data_Resolver} from "../data_resolver/data_resolver";
 
-export default class Book
+
+const DELTA = 6;
+
+function mod(n, m) {
+    return ((n % m) + m) % m;
+}
+
+export default class Book extends Array
 {
     //Contains pages
-    constructor(table_of_contents)
+    constructor(page_array)
     {
-        this.table_of_contents = table_of_contents;
-        this.pages = new Array(table_of_contents.count());
-        //this.build_page(0);
-        this.make_pages();
+        super(page_array);
+        this.Page_Cookie_Manager = new PageCookieManager();
 
-        //this.Page_Cookie_Manager = new PageCookieManager();
-        //this.set_page(this.Page_Cookie_Manager.get_page_number);
+        //this.set_page(this.Page_Cookie_Manager.get_page_number()).then(() => {console.log('ready')});
     }
 
-    build_page(index)
+    static async Initialize(domain)
     {
-        return new Page(this.table_of_contents.resolver,
-            this.table_of_contents.chapters[index]);
+        let resolver = Data_Resolver.Build_From_Domain(domain);
+        let table_of_contents = await resolver.async_load();
+        let page_array = new Array(table_of_contents.length);
+
+        table_of_contents.forEach((item, index) => {
+            page_array[index] = new Page(resolver, item);
+        });
+        return Book.from(page_array);
     }
 
+    open()
+    {
+        this.set_page();
+    }
 
     set_page = async (page_num) =>
     {
         this.current_page = page_num;
-        await this.pages[page_num].async_load();
+        await this[page_num].async_load();
+        await this[mod(page_num + 1, this.length)].async_load();
+    }
+    get_page()
+    {
+        return this[this.current_page];
     }
 
     turn_page(dX)
     {
-        if (Math.abs(dX) >= delta)
+        if (Math.abs(dX) >= DELTA)
         {
             this.current_page -= Math.sign(dX);
             this.current_page = mod((this.current_page), this.page_count);
+            this.set_page(this.current_page);
         }
     }
-    page_count()
-    {
-        return this.pages.length;
-    }
-
-    get_page(page_num)
-    {
-        return this.pages[page_num];
-    }
-
-    make_pages = () =>
-    {
-        this.table_of_contents.chapters.forEach((item, index) => {
-            this.pages[index] = this.build_page(index);
-        });
-    }
-
-    async load_neighbors()
-    {
-        await this.pages[this.current_page + 1].load_page_data()
-        await this.pages[this.current_page - 1].load_page_data()
-    }
-
-    turn_page(direction)
-    {
-        //check if load is complete
-        this.current_page += Math.sign(direction);
-        return this.current_page.load_page()
-
-    }
 }
-
-module.exports.Book = Book

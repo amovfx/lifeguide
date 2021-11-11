@@ -18,7 +18,7 @@
 
 </div>
 
-
+<!-- remove overlay guide -->
 <div id="overlay-div" class="swipe-guide-overlay" onclick="buttonclick()">
     <div >
         <img id="tutorial-image">
@@ -30,12 +30,21 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
-<script src="{{ url_for('/book.static', filename='js/page.js')}}"></script>
+<script>
+  let script_root = "{{ url_for('/book.static', filename='js/main.js')}}";
+  console.log(`script root  : ${script_root}`);
+</script>
+
+<script type='module' src="{{ url_for('/book.static', filename='js/book/book.js')}}"></script>
+<script type='module' src="{{ url_for('/book.static', filename='js/data_resolver/data_resolver.js')}}"></script>
 
 
 
 <script>
-
+    import Book from "{{ url_for('/book.static', filename='js/data_resolver/data_resolver.js')}}";
+    var book = Book.Initialize(DOMAINS.WEB2);
+    console.log("book")
+    console.log(book)
     var md = new MobileDetect(window.navigator.userAgent);
     var accepted = 0;
 

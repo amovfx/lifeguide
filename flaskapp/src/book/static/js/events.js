@@ -1,16 +1,41 @@
 
+import Book from "./book/book";
+
 class EventStrategy
 {
-    constructor(event_name_down, event_name_up, callback)
+    constructor(event_name_down, event_name_up, book)
     {
         this.event_name_down = event_name_down;
         this.event_name_up = event_name_up;
-        this.fn = callback;
+        this.book = book
+        this.fn = book.turn_page;
+    }
+    set_book(book)
+    {
+        if (book instanceof Book)
+        {
+            this.book = book;
+        }
+        else
+        {
+            throw new Error(`${book} is not a Book class.`)
+        }
+
+    }
+    /*
+    * Function to call on page load.
+     */
+    load_event = () =>
+    {
+        this.book.open()
     }
 }
 
-class EventStrategyDesktop extends EventStrategy
+export class EventStrategyDesktop extends EventStrategy
 {
+    constructor(Book) {
+        super("mousedown", "mouseup", Book);
+    }
     down_event = (event) =>
     {
         this.startX = event.pageX;
@@ -21,8 +46,11 @@ class EventStrategyDesktop extends EventStrategy
     }
 }
 
-class EventStrategyMobile extends EventStrategy
+export class EventStrategyMobile extends EventStrategy
 {
+    constructor(Book) {
+        super("touchstart", "touchend", Book);
+    }
     down_event = (event) =>
     {
         this.startX = event.changedTouches[0].screenX;
@@ -33,11 +61,16 @@ class EventStrategyMobile extends EventStrategy
     }
 }
 
-function CreatePageTurnEventListeners(strategy)
+export function CreateBookEventListeners(strategy)
 {
+        document.addEventListener("load"
+            , (event) => {strategy.load_event()}
+            , false);
+
         document.addEventListener(strategy.event_name_down
             , (event) => {strategy.down_event()}
             , false);
+
         document.addEventListener(strategy.event_name_up
             , (event) => {strategy.up_event()}
             , false);

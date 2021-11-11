@@ -7,9 +7,10 @@ export default class BookInterface
         this.book = book;
     }
 
-    turn_page(dX)
+    turn_page = (dX) =>
     {
         this.book.turn_page(dX);
+        this.set_page_data();
         //set page data?
 
     }
@@ -19,14 +20,12 @@ export default class BookInterface
         this.book = book;
     }
 
-    set_page_data(Page)
+    set_page_data()
     {
-
-        $("#page-contents").html(Page.page_data);
-        $("#page-number").html(Page.page_num);
-        $("#page-title").html(Page.title);
+        let page = this.book.get_page();
+        $("#page-contents").html(page.get_content());
+        $("#page-number").html(this.book.current_page);
+        $("#page-title").html(page.get_title());
     }
-
-
 
 }

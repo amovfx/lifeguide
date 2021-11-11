@@ -1,22 +1,10 @@
 import Book from "./book";
-import Table_of_Contents from "../table_of_contents/table_of_contents";
+import {DOMAINS} from "../data_resolver/data_resolver";
 
 describe("Test Book", () => {
+
     it("Initialize Book", async () => {
-        let toc = await Table_of_Contents.Local();
-
-        expect(toc.count()).toBe(27)
-
-        let book = new Book(toc);
-        expect(book.page_count()).toBe(27);
-
-
-    })
-
-    it("Initializing book", async () => {
-        let toc = await Table_of_Contents.Local();
-        let book = new Book(toc);
-        await book.set_page(3);
-        console.log(book.pages[3])
+        let book = await Book.Initialize(DOMAINS.LOCAL);
+        expect(book.length).toBe(27);
     })
 })

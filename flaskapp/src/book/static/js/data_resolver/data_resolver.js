@@ -3,8 +3,8 @@ const {default: axios} = require("axios");
 
 export const DOMAINS = {
     LOCAL: 'http://127.0.0.1:5000',
-    WEB2: 'https://kaizens.guide',
-    IPFS: 'https://ipfs.io/ipfs/'
+    WEB2: '',
+    IPFS: 'https://ipfs.io/ipfs/',
 }
 
 export class Data_Resolver

@@ -1,21 +1,7 @@
 
-import {Data_Resolver} from "./data_resolver/data_resolver";
-import Table_of_Contents from "./table_of_contents/table_of_contents";
 
-var delta = 6;
 
-function mod(n, m) {
-    return ((n % m) + m) % m;
-}
 //build resolver to return data
-
-
-function set_page_data(Page)
-{
-    $("#page-contents").html(Page.page_data);
-    $("#page-number").html(Page.page_num);
-    $("#page-title").html(Page.title);
-}
 
 
 export default class Page // page
@@ -28,14 +14,15 @@ export default class Page // page
         let split_title = title.split(".");
         this.title = split_title[0];
         this.page_num = parseInt(split_title[1]);
-        this.resolver.set_route(data[title]);
+        this.resolver.route = data[title];
     }
 
     async async_load()
     {
-        //render this data to html
+        //add cache manager?
         this.page_contents = await this.resolver.async_load()
     }
+
     get_content = () =>
     {
         return this.page_contents;
