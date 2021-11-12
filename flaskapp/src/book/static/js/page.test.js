@@ -12,7 +12,7 @@ jest.setTimeout(50000)
 *
  */
 
-describe("Testing centralized Data_Resolver", () =>
+describe("Testing centralized Data_resolverModule", () =>
 {
     describe("Testing Table of Contents", () => {
 
@@ -30,7 +30,7 @@ describe("Testing centralized Data_Resolver", () =>
 
     })
 
-    describe("Testing Book",  () => {
+    describe("Testing BookModule",  () => {
 
 
         it ("Testing Page", async () => {

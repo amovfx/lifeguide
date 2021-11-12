@@ -1,7 +1,7 @@
 
-import Page from "../page";
-import PageCookieManager from "../cookie_manager";
-import {Data_Resolver} from "../data_resolver/data_resolver";
+import Page from "../page.js";
+import PageCookieManager from "../cookie_manager.js";
+import {Data_Resolver} from "../data_resolver/data__resolver.js";
 
 
 const DELTA = 6;
@@ -10,7 +10,7 @@ function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
-export default class Book extends Array
+export default class BookModule extends Array
 {
     //Contains pages
     constructor(page_array)
@@ -30,7 +30,7 @@ export default class Book extends Array
         table_of_contents.forEach((item, index) => {
             page_array[index] = new Page(resolver, item);
         });
-        return Book.from(page_array);
+        return BookModule.from(page_array);
     }
 
     open()

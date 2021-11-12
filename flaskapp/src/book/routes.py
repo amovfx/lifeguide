@@ -5,7 +5,13 @@ Routes for book_bp
 """
 import os.path
 
-from flask import render_template, jsonify, render_template_string, url_for
+from flask import (
+    render_template,
+    jsonify,
+    render_template_string,
+    url_for,
+    send_from_directory,
+)
 
 from flask_misaka import markdown
 
@@ -14,7 +20,6 @@ from . import book_bp
 
 
 @book_bp.route("/")
-
 def cover():
     """
 
@@ -27,6 +32,7 @@ def cover():
 
     return render_template("book_page.html", page_count=len(book_bp.files))
 
+
 @book_bp.get("/contents")
 def book_contents():
     """
@@ -34,10 +40,16 @@ def book_contents():
     Return a books' table of contents
 
     """
-    page_content_url = url_for('/book.page_content')
-    return jsonify([{os.path.basename(v) : f'{page_content_url}{i}'} for i, v in enumerate(book_bp.files)])
+    page_content_url = url_for("/book.page_content")
+    return jsonify(
+        [
+            {os.path.basename(v): f"{page_content_url}{i}"}
+            for i, v in enumerate(book_bp.files)
+        ]
+    )
 
-@book_bp.get('/content/', defaults={'page_num': 0})
+
+@book_bp.get("/content/", defaults={"page_num": 0})
 @book_bp.get("/content/<page_num>")
 def page_content(page_num):
     """
@@ -64,3 +76,13 @@ def page_content(page_num):
     md_template_string = markdown(template_string)
 
     return jsonify(md_template_string)
+
+
+@book_bp.route("/es6-static/<path:filename>")
+def es6_static(filename):
+    return send_from_directory(
+        app.config["ES6_MODULES"],
+        filename,
+        as_attachment=True,
+        mimetype="text/javascript",
+    )

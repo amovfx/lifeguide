@@ -1,5 +1,5 @@
 
-import Book from "./book/book";
+import BookModule from "./book/book.module";
 
 class EventStrategy
 {
@@ -12,7 +12,7 @@ class EventStrategy
     }
     set_book(book)
     {
-        if (book instanceof Book)
+        if (book instanceof BookModule)
         {
             this.book = book;
         }

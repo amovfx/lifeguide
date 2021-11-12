@@ -1,4 +1,4 @@
-import {Data_Resolver, DOMAINS} from "./data_resolver";
+import {Data_Resolver, DOMAINS} from "./data__resolver";
 
 
 //import * as https from 'https';
@@ -6,7 +6,7 @@ import {Data_Resolver, DOMAINS} from "./data_resolver";
 
 
 
-describe("Testing centralized Data_Resolver", () => {
+describe("Testing centralized Data_resolverModule", () => {
     describe("Local", () => {
         it ("Getters", () => {
             let local_resolver = Data_Resolver.Local_Resolver();

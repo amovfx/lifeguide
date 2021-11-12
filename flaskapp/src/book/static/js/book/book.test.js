@@ -1,10 +1,10 @@
-import Book from "./book";
-import {DOMAINS} from "../data_resolver/data_resolver";
+import BookModule from "./book.module";
+import {DOMAINS} from "../data_resolver/data__resolver";
 
-describe("Test Book", () => {
+describe("Test BookModule", () => {
 
-    it("Initialize Book", async () => {
-        let book = await Book.Initialize(DOMAINS.LOCAL);
+    it("Initialize BookModule", async () => {
+        let book = await BookModule.Initialize(DOMAINS.LOCAL);
         expect(book.length).toBe(27);
     })
 })

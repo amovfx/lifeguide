@@ -1,12 +1,7 @@
 
-
-import {CreateBookEventListeners, EventStrategyDesktop} from "./events";
-import Book from "./book/book";
-import {DOMAINS} from "./data_resolver/data_resolver";
+import {Data_Resolver,DOMAINS} from "./data_resolver/data__resolver.js";
 
 
+console.log("This is main: `DOMAINS.WEB2`")
+var my_data_resolver = new Data_Resolver(DOMAINS.WEB2)
 
-var Guide = Book.Initialize(DOMAINS.WEB2);
-var Event_Strategy = new EventStrategyDesktop(Guide);
-
-CreateBookEventListeners(Event_Strategy);

@@ -1,4 +1,3 @@
-const {default: axios} = require("axios");
 
 
 export const DOMAINS = {
@@ -73,7 +72,7 @@ export class Data_Resolver
         if (this.route !== undefined)
         {
 
-            let response = await axios.get(`${this.domain}${this.route}`)
+            let response = await fetch(`${this.domain}${this.route}`)
             if (response.status == 200)
             {
                 return response['data'];
