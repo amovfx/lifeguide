@@ -30,6 +30,7 @@ export default class BookModule extends Array
         table_of_contents.forEach((item, index) => {
             page_array[index] = new Page(resolver, item);
         });
+
         return BookModule.from(page_array);
     }
 
