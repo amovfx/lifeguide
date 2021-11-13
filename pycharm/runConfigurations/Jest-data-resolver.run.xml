@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Jest-data-resolver" type="JavaScriptTestRunnerJest">
+    <config-file value="$PROJECT_DIR$/flaskapp/src/book/static/js/jest.config.js" />
+    <node-interpreter value="project" />
+    <node-options value="--experimental-vm-modules" />
+    <jest-package value="$PROJECT_DIR$/flaskapp/src/book/static/js/node_modules/jest" />
+    <working-dir value="$PROJECT_DIR$/flaskapp/src/book/static/js" />
+    <jest-options value="--verbose" />
+    <envs />
+    <scope-kind value="SUITE" />
+    <test-file value="$PROJECT_DIR$/flaskapp/src/book/static/js/data_resolver.js" />
+    <test-names>
+      <test-name value="Testing centralized Data_Resolver" />
+    </test-names>
+    <method v="2" />
+  </configuration>
+</component>
