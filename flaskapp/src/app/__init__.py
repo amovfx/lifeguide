@@ -6,6 +6,7 @@ App factory/
 
 from flask import Flask
 from flask_misaka import Misaka
+
 from flaskapp.src.app.config import *
 
 from .cache import cache
@@ -43,6 +44,26 @@ def set_config(app, env_name: str = os.environ.get("FLASK_ENV")) -> None:
 
     return None
 
+def register_blueprints(app):
+    """
+
+    Register blueprints.
+
+    :param app:
+    :return:
+    """
+    # blueprints
+    from ..book import book_bp
+    from .error_handlers import error_handler_bp
+
+    app.register_blueprint(book_bp)
+    app.register_blueprint(error_handler_bp)
+
+def register_plugins(app):
+    Misaka(app, autolink=True)
+
+
+
 
 def create_app():
     """
@@ -59,15 +80,10 @@ def create_app():
     set_config(app)
 
     # plugins
-    Misaka(app, autolink=True)
+
 
     #cache.init_app(app)
 
-    # blueprints
-    from ..book import book_bp
-    from .error_handlers import error_handler_bp
-
-    app.register_blueprint(book_bp)
-    app.register_blueprint(error_handler_bp)
+    register_blueprints(app)
 
     return app

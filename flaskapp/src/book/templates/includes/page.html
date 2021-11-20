@@ -28,13 +28,18 @@
         <h3>Click and drag to turn the page.</h3>
     </div>
 </div>
-
+<script>var exports = {};</script>
 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
 
 
 <script
-        defer
-        type="module"
-        src="{{ url_for('/book.static', filename='js/main.js')}}"
+        type="application/javascript"
+        src="{{ url_for('/book.static', filename='js/book_interface.mjs')}}"
         crossorigin="anonymous"
 ></script>
+
+<script>
+
+    var bookInterface = new BookInterface();
+</script>
+

@@ -1,9 +1,9 @@
 
-import BookModule from "./book/book.module";
+import BookModule from "./book/book";
 
 class EventStrategy
 {
-    constructor(event_name_down, event_name_up, book)
+    constructor(event_name_down, event_name_up, bookInterface)
     {
         this.event_name_down = event_name_down;
         this.event_name_up = event_name_up;

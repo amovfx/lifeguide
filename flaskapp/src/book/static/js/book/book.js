@@ -10,39 +10,26 @@ function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
-export default class BookModule extends Array
+export default class Book extends Array
 {
     //Contains pages
-    constructor(page_array)
+    constructor(table_of_contents)
     {
-        super(page_array);
+        super(table_of_contents);
         this.Page_Cookie_Manager = new PageCookieManager();
-
         //this.set_page(this.Page_Cookie_Manager.get_page_number()).then(() => {console.log('ready')});
     }
-
-    static async Initialize(domain)
+    //open book to last page or page 0.
+    open = async () =>
     {
-        let resolver = Data_Resolver.Build_From_Domain(domain);
-        let table_of_contents = await resolver.async_load();
-        let page_array = new Array(table_of_contents.length);
-
-        table_of_contents.forEach((item, index) => {
-            page_array[index] = new Page(resolver, item);
-        });
-
-        return BookModule.from(page_array);
-    }
-
-    open()
-    {
-        this.set_page();
+        await this.set_page(this.Page_Cookie_Manager.get_page_number());
     }
 
     set_page = async (page_num) =>
     {
         this.current_page = page_num;
         await this[page_num].async_load();
+        //load next page
         await this[mod(page_num + 1, this.length)].async_load();
     }
     get_page()
@@ -50,13 +37,13 @@ export default class BookModule extends Array
         return this[this.current_page];
     }
 
-    turn_page(dX)
+    turn_page = async (dX) =>
     {
         if (Math.abs(dX) >= DELTA)
         {
             this.current_page -= Math.sign(dX);
             this.current_page = mod((this.current_page), this.page_count);
-            this.set_page(this.current_page);
+            await this.set_page(this.current_page);
         }
     }
 }

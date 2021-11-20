@@ -78,11 +78,10 @@ def page_content(page_num):
     return jsonify(md_template_string)
 
 
-@book_bp.route("/es6-static/<path:filename>")
-def es6_static(filename):
+@book_bp.route("/mime")
+def main_js(filename):
     return send_from_directory(
-        app.config["ES6_MODULES"],
+        'static/js/',
         filename,
-        as_attachment=True,
-        mimetype="text/javascript",
+        mimetype="text/javascript"
     )

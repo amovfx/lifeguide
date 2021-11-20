@@ -1,10 +1,10 @@
 
 
-export default class BookInterface
+class BookInterface
 {
-    constructor(book)
+    constructor()
     {
-        this.book = book;
+        console.log("Making book interface")
     }
 
     turn_page = (dX) =>
@@ -27,5 +27,11 @@ export default class BookInterface
         $("#page-number").html(this.book.current_page);
         $("#page-title").html(page.get_title());
     }
+    build_nav_bar()
+    {
+        //builds the nav bar for the webpage.
+    }
 
 }
+
+export default BookInterface
