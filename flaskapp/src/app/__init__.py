@@ -95,7 +95,7 @@ def create_app():
     set_config(app)
 
     # plugins
-
+    register_plugins(app)
 
     #cache.init_app(app)
 
