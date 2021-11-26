@@ -19,6 +19,7 @@ ENV_CONFIGS = {
     "production": ProductionConfig,
 }
 
+
 def set_config(app, env_name: str = os.environ.get("FLASK_ENV")) -> None:
 
     """
@@ -39,11 +40,11 @@ def set_config(app, env_name: str = os.environ.get("FLASK_ENV")) -> None:
         else:
             raise ValueError("Config class not available.")
 
-
     else:
         raise ValueError("Env not available.")
 
     return None
+
 
 def register_blueprints(app):
     """
@@ -60,6 +61,7 @@ def register_blueprints(app):
     app.register_blueprint(book_bp)
     app.register_blueprint(error_handler_bp)
 
+
 def register_plugins(app):
     """
 
@@ -68,15 +70,12 @@ def register_plugins(app):
     :param app:
     :return:
     """
-    #a markdown renderer
+    # a markdown renderer
     Misaka(app, autolink=True)
 
-    #asset management
+    # asset management
     flask_static_digest = FlaskStaticDigest()
     flask_static_digest.init_app(app)
-
-
-
 
 
 def create_app():
@@ -97,7 +96,7 @@ def create_app():
     # plugins
     register_plugins(app)
 
-    #cache.init_app(app)
+    # cache.init_app(app)
 
     register_blueprints(app)
 
