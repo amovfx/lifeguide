@@ -6,6 +6,7 @@ App factory/
 
 from flask import Flask
 from flask_misaka import Misaka
+from flask_static_digest import FlaskStaticDigest
 
 from flaskapp.src.app.config import *
 
@@ -60,7 +61,20 @@ def register_blueprints(app):
     app.register_blueprint(error_handler_bp)
 
 def register_plugins(app):
+    """
+
+    Register flask plugins
+
+    :param app:
+    :return:
+    """
+    #a markdown renderer
     Misaka(app, autolink=True)
+
+    #asset management
+    flask_static_digest = FlaskStaticDigest()
+    flask_static_digest.init_app(app)
+
 
 
 
@@ -74,6 +88,7 @@ def create_app():
         Flask app
 
     """
+
     app = Flask(__name__)
 
     # set configuration
