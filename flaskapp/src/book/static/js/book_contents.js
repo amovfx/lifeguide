@@ -1,7 +1,7 @@
 import Page from "./page";
 
 
-export class Book_Contents extends Array
+class Book_Contents extends Array
 {
     constructor(page_array)
     {
@@ -19,6 +19,6 @@ export class Book_Contents extends Array
 
         return Book_Contents.from(page_array);
     }
-
-
 }
+
+export default Book_Contents
