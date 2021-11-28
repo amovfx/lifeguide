@@ -111,13 +111,20 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
                 f"f{self.app.blueprints[bp_name]} has not been webpacked. "
             )
 
-        folder = self.app.blueprints[bp_name].static_folder + self.dist_folder
-        paths = list(pathlib.Path(folder).glob("*.js"))
+        folder_path = pathlib.Path(
+            self.app.blueprints[bp_name].static_folder + self.dist_folder
+        )
+        paths = list(folder_path.glob("*.js"))
         js_file_name = filename.split("/")[1].split(".")[0]
         packed_js_file = [
             path
             for path in paths
             if path.is_file() and path.name.startswith(js_file_name)
-        ][0]
-        js_file_name = pathlib.Path(self.dist_folder) / packed_js_file.name
+        ]
+        if not packed_js_file:
+            raise FileNotFoundError(
+                f"{js_file_name}.[md5hash].js not found in {folder_path.as_posix()}"
+            )
+
+        js_file_name = pathlib.Path(self.dist_folder) / packed_js_file[0].name
         return url_for(endpoint, filename=js_file_name.as_posix())
