@@ -1,4 +1,4 @@
-import {Data_Resolver, DOMAINS} from "./data__resolver";
+import {Data_Resolver, DOMAINS} from "./data_resolver";
 
 
 //import * as https from 'https';

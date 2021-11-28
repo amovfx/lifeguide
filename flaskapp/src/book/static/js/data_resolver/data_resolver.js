@@ -73,9 +73,10 @@ class Data_Resolver
         {
 
             let response = await fetch(`${this.domain}${this.route}`)
-            let data = await response.json();
+
             if (response.status == 200)
             {
+                let data = await response.json();
                 return data;
             }
             else
