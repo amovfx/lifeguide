@@ -4,11 +4,12 @@ App factory/
 
 """
 
-from flask import Flask
+from flask import Flask, url_for
 from flask_misaka import Misaka
 from flask_static_digest import FlaskStaticDigest
 
 from flaskapp.src.app.config import *
+from flaskapp.src.utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 
 from .cache import cache
 from .config import DevelopmentConfig, TestConfig, ProductionConfig
@@ -77,6 +78,8 @@ def register_plugins(app):
     flask_static_digest = FlaskStaticDigest()
     flask_static_digest.init_app(app)
 
+    flask_webpacked_blueprint = FlaskWebpackedBlueprint()
+    flask_webpacked_blueprint.init_app(app)
 
 def create_app():
     """

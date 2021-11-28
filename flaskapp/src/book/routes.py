@@ -78,10 +78,11 @@ def page_content(page_num):
     return jsonify(md_template_string)
 
 
-@book_bp.route("/mime")
+@book_bp.route("/<filename>")
 def main_js(filename):
+    print(f" MIME TYPE: {filename}")
     return send_from_directory(
-        'static/js/',
+        '/static/js/',
         filename,
-        mimetype="text/javascript"
+        mimetype="application/javascript"
     )

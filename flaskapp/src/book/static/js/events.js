@@ -3,12 +3,11 @@ import BookModule from "./book/book";
 
 class EventStrategy
 {
-    constructor(event_name_down, event_name_up, bookInterface)
+    constructor(event_name_down, event_name_up, Book_Interface)
     {
         this.event_name_down = event_name_down;
         this.event_name_up = event_name_up;
-        this.book = book
-        this.fn = book.turn_page;
+        this.book_interface = Book_Interface;
     }
     set_book(book)
     {
@@ -27,14 +26,17 @@ class EventStrategy
      */
     load_event = () =>
     {
+        console.log("Firing load event.")
         this.book.open()
     }
 }
 
-export class EventStrategyDesktop extends EventStrategy
+class EventStrategyDesktop extends EventStrategy
 {
-    constructor(Book) {
-        super("mousedown", "mouseup", Book);
+    constructor(Book_Interface) {
+
+        super("mousedown", "mouseup", Book_Interface);
+        console.log("Creating Event Strategy Desktop");
     }
     down_event = (event) =>
     {
@@ -42,11 +44,11 @@ export class EventStrategyDesktop extends EventStrategy
     }
     up_event = (event) =>
     {
-        this.fn(event.pageX - this.startX);
+        this.book_interface.turn_page(event.pageX - this.startX);
     }
 }
 
-export class EventStrategyMobile extends EventStrategy
+class EventStrategyMobile extends EventStrategy
 {
     constructor(Book) {
         super("touchstart", "touchend", Book);
@@ -57,11 +59,11 @@ export class EventStrategyMobile extends EventStrategy
     }
     up_event = (event) =>
     {
-        this.fn(event.changedTouches[0].screenX - this.startX);
+        this.book_interface.turn_page(event.changedTouches[0].screenX - this.startX);
     }
 }
 
-export function CreateBookEventListeners(strategy)
+function CreateBookEventListeners(strategy)
 {
         document.addEventListener("load"
             , (event) => {strategy.load_event()}
@@ -75,3 +77,4 @@ export function CreateBookEventListeners(strategy)
             , (event) => {strategy.up_event()}
             , false);
 }
+

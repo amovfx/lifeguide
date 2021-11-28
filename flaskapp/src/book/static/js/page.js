@@ -4,7 +4,7 @@
 //build resolver to return data
 
 
-export default class Page // page
+class Page // page
 {
     constructor(data_resolver, data)
     {
@@ -52,7 +52,7 @@ export default class Page // page
     }
 }
 
-
+export default Page
 
 
 

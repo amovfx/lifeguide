@@ -30,16 +30,10 @@
 </div>
 <script>var exports = {};</script>
 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
+<script type="module"
+        src="{{ webpacked_url_for('/book.static', filename='js/main.js')}}"
 
-
-<script
-        type="application/javascript"
-        src="{{ url_for('/book.static', filename='js/book_interface.mjs')}}"
-        crossorigin="anonymous"
 ></script>
 
-<script>
 
-    var bookInterface = new BookInterface();
-</script>
 

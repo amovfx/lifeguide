@@ -22,6 +22,7 @@ class BookInterface
 
     set_page_data()
     {
+        console.log("Setting page data.")
         let page = this.book.get_page();
         $("#page-contents").html(page.get_content());
         $("#page-number").html(this.book.current_page);

@@ -1,13 +1,8 @@
-from flask import Blueprint, request
+from flask import Blueprint, request, url_for
+from flaskapp.src.utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 import re
 import pathlib
-def create_bp(name):
-    return Blueprint(name,
-                     __name__,
-                     template_folder='templates',
-                     static_url_path=f'/static',
-                     static_folder='static',
-                     url_prefix=f'/book')
+import subprocess as sp
 
 def get_sorted_content():
     """
@@ -16,13 +11,16 @@ def get_sorted_content():
 
     :return:
     """
-    files = [x.as_posix() for x in pathlib.Path(book_bp.static_folder).rglob("*/*.md") if
-             re.search(r'\d{2}\.md$', x.as_posix())]
+    files = [
+        x.as_posix()
+        for x in pathlib.Path(book_bp.static_folder).rglob("*/*.md")
+        if re.search(r"\d{2}\.md$", x.as_posix())
+    ]
     files.sort(key=lambda x: int(x.split(".")[-2]))
     return files
 
 
-book_bp = create_bp('/book')
+book_bp = FlaskWebpackedBlueprint.create_ES6_blueprint("/book",file_name=__name__)
 book_bp.files = get_sorted_content()
 
 from . import routes

@@ -1,12 +1,12 @@
 
 
-export const DOMAINS = {
+const DOMAINS = {
     LOCAL: 'http://127.0.0.1:5000',
     WEB2: '',
     IPFS: 'https://ipfs.io/ipfs/',
 }
 
-export class Data_Resolver
+class Data_Resolver
 {
 
     static Local_Resolver()
@@ -88,3 +88,5 @@ export class Data_Resolver
         }
     }
 }
+
+export {Data_Resolver, DOMAINS}
