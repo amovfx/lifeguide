@@ -4,6 +4,16 @@ import pathlib
 import subprocess as sp
 
 
+def validate_filename_arg(filename):
+    if not filename:
+        raise ValueError("filename is not an argument.")
+
+    if not (filename.endswith("js") and filename.startswith("js")):
+        raise ValueError(
+            f"webpacked_bp_url_for_js filename: {filename} does not start or end with 'js'."
+        )
+
+
 class FlaskWebpackedBlueprint(object):
     webpack_config = """
 const path = require("path");
@@ -79,6 +89,19 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         self.app = app
         app.add_template_global(self.webpacked_url_for)
 
+    def get_bp_name_from_endpoint(self, endpoint):
+        if not "." in endpoint:
+            raise ValueError(
+                f"webpacked_bp_url_for_js endpoint: {endpoint} doesn't look like it is pointint to a blueprint."
+            )
+
+        bp_name, _ = endpoint.split(".")
+        if not (self.app.blueprints[bp_name].is_webpacked):
+            raise ValueError(
+                f"f{self.app.blueprints[bp_name]} has not been webpacked. "
+            )
+        return bp_name
+
     @lru_cache(maxsize=16)
     def webpacked_url_for(self, endpoint, **values):
         """
@@ -90,32 +113,18 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         :param values:
         :return:
         """
-
+        # validate filename
         filename = values.get("filename")
-        if not filename:
-            raise ValueError("filename is not an argument.")
+        validate_filename_arg(filename)
 
-        if not (filename.endswith("js") and filename.startswith("js")):
-            raise ValueError(
-                f"webpacked_bp_url_for_js filename: {filename} does not start or end with 'js'."
-            )
-
-        if not "." in endpoint:
-            raise ValueError(
-                f"webpacked_bp_url_for_js endpoint: {endpoint} doesn't look like it is pointint to a blueprint."
-            )
-
-        bp_name, _ = endpoint.split(".")
-        if not (self.app.blueprints[bp_name].is_webpacked):
-            raise ValueError(
-                f"f{self.app.blueprints[bp_name]} has not been webpacked. "
-            )
+        #validate endpoint
+        bp_name = self.get_bp_name_from_endpoint(endpoint)
 
         folder_path = pathlib.Path(
             self.app.blueprints[bp_name].static_folder + self.dist_folder
         )
         paths = list(folder_path.glob("*.js"))
-        js_file_name = filename.split("/")[1].split(".")[0]
+        js_file_name = pathlib.Path(filename).stem
         packed_js_file = [
             path
             for path in paths
