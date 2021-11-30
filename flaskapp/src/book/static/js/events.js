@@ -1,5 +1,6 @@
 
-import BookModule from "./book/book";
+import {Book} from './book/book.js'
+import {BookInterface} from "./book_interface.mjs";
 
 class EventStrategy
 {
@@ -7,11 +8,18 @@ class EventStrategy
     {
         this.event_name_down = event_name_down;
         this.event_name_up = event_name_up;
-        this.book_interface = Book_Interface;
+        if (Book_Interface instanceof BookInterface)
+        {
+            this.book_interface = Book_Interface;
+        }
+        else
+        {
+            throw new Error(`${Book_Interface} is not a BookInterface class.`)
+        }
     }
     set_book(book)
     {
-        if (book instanceof BookModule)
+        if (book instanceof Book)
         {
             this.book = book;
         }
@@ -26,12 +34,13 @@ class EventStrategy
      */
     load_event = () =>
     {
-        console.log("Firing load event.")
-        this.book.open()
+        console.log("Firing load event.");
+        console.log(this.book);
+        this.book.open();
     }
 }
 
-class EventStrategyDesktop extends EventStrategy
+export class EventStrategyDesktop extends EventStrategy
 {
     constructor(Book_Interface) {
 
@@ -48,7 +57,7 @@ class EventStrategyDesktop extends EventStrategy
     }
 }
 
-class EventStrategyMobile extends EventStrategy
+export class EventStrategyMobile extends EventStrategy
 {
     constructor(Book) {
         super("touchstart", "touchend", Book);
@@ -63,18 +72,21 @@ class EventStrategyMobile extends EventStrategy
     }
 }
 
-function CreateBookEventListeners(strategy)
+export var CreateBookEventListeners = (strategy) =>
 {
-        document.addEventListener("load"
-            , (event) => {strategy.load_event()}
+        console.log("Adding event listeners")
+        document.addEventListener("DOMContentLoaded"
+            , (event) => {strategy.load_event(event)}
             , false);
 
         document.addEventListener(strategy.event_name_down
-            , (event) => {strategy.down_event()}
+            , (event) => {strategy.down_event(event)}
             , false);
 
         document.addEventListener(strategy.event_name_up
-            , (event) => {strategy.up_event()}
+            , (event) => {strategy.up_event(event)}
             , false);
 }
+
+
 

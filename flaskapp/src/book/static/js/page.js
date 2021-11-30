@@ -4,7 +4,7 @@
 //build resolver to return data
 
 
-class Page // page
+export class Page // page
 {
     constructor(data_resolver, data)
     {
@@ -36,7 +36,6 @@ class Page // page
     set_page_num = (page_num) =>
     {
         this.page_num = page_num;
-        $("#page-number").html(this.page_num);
 
     }
 
@@ -48,11 +47,8 @@ class Page // page
     set_title(title)
     {
         this.title = title;
-        $("#page-number").html(this.page_num);
     }
 }
-
-export default Page
 
 
 

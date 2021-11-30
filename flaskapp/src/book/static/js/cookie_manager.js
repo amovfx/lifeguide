@@ -14,4 +14,6 @@ export default class PageCookieManager
     {
         return $.cookie(this.PAGE_COOKIE_NAME) ? $.cookie(this.PAGE_COOKIE_NAME) : 0;
     }
+
+    Cookies.set('')
 }

@@ -1,3 +1,3 @@
 export function module_test() {
-    console.log("Page loading...");
+    console.log("Page loading...poopy but");
 }

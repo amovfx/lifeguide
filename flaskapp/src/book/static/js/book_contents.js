@@ -1,11 +1,13 @@
-import Page from "./page";
+import {Page} from "./page";
 
 
-class Book_Contents extends Array
+export class Book_Contents extends Array
 {
     constructor(page_array)
     {
         super(page_array);
+        console.log("Created Table of Contents...");
+        console.log(this);
     }
 
     static async from_resolver(resolver)
@@ -21,4 +23,3 @@ class Book_Contents extends Array
     }
 }
 
-export default Book_Contents

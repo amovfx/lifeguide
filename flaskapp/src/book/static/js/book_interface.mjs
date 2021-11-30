@@ -1,23 +1,29 @@
 
 
-class BookInterface
+export class BookInterface
 {
     constructor()
     {
         console.log("Making book interface")
+    }
+    open = async () =>
+    {
+        this.book.open();
+        this.set_page_data(0);
+
     }
 
     turn_page = (dX) =>
     {
         this.book.turn_page(dX);
         this.set_page_data();
-        //set page data?
-
     }
 
-    set_book(book)
+    set_book = async (book) =>
     {
         this.book = book;
+        this.book.open();
+        this.set_page_data();
     }
 
     set_page_data()
@@ -28,11 +34,6 @@ class BookInterface
         $("#page-number").html(this.book.current_page);
         $("#page-title").html(page.get_title());
     }
-    build_nav_bar()
-    {
-        //builds the nav bar for the webpage.
-    }
+
 
 }
-
-export default BookInterface

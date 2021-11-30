@@ -1,5 +1,5 @@
 import BookModule from "./book";
-import {DOMAINS} from "../data_resolver/data__resolver";
+import {DOMAINS} from "../data_resolver/data_resolver";
 
 describe("Test BookModule", () => {
 

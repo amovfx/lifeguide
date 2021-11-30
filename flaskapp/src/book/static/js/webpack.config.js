@@ -6,7 +6,11 @@ module.exports = {
     entry : "./main.js",
     output: {
         filename: "[name].[contenthash].js",
-        path: path.resolve(__dirname, "../dist/")
+        path: path.resolve(__dirname, "../dist/"),
+        library: "booklib"
     },
-    plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
+    plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()],
+    optimization: {
+        minimize: false
+    },
 }
