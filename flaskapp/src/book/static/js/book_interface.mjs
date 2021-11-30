@@ -22,7 +22,7 @@ export class BookInterface
     set_book = async (book) =>
     {
         this.book = book;
-        this.book.open();
+        await this.book.open();
         this.set_page_data();
     }
 
@@ -30,9 +30,10 @@ export class BookInterface
     {
         console.log("Setting page data.")
         let page = this.book.get_page();
-        $("#page-contents").html(page.get_content());
-        $("#page-number").html(this.book.current_page);
-        $("#page-title").html(page.get_title());
+
+        document.getElementById("page_contents").innerHTML = page.get_content();
+        document.getElementById("page-number").innerHTML = this.book.current_page;
+        document.getElementById("page_contents").innerHTML = (page.get_title());
     }
 
 
