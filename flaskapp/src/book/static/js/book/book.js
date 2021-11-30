@@ -18,7 +18,7 @@ export class Book extends Array
         console.log("")
         super(table_of_contents);
         this.Page_Cookie_Manager = new PageCookieManager();
-        //this.set_page(this.Page_Cookie_Manager.get_page_number()).then(() => {console.log('ready')});
+        this.set_page(this.Page_Cookie_Manager.get_page_number()).then(() => {console.log('ready')});
     }
     //open book to last page or page 0.
     open = async () =>
@@ -35,7 +35,7 @@ export class Book extends Array
         //load next page
         await this[mod(page_num + 1, this.length)].async_load();
     }
-    get_page()
+    get_page = () =>
     {
         return this[this.current_page];
     }
