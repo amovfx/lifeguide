@@ -7,13 +7,12 @@ import {EventStrategyDesktop, CreateBookEventListeners} from "./events.js";
 
 export async function make_book() {
     let data_resolver = Data_Resolver.Build_From_Domain(DOMAINS.LOCAL) //fetches data
-    let table_of_contents = await Book_Contents.from_resolver(data_resolver); //builds table of contents
-    return new Book(table_of_contents); //builds book from table of contents
+    return await Book.from_resolver(data_resolver); //builds book from table of contents
 }
 
-export function makeInterface(book) {
+export async function makeBookInterface(book) {
     let Book_Interface = new BookInterface();
-    Book_Interface.set_book(book);
+    await Book_Interface.set_book(book);
     const strategy = new EventStrategyDesktop(Book_Interface);
     CreateBookEventListeners(strategy);
     return Book_Interface;

@@ -1,6 +1,6 @@
 
-import Page from "../page.js";
-import PageCookieManager from "../cookie_manager.js";
+import {Page} from "../page.js";
+import {Bookmark} from "../bookmark.js";
 import {Data_Resolver} from "../data_resolver/data_resolver.js";
 
 
@@ -13,27 +13,50 @@ function mod(n, m) {
 export class Book extends Array
 {
     //Contains pages
-    constructor(table_of_contents)
+    constructor(page_array)
     {
-        console.log("")
-        super(table_of_contents);
-        this.Page_Cookie_Manager = new PageCookieManager();
-        this.set_page(this.Page_Cookie_Manager.get_page_number()).then(() => {console.log('ready')});
-    }
-    //open book to last page or page 0.
-    open = async () =>
-    {
-        console.log("Opening book")
-        await this.set_page(this.Page_Cookie_Manager.get_page_number());
+        super(page_array)
+        console.log("Creating book");
+        console.log(this)
+
+        this.Bookmark = new Bookmark();
+        //this.set_page(this.Bookmark.get_page_number()).then(() => {console.log('ready')});
     }
 
-    set_page = async (page_num) =>
+    static async from_resolver(resolver)
+    {
+        console.log("Building book from resolver.")
+        let table_of_contents = await resolver.async_load();
+        let page_array = new Array(table_of_contents.length);
+
+        table_of_contents.forEach((item, index) => {
+            let page = new Page(resolver, item);
+            //page.load_page();
+            page_array[index] = page;
+        });
+
+        return Book.from(page_array);
+    }
+
+    //open book to last page or page 0.
+    open = () =>
+    {
+        console.log("Opening book")
+        this.set_page(0).then((result) => {"Setting page complete."});
+    }
+
+    set_page = (page_num) =>
     {
         console.log(`Setting page to ${page_num}`);
         this.current_page = page_num;
-        await this[page_num].async_load();
+        console.log(this[5])
+        let page = this[page_num];
+        let loaded = page.load_page().then((result) => {console.log(result)});
+
         //load next page
-        await this[mod(page_num + 1, this.length)].async_load();
+        //await this[mod(page_num + 1, this.length)].async_load();
+        this.Bookmark.set_page_number(page_num);
+        return true;
     }
     get_page = () =>
     {

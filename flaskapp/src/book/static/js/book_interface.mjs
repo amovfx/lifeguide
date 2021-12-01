@@ -10,7 +10,6 @@ export class BookInterface
     {
         this.book.open();
         this.set_page_data(0);
-
     }
 
     turn_page = (dX) =>
@@ -30,11 +29,10 @@ export class BookInterface
     {
         console.log("Setting page data.")
         let page = this.book.get_page();
+        console.log(`page : ${page}`);
 
         document.getElementById("page_contents").innerHTML = page.get_content();
         document.getElementById("page-number").innerHTML = this.book.current_page;
         document.getElementById("page_contents").innerHTML = (page.get_title());
     }
-
-
 }

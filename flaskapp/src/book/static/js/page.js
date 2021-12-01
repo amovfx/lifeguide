@@ -8,19 +8,30 @@ export class Page // page
 {
     constructor(data_resolver, data)
     {
-        this.resolver = { ...data_resolver};
 
+        this.build(data_resolver, data);
+
+
+    }
+
+    build = (data_resolver, data) =>
+    {
+        this.resolver = { ...data_resolver};
         let title = Object.keys(data)[0];
         let split_title = title.split(".");
         this.title = split_title[0];
         this.page_num = parseInt(split_title[1]);
-        this.resolver.route = data[title];
+        this.resolver.set_route(data[title]);
     }
 
-    async async_load()
+    load_page = async () =>
     {
         //add cache manager?
-        this.page_contents = await this.resolver.async_load()
+        //console.log("Loading page")
+        let page = await this.resolver.async_load();
+        console.log(page)
+        this.page_contents = page;
+        return true;
     }
 
     get_content = () =>
