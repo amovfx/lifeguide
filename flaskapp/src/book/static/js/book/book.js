@@ -31,7 +31,6 @@ export class Book extends Array
 
         table_of_contents.forEach((item, index) => {
             let page = new Page(resolver, item);
-            //page.load_page();
             page_array[index] = page;
         });
 
@@ -48,13 +47,8 @@ export class Book extends Array
 
     set_page = (page_num) =>
     {
-        console.log(`Setting page to ${page_num}`);
         this.current_page = page_num;
-        let page = this[page_num];
-        let loaded = page.load_page();
-        console.log(page)
-        //load next page
-        //await this[mod(page_num + 1, this.length)].async_load();
+        this[page_num].async_load();
         this.Bookmark.set_page_number(page_num);
     }
     get_page = () =>
