@@ -2,25 +2,25 @@
 
 
 //build resolver to return data
-
+import {Data_Resolver,DOMAINS} from "./data_resolver/data_resolver";
 
 export class Page // page
 {
     constructor(data_resolver, data)
     {
-
         this.build(data_resolver, data);
-
-
     }
 
     build = (data_resolver, data) =>
     {
-        this.resolver = { ...data_resolver};
+
         let title = Object.keys(data)[0];
         let split_title = title.split(".");
         this.title = split_title[0];
         this.page_num = parseInt(split_title[1]);
+
+        this.resolver = new Data_Resolver();
+        this.resolver.set_domain(data_resolver.get_domain())
         this.resolver.set_route(data[title]);
     }
 
@@ -28,10 +28,14 @@ export class Page // page
     {
         //add cache manager?
         //console.log("Loading page")
-        let page = await this.resolver.async_load();
-        console.log(page)
-        this.page_contents = page;
-        return true;
+        this.resolver.async_load().then((content) => {
+            this.set_content(content);
+        });
+
+    }
+    set_content = (content) =>
+    {
+        this.page_contents = content
     }
 
     get_content = () =>

@@ -42,21 +42,20 @@ export class Book extends Array
     open = () =>
     {
         console.log("Opening book")
-        this.set_page(0).then((result) => {"Setting page complete."});
+        console.log(this);
+        this.set_page(0);
     }
 
     set_page = (page_num) =>
     {
         console.log(`Setting page to ${page_num}`);
         this.current_page = page_num;
-        console.log(this[5])
         let page = this[page_num];
-        let loaded = page.load_page().then((result) => {console.log(result)});
-
+        let loaded = page.load_page();
+        console.log(page)
         //load next page
         //await this[mod(page_num + 1, this.length)].async_load();
         this.Bookmark.set_page_number(page_num);
-        return true;
     }
     get_page = () =>
     {
