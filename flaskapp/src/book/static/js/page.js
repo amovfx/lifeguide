@@ -10,8 +10,8 @@ export class Page // page
     {
         let title = Object.keys(data)[0];
         let split_title = title.split(".");
-        this.title = split_title[0];
-        this.page_num = parseInt(split_title[1]);
+        this.set_title(split_title[0]);
+        this.set_page_num(parseInt(split_title[1]));
 
         //create a resolver, it would be nice to
         this.resolver = new Data_Resolver();
@@ -22,8 +22,10 @@ export class Page // page
 
     async_load = async () =>
     {
-        let content = await this.resolver.async_load();
-        this.set_content(content);
+        return this.resolver.async_load().then((result) => {
+            this.page_contents = result;
+        });
+
     }
 
     set_content = (content) =>

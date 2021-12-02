@@ -20,7 +20,7 @@ def get_sorted_content():
     return files
 
 
-book_bp = FlaskWebpackedBlueprint.create_ES6_blueprint("/book",file_name=__name__)
+book_bp = FlaskWebpackedBlueprint.create_ES6_blueprint("/book", file_name=__name__)
 book_bp.files = get_sorted_content()
 
 from . import routes

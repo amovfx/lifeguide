@@ -6,10 +6,16 @@ export class BookInterface
     {
         console.log("Making book interface")
     }
-    open = async () =>
+    set_book = (book) =>
     {
+        this.book = book;
+
+    }
+    open = () =>
+    {
+        console.log("Opening book interface")
         this.book.open();
-        this.set_page_data(0);
+        this.set_page_data();
     }
 
     turn_page = (dX) =>
@@ -18,21 +24,21 @@ export class BookInterface
         this.set_page_data();
     }
 
-    set_book = async (book) =>
+    set_page_data = () =>
     {
-        this.book = book;
-        await this.book.open();
-        this.set_page_data();
-    }
-
-    set_page_data()
-    {
-        console.log("Setting page data.")
         let page = this.book.get_page();
-        console.log(`page : ${page}`);
+        console.log("Setting page");
+        console.log(this.book);
+        console.log(page);
+        page.async_load().then((result) =>
+        {
+            document.getElementById("page-contents").innerHTML = page.get_content();
+            document.getElementById("page-number-text").innerHTML = page.get_page_num();
+        });
 
-        document.getElementById("page_contents").innerHTML = page.get_content();
-        document.getElementById("page-number").innerHTML = this.book.current_page;
-        document.getElementById("page_contents").innerHTML = (page.get_title());
+
+
+
+        //document.getElementById("page_contents").innerHTML = (page.get_title());
     }
 }

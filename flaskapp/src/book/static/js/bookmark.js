@@ -10,6 +10,7 @@ export class Bookmark
     {
         if (Cookies.get("acceptCookies") == "true")
         {
+
             Cookies.set(this.PAGE_COOKIE_NAME, page);
         }
     }

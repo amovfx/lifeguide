@@ -16,11 +16,11 @@ export class Book extends Array
     constructor(page_array)
     {
         super(page_array)
-        console.log("Creating book");
+        console.log("Constructing book");
         console.log(this)
-
         this.Bookmark = new Bookmark();
-        //this.set_page(this.Bookmark.get_page_number()).then(() => {console.log('ready')});
+
+        this.open();
     }
 
     static async from_resolver(resolver)
@@ -42,13 +42,12 @@ export class Book extends Array
     {
         console.log("Opening book")
         console.log(this);
-        this.set_page(0);
+        this.set_page(this.Bookmark.get_page_number());
     }
 
     set_page = (page_num) =>
     {
         this.current_page = page_num;
-        this[page_num].async_load();
         this.Bookmark.set_page_number(page_num);
     }
     get_page = () =>
@@ -61,8 +60,8 @@ export class Book extends Array
         if (Math.abs(dX) >= DELTA)
         {
             this.current_page -= Math.sign(dX);
-            this.current_page = mod((this.current_page), this.page_count);
-            await this.set_page(this.current_page);
+            this.current_page = mod((this.current_page), this.length);
+            this.set_page(this.current_page);
         }
     }
 }

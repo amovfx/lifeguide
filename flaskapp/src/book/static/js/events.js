@@ -17,18 +17,6 @@ class EventStrategy
             throw new Error(`${Book_Interface} is not a BookInterface class.`)
         }
     }
-    set_book(book)
-    {
-        if (book instanceof Book)
-        {
-            this.book = book;
-        }
-        else
-        {
-            throw new Error(`${book} is not a Book class.`)
-        }
-
-    }
     /*
     * Function to call on page load.
      */
@@ -36,7 +24,7 @@ class EventStrategy
     {
         console.log("Firing load event.");
         console.log(this.book);
-        this.book.open();
+        this.book_interface.open();
     }
 }
 
@@ -75,7 +63,7 @@ export class EventStrategyMobile extends EventStrategy
 export const CreateBookEventListeners = (strategy) =>
 {
         console.log("Adding event listeners")
-        document.addEventListener("DOMContentLoaded"
+        window.addEventListener("load"
             , (event) => {strategy.load_event(event)}
             , false);
 
@@ -86,6 +74,7 @@ export const CreateBookEventListeners = (strategy) =>
         document.addEventListener(strategy.event_name_up
             , (event) => {strategy.up_event(event)}
             , false);
+        strategy.load_event();
 }
 
 
