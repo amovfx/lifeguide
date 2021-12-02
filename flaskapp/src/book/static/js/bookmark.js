@@ -4,8 +4,8 @@ const PAGE_COOKIE_NAME = "page"
 
 export class Bookmark
 {
-
-    constructor() {
+    constructor()
+    {
         console.log("Initializing Bookmark....")
     }
 
@@ -13,7 +13,6 @@ export class Bookmark
     {
         if (Cookies.get("acceptCookies") == "true")
         {
-
             Cookies.set(PAGE_COOKIE_NAME, page);
         }
     }
