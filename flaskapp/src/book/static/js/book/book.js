@@ -55,7 +55,7 @@ export class Book extends Array
         return this[this.current_page];
     }
 
-    turn_page = async (dX) =>
+    turn_page = (dX) =>
     {
         if (Math.abs(dX) >= DELTA)
         {
