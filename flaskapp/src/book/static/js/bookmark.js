@@ -11,7 +11,7 @@ export class Bookmark
 
     set_page_number(page)
     {
-        if (Cookies.get("acceptCookies") == "true")
+        if (Cookies.get("acceptCookies") === "true")
         {
             Cookies.set(PAGE_COOKIE_NAME, page);
         }
