@@ -4,24 +4,41 @@ export class BookInterface
 {
     constructor()
     {
-        console.log("Making book interface")
+        console.log("Constructing book interface")
     }
     set_book = (book) =>
     {
         this.book = book;
-
     }
+
+    get_book = () =>
+    {
+        return this.book;
+    }
+
     open = () =>
     {
         console.log("Opening book interface")
-        this.book.open();
-        this.set_page_data();
+        if (this.book !== undefined)
+        {
+            this.book.open();
+            this.set_page_data();
+        }
+        else
+        {
+            throw new Error("Book is not defined.")
+        }
+
     }
 
     turn_page = (dX) =>
     {
-        this.book.turn_page(dX);
-        this.set_page_data();
+        if (this.book !== undefined)
+        {
+            this.book.turn_page(dX);
+            this.set_page_data();
+        }
+
     }
 
     set_page_data = () =>
