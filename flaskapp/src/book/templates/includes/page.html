@@ -31,8 +31,12 @@
 <script defer>
 
 
+    var book_interface = booklib.makeBookInterface();
+    var book = booklib.make_book();
+    console.log(book);
+    book_interface.set_book(book);
+    book_interface.open();
 
-    var book_interface = booklib.initialize_book();
 
 
 

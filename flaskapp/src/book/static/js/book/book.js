@@ -1,6 +1,6 @@
 
-import {Page} from "../page.js";
-import {Bookmark} from "../bookmark.js";
+import {Page} from "../page/page.js";
+import {Bookmark} from "../bookmark/bookmark.js";
 import {Data_Resolver} from "../data_resolver/data_resolver.js";
 
 
@@ -10,49 +10,45 @@ function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
-export class Book extends Array
+export class Book
 {
     //Contains pages
-    constructor(page_array)
+    constructor()
     {
-        super(page_array)
         console.log("Constructing book");
         console.log(this)
         this.Bookmark = new Bookmark();
-
         this.open();
+
     }
-
-    static async from_resolver(resolver)
+    //ingest contents
+    load_contents(resolver)
     {
-        console.log("Building book from resolver.")
-        let table_of_contents = await resolver.async_load();
-        let page_array = new Array(table_of_contents.length);
+        resolver.async_load().then((result) =>
+        {
+            let page_array = new Array(result.length);
 
-        table_of_contents.forEach((item, index) => {
-            let page = new Page(resolver, item);
-            page_array[index] = page;
-        });
-
-        return Book.from(page_array);
+            result.forEach((item, index) => {
+                let page = new Page(resolver, item);
+                page_array[index] = page;
+            });
+            this.pages = page_array;
+        })
     }
 
     //open book to last page or page 0.
-    open = () =>
-    {
-        console.log("Opening book")
-        console.log(this);
+    open = () => {
         this.set_page(this.Bookmark.get_page_number());
     }
-
     set_page = (page_num) =>
     {
         this.current_page = page_num;
         this.Bookmark.set_page_number(page_num);
     }
+
     get_page = () =>
     {
-        return this[this.current_page];
+        return this.pages[this.current_page];
     }
 
     turn_page = (dX) =>

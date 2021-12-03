@@ -1,4 +1,4 @@
-import Cookies from "./node_modules/js-cookie/dist/js.cookie.mjs"
+import Cookies from "js-cookie"
 
 const PAGE_COOKIE_NAME = "page"
 
@@ -16,6 +16,7 @@ export class Bookmark
             Cookies.set(PAGE_COOKIE_NAME, page);
         }
     }
+
     get_page_number()
     {
         return Cookies.get(PAGE_COOKIE_NAME) ? Cookies.get(PAGE_COOKIE_NAME) : 0;

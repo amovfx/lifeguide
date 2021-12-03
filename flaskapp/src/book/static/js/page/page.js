@@ -2,7 +2,7 @@
 
 
 //build resolver to return data
-import {Data_Resolver,DOMAINS} from "./data_resolver/data_resolver";
+import {Data_Resolver,DOMAINS} from "../data_resolver/data_resolver";
 
 export class Page // page
 {

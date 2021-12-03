@@ -30,15 +30,12 @@ export class BookInterface
         console.log("Setting page");
         console.log(this.book);
         console.log(page);
-        page.async_load().then((result) =>
+        page.async_load().then(() =>
         {
             document.getElementById("page-contents").innerHTML = page.get_content();
-            document.getElementById("page-number-text").innerHTML = page.get_page_num();
+            document.getElementById("page-number-text").innerHTML = page.get_page_num()
+            document.getElementById("title").innerHTML = page.get_title();
         });
 
-
-
-
-        //document.getElementById("page_contents").innerHTML = (page.get_title());
     }
 }

@@ -1,6 +1,6 @@
 
-import {Book} from './book/book.js'
-import {BookInterface} from "./book_interface.mjs";
+import {Book} from '../book/book.js'
+import {BookInterface} from "../book_interface/book_interface.js";
 
 class EventStrategy
 {
@@ -23,7 +23,7 @@ class EventStrategy
     load_event = () =>
     {
         console.log("Firing load event.");
-        console.log(this.book);
+        console.log(this.book_interface);
         this.book_interface.open();
     }
 }
@@ -64,7 +64,7 @@ export const CreateBookEventListeners = (strategy) =>
 {
         console.log("Adding event listeners")
         window.addEventListener("load"
-            , (event) => {strategy.load_event(event)}
+            , (event) => {strategy.load_event()}
             , false);
 
         document.addEventListener(strategy.event_name_down
