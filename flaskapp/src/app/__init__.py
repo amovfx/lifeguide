@@ -6,7 +6,6 @@ App factory/
 
 from flask import Flask, url_for
 from flask_misaka import Misaka
-from flask_static_digest import FlaskStaticDigest
 
 from flaskapp.src.app.config import *
 from flaskapp.src.utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
@@ -73,10 +72,6 @@ def register_plugins(app):
     """
     # a markdown renderer
     Misaka(app, autolink=True)
-
-    # asset management
-    flask_static_digest = FlaskStaticDigest()
-    flask_static_digest.init_app(app)
 
     flask_webpacked_blueprint = FlaskWebpackedBlueprint()
     flask_webpacked_blueprint.init_app(app)
