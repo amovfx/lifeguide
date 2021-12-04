@@ -40,7 +40,8 @@ export class EventStrategyDesktop extends EventStrategy
 
 export class EventStrategyMobile extends EventStrategy
 {
-    constructor(Book) {
+    constructor(Book)
+    {
         super("touchstart", "touchend", Book);
     }
     down_event = (event) =>
