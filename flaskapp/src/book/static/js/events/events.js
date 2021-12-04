@@ -56,15 +56,15 @@ export class EventStrategyMobile extends EventStrategy
 
 export const CreateBookEventListeners = (strategy) =>
 {
-        Logger.info("Adding event listeners");
+    Logger.info("Adding event listeners");
 
-        document.addEventListener(strategy.event_name_down
-            , (event) => {strategy.down_event(event)}
-            , false);
+    document.addEventListener(strategy.event_name_down
+        , (event) => {strategy.down_event(event)}
+        , false);
 
-        document.addEventListener(strategy.event_name_up
-            , (event) => {strategy.up_event(event)}
-            , false);
+    document.addEventListener(strategy.event_name_up
+        , (event) => {strategy.up_event(event)}
+        , false);
 }
 
 
