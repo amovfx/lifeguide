@@ -6,6 +6,7 @@ class EventStrategy
 {
     constructor(event_name_down, event_name_up, Book_Interface)
     {
+        console.log(`Constructing ${this.constructor.name}`)
         this.event_name_down = event_name_down;
         this.event_name_up = event_name_up;
         if (Book_Interface instanceof BookInterface)

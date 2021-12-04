@@ -1,4 +1,17 @@
+import Logger from "js-logger";
 
+function check_book(target, name, descriptor)
+{
+    const original = descriptor.value;
+    if (typeof original === 'function')
+    {
+        if (target.book !== undefined)
+        {
+            Logger.warn(`${target} has no book set.`)
+        }
+    }
+    return descriptor;
+}
 
 export class BookInterface
 {
@@ -6,53 +19,45 @@ export class BookInterface
     {
         console.log("Constructing book interface")
     }
+
     set_book = (book) =>
     {
         this.book = book;
     }
 
+    @check_book
     get_book = () =>
     {
         return this.book;
     }
 
+    @check_book
     open = () =>
     {
-        console.log("Opening book interface")
-        if (this.book !== undefined)
-        {
-            this.book.open();
-            this.set_page_data();
-        }
-        else
-        {
-            throw new Error("Book is not defined.")
-        }
-
+        this.book.open();
+        this.set_page_data();
     }
 
+    @check_book
     turn_page = (dX) =>
     {
-        if (this.book !== undefined)
-        {
-            this.book.turn_page(dX);
-            this.set_page_data();
-        }
-
+        this.book.turn_page(dX);
+        this.set_page_data();
     }
 
+    @check_book
     set_page_data = () =>
     {
         let page = this.book.get_page();
         console.log("Setting page");
         console.log(this.book);
         console.log(page);
-        page.async_load().then(() =>
-        {
+        page.async_load().then(() => {
             document.getElementById("page-contents").innerHTML = page.get_content();
             document.getElementById("page-number-text").innerHTML = page.get_page_num()
             document.getElementById("title").innerHTML = page.get_title();
         });
+
 
     }
 }

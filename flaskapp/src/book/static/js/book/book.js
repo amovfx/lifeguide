@@ -10,6 +10,32 @@ function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
+export class BookFactory
+{
+    constructor()
+    {
+        console.log("Constructor book factory")
+    }
+
+    static make_book = async (resolver, book_interface) =>
+    {
+        let book = new Book();
+
+        return resolver.async_load().then((result) =>
+        {
+            let page_array = new Array(result.length);
+
+            result.forEach((item, index) => {
+                let page = new Page(resolver, item);
+                page_array[index] = page;
+            });
+
+            book.pages = page_array;
+            return book;
+        })
+    }
+}
+
 export class Book
 {
     //Contains pages
@@ -19,7 +45,15 @@ export class Book
         console.log(this)
         this.Bookmark = new Bookmark();
         this.open();
+    }
+    get_pages()
+    {
+        return pages;
+    }
 
+    set_pages(pages)
+    {
+        this.pages = pages;
     }
     //ingest contents
     load_contents(resolver)
@@ -48,7 +82,11 @@ export class Book
 
     get_page = () =>
     {
-        return this.pages[this.current_page];
+        if (this.pages !== undefined)
+        {
+            return this.pages[this.current_page];
+        }
+
     }
 
     turn_page = (dX) =>

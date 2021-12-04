@@ -18,6 +18,13 @@ export function makeBookInterface() {
     return Book_Interface;
 }
 
+export function makeEventListeners(Book_Interface)
+{
+    //Create a strategy manager here
+    const strategy = new EventStrategyDesktop(Book_Interface);
+    CreateBookEventListeners(strategy);
+}
+
 export function initialize_book()
 {
     return make_book().then((result) =>
@@ -29,6 +36,9 @@ export function initialize_book()
     })
 }
 
+export const Local_Data_Resolver = Data_Resolver;
+export const Book_Interface = BookInterface;
+export const CreateEventListenders = CreateBookEventListeners;
 
 
 
