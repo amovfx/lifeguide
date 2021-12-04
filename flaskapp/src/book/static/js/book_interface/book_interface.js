@@ -3,14 +3,26 @@ import Logger from "js-logger";
 function check_book(target, name, descriptor)
 {
     const original = descriptor.value;
-    if (typeof original === 'function')
+    if (typeof descriptor.value == 'function')
     {
         if (target.book !== undefined)
         {
-            Logger.warn(`${target} has no book set.`)
+            descriptor.value = function(...args)
+            {
+                console.log("Book defined")
+                return original.apply(this, args);
+            }
+        }
+        else
+        {
+            descriptor.value = function ()
+            {
+                console.log("Warning")
+                Logger.warn(`${target} has no book set when calling ${name} function.`);
+            }
         }
     }
-    return descriptor;
+
 }
 
 export class BookInterface
@@ -18,6 +30,7 @@ export class BookInterface
     constructor()
     {
         console.log("Constructing book interface")
+        this.book = undefined;
     }
 
     set_book = (book) =>
@@ -26,27 +39,27 @@ export class BookInterface
     }
 
     @check_book
-    get_book = () =>
+    get_book()
     {
         return this.book;
     }
 
     @check_book
-    open = () =>
+    open()
     {
         this.book.open();
         this.set_page_data();
     }
 
     @check_book
-    turn_page = (dX) =>
+    turn_page(dX)
     {
         this.book.turn_page(dX);
         this.set_page_data();
     }
 
     @check_book
-    set_page_data = () =>
+    set_page_data()
     {
         let page = this.book.get_page();
         console.log("Setting page");
