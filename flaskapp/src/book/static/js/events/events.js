@@ -1,14 +1,17 @@
 
 import {Book} from '../book/book.js'
 import {BookInterface} from "../book_interface/book_interface.js";
+import Logger from "js-logger";
 
 class EventStrategy
 {
     constructor(event_name_down, event_name_up, Book_Interface)
     {
-        console.log(`Constructing ${this.constructor.name}`)
+        Logger.info(`Constructing ${this.constructor.name}`);
+
         this.event_name_down = event_name_down;
         this.event_name_up = event_name_up;
+
         if (Book_Interface instanceof BookInterface)
         {
             this.book_interface = Book_Interface;
@@ -18,23 +21,13 @@ class EventStrategy
             throw new Error(`${Book_Interface} is not a BookInterface class.`)
         }
     }
-    /*
-    * Function to call on page load.
-     */
-    load_event = () =>
-    {
-        console.log("Firing load event.");
-        console.log(this.book_interface);
-        this.book_interface.open();
-    }
 }
 
 export class EventStrategyDesktop extends EventStrategy
 {
-    constructor(Book_Interface) {
-
+    constructor(Book_Interface)
+    {
         super("mousedown", "mouseup", Book_Interface);
-        console.log("Creating Event Strategy Desktop");
     }
     down_event = (event) =>
     {
@@ -63,10 +56,7 @@ export class EventStrategyMobile extends EventStrategy
 
 export const CreateBookEventListeners = (strategy) =>
 {
-        console.log("Adding event listeners")
-        window.addEventListener("load"
-            , (event) => {strategy.load_event()}
-            , false);
+        Logger.info("Adding event listeners");
 
         document.addEventListener(strategy.event_name_down
             , (event) => {strategy.down_event(event)}
@@ -75,7 +65,6 @@ export const CreateBookEventListeners = (strategy) =>
         document.addEventListener(strategy.event_name_up
             , (event) => {strategy.up_event(event)}
             , false);
-        strategy.load_event();
 }
 
 
