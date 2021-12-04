@@ -27,7 +27,7 @@ export class BookInterface
 {
     constructor()
     {
-        Logger.info("Constructing book interface")
+        Logger.info("Constructing book interface");
         this.book = undefined;
     }
 
@@ -65,7 +65,5 @@ export class BookInterface
             document.getElementById("page-number-text").innerHTML = page.get_page_num()
             document.getElementById("title").innerHTML = page.get_title();
         });
-
-
     }
 }

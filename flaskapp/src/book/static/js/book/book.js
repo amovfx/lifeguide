@@ -1,8 +1,7 @@
 
 import {Page} from "../page/page.js";
 import {Bookmark} from "../bookmark/bookmark.js";
-import {Data_Resolver} from "../data_resolver/data_resolver.js";
-
+import Logger from "js-logger";
 
 const DELTA = 6;
 
@@ -14,7 +13,7 @@ export class BookFactory
 {
     constructor()
     {
-        console.log("Constructor book factory")
+        Logger.info("Constructing BookFactory. ");
     }
 
     static make_book = async (resolver, book_interface) =>
@@ -41,8 +40,7 @@ export class Book
     //Contains pages
     constructor()
     {
-        console.log("Constructing book");
-        console.log(this)
+        Logger.info("Constructing book.");
         this.Bookmark = new Bookmark();
         this.open();
     }
@@ -55,7 +53,7 @@ export class Book
     {
         this.pages = pages;
     }
-    //ingest contents
+
     load_contents(resolver)
     {
         resolver.async_load().then((result) =>
@@ -70,26 +68,26 @@ export class Book
         })
     }
 
-    //open book to last page or page 0.
-    open = () => {
+    open()
+    {
         this.set_page(this.Bookmark.get_page_number());
     }
-    set_page = (page_num) =>
+
+    set_page(page_num)
     {
         this.current_page = page_num;
         this.Bookmark.set_page_number(page_num);
     }
 
-    get_page = () =>
+    get_page()
     {
         if (this.pages !== undefined)
         {
             return this.pages[this.current_page];
         }
-
     }
 
-    turn_page = (dX) =>
+    turn_page(dX)
     {
         if (Math.abs(dX) >= DELTA)
         {
