@@ -9,7 +9,6 @@ function check_book(target, name, descriptor)
         {
             descriptor.value = function(...args)
             {
-                console.log("Book defined")
                 return original.apply(this, args);
             }
         }
@@ -17,7 +16,6 @@ function check_book(target, name, descriptor)
         {
             descriptor.value = function ()
             {
-                console.log("Warning")
                 Logger.warn(`${target} has no book set when calling ${name} function.`);
             }
         }
@@ -29,7 +27,7 @@ export class BookInterface
 {
     constructor()
     {
-        console.log("Constructing book interface")
+        Logger.info("Constructing book interface")
         this.book = undefined;
     }
 
@@ -62,9 +60,6 @@ export class BookInterface
     set_page_data()
     {
         let page = this.book.get_page();
-        console.log("Setting page");
-        console.log(this.book);
-        console.log(page);
         page.async_load().then(() => {
             document.getElementById("page-contents").innerHTML = page.get_content();
             document.getElementById("page-number-text").innerHTML = page.get_page_num()
