@@ -3,6 +3,7 @@ import {Data_Resolver,DOMAINS} from "./data_resolver/data_resolver.js";
 import {Book} from "./book/book.js";
 import {BookInterface} from "./book_interface/book_interface.js";
 import {EventStrategyDesktop, CreateBookEventListeners} from "./events/events.js";
+import Logger from "js-logger";
 
 export function make_book() {
     ///THIS IS WHERE I LEFT OFF FIGURE THIS SHIT OUT.
@@ -40,6 +41,6 @@ export const Local_Data_Resolver = Data_Resolver;
 export const Book_Interface = BookInterface;
 export const CreateEventListenders = CreateBookEventListeners;
 
-
+Logger.useDefaults()
 
 
