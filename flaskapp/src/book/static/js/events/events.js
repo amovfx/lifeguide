@@ -1,5 +1,4 @@
 
-import {Book} from '../book/book.js'
 import {BookInterface} from "../book_interface/book_interface.js";
 import Logger from "js-logger";
 
