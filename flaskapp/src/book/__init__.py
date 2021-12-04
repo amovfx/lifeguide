@@ -11,9 +11,10 @@ def get_sorted_content():
 
     :return:
     """
+    content_path = pathlib.Path(book_bp.static_folder) / 'content'
     files = [
         x.as_posix()
-        for x in pathlib.Path(book_bp.static_folder).rglob("*/*.md")
+        for x in pathlib.Path(content_path).rglob("*.md")
         if re.search(r"\d{2}\.md$", x.as_posix())
     ]
     files.sort(key=lambda x: int(x.split(".")[-2]))
