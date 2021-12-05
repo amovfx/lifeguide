@@ -3,11 +3,9 @@ import {Page} from "../page/page.js";
 import {Bookmark} from "../bookmark/bookmark.js";
 import Logger from "js-logger";
 
-const DELTA = 6;
 
-function mod(n, m) {
-    return ((n % m) + m) % m;
-}
+
+
 
 export class BookFactory
 {
@@ -16,7 +14,7 @@ export class BookFactory
         Logger.info("Constructing BookFactory. ");
     }
 
-    static make_book = async (resolver, book_interface) =>
+    static make_book = async (resolver) =>
     {
         let book = new Book();
 
@@ -29,7 +27,9 @@ export class BookFactory
                 page_array[index] = page;
             });
 
-            book.pages = page_array;
+            book.set_table_of_contents(result);
+            book.set_pages(page_array);
+
             return book;
         })
     }
@@ -37,63 +37,33 @@ export class BookFactory
 
 export class Book
 {
-    //Contains pages
+
+
     constructor()
     {
         Logger.info("Constructing book.");
-        this.Bookmark = new Bookmark();
-        this.open();
     }
     get_pages()
     {
-        return pages;
+        return this.pages;
     }
 
-    set_pages(pages)
+    set_pages = (pages) =>
     {
         this.pages = pages;
     }
 
-    load_contents(resolver)
+    set_table_of_contents = (table_of_contents) =>
     {
-        resolver.async_load().then((result) =>
-        {
-            let page_array = new Array(result.length);
-
-            result.forEach((item, index) => {
-                let page = new Page(resolver, item);
-                page_array[index] = page;
-            });
-            this.pages = page_array;
-        })
+        this.table_of_contents = table_of_contents;
     }
 
-    open()
-    {
-        this.set_page(this.Bookmark.get_page_number());
-    }
-
-    set_page(page_num)
-    {
-        this.current_page = page_num;
-        this.Bookmark.set_page_number(page_num);
-    }
-
-    get_page()
+    get_page(id)
     {
         if (this.pages !== undefined)
         {
-            return this.pages[this.current_page];
+            return this.pages[id];
         }
     }
 
-    turn_page(dX)
-    {
-        if (Math.abs(dX) >= DELTA)
-        {
-            this.current_page -= Math.sign(dX);
-            this.current_page = mod((this.current_page), this.length);
-            this.set_page(this.current_page);
-        }
-    }
 }

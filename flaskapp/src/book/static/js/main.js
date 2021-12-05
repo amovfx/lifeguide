@@ -1,6 +1,6 @@
 
 import {Data_Resolver,DOMAINS} from "./data_resolver/data_resolver.js";
-import {Book} from "./book/book.js";
+import {Book, BookFactory} from "./book/book.js";
 import {BookInterface} from "./book_interface/book_interface.js";
 import {EventStrategyDesktop, CreateBookEventListeners} from "./events/events.js";
 import Logger from "js-logger";
@@ -37,9 +37,10 @@ export function initialize_book()
     })
 }
 
-export const Local_Data_Resolver = Data_Resolver;
+export const DataResolver = Data_Resolver;
 export const Book_Interface = BookInterface;
 export const CreateEventListenders = CreateBookEventListeners;
+export const Book_Factory = BookFactory;
 
 Logger.useDefaults()
 
