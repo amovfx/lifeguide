@@ -48,10 +48,8 @@ export class BookInterface
     //strip this out to a renderer class.
     set_page_data()
     {
-        Logger.info("Setting page....")
         if (this.book !== undefined) {
             let page = this.book.get_page(this.Bookmark.get_page_number());
-            Logger.info(page);
             page.async_load().then(() => {
                 document.getElementById("page-contents").innerHTML = page.get_content();
                 document.getElementById("page-number-text").innerHTML = page.get_page_num()
