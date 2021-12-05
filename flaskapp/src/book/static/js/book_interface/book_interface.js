@@ -22,12 +22,10 @@ export class BookInterface
         this.set_page_data()
     }
 
-
     get_book()
     {
         return this.book;
     }
-
 
     turn_page(dX)
     {
@@ -40,11 +38,17 @@ export class BookInterface
         }
         this.set_page_data();
     }
+    goto_page(page_num)
+    {
+        page_num = mod((page_num), this.book.pages.length);
+        this.Bookmark.set_page_number(page_num);
+        this.set_page_data();
+    }
 
     //strip this out to a renderer class.
     set_page_data()
     {
-        Logger.info("Calling set page....")
+        Logger.info("Setting page....")
         if (this.book !== undefined) {
             let page = this.book.get_page(this.Bookmark.get_page_number());
             Logger.info(page);
@@ -54,6 +58,9 @@ export class BookInterface
                 document.getElementById("title").innerHTML = page.get_title();
             });
         }
-        Logger.warn(`${this.constructor.name} has no book set when calling ${name} function.`);
+        else
+        {
+            Logger.warn(`${this.constructor.name} has no book set when calling ${name} function.`);
+        }
     }
 }
