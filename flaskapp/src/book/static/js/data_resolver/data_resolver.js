@@ -1,3 +1,4 @@
+import Logger from "js-logger";
 
 
 export const DOMAINS = {
@@ -71,7 +72,7 @@ export class Data_Resolver
         //add browser cache management here.
         if (this.route !== undefined)
         {
-            console.log(`fetching: ${this.domain}${this.route}`)
+            Logger.info(`Resolver fetching: ${this.domain}${this.route}`)
             let response = await fetch(`${this.domain}${this.route}`)
 
             if (response.status == 200)

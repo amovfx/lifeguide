@@ -61,21 +61,13 @@ export class Page // page
     }
 }
 
-
-export class PageRenderer
+export function render_page(page)
 {
-    constructor()
-    {
-        Logger.info("Constructing Book Renderer")
-    }
-
-    render(page)
-    {
-        page.async_load().then(() => {
-            document.getElementById("page-contents").innerHTML = page.get_content();
-            document.getElementById("page-number-text").innerHTML = page.get_page_num()
-            document.getElementById("title").innerHTML = page.get_title();
-        });
-    }
+    page.async_load().then(() => {
+        document.getElementById("page-contents").innerHTML = page.get_content();
+        document.getElementById("page-number-text").innerHTML = page.get_page_num()
+        document.getElementById("title").innerHTML = page.get_title();
+    });
 }
+
 

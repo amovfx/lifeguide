@@ -1,6 +1,6 @@
 import Logger from "js-logger";
 import {Bookmark} from "../bookmark/bookmark";
-import {PageRenderer} from "../page/page";
+import {render_page} from "../page/page";
 
 const DELTA = 6;
 
@@ -14,7 +14,6 @@ export class BookInterface
     {
         Logger.info("Constructing book interface");
         this.Bookmark = new Bookmark();
-        this.PageRenderer = new PageRenderer();
         this.book = undefined;
     }
 
@@ -53,7 +52,7 @@ export class BookInterface
         if (this.book !== undefined)
         {
             let page = this.book.get_page(this.Bookmark.get_page_number());
-            this.PageRenderer.render(page);
+            render_page(page);
         }
         else
         {
