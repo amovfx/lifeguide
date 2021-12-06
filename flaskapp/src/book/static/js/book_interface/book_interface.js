@@ -50,7 +50,8 @@ export class BookInterface
     //strip this out to a renderer class.
     set_page_data()
     {
-        if (this.book !== undefined) {
+        if (this.book !== undefined)
+        {
             let page = this.book.get_page(this.Bookmark.get_page_number());
             this.PageRenderer.render(page);
         }
