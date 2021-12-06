@@ -1,0 +1,9 @@
+#cookie-alert
+{
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    bottom:0%;
+    left:10px;
+}
