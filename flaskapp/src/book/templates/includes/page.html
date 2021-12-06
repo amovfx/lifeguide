@@ -35,7 +35,6 @@
 
     const book_data = new booklib.DataResolver.Local_Resolver();
     booklib.Book_Factory.make_book(book_data).then((result) => {
-        console.log(result)
         book_interface.set_book(result);
     });
 
