@@ -1,6 +1,7 @@
 
 import {BookInterface} from "../book_interface/book_interface.js";
 import Logger from "js-logger";
+import {DELTA} from "../book_interface/book_interface.js";
 
 class EventStrategy
 {
@@ -19,6 +20,17 @@ class EventStrategy
         {
             throw new Error(`${Book_Interface} is not a BookInterface class.`)
         }
+    }
+
+    //these high jack delta constant to turn the page.
+    //these are click events.
+    next_page = () =>
+    {
+        this.book_interface.turn_page(DELTA);
+    }
+    prev_page = () =>
+    {
+        this.book_interface.prev_page(-DELTA);
     }
 }
 
@@ -58,13 +70,23 @@ export const CreateBookEventListeners = (strategy) =>
 {
     Logger.info("Adding event listeners");
 
-    document.addEventListener(strategy.event_name_down
-        , (event) => {strategy.down_event(event)}
-        , false);
+    document.addEventListener(strategy.event_name_down,
+        (event) => {strategy.down_event(event)},
+        false);
 
-    document.addEventListener(strategy.event_name_up
-        , (event) => {strategy.up_event(event)}
-        , false);
+    document.addEventListener(strategy.event_name_up,
+        (event) => {strategy.up_event(event)},
+        false);
+
+    document.getElementById("prev-page")
+        .addEventListener("click",
+            (event) => {strategy.next_page()},
+            false);
+
+    document.getElementById("next-page")
+        .addEventListener("click",
+            (event) => {strategy.next_page()},
+            false);
 }
 
 
