@@ -2,7 +2,7 @@ import Logger from "js-logger";
 import {Bookmark} from "../bookmark/bookmark";
 import {render_page} from "../page/page";
 
-const DELTA = 6;
+export const DELTA = 6;
 
 function mod(n, m) {
     return ((n % m) + m) % m;

@@ -66,7 +66,7 @@ export class EventStrategyMobile extends EventStrategy
     }
 }
 
-export const CreateBookEventListeners = (strategy) =>
+export const CreatePageEventListeners = (strategy) =>
 {
     Logger.info("Adding event listeners");
 

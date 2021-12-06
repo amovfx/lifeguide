@@ -52,14 +52,7 @@
         $("#tutorial-image").attr('src',"{{ url_for('/book.static', filename='images/click_swipe.png') }}");
     }
 
-    $("#prev-page").click(() => {
-        Page_Manager.turn_page(-1*delta);
-    })
 
-    $("#next-page").click(() =>
-    {
-        Page_Manager.turn_page(delta);
-    })
 
     $("#overlay-gudie").click( () =>
         {
