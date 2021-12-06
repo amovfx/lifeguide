@@ -1,11 +1,6 @@
 
 import {Page} from "../page/page.js";
-import {Bookmark} from "../bookmark/bookmark.js";
 import Logger from "js-logger";
-
-
-
-
 
 export class BookFactory
 {
@@ -37,12 +32,11 @@ export class BookFactory
 
 export class Book
 {
-
-
     constructor()
     {
         Logger.info("Constructing book.");
     }
+
     get_pages()
     {
         return this.pages;
