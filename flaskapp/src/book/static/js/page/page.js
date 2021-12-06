@@ -3,6 +3,7 @@
 
 //build resolver to return data
 import {Data_Resolver,DOMAINS} from "../data_resolver/data_resolver";
+import Logger from "js-logger";
 
 export class Page // page
 {
@@ -61,5 +62,20 @@ export class Page // page
 }
 
 
+export class PageRenderer
+{
+    constructor()
+    {
+        Logger.info("Constructing Book Renderer")
+    }
 
+    render(page)
+    {
+        page.async_load().then(() => {
+            document.getElementById("page-contents").innerHTML = page.get_content();
+            document.getElementById("page-number-text").innerHTML = page.get_page_num()
+            document.getElementById("title").innerHTML = page.get_title();
+        });
+    }
+}
 

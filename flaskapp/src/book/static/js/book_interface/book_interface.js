@@ -1,28 +1,11 @@
 import Logger from "js-logger";
 import {Bookmark} from "../bookmark/bookmark";
+import {PageRenderer} from "../page/page";
 
 const DELTA = 6;
 
 function mod(n, m) {
     return ((n % m) + m) % m;
-}
-
-
-export class PageRenderer
-{
-    constructor()
-    {
-        Logger.info("Constructing Book Renderer")
-    }
-
-    render(page)
-    {
-        page.async_load().then(() => {
-            document.getElementById("page-contents").innerHTML = page.get_content();
-            document.getElementById("page-number-text").innerHTML = page.get_page_num()
-            document.getElementById("title").innerHTML = page.get_title();
-        });
-    }
 }
 
 export class BookInterface
