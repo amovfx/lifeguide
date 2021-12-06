@@ -7,6 +7,7 @@ function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
+
 export class PageRenderer
 {
     constructor()
@@ -30,7 +31,7 @@ export class BookInterface
     {
         Logger.info("Constructing book interface");
         this.Bookmark = new Bookmark();
-        this.BookRenderer = new PageRenderer();
+        this.PageRenderer = new PageRenderer();
         this.book = undefined;
     }
 
@@ -68,7 +69,7 @@ export class BookInterface
     {
         if (this.book !== undefined) {
             let page = this.book.get_page(this.Bookmark.get_page_number());
-            this.BookRenderer.render(page);
+            this.PageRenderer.render(page);
         }
         else
         {
