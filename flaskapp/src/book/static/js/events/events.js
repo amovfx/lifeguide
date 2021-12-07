@@ -63,11 +63,15 @@ export class EventStrategyMobile extends EventStrategy
     }
     down_event = (event) =>
     {
+        this.element_clicked = event.target;
         this.startX = event.changedTouches[0].screenX;
     }
     up_event = (event) =>
     {
-        this.book_interface.turn_page(event.changedTouches[0].screenX - this.startX);
+        if( this.element_clicked === event.target)
+        {
+            this.book_interface.turn_page(event.changedTouches[0].screenX - this.startX);
+        }
     }
 }
 
