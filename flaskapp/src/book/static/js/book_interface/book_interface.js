@@ -31,7 +31,6 @@ export class BookInterface
     turn_page(dX)
     {
         let current_page = this.Bookmark.get_page_number();
-        Logger.info(current_page);
         if (Math.abs(dX) >= DELTA)
         {
             current_page -= Math.sign(dX);

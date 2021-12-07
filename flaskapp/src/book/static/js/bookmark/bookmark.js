@@ -9,7 +9,7 @@ export class Bookmark
 
     constructor()
     {
-        console.log("Initializing Bookmark....");
+        Logger.info("Initializing Bookmark....");
         this.page_num = 0;
     }
 
@@ -29,15 +29,11 @@ export class Bookmark
     {
         if (Cookies.get("acceptCookies") === "true")
         {
-            const val = Cookies.get(PAGE_COOKIE_NAME);
-            Logger.info(`Getting Page number from cookie: ${val}`);
-            return val;
+            return Cookies.get(PAGE_COOKIE_NAME);
         }
         else
         {
-            const val = this.page_num;
-            Logger.info(`Getting Page number from bookmark: ${val}`);
-            return val;
+            return this.page_num;
         }
     }
 }
