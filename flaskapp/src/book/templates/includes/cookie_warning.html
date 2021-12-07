@@ -1,28 +1,20 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+<link rel="stylesheet" href="{{ url_for('/book.static', filename='css/cookie-alert.css')}}">
 
-<div class="alert text-center cookiealert" role="alert">
-    <b>The only cookie we store is to remember what page you are on.</b>
 
-    <span id="accept-cookies" class="acceptcookies">
-        Remember my page!
-    </span>
-    <span id="disable-cookies" class="acceptcookies">
-        No!
-    </span>
+<div id="cookie-alert" class="alert" role="alert">
+    <div id="alert-message">
+        <b>The only cookie we store is to remember what page you are on.</b>
+    </div>
+    <div class="cookie-buttons">
+        <button id="cookie-button-ok" type="button" class="btc btn-primary cookie-button">
+            Ok!
+        </button>
+        <button id="cookie-button-cancel" type="button" class="btn btn-secondary cookie-button">
+            No!
+        </button>
+    </div>
 </div>
 
-<style>
-    #accept-cookies
-    {
+<script src="{{ webpacked_url_for('/book.static', filename='js/cookie_alert.js')}}"></script>
 
-    }
-</style>
 
-<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-
-<!--event listener for accepting cookies -->
-<script>
-window.addEventListener("cookieAlertAccept", function() {
-
-})
-</script>

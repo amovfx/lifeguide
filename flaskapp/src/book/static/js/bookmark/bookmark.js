@@ -1,24 +1,43 @@
-import Cookies from "js-cookie"
+import Cookies from "js-cookie";
+import Logger from "js-logger";
+
 
 const PAGE_COOKIE_NAME = "page"
 
 export class Bookmark
 {
+
     constructor()
     {
-        console.log("Initializing Bookmark....")
+        console.log("Initializing Bookmark....");
+        this.page_num = 0;
     }
 
-    set_page_number(page)
+    set_page_number = (page) =>
     {
         if (Cookies.get("acceptCookies") === "true")
         {
             Cookies.set(PAGE_COOKIE_NAME, page);
         }
+        else
+        {
+            this.page_num = page;
+        }
     }
 
-    get_page_number()
+    get_page_number = () =>
     {
-        return Cookies.get(PAGE_COOKIE_NAME) ? Cookies.get(PAGE_COOKIE_NAME) : 0;
+        if (Cookies.get("acceptCookies") === "true")
+        {
+            const val = Cookies.get(PAGE_COOKIE_NAME);
+            Logger.info(`Getting Page number from cookie: ${val}`);
+            return val;
+        }
+        else
+        {
+            const val = this.page_num;
+            Logger.info(`Getting Page number from bookmark: ${val}`);
+            return val;
+        }
     }
 }

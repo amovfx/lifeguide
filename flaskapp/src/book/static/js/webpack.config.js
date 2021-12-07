@@ -3,7 +3,10 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
     mode: "production",
-    entry : "./main.js",
+    entry : {
+        main: "./main.js",
+        cookie_alert: "./cookie_alert.js"
+    },
     output: {
         filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, "../dist/"),

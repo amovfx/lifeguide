@@ -1,9 +1,27 @@
 #cookie-alert
 {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     z-index: 2;
     width: 200px;
     height: 200px;
     bottom:0%;
     left:10px;
+}
+
+.cookie-buttons
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+#cookie-button
+{
+    width: 55px;
+    padding-left: 10px;
+    padding-right: 10px;
 }

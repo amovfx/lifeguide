@@ -31,17 +31,18 @@ export class BookInterface
     turn_page(dX)
     {
         let current_page = this.Bookmark.get_page_number();
+        Logger.info(current_page);
         if (Math.abs(dX) >= DELTA)
         {
             current_page -= Math.sign(dX);
-            current_page = mod((current_page), this.book.pages.length);
+            current_page = mod(current_page, this.book.pages.length);
             this.Bookmark.set_page_number(current_page);
         }
         this.set_page_data();
     }
     goto_page(page_num)
     {
-        page_num = mod((page_num), this.book.pages.length);
+        page_num = mod(page_num, this.book.pages.length);
         this.Bookmark.set_page_number(page_num);
         this.set_page_data();
     }
