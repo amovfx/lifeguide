@@ -1,7 +1,6 @@
 import Cookies from "js-cookie";
 import Logger from "js-logger";
 
-
 const PAGE_COOKIE_NAME = "page"
 
 export class Bookmark
