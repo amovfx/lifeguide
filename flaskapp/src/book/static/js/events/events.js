@@ -11,7 +11,7 @@ class EventStrategy
 
         this.event_name_down = event_name_down;
         this.event_name_up = event_name_up;
-        this.element_clicked = undefined;
+        this.element_clicked = false;
 
         if (Book_Interface instanceof BookInterface)
         {
