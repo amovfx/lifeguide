@@ -80,7 +80,7 @@ export class Data_Resolver
             Logger.info(`${this.get_domain_type()} Resolver fetching: ${this.domain}${this.route}`)
             let response = await fetch(`${this.domain}${this.route}`)
 
-            if (response.status == 200)
+            if (response.status === 200)
             {
                 let data = await response.json();
                 return data;
