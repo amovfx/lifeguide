@@ -87,12 +87,12 @@ export class Data_Resolver
             }
             else
             {
-                throw Error(`${this.domain}${route} does not exist.`);
+                throw Error(`${this.domain}${this.route} does not exist.`);
             }
         }
         else
         {
-            throw Error(`${route} is undefined.`);
+            throw Error(`${this.route} is undefined.`);
         }
     }
 }
