@@ -25,12 +25,16 @@ class EventStrategy
 
     down_event(event)
     {
-        this.element_clicked = event.target;
+        if (event.target.closest("[data-page-swipe='1']") !== undefined)
+        {
+            this.element_clicked = true;
+        }
     }
 
     up_event(event, callback)
     {
-        if( this.element_clicked === event.target)
+        let condition = event.target.closest("[data-page-swipe='1']") !== undefined;
+        if( condition && this.element_clicked )
         {
             callback(event);
         }
