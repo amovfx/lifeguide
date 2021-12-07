@@ -11,6 +11,7 @@ class EventStrategy
 
         this.event_name_down = event_name_down;
         this.event_name_up = event_name_up;
+        this.element_clicked = undefined;
 
         if (Book_Interface instanceof BookInterface)
         {
@@ -42,11 +43,17 @@ export class EventStrategyDesktop extends EventStrategy
     }
     down_event = (event) =>
     {
+        //maybe move this to the parent class
+        this.element_clicked = event.target;
         this.startX = event.pageX;
     }
     up_event = (event) =>
     {
-        this.book_interface.turn_page(event.pageX - this.startX);
+        //maybe move this to the parent class
+        if( this.element_clicked === event.target)
+        {
+            this.book_interface.turn_page(event.pageX - this.startX);
+        }
     }
 }
 
@@ -70,11 +77,12 @@ export const CreatePageEventListeners = (strategy) =>
 {
     Logger.info("Adding event listeners");
 
-    document.addEventListener(strategy.event_name_down,
+    document.getElementById("page")
+        .addEventListener(strategy.event_name_down,
         (event) => {strategy.down_event(event)},
         false);
 
-    document.addEventListener(strategy.event_name_up,
+    document.getElementById("page").addEventListener(strategy.event_name_up,
         (event) => {strategy.up_event(event)},
         false);
 
