@@ -57,6 +57,11 @@ export class Data_Resolver
         return this.domain;
     }
 
+    get_domain_type = () =>
+    {
+        return Object.keys(DOMAINS).find(key => DOMAINS[key] === this.domain);
+    }
+
     set_route = (route) =>
     {
         this.route = route;
@@ -72,7 +77,7 @@ export class Data_Resolver
         //add browser cache management here.
         if (this.route !== undefined)
         {
-            Logger.info(`Resolver fetching: ${this.domain}${this.route}`)
+            Logger.info(`${this.get_domain_type()} Resolver fetching: ${this.domain}${this.route}`)
             let response = await fetch(`${this.domain}${this.route}`)
 
             if (response.status == 200)
