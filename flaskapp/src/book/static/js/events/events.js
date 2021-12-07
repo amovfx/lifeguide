@@ -43,13 +43,11 @@ export class EventStrategyDesktop extends EventStrategy
     }
     down_event = (event) =>
     {
-        //maybe move this to the parent class
         this.element_clicked = event.target;
         this.startX = event.pageX;
     }
     up_event = (event) =>
     {
-        //maybe move this to the parent class
         if( this.element_clicked === event.target)
         {
             this.book_interface.turn_page(event.pageX - this.startX);
