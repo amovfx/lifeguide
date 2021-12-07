@@ -11,7 +11,7 @@ class EventStrategy
 
         this.event_name_down = event_name_down;
         this.event_name_up = event_name_up;
-        this.element_clicked = false;
+        this.data_swipe_element_clicked = false;
 
         if (Book_Interface instanceof BookInterface)
         {
@@ -22,22 +22,16 @@ class EventStrategy
             throw new Error(`${Book_Interface} is not a BookInterface class.`)
         }
     }
-
-    down_event(event)
+    is_up_event_target_valid(event)
     {
-        if (event.target.closest("[data-page-swipe='1']") !== undefined)
-        {
-            this.element_clicked = true;
-        }
+        let condition = event.target.closest("[data-page-swipe='1']") !== undefined
+        return condition && this.data_swipe_element_clicked
     }
 
-    up_event(event, callback)
+    validate_data_swipe_element(event)
     {
-        let condition = event.target.closest("[data-page-swipe='1']") !== undefined;
-        if( condition && this.element_clicked )
-        {
-            callback(event);
-        }
+            let event_target = event.target.closest("[data-page-swipe='1']");
+            this.data_swipe_element_clicked = event_target !== undefined;
     }
 
     //these high jack delta constant to turn the page.
@@ -60,16 +54,17 @@ export class EventStrategyDesktop extends EventStrategy
     }
     down_event = (event) =>
     {
-        super.down_event(event);
+        super.validate_data_swipe_element(event);
         this.startX = event.pageX;
     }
     up_event = (event) =>
     {
-        super.up_event(event, (event) =>
+        if (super.is_up_event_target_valid(event))
         {
             this.book_interface.turn_page(event.pageX - this.startX);
-        });
+        }
     }
+
 }
 
 export class EventStrategyMobile extends EventStrategy
@@ -80,15 +75,15 @@ export class EventStrategyMobile extends EventStrategy
     }
     down_event = (event) =>
     {
-        super.down_event(event);
+        super.validate_data_swipe_element(event);
         this.startX = event.changedTouches[0].screenX;
     }
     up_event = (event) =>
     {
-        super.up_event(event, (event) =>
+        if (super.is_up_event_target_valid(event))
         {
             this.book_interface.turn_page(event.changedTouches[0].screenX - this.startX);
-        });
+        }
     }
 }
 
