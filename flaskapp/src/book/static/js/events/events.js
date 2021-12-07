@@ -23,6 +23,19 @@ class EventStrategy
         }
     }
 
+    down_event(event)
+    {
+        this.element_clicked = event.target;
+    }
+
+    up_event(event, callback)
+    {
+        if( this.element_clicked === event.target)
+        {
+            callback(event);
+        }
+    }
+
     //these high jack delta constant to turn the page.
     //these are click events.
     next_page = () =>
@@ -43,15 +56,15 @@ export class EventStrategyDesktop extends EventStrategy
     }
     down_event = (event) =>
     {
-        this.element_clicked = event.target;
+        super.down_event(event);
         this.startX = event.pageX;
     }
     up_event = (event) =>
     {
-        if( this.element_clicked === event.target)
+        super.up_event(event, (event) =>
         {
             this.book_interface.turn_page(event.pageX - this.startX);
-        }
+        });
     }
 }
 
@@ -63,15 +76,15 @@ export class EventStrategyMobile extends EventStrategy
     }
     down_event = (event) =>
     {
-        this.element_clicked = event.target;
+        super.down_event(event);
         this.startX = event.changedTouches[0].screenX;
     }
     up_event = (event) =>
     {
-        if( this.element_clicked === event.target)
+        super.up_event(event, (event) =>
         {
             this.book_interface.turn_page(event.changedTouches[0].screenX - this.startX);
-        }
+        });
     }
 }
 
