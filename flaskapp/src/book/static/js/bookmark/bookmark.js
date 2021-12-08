@@ -1,7 +1,8 @@
 import Cookies from "js-cookie";
 import Logger from "js-logger";
 
-const PAGE_COOKIE_NAME = "page"
+const PAGE_COOKIE_NAME = "page";
+const ACCEPT_COOKIES = "acceptCookies";
 
 export class Bookmark
 {
@@ -14,7 +15,7 @@ export class Bookmark
 
     set_page_number = (page) =>
     {
-        if (Cookies.get("acceptCookies") === "true")
+        if (Cookies.get(ACCEPT_COOKIES) === "true")
         {
             Cookies.set(PAGE_COOKIE_NAME, page);
         }
@@ -26,7 +27,7 @@ export class Bookmark
 
     get_page_number = () =>
     {
-        if (Cookies.get("acceptCookies") === "true")
+        if (Cookies.get(ACCEPT_COOKIES) === "true")
         {
             return Cookies.get(PAGE_COOKIE_NAME);
         }
