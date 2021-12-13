@@ -29,11 +29,11 @@
 
 
 <script defer>
-    var book_interface = new booklib.Book_Interface();
-    booklib.makeEventListeners(book_interface);
+    var book_interface = new main.Book_Interface();
+    main.makeEventListeners(book_interface);
 
-    const book_data = new booklib.DataResolver.Local_Resolver();
-    booklib.Book_Factory.make_book(book_data).then((result) => {
+    const book_data = new main.DataResolver.Local_Resolver();
+    main.Book_Factory.make_book(book_data).then((result) => {
         book_interface.set_book(result);
     });
 </script>
