@@ -33,17 +33,32 @@ li
 
 .page
 {
-    overflow: scroll;
+
     padding-top: 20px;
     display: flex;
-    flex-direction: column;
+
     height: 100%;
     /*justify-content: space-between;*/
+}
+
+.page-sidebar
+{
+    border-right-color: rgba(0,0,0,.20);
+    border-right-style: solid;
+    border-right-width: 1px;
+    width: 1000px;
 }
 .blur
 {
     filter: blur(10px);
     -webkit-filter: blur(10px)
+}
+.book-page
+{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 100%;
 }
 
 .page-content
@@ -55,6 +70,13 @@ li
 
         /* Add the blur effect */
 
+}
+
+.hammy {
+  width: 35px;
+  height: 5px;
+  background-color: #ffaa00;
+  margin: 6px 0;
 }
 
 .page-info

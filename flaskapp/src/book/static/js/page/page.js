@@ -70,4 +70,9 @@ export function render_page(page)
     });
 }
 
+export function render_sidebar(contents)
+{
+    document.getElementById("page-sidebar-contents").innerHTML = "test";
+}
+
 
