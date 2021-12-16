@@ -10,6 +10,7 @@ h1
     font-weight: bolder;
     padding-bottom: 20px;
     font-max-size: 10px;
+    padding-top: 40px;
 
 }
 
@@ -51,6 +52,9 @@ li
 {
     display: flex;
     flex-direction: column;
+    overflow: scroll;
+    height: 100%;
+    width: 90%;
 
 
 }
@@ -62,8 +66,8 @@ li
     flex-direction: column;
     padding-left: 40px;
     padding-right: 40px;
-    overflow: scroll;
-    height: 100%;
+
+
         /* Add the blur effect */
 
 }
