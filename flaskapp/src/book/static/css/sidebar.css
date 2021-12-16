@@ -1,0 +1,41 @@
+
+.page-sidebar
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+
+    border-right-color: rgba(0,0,0,.20);
+    border-right-style: solid;
+    border-right-width: 1px;
+
+
+    height: 100%;
+    overflow-y: scroll;
+
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.page-sidebar-contents
+{
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 800px;
+    white-space: nowrap;
+}
+.sidebar-hamburger
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.hammy {
+  width: 35px;
+  height: 5px;
+  background-color: #ffaa00;
+  margin: 6px 0;
+}

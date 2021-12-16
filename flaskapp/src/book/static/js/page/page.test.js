@@ -1,5 +1,5 @@
 
-import Table_of_Contents from "./table_of_contents/table_of_contents";
+import Table_of_Contents from "./contents/contents";
 
 
 const axios = require('axios').default;

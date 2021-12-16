@@ -52,6 +52,11 @@ export class Book
         this.table_of_contents = table_of_contents;
     }
 
+    get_table_of_contents()
+    {
+        return this.table_of_contents;
+    }
+
     get_page(id)
     {
         if (this.pages !== undefined)

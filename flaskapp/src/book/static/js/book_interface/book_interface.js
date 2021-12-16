@@ -1,6 +1,8 @@
 import Logger from "js-logger";
 import {Bookmark} from "../bookmark/bookmark";
 import {render_page} from "../page/page";
+import {buildMenu} from "../contents/contents";
+
 
 export const DELTA = 6;
 
@@ -20,7 +22,16 @@ export class BookInterface
     set_book = (book) =>
     {
         this.book = book;
+        this.set_contents()
         this.set_page_data()
+    }
+    set_contents()
+    {
+        Logger.info("Setting table of contents")
+        buildMenu(this.book.get_pages()).then(() =>
+        {
+            Logger.info("Menu Build");
+        })
     }
 
     get_book()

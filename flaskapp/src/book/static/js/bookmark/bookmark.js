@@ -1,8 +1,8 @@
 import Cookies from "js-cookie";
 import Logger from "js-logger";
 
-const PAGE_COOKIE_NAME = "page";
-const ACCEPT_COOKIES = "acceptCookies";
+export const PAGE_COOKIE_NAME = "page";
+export const ACCEPT_COOKIES = "acceptCookies";
 
 export class Bookmark
 {
