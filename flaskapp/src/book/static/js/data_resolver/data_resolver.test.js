@@ -11,7 +11,7 @@ describe("Testing centralized Data_resolverModule", () => {
         it ("Getters", () => {
             let local_resolver = Data_Resolver.Local_Resolver();
             expect(local_resolver.get_domain()).toBe(DOMAINS.LOCAL);
-            expect(local_resolver.get_route()).toBe(('/book/contents'))
+            expect(local_resolver.get_route()).toBe(('/book/menu_manager'))
         })
 
         it ("Setters", () => {
@@ -48,7 +48,7 @@ describe("Testing centralized Data_resolverModule", () => {
         it("Getters", () => {
             let web2_resolver = Data_Resolver.Web2_Resolver();
             expect(web2_resolver.get_domain()).toBe('https://kaizens.guide');
-            expect(web2_resolver.get_route()).toBe('/book/contents')
+            expect(web2_resolver.get_route()).toBe('/book/menu_manager')
         })
 
         it("Loading", async () => {

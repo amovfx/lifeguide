@@ -1,7 +1,7 @@
 import Logger from "js-logger";
 import {Bookmark} from "../bookmark/bookmark";
 import {render_page} from "../page/page";
-import {buildMenu, MenuManager} from "../contents/contents";
+import {buildMenu, MenuManager} from "../menu_manager/menu_manager";
 
 
 export const DELTA = 6;
@@ -28,7 +28,7 @@ export class BookInterface
     }
     set_contents = () =>
     {
-        Logger.info("Setting table of contents")
+        Logger.info("Setting table of menu_manager")
         this.MenuManager.initialize_menu(this.book.get_pages(), this).then(() =>
         {
             Logger.info("Menu Built");

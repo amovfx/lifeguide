@@ -1,4 +1,4 @@
-import Logger from "js-logger";
+
 
 function create_menu_element(chapter)
 {
@@ -24,7 +24,7 @@ export class MenuManager
     constructor()
     {
         this.last_item = undefined;
-        this.sidebar_element = document.getElementById("page-sidebar-contents")
+        this.sidebar_element = document.getElementById("page-sidebar-menu_manager")
     }
 
     async initialize_menu(pages, book_interface)
