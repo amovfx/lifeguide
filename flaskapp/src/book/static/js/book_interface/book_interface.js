@@ -25,10 +25,10 @@ export class BookInterface
         this.set_contents()
         this.set_page_data()
     }
-    set_contents()
+    set_contents = () =>
     {
         Logger.info("Setting table of contents")
-        buildMenu(this.book.get_pages()).then(() =>
+        buildMenu(this.book.get_pages(), this ).then(() =>
         {
             Logger.info("Menu Build");
         })
