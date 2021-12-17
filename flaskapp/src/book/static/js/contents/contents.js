@@ -3,7 +3,7 @@ import Logger from "js-logger";
 function buildItem(chapter, fn)
 {
     let menuItem = document.createElement("div");
-    let menu_text = document.createElement("a");
+    let menu_text = document.createElement("p");
     //add function to call book Interface.
     menu_text.innerHTML = chapter;
     menuItem.append(menu_text);
@@ -21,7 +21,7 @@ export async function buildMenu(pages, book_interface)
         let formatted_title = title.replace('_',' ');
         let capitalized_title = formatted_title.charAt(0).toUpperCase() + formatted_title.slice(1)
         let new_item = buildItem(capitalized_title);
-        new_item.onclick = () =>
+        new_item.firstChild.onclick = () =>
         {
             book_interface.goto_page(index);
         }
