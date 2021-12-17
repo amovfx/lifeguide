@@ -24,7 +24,7 @@ export class MenuManager
     constructor()
     {
         this.last_item = undefined;
-        this.sidebar_element = document.getElementById("page-sidebar-menu_manager")
+        this.sidebar_element = document.getElementById("page-sidebar-contents")
     }
 
     async initialize_menu(pages, book_interface)
