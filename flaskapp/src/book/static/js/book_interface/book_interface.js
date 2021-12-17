@@ -1,7 +1,7 @@
 import Logger from "js-logger";
 import {Bookmark} from "../bookmark/bookmark";
 import {render_page} from "../page/page";
-import {buildMenu} from "../contents/contents";
+import {buildMenu, MenuManager} from "../contents/contents";
 
 
 export const DELTA = 6;
@@ -17,6 +17,7 @@ export class BookInterface
         Logger.info("Constructing book interface");
         this.Bookmark = new Bookmark();
         this.book = undefined;
+        this.MenuManager = new MenuManager();
     }
 
     set_book = (book) =>
@@ -28,9 +29,9 @@ export class BookInterface
     set_contents = () =>
     {
         Logger.info("Setting table of contents")
-        buildMenu(this.book.get_pages(), this ).then(() =>
+        this.MenuManager.initialize_menu(this.book.get_pages(), this).then(() =>
         {
-            Logger.info("Menu Build");
+            Logger.info("Menu Built");
         })
     }
 
@@ -62,7 +63,9 @@ export class BookInterface
     {
         if (this.book !== undefined)
         {
-            let page = this.book.get_page(this.Bookmark.get_page_number());
+            let page_number = this.Bookmark.get_page_number();
+            let page = this.book.get_page(page_number);
+            this.MenuManager.set_active_menu_item(page_number);
             render_page(page);
         }
         else

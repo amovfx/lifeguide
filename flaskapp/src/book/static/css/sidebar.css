@@ -15,6 +15,7 @@
 
 
     white-space: nowrap;
+    padding-top:60px;
 }
 
 .page-sidebar-contents
@@ -39,4 +40,13 @@
   height: 5px;
   background-color: #ffaa00;
   margin: 6px 0;
+}
+
+.menu-item:hover
+{
+    text-decoration: underline;
+}
+.menu-active
+{
+    color: #ffaa00;
 }
