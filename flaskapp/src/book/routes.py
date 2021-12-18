@@ -33,11 +33,11 @@ def cover():
     return render_template("book_page.html", page_count=len(book_bp.files))
 
 
-@book_bp.get("/contents")
+@book_bp.get("/menu_manager")
 def book_contents():
     """
 
-    Return a books' table of contents
+    Return a books' table of menu_manager
 
     """
     page_content_url = url_for("/book.page_content")

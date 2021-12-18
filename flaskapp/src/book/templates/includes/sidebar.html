@@ -20,17 +20,13 @@
         let open = hamburger.getAttribute('data-open');
         if (open == 0)
         {
-            {#document.getElementById("page-sidebar").style.width = "400px";#}
             document.getElementById("page-sidebar-contents").hidden = false;
             hamburger.setAttribute('data-open', '1');
         }
         else
         {
-            {#document.getElementById("page-sidebar").style.width = "35px";#}
             document.getElementById("page-sidebar-contents").hidden = true;
             hamburger.setAttribute('data-open', '0');
         }
-
-
     }
 </script>
