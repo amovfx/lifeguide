@@ -4,7 +4,7 @@ FROM python:3.7.2-stretch
 
 # Set the working directory to /app
 
-# Copy the current directory contents into the container at /app
+# Copy the current directory menu_manager into the container at /app
 WORKDIR /app
 ADD . /app
 

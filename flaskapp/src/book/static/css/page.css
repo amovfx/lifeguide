@@ -1,7 +1,7 @@
 body
 {
-    height: 99%;
-    width:100%;
+    height: 100vh;
+    /*width:100%;*/
 }
 
 h1
@@ -10,6 +10,7 @@ h1
     font-weight: bolder;
     padding-bottom: 20px;
     font-max-size: 10px;
+    padding-top: 40px;
 
 }
 
@@ -33,28 +34,45 @@ li
 
 .page
 {
-    overflow: scroll;
-    padding-top: 20px;
+
+
     display: flex;
-    flex-direction: column;
+
     height: 100%;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
+
+
 .blur
 {
     filter: blur(10px);
     -webkit-filter: blur(10px)
 }
+.book-page
+{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 100%;
+    width: 90%;
+
+
+}
 
 .page-content
 {
-    display: table-cell;
+    /*display: table-cell;*/
+    display: flex;
+    flex-direction: column;
     padding-left: 40px;
     padding-right: 40px;
+
 
         /* Add the blur effect */
 
 }
+
+
 
 .page-info
 {
@@ -82,10 +100,11 @@ li
 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 40px;
 }
 
 .page-turn
@@ -93,30 +112,7 @@ li
     padding:40px;
 }
 
-.swipe-guide-overlay
-{
 
-    z-index: 2;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    width: 400px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    -moz-border-radius: 18px 18px 18px 18px;
-    -webkit-border-radius: 18px;
-    border-radius: 18px 18px 18px 18px;
-    box-shadow: 0px 0px 30px rgba(0,0,0,.5);
-}
-
-.instructions
-{
-    text-align:center;
-    padding:10px;
-}
 
 
 

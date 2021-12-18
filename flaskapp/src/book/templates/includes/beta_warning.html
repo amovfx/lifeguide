@@ -9,7 +9,8 @@
 </div>
 
 <script>
-    $("#alert-toggle").click(function(){
-        $("#beta-warning").hide();
-    });
+    document.getElementById("alert-toggle")
+        .addEventListener("click",
+            (event) => {document.getElementById("beta-warning").hidden = true;},
+            false);
 </script>

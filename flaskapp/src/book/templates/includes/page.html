@@ -1,110 +1,46 @@
 <link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.css')}}">
 <link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.mobile.css')}}">
 
-<div id="page" class="page blur">
-    <div id="page-contents" class="page-content unselectable"></div> <!-- Page Manager stuffs this -->
+
+<div id="page" class="page">
+    {% include "includes/sidebar.html" %}
+    <div id="book-page" class="book-page">
+        <div id="page-contents" class="page-content" data-page-swipe='1'></div> <!-- render_page function stuffs this -->
 
 
 
-    <!-- optimize this, maybe collapse page-info and navigation, remove page-number div -->
-    <div class="page-info">
-        <div class="navigation">
-            <div class="page-turn" id="prev-page">Prev</div>
-            <div class="page-number"><p id="page-number-text"></p></div>
-            <div class="page-turn" id="next-page">Next</div>
+        <!-- optimize this, maybe collapse page-info and navigation, remove page-number div -->
+        <div class="page-info">
+            <div class="navigation">
+                <div class="page-turn" id="prev-page">Prev</div>
+                <div class="page-number"><p id="page-number-text"></p></div>
+                <div class="page-turn" id="next-page">Next</div>
+            </div>
         </div>
     </div>
 
 
 </div>
 
+<!-- remove overlay guide -->
 
-<div id="overlay-div" class="swipe-guide-overlay" onclick="buttonclick()">
-    <div >
-        <img id="tutorial-image">
 
-    </div>
-    <div class="instructions">
-        <h3>Click and drag to turn the page.</h3>
-    </div>
-</div>
-
+<script src="https://unpkg.com/js-logger/src/logger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
-<script src="{{ url_for('/book.static', filename='js/page.js')}}"></script>
-<script>
-
-    var md = new MobileDetect(window.navigator.userAgent);
-    var accepted = 0;
-
-    function buttonclick()
-    {
-        $(".swipe-guide-overlay").hide()
-            var setBlur = function(ele, radius) {
-            $(ele).css({
-               "-webkit-filter": "blur("+radius+"px)",
-                "filter": "blur("+radius+"px)"
-           });
-       }
-
-       // Generic function to tween blur radius
-       var tweenBlur = function(ele, startRadius, endRadius) {
-            $({blurRadius: startRadius}).animate({blurRadius: endRadius}, {
-                duration: 200,
-                easing: 'swing', // or "linear"
-                                 // use jQuery UI or Easing plugin for more options
-                step: function() {
-                    setBlur(ele, this.blurRadius);
-                },
-                callback: function() {
-                    // Final callback to set the target blur radius
-                     // jQuery might not reach the end value
-                     setBlur(ele, endRadius);
-                }
-            });
-        };
-        tweenBlur('#page', 10, 0);
-
-        if (accepted === 0) {
-            Page_Manager.init_event_listeners();
-        }
-    }
-
-    console.log("activating page managers");
-    var page_count = {{ page_count | safe }};
-    var Page_Manager;
-
-    if (md.mobile() != null)
-    {
-        Page_Manager = new PageMobile(page_count);
-        $("#tutorial-image").attr('src',"{{ url_for('/book.static', filename='images/touch_swipe.png') }}");
-    }
-    else
-    {
-        Page_Manager = new PageDesktop( page_count );
-        $("#tutorial-image").attr('src',"{{ url_for('/book.static', filename='images/click_swipe.png') }}");
-    }
-
-    $("#prev-page").click(() => {
-        Page_Manager.turn_page(-1*delta);
-    })
-
-    $("#next-page").click(() =>
-    {
-        Page_Manager.turn_page(delta);
-    })
-
-    $("#overlay-gudie").click( () =>
-        {
-            $("#overlay-guide").hide();
-        }
-    )
+<script
+        src="{{ webpacked_url_for('/book.static', filename='js/main.js')}}"
+></script>
 
 
+<script defer>
+    var book_interface = new main.Book_Interface();
+    main.makeEventListeners(book_interface);
 
-
-
-
-
-
-
+    const book_data = new main.DataResolver.Local_Resolver();
+    main.Book_Factory.make_book(book_data).then((result) => {
+        book_interface.set_book(result);
+    });
 </script>
+
+
+

@@ -1,0 +1,52 @@
+
+.page-sidebar
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    border-right-color: rgba(0,0,0,.20);
+    border-right-style: solid;
+    border-right-width: 1px;
+
+
+    height: 100%;
+    overflow-y: scroll;
+
+
+    white-space: nowrap;
+    padding-top:60px;
+}
+
+.page-sidebar-contents
+{
+    padding-left: 10px;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: scroll;
+    height:100%;
+}
+.sidebar-hamburger
+{
+    display: block;
+    padding: 30px;
+
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.hammy {
+  width: 35px;
+  height: 5px;
+  background-color: #ffaa00;
+  margin: 6px 0;
+}
+
+.menu-item:hover
+{
+    text-decoration: underline;
+}
+.menu-active
+{
+    color: #ffaa00;
+}

@@ -4,9 +4,11 @@ App factory/
 
 """
 
-from flask import Flask
+from flask import Flask, url_for
 from flask_misaka import Misaka
+
 from flaskapp.src.app.config import *
+from flaskapp.src.utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 
 from .cache import cache
 from .config import DevelopmentConfig, TestConfig, ProductionConfig
@@ -16,6 +18,7 @@ ENV_CONFIGS = {
     "testing": TestConfig,
     "production": ProductionConfig,
 }
+
 
 def set_config(app, env_name: str = os.environ.get("FLASK_ENV")) -> None:
 
@@ -37,12 +40,41 @@ def set_config(app, env_name: str = os.environ.get("FLASK_ENV")) -> None:
         else:
             raise ValueError("Config class not available.")
 
-
     else:
         raise ValueError("Env not available.")
 
     return None
 
+
+def register_blueprints(app):
+    """
+
+    Register blueprints.
+
+    :param app:
+    :return:
+    """
+    # blueprints
+    from ..book import book_bp
+    from .error_handlers import error_handler_bp
+
+    app.register_blueprint(book_bp)
+    app.register_blueprint(error_handler_bp)
+
+
+def register_plugins(app):
+    """
+
+    Register flask plugins
+
+    :param app:
+    :return:
+    """
+    # a markdown renderer
+    Misaka(app, autolink=True)
+
+    flask_webpacked_blueprint = FlaskWebpackedBlueprint()
+    flask_webpacked_blueprint.init_app(app)
 
 def create_app():
     """
@@ -53,21 +85,17 @@ def create_app():
         Flask app
 
     """
+
     app = Flask(__name__)
 
     # set configuration
     set_config(app)
 
     # plugins
-    Misaka(app, autolink=True)
+    register_plugins(app)
 
-    #cache.init_app(app)
+    # cache.init_app(app)
 
-    # blueprints
-    from ..book import book_bp
-    from .error_handlers import error_handler_bp
-
-    app.register_blueprint(book_bp)
-    app.register_blueprint(error_handler_bp)
+    register_blueprints(app)
 
     return app
