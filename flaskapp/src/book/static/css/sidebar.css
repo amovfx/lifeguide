@@ -5,27 +5,28 @@
     flex-direction: column;
     justify-content: flex-end;
 
+    background-color: #a6998a;
+
     border-right-color: rgba(0,0,0,.20);
     border-right-style: solid;
     border-right-width: 1px;
 
-
     height: 100%;
     overflow-y: scroll;
-
-
     white-space: nowrap;
-    padding-top:60px;
+
 }
 
 .page-sidebar-contents
 {
-    padding-left: 10px;
-    padding-right: 20px;
+    padding-top: 60px;
+    padding-left: 15px;
     white-space: nowrap;
-    overflow: scroll;
+    overflow-y: scroll;
     height:100%;
+    width: 250px;
 }
+
 .sidebar-hamburger
 {
     display: block;
@@ -35,7 +36,8 @@
     align-items: flex-end;
 }
 
-.hammy {
+.hammy
+{
   width: 35px;
   height: 5px;
   background-color: #ffaa00;
@@ -44,8 +46,11 @@
 
 .menu-item:hover
 {
+
     text-decoration: underline;
+    font-weight: bolder;
 }
+
 .menu-active
 {
     color: #ffaa00;
