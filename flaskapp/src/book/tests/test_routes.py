@@ -105,14 +105,14 @@ class TestRoutes(TestBaseCase):
     def test_book_contents(self, key, value):
         """
 
-        Test for testing book table of contents route.
+        Test for testing book table of menu_manager route.
 
         :param value:
 
         """
         print("\n")
-        print(f"Testing book contents {value}...")
-        response = self.client.get("/book/contents", content_type="json")
+        print(f"Testing book menu_manager {value}...")
+        response = self.client.get("/book/menu_manager", content_type="json")
         first_entry = json.loads(response.data)[value]
         self.assertIn(key, first_entry)
         self.assertEqual(f"/book/content/{value}", first_entry[key])
