@@ -3,12 +3,11 @@
 App factory/
 
 """
-
+import os
 from flask import Flask, url_for
 from flask_misaka import Misaka
 
-from flaskapp.src.app.config import *
-from flaskapp.src.utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
+from ..utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 
 from .cache import cache
 from .config import DevelopmentConfig, TestConfig, ProductionConfig
@@ -32,18 +31,14 @@ def set_config(app, env_name: str = os.environ.get("FLASK_ENV")) -> None:
         environment variable
     :return:
     """
-
     if env_name:
         if (config_class := ENV_CONFIGS.get(env_name)) :
             app.config.from_object(config_class)
-            return config_class
         else:
             raise ValueError("Config class not available.")
 
     else:
         raise ValueError("Env not available.")
-
-    return None
 
 
 def register_blueprints(app):

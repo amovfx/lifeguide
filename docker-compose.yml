@@ -7,7 +7,7 @@ services:
         environment:
           APP_NAME: FlaskBookApp
           FLASK_DEBUG: 1
-          FLASK_ENV: configmodule.ProductionConfig
+          FLASK_ENV: "production"
         expose:
           - 8080
         volumes:

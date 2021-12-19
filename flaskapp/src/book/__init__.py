@@ -1,5 +1,5 @@
 from flask import Blueprint, request, url_for
-from flaskapp.src.utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
+from ..utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 import re
 import pathlib
 import subprocess as sp
