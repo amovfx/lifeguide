@@ -2,7 +2,7 @@ import Logger from "js-logger";
 
 
 export const DOMAINS = {
-    LOCAL: 'http://127.0.0.1:5000',
+    LOCAL: 'http://localhost',
     WEB2: '',
     IPFS: 'https://ipfs.io/ipfs/',
 }
