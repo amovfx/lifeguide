@@ -57,10 +57,7 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         webpack_cfg = js_path / "webpack.config.js"
 
         # run webpack
-        if webpack_cfg.is_file():
-            result = sp.check_call("npm run packjs", shell=True, cwd=js_path,)
-            print(result)
-        else:
+        if not webpack_cfg.is_file():
             raise FileExistsError(f"{webpack_cfg.as_posix()} is missing.")
 
         bp.is_webpacked = True
@@ -82,7 +79,7 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
     def init_app(self, app):
         """
 
-        Mutate the app
+        Mutate the app_factory
         :param app:
         :return:
         """
