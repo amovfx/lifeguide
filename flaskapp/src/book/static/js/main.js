@@ -16,6 +16,6 @@ export const DataResolver = Data_Resolver;
 export const Book_Interface = BookInterface;
 export const Book_Factory = BookFactory;
 
-Logger.useDefaults()
+
 
 

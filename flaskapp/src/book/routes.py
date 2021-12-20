@@ -15,7 +15,7 @@ from flask import (
 
 from flask_misaka import markdown
 
-from ..app.cache import cache
+from ..app_factory.cache import cache
 from . import book_bp
 
 

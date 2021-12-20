@@ -26,7 +26,7 @@ def set_config(app, env_name: str = os.environ.get("FLASK_ENV")) -> None:
     Set the apps configuration object from the environment variable.
 
     :param app:
-        Flask app
+        Flask app_factory
     :param env_name:
         environment variable
     :return:
@@ -77,7 +77,7 @@ def create_app():
     App factory
 
     :return:
-        Flask app
+        Flask app_factory
 
     """
 
@@ -89,7 +89,7 @@ def create_app():
     # plugins
     register_plugins(app)
 
-    # cache.init_app(app)
+    # cache.init_app(app_factory)
 
     register_blueprints(app)
 

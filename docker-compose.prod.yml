@@ -1,5 +1,8 @@
-version: '3.3'
+version: '3.8'
 services:
+
+
+
 
   flask:
     extends:
@@ -7,6 +10,7 @@ services:
       service: flask
     environment:
       FLASK_DEBUG: 0
+      FLASK_ENV: "production"
 
   nginx:
     extends:
@@ -23,3 +27,4 @@ services:
     volumes:
       - /root/cert.pem:/ssl/cert.pem
       - /root/key.pem:/ssl/key.pem
+

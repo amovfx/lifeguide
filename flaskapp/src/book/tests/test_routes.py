@@ -9,7 +9,7 @@ import json
 from ddt import ddt, idata, unpack
 from tabulate import tabulate
 
-from ...app.tests.test import TestBaseCase
+from ...app_factory.tests.test import TestBaseCase
 from .. import book_bp
 
 

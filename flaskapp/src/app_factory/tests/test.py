@@ -1,7 +1,7 @@
 
 
 from flask_testing import TestCase
-from flaskapp.src.app import create_app
+from flaskapp.src.app_factory import create_app
 
 
 class TestBaseCase(TestCase):

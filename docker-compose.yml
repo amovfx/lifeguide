@@ -1,29 +1,45 @@
-version: '3.3'
+version: '3.8'
 services:
-    flask:
-        build: ./flaskapp
-        container_name: flask
-        restart: always
-        environment:
-          APP_NAME: FlaskBookApp
-          FLASK_DEBUG: 1
-          FLASK_ENV: "production"
-        expose:
-          - 8080
-        volumes:
-          - ./flaskapp/src:/app/src
+
+  webpack:
+      build: ./webpack
+      container_name: webpack
+      volumes:
+        - ./webpack/pack_assets.sh:/pack_assets.sh:Z
+        - ./flaskapp/:/flask_data
+      command: /bin/bash -c "./pack_assets.sh"
+
+  flask:
+      build: ./flaskapp
+      container_name: flask
+      restart: always
+      environment:
+        APP_NAME: FlaskBookApp
+        FLASK_DEBUG: 1
+        FLASK_ENV: "testing"
+      expose:
+        - 8080
+      volumes:
+        - ./flaskapp/:/flask_data
+      depends_on:
+        - webpack
+      command: ["uwsgi", "/flask_data/app.ini"]
+
+  nginx:
+      build:
+        context: ./nginx
+        dockerfile: Dockerfile
+      container_name: nginx
+      restart: always
+      ports:
+        - "80:80"
+        - "443:443"
+      depends_on:
+        - flask
 
 
-    nginx:
-        build:
-          context: ./nginx
-          dockerfile: Dockerfile
-        container_name: nginx
-        restart: always
-        ports:
-          - "80:80"
-          - "443:443"
-        depends_on:
-          - flask
+
+
+
 
 
