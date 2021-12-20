@@ -21,8 +21,6 @@ services:
         - 8080
       volumes:
         - ./flaskapp/:/flask_data
-      depends_on:
-        - webpack
       command: ["uwsgi", "/flask_data/app.ini"]
 
   nginx:
