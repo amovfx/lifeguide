@@ -1,27 +1,42 @@
 version: '2.4'
 services:
 
-
-
+  webpack:
+      build: ./webpack
+      container_name: webpack
+      volumes:
+        - ./webpack/pack_assets.sh:/pack_assets.sh:Z
+        - ./flaskapp/:/flask_data
+      command: /bin/bash -c "./pack_assets.sh"
 
   flask:
-    extends:
-      file: docker-compose.yml
-      service: flask
+    build: ./flaskapp
+    container_name: flask
+    restart: always
     environment:
+      APP_NAME: FlaskBookApp
       FLASK_DEBUG: 0
       FLASK_ENV: "production"
+    expose:
+      - 8080
+    volumes:
+      - ./flaskapp/:/flask_data
+    command: [ "uwsgi", "/flask_data/app.ini" ]
+    depends_on:
+      - webpack
 
   nginx:
-    extends:
-      file: docker-compose.yml
-      service: nginx
     build:
       context: ./nginx
-      dockerfile: Dockerfile.prod
-
+      dockerfile: Dockerfile
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
     depends_on:
       - flask
+
     environment:
       - NGINX_CONF_FILE=nginx.prod.conf
     volumes:
