@@ -42,7 +42,7 @@ class EventStrategy
     }
     prev_page = () =>
     {
-        this.book_interface.prev_page(DELTA);
+        this.book_interface.turn_page(DELTA);
     }
 }
 
