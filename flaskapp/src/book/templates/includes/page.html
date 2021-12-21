@@ -36,7 +36,7 @@
     var book_interface = new main.Book_Interface();
     main.makeEventListeners(book_interface);
 
-    const book_data = new main.DataResolver.Local_Resolver();
+    const book_data = new main.DataResolver.Web2_Resolver();
     main.Book_Factory.make_book(book_data).then((result) => {
         book_interface.set_book(result);
     });
