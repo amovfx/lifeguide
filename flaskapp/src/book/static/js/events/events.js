@@ -38,11 +38,11 @@ class EventStrategy
     //these are click events.
     next_page = () =>
     {
-        this.book_interface.turn_page(DELTA);
+        this.book_interface.turn_page(-DELTA);
     }
     prev_page = () =>
     {
-        this.book_interface.prev_page(-DELTA);
+        this.book_interface.prev_page(DELTA);
     }
 }
 
@@ -102,7 +102,7 @@ export const CreatePageEventListeners = (strategy) =>
 
     document.getElementById("prev-page")
         .addEventListener("click",
-            (event) => {strategy.next_page()},
+            (event) => {strategy.prev_page()},
             false);
 
     document.getElementById("next-page")
