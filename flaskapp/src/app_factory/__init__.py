@@ -4,7 +4,8 @@ App factory/
 
 """
 import os
-from flask import Flask, url_for
+from flask import Flask
+from flask_cors import CORS
 from flask_misaka import Misaka
 
 from ..utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
@@ -82,7 +83,7 @@ def create_app():
     """
 
     app = Flask(__name__)
-
+    CORS(app)
     # set configuration
     set_config(app)
 
