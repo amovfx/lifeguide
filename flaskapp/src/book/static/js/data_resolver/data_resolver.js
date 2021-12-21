@@ -3,7 +3,7 @@ import Logger from "js-logger";
 
 export const DOMAINS = {
     LOCAL: 'http://localhost',
-    WEB2: '',
+    WEB2: 'https://kaizens.guide',
     IPFS: 'https://ipfs.io/ipfs/',
 }
 
