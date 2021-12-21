@@ -15,7 +15,7 @@ export class Bookmark
 
     set_page_number = (page) =>
     {
-        if (Cookies.get(ACCEPT_COOKIES) === "true")
+        if (Cookies.get(ACCEPT_COOKIES) == "1")
         {
             Cookies.set(PAGE_COOKIE_NAME, page);
         }
@@ -27,7 +27,7 @@ export class Bookmark
 
     get_page_number = () =>
     {
-        if (Cookies.get(ACCEPT_COOKIES) === "true")
+        if (Cookies.get(ACCEPT_COOKIES) == "1")
         {
             return Cookies.get(PAGE_COOKIE_NAME);
         }
