@@ -40,6 +40,6 @@ services:
     environment:
       - NGINX_CONF_FILE=nginx.prod.conf
     volumes:
-      - /etc/letsencrypt/live/kaizens.guide-0001/fullchain.pem:/ssl/cert.pem
-      - /etc/letsencrypt/live/kaizens.guide-0001/privkey.pem:/ssl/privkey.pem
+      - /etc/letsencrypt/live/kaizens.guide/fullchain.pem:/ssl/cert.pem
+      - /etc/letsencrypt/live/kaizens.guide/privkey.pem:/ssl/privkey.pem
 
