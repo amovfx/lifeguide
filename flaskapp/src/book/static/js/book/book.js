@@ -34,7 +34,7 @@ export class Book
 {
     constructor()
     {
-        Logger.info("Constructing book.");
+        Logger.info("Constructing lifeguide.");
     }
 
     get_pages()

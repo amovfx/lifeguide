@@ -14,7 +14,7 @@ export class BookInterface
 {
     constructor()
     {
-        Logger.info("Constructing book interface");
+        Logger.info("Constructing lifeguide interface");
         this.Bookmark = new Bookmark();
         this.book = undefined;
         this.MenuManager = new MenuManager();

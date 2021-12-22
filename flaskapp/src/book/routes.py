@@ -24,7 +24,7 @@ def cover():
     """
 
     Access the sorted content from book_bp.files and renders a page.
-    This book should be a content hash in ipfs.
+    This lifeguide should be a content hash in ipfs.
 
     :return:
         response
@@ -40,7 +40,7 @@ def book_contents():
     Return a books' table of menu_manager
 
     """
-    page_content_url = url_for("/book.page_content")
+    page_content_url = url_for("/lifeguide.page_content")
     return jsonify(
         [
             {os.path.basename(v): f"{page_content_url}{i}"}
@@ -54,25 +54,25 @@ def book_contents():
 def page_content(page_num):
     """
 
-    Returns a book page to be injected into the webpage.
+    Returns a lifeguide page to be injected into the webpage.
 
     :param page_num:
-        The page number of the book.
+        The page number of the lifeguide.
 
     :return:
-        json book content
+        json lifeguide content
 
     """
     page_num = int(page_num)
 
     # turn this into a error handler.
     if page_num > len(book_bp.files):
-        return "Page does not exist for this book", 404
+        return "Page does not exist for this lifeguide", 404
 
     with open(book_bp.files[page_num], "r", encoding="utf-8") as md_file:
         text = md_file.read()
 
-    template_string = render_template_string(text, static_path="/book.static")
+    template_string = render_template_string(text, static_path="/lifeguide.static")
     md_template_string = markdown(template_string)
 
     return jsonify(md_template_string)

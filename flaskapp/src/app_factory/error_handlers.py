@@ -7,9 +7,9 @@ error_handler_bp = Blueprint("error_handlers", __name__)
 def handle404(e):
     """
 
-    Missing resources sends us back to the beginning of the book.
+    Missing resources sends us back to the beginning of the lifeguide.
 
     :param e:
     :return:
     """
-    return redirect(url_for("/book.cover"))
+    return redirect(url_for("/lifeguide.cover"))

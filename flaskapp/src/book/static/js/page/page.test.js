@@ -19,7 +19,7 @@ describe("Testing centralized Data_resolverModule", () =>
         it ("Table of Contents (local)", async () =>
         {
             let table_of_contents = await Table_of_Contents.Local();
-            expect(table_of_contents.chapters[0]).toMatchObject({"Intro.01.md": "/book/content/0"})
+            expect(table_of_contents.chapters[0]).toMatchObject({"Intro.01.md": "/lifeguide/content/0"})
         })
 
         it ("Table of Contents (ipfs)", async () =>

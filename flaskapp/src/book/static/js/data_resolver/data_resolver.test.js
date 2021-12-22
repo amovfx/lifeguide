@@ -11,21 +11,21 @@ describe("Testing centralized Data_resolverModule", () => {
         it ("Getters", () => {
             let local_resolver = Data_Resolver.Local_Resolver();
             expect(local_resolver.get_domain()).toBe(DOMAINS.LOCAL);
-            expect(local_resolver.get_route()).toBe(('/book/menu_manager'))
+            expect(local_resolver.get_route()).toBe(('/lifeguide/menu_manager'))
         })
 
         it ("Setters", () => {
             let local_resolver = Data_Resolver.Local_Resolver();
             local_resolver.set_domain('http://127.0.0.2:5000');
-            local_resolver.set_route('/book/content');
+            local_resolver.set_route('/lifeguide/content');
             expect(local_resolver.get_domain()).toBe('http://127.0.0.2:5000');
-            expect(local_resolver.get_route()).toBe(('/book/content'))
+            expect(local_resolver.get_route()).toBe(('/lifeguide/content'))
         })
 
         it("Loading", async () => {
             let local_resolver = Data_Resolver.Local_Resolver();
             let data = await local_resolver.async_load();
-            expect(data[0]).toMatchObject({"Intro.01.md": "/book/content/0"})
+            expect(data[0]).toMatchObject({"Intro.01.md": "/lifeguide/content/0"})
         })
     })
 
@@ -48,13 +48,13 @@ describe("Testing centralized Data_resolverModule", () => {
         it("Getters", () => {
             let web2_resolver = Data_Resolver.Web2_Resolver();
             expect(web2_resolver.get_domain()).toBe('https://kaizens.guide');
-            expect(web2_resolver.get_route()).toBe('/book/menu_manager')
+            expect(web2_resolver.get_route()).toBe('/lifeguide/menu_manager')
         })
 
         it("Loading", async () => {
             let web2_resolver = Data_Resolver.Web2_Resolver();
             let data = await web2_resolver.async_load();
-            expect(data[0]).toMatchObject({"Intro.01.md": "/book/content/0"})
+            expect(data[0]).toMatchObject({"Intro.01.md": "/lifeguide/content/0"})
         })
     })
 })

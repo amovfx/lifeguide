@@ -14,7 +14,7 @@ export class Data_Resolver
     {
         let local_resolver = new Data_Resolver()
         local_resolver.set_domain(DOMAINS.LOCAL);
-        local_resolver.set_route('/book/menu_manager');
+        local_resolver.set_route('/lifeguide/menu_manager');
         return local_resolver;
     }
 
@@ -30,7 +30,7 @@ export class Data_Resolver
     {
         let web2_resolver = new Data_Resolver();
         web2_resolver.set_domain(DOMAINS.WEB2);
-        web2_resolver.set_route('/book/menu_manager');
+        web2_resolver.set_route('/lifeguide/menu_manager');
         return web2_resolver;
     }
 
