@@ -26,6 +26,12 @@ def annotate(expected, actual):
     msg = tabulate([["Expected:", expected], ["Actual: ", actual]])
     print(msg)
 
+@ddt
+class TestBlueprint(TestBaseCase):
+
+    def test_webpacked(self):
+        self.assertTrue(book_bp.is_webpacked)
+
 
 @ddt
 class TestRoutes(TestBaseCase):
@@ -34,6 +40,9 @@ class TestRoutes(TestBaseCase):
     Test routes of the book_bp
 
     """
+
+    def test_webpacked(self):
+        self.assertTrue(book_bp.is_webpacked)
 
     def test_home(self):
         """
@@ -113,6 +122,8 @@ class TestRoutes(TestBaseCase):
         print("\n")
         print(f"Testing lifeguide menu_manager {value}...")
         response = self.client.get("/lifeguide/menu_manager", content_type="json")
+        print(response.data)
+
         first_entry = json.loads(response.data)[value]
         self.assertIn(key, first_entry)
         self.assertEqual(f"/lifeguide/content/{value}", first_entry[key])
