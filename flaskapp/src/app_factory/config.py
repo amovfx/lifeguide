@@ -10,6 +10,7 @@ class DefaultConfig(object):
     TESTING = False
 
 
+
 class TestConfig(DefaultConfig):
     DEBUG = True
     TESTING = True
@@ -19,8 +20,9 @@ class TestConfig(DefaultConfig):
 
 class DevelopmentConfig(DefaultConfig):
     DEBUG = True
-    CORS_HEADERS = "Access-Control-Allow-Origin"
+    #CORS_HEADERS = "Access-Control-Allow-Origin"
 
 class ProductionConfig(DefaultConfig):
     SECRET_KEY = secrets.token_hex(2048)
-    SSL='adhoc'
+    SSL = 'adhoc'
+    HOST = '0.0.0.0'

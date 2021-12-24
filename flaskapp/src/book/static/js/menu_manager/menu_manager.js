@@ -1,6 +1,18 @@
 
 
-function create_menu_element(chapter)
+function create_menu_category(name, category)
+{
+    let category_text = document.createElement("span");
+    category_text.innerHTML = name;
+
+    let category_div = document.createElement("div");
+    category_div.classList.add("menu-cat");
+    category_div.append(category_text);
+
+    return category_div
+}
+
+function create_menu_element(chapter, category)
 {
     let menu_text = document.createElement("p");
     menu_text.innerHTML = chapter;
@@ -17,6 +29,15 @@ function format_title(title)
     let formatted_title = title.replace('_',' ');
     let capitalized_title = formatted_title.charAt(0).toUpperCase() + formatted_title.slice(1)
     return capitalized_title;
+}
+
+export class MenuBuilder
+{
+    constructor() {
+        this.menu_items = [];
+    }
+
+
 }
 
 export class MenuManager

@@ -4,18 +4,17 @@ Routes for book_bp
 
 """
 import os.path
+from pathlib import Path
 
 from flask import (
     render_template,
     jsonify,
     render_template_string,
-    url_for,
-    send_from_directory,
+    url_for
 )
+from flask_cors import cross_origin
 
 from flask_misaka import markdown
-
-from ..app_factory.cache import cache
 from . import book_bp
 
 
@@ -29,9 +28,7 @@ def cover():
     :return:
         response
     """
-
     return render_template("book_page.html", page_count=len(book_bp.files))
-
 
 @book_bp.get("/menu_manager")
 def book_contents():
@@ -40,14 +37,14 @@ def book_contents():
     Return a books' table of menu_manager
 
     """
-    page_content_url = url_for("/lifeguide.page_content")
-    return jsonify(
-        [
-            {os.path.basename(v): f"{page_content_url}{i}"}
-            for i, v in enumerate(book_bp.files)
-        ]
-    )
+    #todo: fix what I'm doing to the menu
 
+
+    return jsonify(book_bp.menu)
+
+@book_bp.get("/content/")
+def book_pages():
+    return jsonify(book_bp.pages)
 
 @book_bp.get("/content/", defaults={"page_num": 0})
 @book_bp.get("/content/<page_num>")
@@ -65,24 +62,21 @@ def page_content(page_num):
     """
     page_num = int(page_num)
 
-    # turn this into a error handler.
+    # turn this into a error handler. Handle JPGS
     if page_num > len(book_bp.files):
         return "Page does not exist for this lifeguide", 404
 
-    with open(book_bp.files[page_num], "r", encoding="utf-8") as md_file:
-        text = md_file.read()
+    file = book_bp.files[page_num]
+    if Path(file).suffix == 'md':
+        with open(book_bp.files[page_num], "r", encoding="utf-8") as md_file:
+            text = md_file.read()
 
-    template_string = render_template_string(text, static_path="/lifeguide.static")
-    md_template_string = markdown(template_string)
+        template_string = render_template_string(text,
+                                                 static_path="/book.static")
 
-    return jsonify(md_template_string)
-
-
-@book_bp.route("/<filename>")
-def main_js(filename):
-    print(f" MIME TYPE: {filename}")
-    return send_from_directory(
-        '/static/js/',
-        filename,
-        mimetype="application/javascript"
-    )
+        md_template_string = markdown(template_string)
+        response = jsonify(md_template_string)
+        print (response)
+        return jsonify(md_template_string)
+    else:
+        return render_template("illustration.html", illustration=file)

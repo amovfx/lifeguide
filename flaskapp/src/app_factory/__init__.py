@@ -85,7 +85,7 @@ def create_app():
     app = Flask(__name__)
 
     #cross origin
-    CORS(app)
+    CORS(app, support_credentials=True)
 
     # set configuration
     set_config(app)

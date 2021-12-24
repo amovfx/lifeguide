@@ -32,6 +32,10 @@ class TestBlueprint(TestBaseCase):
     def test_webpacked(self):
         self.assertTrue(book_bp.is_webpacked)
 
+    def test_blueprint_data(self):
+        self.assertIn("lifeguide", book_bp.menu.keys() )
+
+
 
 @ddt
 class TestRoutes(TestBaseCase):
@@ -40,9 +44,6 @@ class TestRoutes(TestBaseCase):
     Test routes of the book_bp
 
     """
-
-    def test_webpacked(self):
-        self.assertTrue(book_bp.is_webpacked)
 
     def test_home(self):
         """
@@ -61,7 +62,7 @@ class TestRoutes(TestBaseCase):
         )
 
         self.assertEqual(302, response.status_code)
-        self.assertRedirects(response, "/lifeguide/")
+        self.assertRedirects(response, "/book/")
 
     @idata(range(5))
     def test_badroutes(self, value):
@@ -73,7 +74,7 @@ class TestRoutes(TestBaseCase):
 
         response = self.client.get(f"/{value}", content_type="html/text")
         self.assertEqual(302, response.status_code)
-        self.assertRedirects(response, "/lifeguide/")
+        self.assertRedirects(response, "/book/")
 
     def test_cover(self):
         """
@@ -82,7 +83,7 @@ class TestRoutes(TestBaseCase):
 
 
         """
-        response = self.client.get("/lifeguide/", content_type="html/text")
+        response = self.client.get("/book/", content_type="html/text")
         self.assertEqual(200, response.status_code)
 
     @idata(range(len(book_bp.files)))
@@ -94,7 +95,7 @@ class TestRoutes(TestBaseCase):
             tests each page.
 
         """
-        response = self.client.get(f"/lifeguide/content/{value}", content_type="html/text")
+        response = self.client.get(f"/book/content/{value}", content_type="html/text")
         self.assertEqual(200, response.status_code)
 
     @idata(range(5))
@@ -106,12 +107,11 @@ class TestRoutes(TestBaseCase):
 
         """
         value += len(book_bp.files) + 1
-        response = self.client.get(f"/lifeguide/content/{value}", content_type="html/text")
+        response = self.client.get(f"/book/content/{value}", content_type="html/text")
         self.assertEqual(404, response.status_code)
 
-    @idata(zip(("Intro.01.md", "Autonomy.02.md", "01_current_mindset.03.md"), range(3)))
-    @unpack
-    def test_book_contents(self, key, value):
+
+    def test_book_menu(self):
         """
 
         Test for testing lifeguide table of menu_manager route.
@@ -119,12 +119,6 @@ class TestRoutes(TestBaseCase):
         :param value:
 
         """
-        print("\n")
-        print(f"Testing lifeguide menu_manager {value}...")
-        response = self.client.get("/lifeguide/menu_manager", content_type="json")
-        print(response.data)
+        response = self.client.get("/book/menu_manager", content_type="json")
+        self.assertIn("lifeguide", json.loads(response.data))
 
-        first_entry = json.loads(response.data)[value]
-        self.assertIn(key, first_entry)
-        self.assertEqual(f"/lifeguide/content/{value}", first_entry[key])
-        print(f"Expected: /lifeguide/content/{value} Acctual: {first_entry[key]}")

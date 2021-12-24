@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{ url_for('/lifeguide.static', filename='css/page.css')}}">
-<link rel="stylesheet" href="{{ url_for('/lifeguide.static', filename='css/page.mobile.css')}}">
+<link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.css')}}">
+<link rel="stylesheet" href="{{ url_for('/book.static', filename='css/page.mobile.css')}}">
 
 
 <div id="page" class="page">
@@ -28,7 +28,7 @@
 <script src="https://unpkg.com/js-logger/src/logger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
 <script
-        src="{{ webpacked_url_for('/lifeguide.static', filename='js/main.js')}}"
+        src="{{ webpacked_url_for('/book.static', filename='js/main.js')}}"
 ></script>
 
 
@@ -36,10 +36,12 @@
     var book_interface = new main.Book_Interface();
     main.makeEventListeners(book_interface);
 
-    const book_data = new main.DataResolver.Web2_Resolver();
+    const book_data = new main.DataResolver.Local_Resolver();
     main.Book_Factory.make_book(book_data).then((result) => {
         book_interface.set_book(result);
     });
+    //make book menu
+    //MenuManager(book_data, book_interface);
 </script>
 
 

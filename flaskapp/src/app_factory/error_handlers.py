@@ -12,4 +12,4 @@ def handle404(e):
     :param e:
     :return:
     """
-    return redirect(url_for("/lifeguide.cover"))
+    return redirect(url_for("/book.cover"))

@@ -2,7 +2,7 @@ import Logger from "js-logger";
 
 
 export const DOMAINS = {
-    LOCAL: 'http://localhost',
+    LOCAL: '',
     WEB2: 'https://kaizens.guide',
     IPFS: 'https://ipfs.io/ipfs/',
 }
@@ -14,7 +14,7 @@ export class Data_Resolver
     {
         let local_resolver = new Data_Resolver()
         local_resolver.set_domain(DOMAINS.LOCAL);
-        local_resolver.set_route('/lifeguide/menu_manager');
+        local_resolver.set_route('/book/menu_manager');
         return local_resolver;
     }
 
