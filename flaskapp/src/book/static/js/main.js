@@ -12,10 +12,11 @@ export function makeEventListeners(Book_Interface)
     CreatePageEventListeners(strategy);
 }
 
-export const DataResolver = Data_Resolver;
-export const Book_Interface = BookInterface;
-export const Book_Factory = BookFactory;
+export const CDataResolver = Data_Resolver;
+export const CBook_Interface = BookInterface;
+export const CBook_Factory = BookFactory;
+export const CBook = Book;
 
-
+Logger.useDefaults()
 
 
