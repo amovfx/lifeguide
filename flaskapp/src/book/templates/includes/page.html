@@ -37,11 +37,20 @@
     main.makeEventListeners(book_interface);
 
     const book_data = new main.DataResolver.Local_Resolver();
+    main.Menu_Builder.create();
     main.Book_Factory.make_book(book_data).then((result) => {
+
+        //build menu
+        result.async_load().then((result) => {
+
+        })
+        let menu = new MenuManager(result)
         book_interface.set_book(result);
     });
     //make book menu
     //MenuManager(book_data, book_interface);
+
+    //Book is menu manager and page manager
 </script>
 
 

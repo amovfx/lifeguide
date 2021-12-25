@@ -44,6 +44,10 @@ class EventStrategy
     {
         this.book_interface.turn_page(DELTA);
     }
+    set_page = (num) =>
+    {
+        this.book_interface.set_page();
+    }
 }
 
 export class EventStrategyDesktop extends EventStrategy
@@ -109,6 +113,8 @@ export const CreatePageEventListeners = (strategy) =>
         .addEventListener("click",
             (event) => {strategy.next_page()},
             false);
+
+
 }
 
 

@@ -70,4 +70,20 @@ export function render_page(page)
     });
 }
 
+export class PageManager
+{
+    constructor(pages) {
+        this.pages = []
+    }
+
+    render_page(page)
+    {
+        this.pages[page].async_load().then(() => {
+            document.getElementById("page-contents").innerHTML = page.get_content();
+            document.getElementById("page-number-text").innerHTML = page.get_page_num()
+            document.getElementById("title").innerHTML = page.get_title();
+    });
+}
+}
+
 

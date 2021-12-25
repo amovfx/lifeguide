@@ -62,6 +62,8 @@ export class Book
     constructor()
     {
         Logger.info("Constructing lifeguide.");
+        this.page_manager = new PageManager();
+        this.menu_manager = new MenuManager();
     }
     get_title()
     {
