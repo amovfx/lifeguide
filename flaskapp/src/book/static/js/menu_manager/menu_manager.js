@@ -1,7 +1,10 @@
-
+import {Page, PageManager} from "../page/page";
+import {Book} from "../book/book";
+import Logger from "js-logger";
 
 function create_menu_category(name, category)
 {
+    Logger.info(`Creating menu category : ${name}`)
     let category_text = document.createElement("span");
     category_text.innerHTML = name;
 
@@ -12,8 +15,9 @@ function create_menu_category(name, category)
     return category_div
 }
 
-function create_menu_element(chapter, category)
+function create_menu_element(chapter)
 {
+    Logger.info(`Creating menu element : ${name}`)
     let menu_text = document.createElement("p");
     menu_text.innerHTML = chapter;
 
@@ -31,13 +35,46 @@ function format_title(title)
     return capitalized_title;
 }
 
-export class MenuBuilder
+
+
+export class BookBuilder
 {
     constructor() {
-        this.menu_items = [];
+        this.pages = [];
+        this.sidebar_element = document.getElementById("page-sidebar-contents")
     }
 
+    static create = async (resolver) =>
+    {
 
+        let book = new Book();
+        let pages = [];
+        let PageManager = new PageManager();
+        let MenuManager = new MenuManager();
+        const iterate = (obj, category) =>
+        {
+            Logger.info(``)
+            Object.keys(obj).forEach((key) =>
+            {
+                if (typeof obj[key] === 'object')
+                {
+                    let category = create_menu_category(key, category);
+                    iterate(obj[key], category);
+                }
+                else
+                {
+                    //create a page for the book
+                    let page = new Page(resolver, obj[key])
+                    let page_title = format_title(item.get_title())
+                    pages.append(pages);
+                    let menu_item = create_menu_element(key);
+                    category.append(menu_item);
+                }
+            })
+        }
+
+        return new Book(MenuManager, PageManager)
+    }
 }
 
 export class MenuManager
@@ -46,6 +83,7 @@ export class MenuManager
     {
         this.last_item = undefined;
         this.sidebar_element = document.getElementById("page-sidebar-contents")
+
     }
 
     async initialize_menu(pages, book_interface)
@@ -63,7 +101,13 @@ export class MenuManager
 
             new_item.onclick = () =>
             {
-                book_interface.goto_page(index);
+                const event = new CustomEvent('set_page',
+                {
+                    detail: {
+                        page: index,
+                    }
+                })
+                new_item.dispatchEvent(event);
             }
             this.sidebar_element.append(new_item);
         })
@@ -76,5 +120,13 @@ export class MenuManager
         menu_item.classList.toggle("menu-active");
         this.last_item = menu_item;
     }
+
+}
+
+export class MenuInterface
+{
+    constructor() {
+    }
+
 
 }
