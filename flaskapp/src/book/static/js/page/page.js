@@ -61,29 +61,51 @@ export class Page // page
     }
 }
 
-export function render_page(page)
+export class PageRenderer
 {
-    page.async_load().then(() => {
-        document.getElementById("page-contents").innerHTML = page.get_content();
-        document.getElementById("page-number-text").innerHTML = page.get_page_num()
-        document.getElementById("title").innerHTML = page.get_title();
-    });
+    constructor() {
+    }
+}
+
+export class HTMLRenderer extends PageRenderer
+{
+    async render(page)
+    {
+        page.async_load().then(() => {
+            document.getElementById("page-contents").innerHTML = page.get_content();
+            document.getElementById("page-number-text").innerHTML = page.get_page_num()
+            document.getElementById("title").innerHTML = page.get_title();
+        });
+    }
 }
 
 export class PageManager
 {
-    constructor(pages) {
-        this.pages = []
+    constructor() {
+        Logger.info('Buildling PageManager')
+        this.pages = new Array(0);
+        this.Renderer = new HTMLRenderer();
     }
 
-    render_page(page)
+    create_page(resolver, path)
     {
-        this.pages[page].async_load().then(() => {
-            document.getElementById("page-contents").innerHTML = page.get_content();
-            document.getElementById("page-number-text").innerHTML = page.get_page_num()
-            document.getElementById("title").innerHTML = page.get_title();
-    });
-}
+        let page = new Page(resolver, path);
+        this.pages.push(page);
+    }
+
+    get_pages()
+    {
+        return this.pages;
+    }
+
+    render(page_num) {
+        let page = this.pages[page_num];
+
+        page.async_load().then(() => {
+            this.Renderer.render(page).then(() => {Logger.info('page loaded')})
+        });
+    }
+
 }
 
 

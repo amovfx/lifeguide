@@ -1,6 +1,6 @@
 import Logger from "js-logger";
 import {Bookmark} from "../bookmark/bookmark";
-import {render_page} from "../page/page";
+
 import {buildMenu, MenuManager} from "../menu_manager/menu_manager";
 
 
@@ -62,23 +62,12 @@ export class BookInterface
         Logger.info("Constructing lifeguide interface");
         this.book = book;
         this.Bookmark = new Bookmark();
-        this.MenuManager = menuman;
-        this.PageManager = pageman;
     }
 
     set_book = (book) =>
     {
         this.book = book;
-        this.set_contents()
         this.set_page_data(this.Bookmark.get_page_number())
-    }
-    set_contents = () =>
-    {
-        Logger.info("Setting table of menu_manager")
-        this.MenuManager.initialize_menu(this.book.get_pages(), this).then(() =>
-        {
-            Logger.info("Menu Built");
-        })
     }
 
     get_book()
@@ -110,8 +99,7 @@ export class BookInterface
     {
         if (this.book !== undefined)
         {
-            this.MenuManager.set_active_menu_item(page_num);
-            this.PageManager.render_page(page_num);
+            this.book.set_page(page_num);
         }
         else
         {

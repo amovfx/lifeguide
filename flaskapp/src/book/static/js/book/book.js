@@ -1,69 +1,75 @@
 
-import {Page} from "../page/page.js";
+import {Page, PageManager} from "../page/page.js";
 import Logger from "js-logger";
 import {MenuManager} from "../menu_manager/menu_manager";
 
 export class BookFactory
 {
-    constructor()
+    constructor(book_class)
     {
         Logger.info("Constructing BookFactory. ");
+        this.book_class = book_class
+
     }
 
-    static make_book = async (resolver) =>
+    make_book = async (resolver) =>
     {
-        let book = new Book();
-        let menu_manager = new MenuManager();
+
+
 
         return resolver.async_load().then((result) =>
         {
-            let page_array = new Array(result.length);
-            book.title = Object.keys(result)[0]
-            result[book.title]
-
             //build menu and create book at the same time
-            const iterate = (obj) =>
+            let page_manager = new PageManager();
+            let menu_manager = new MenuManager();
+            Logger.info(`Making book: ${result}`)
+            const iterate = (obj, category) =>
             {
-                Object.keys(obj).forEach(key =>
+                console.log(obj)
+
+                Object.keys(obj).forEach((key) =>
                 {
-                    console.log(`key: ${key}, value: ${obj[key]}`)
-                    //create category
-
-
-                    if (typeof obj[key] === 'object')
+                    let category = menu_manager.create_menu_category(key, category);
+                    let value = obj[key];
+                    Logger.info(`key: ${key} value: ${value}`)
+                    if (Array.isArray(value))
                     {
-                            iterate(obj[key])
+                        obj[key].forEach((item) => {
+                            if (!Array.isArray(item))
+                            {
+                                Logger.info(`recursing on: ${typeof item}`)
+                                iterate(item, category);
+                            }
+                            else
+                            {
+
+                                let i = item[0];
+                                Logger.info(`Creating page from: ${i}`);
+                                let p = item[1];
+                                Logger.info(`Item: ${i}, Path: ${p}`);
+                                page_manager.create_page(resolver, p);
+                                let menu_item = menu_manager.create_menu_element(p);
+                                category.append(menu_item);
+                            }
+                        })
                     }
-                    else
-                    {
-                        let page = new Page(resolver, obj[key]);
-                        page_array[index] = page;
-                    }
+
                 })
             }
+            iterate(result, menu_manager.sidebar_element);
+            return new this.book_class(page_manager, menu_manager)
 
-            iterate(result)
-
-            result.forEach((item, index) => {
-                let page = new Page(resolver, item);
-                page_array[index] = page;
-            });
-
-            book.set_table_of_contents(result);
-            book.set_pages(page_array);
-
-            return book;
         })
     }
 }
 
 export class Book
 {
-    constructor()
+    constructor(page_manager, menu_manager)
     {
-        Logger.info("Constructing lifeguide.");
-        this.page_manager = new PageManager();
-        this.menu_manager = new MenuManager();
+        Logger.info("Constructing Book.");
+        this.page_manager = page_manager;
+        this.menu_manager = menu_manager;
     }
     get_title()
     {
@@ -80,9 +86,10 @@ export class Book
         return this.pages;
     }
 
-    set_pages = (pages) =>
+    set_page = (page_num) =>
     {
-        this.pages = pages;
+        this.menu_manager.set_active_menu_item(page_num);
+        this.page_manager.render(page_num);
     }
 
     set_table_of_contents = (table_of_contents) =>

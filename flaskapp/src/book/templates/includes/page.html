@@ -33,24 +33,17 @@
 
 
 <script defer>
-    var book_interface = new main.Book_Interface();
+    var book_interface = new main.CBook_Interface();
     main.makeEventListeners(book_interface);
 
-    const book_data = new main.DataResolver.Local_Resolver();
-    main.Menu_Builder.create();
-    main.Book_Factory.make_book(book_data).then((result) => {
+    const book_data = new main.CDataResolver.Local_Resolver();
+    const book_factory = new main.CBook_Factory(main.CBook)
 
-        //build menu
-        result.async_load().then((result) => {
+    book_factory.make_book(book_data).then((book) =>
+        {
+            book_interface.set_book(book);
+        });
 
-        })
-        let menu = new MenuManager(result)
-        book_interface.set_book(result);
-    });
-    //make book menu
-    //MenuManager(book_data, book_interface);
-
-    //Book is menu manager and page manager
 </script>
 
 
