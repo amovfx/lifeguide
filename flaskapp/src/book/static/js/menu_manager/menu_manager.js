@@ -108,6 +108,7 @@ export class MenuManager
 
     set_active_menu_item(page_num)
     {
+        Logger.info("setting active item");
         if (this.last_item !== undefined)
         {
             this.last_item.classList.toggle("menu-active");
