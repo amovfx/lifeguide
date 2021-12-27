@@ -1,3 +1,4 @@
 echo "Running shellscript!"
-
-echo "End shell script!"
+which npm
+npm run packjs
+echo "End shell script to try!!!"
