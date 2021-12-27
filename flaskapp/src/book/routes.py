@@ -67,9 +67,7 @@ def page_content(page_num):
         return "Page does not exist for this lifeguide", 404
 
     file = book_bp.files[page_num]
-    print (file)
-    if Path(file).suffix == 'md':
-        print('md file')
+    if Path(file).suffix == '.md':
         with open(book_bp.files[page_num], "r", encoding="utf-8") as md_file:
             text = md_file.read()
 
