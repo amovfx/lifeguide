@@ -3,6 +3,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
     mode: "production",
+    bail: true,
     entry : {
         main: "./main.js",
         cookie_alert: "./cookie_alert.js"
@@ -16,6 +17,9 @@ module.exports = {
     optimization: {
         minimize: false
     },
+    performance: {
+        hints: false
+    },
     module: {
         rules: [
             {
@@ -28,5 +32,6 @@ module.exports = {
 
         ]
 
-    }
+    },
+
 }
