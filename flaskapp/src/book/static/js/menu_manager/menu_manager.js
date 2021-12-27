@@ -108,7 +108,7 @@ export class MenuManager
 
     set_active_menu_item(page_num)
     {
-        Logger.info("setting active item");
+
         if (this.last_item !== undefined)
         {
             this.last_item.classList.toggle("menu-active");
@@ -116,6 +116,7 @@ export class MenuManager
         let menu_item = this.sidebar_element.children[page_num];
         menu_item.classList.toggle("menu-active");
         this.last_item = menu_item;
+        Logger.info("Running for some shit for  yo webpack");
     }
 
 }
