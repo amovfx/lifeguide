@@ -23,8 +23,18 @@ def get_sorted_content(root):
         global counter
         path, dirs, files = next(os.walk(path))
 
+        def title(file_path):
+            name = pathlib.Path(file_path).name.split(".")[0]
+            if "_" in name:
+                split_name = name.split("_")
+                name = " ".join(map(str.capitalize, split_name))
+
+            else:
+                name = name.capitalize()
+            return name
+
         def pairing(a, b):
-            return [a + counter, os.path.join(path, b)]
+            return [a + counter, title(b)]
 
         branch_name = path.split(os.sep)[-1]
         if files:
