@@ -7,12 +7,12 @@ export const DOMAINS = {
     IPFS: 'https://ipfs.io/ipfs/',
 }
 
-export class Data_Resolver
+export class CDataResolver
 {
 
     static Local_Resolver()
     {
-        let local_resolver = new Data_Resolver()
+        let local_resolver = new CDataResolver()
         local_resolver.set_domain(DOMAINS.LOCAL);
         local_resolver.set_route('/book/menu_manager');
         return local_resolver;
@@ -20,7 +20,7 @@ export class Data_Resolver
 
     static IPFS_Resolver()
     {
-        let ipfs_resolver = new Data_Resolver();
+        let ipfs_resolver = new CDataResolver();
         ipfs_resolver.set_domain(DOMAINS.IPFS);
         ipfs_resolver.set_route('QmXY68cNw16ASk2crFRG2nv6GVU8AaSfrwr9wGosqsgW8R')
         return ipfs_resolver;
@@ -28,7 +28,7 @@ export class Data_Resolver
 
     static Web2_Resolver()
     {
-        let web2_resolver = new Data_Resolver();
+        let web2_resolver = new CDataResolver();
         web2_resolver.set_domain(DOMAINS.WEB2);
         web2_resolver.set_route('/lifeguide/menu_manager');
         return web2_resolver;
@@ -39,11 +39,11 @@ export class Data_Resolver
         switch(domain)
         {
             case DOMAINS.LOCAL:
-                return Data_Resolver.Local_Resolver();
+                return CDataResolver.Local_Resolver();
             case DOMAINS.WEB2:
-                return Data_Resolver.Web2_Resolver();
+                return CDataResolver.Web2_Resolver();
             case DOMAINS.IPFS:
-                return Data_Resolver.IPFS_Resolver();
+                return CDataResolver.IPFS_Resolver();
         }
     }
 
@@ -77,12 +77,12 @@ export class Data_Resolver
         //add browser cache management here.
         if (this.route !== undefined)
         {
-            Logger.info(`${this.get_domain_type()} Resolver fetching: ${this.domain}${this.route}`)
             let response = await fetch(`${this.domain}${this.route}`)
 
             if (response.status === 200)
             {
                 let data = await response.json();
+
                 return data;
             }
             else
