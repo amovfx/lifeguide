@@ -4,36 +4,39 @@ import Logger from "js-logger";
 export const PAGE_COOKIE_NAME = "page";
 export const ACCEPT_COOKIES = "acceptCookies";
 
+const hasAcceptedCookies = () =>
+{
+    return (Cookies.get(ACCEPT_COOKIES) == "1")
+}
+
 export class CBookmark
 {
 
     constructor()
     {
         Logger.info("Initializing Bookmark....");
-        this.page_num = 0;
+        this.page_num = undefined;
     }
+
+    accept_cookines
 
     set_page_number = (page) =>
     {
-        if (Cookies.get(ACCEPT_COOKIES) == "1")
+        if (hasAcceptedCookies())
         {
             Cookies.set(PAGE_COOKIE_NAME, page);
         }
-        else
-        {
-            this.page_num = page;
-        }
+        this.page_num = page;
+
     }
 
     get_page_number = () =>
     {
-        if (Cookies.get(ACCEPT_COOKIES) == "1")
+        if ((hasAcceptedCookies()) && (this.page_num === undefined))
         {
-            return Cookies.get(PAGE_COOKIE_NAME);
+            this.page_num = Cookies.get(PAGE_COOKIE_NAME);
         }
-        else
-        {
-            return this.page_num;
-        }
+        return this.page_num;
+
     }
 }
