@@ -2,8 +2,9 @@
 import {BookInterface} from "../book_interface/book_interface.js";
 import Logger from "js-logger";
 import {DELTA} from "../book_interface/book_interface.js";
+import {Book} from "../book/book" ;
 
-class EventStrategy
+class CEventStrategy
 {
     constructor(event_name_down, event_name_up, Book_Interface)
     {
@@ -50,7 +51,7 @@ class EventStrategy
     }
 }
 
-export class EventStrategyDesktop extends EventStrategy
+export class CEventStrategyDesktop extends CEventStrategy
 {
     constructor(Book_Interface)
     {
@@ -71,7 +72,7 @@ export class EventStrategyDesktop extends EventStrategy
 
 }
 
-export class EventStrategyMobile extends EventStrategy
+export class CEventStrategyMobile extends CEventStrategy
 {
     constructor(Book)
     {
