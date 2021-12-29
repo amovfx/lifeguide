@@ -43,11 +43,24 @@
   background-color: #ffaa00;
   margin: 6px 0;
 }
+.menu-cat
+{
+    position: relative;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.menu-item
+{
+    font-size: 10px;
+    padding-left: 15px;
+}
 
 .menu-item:hover
 {
     text-decoration: underline;
     font-weight: bolder;
+
 }
 
 .menu-active
