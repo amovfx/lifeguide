@@ -3,6 +3,17 @@ import {Book} from "../book/book";
 import Logger from "js-logger";
 
 //split out into menu builder and manager
+function menu_click_event(index)
+{
+    const event = new CustomEvent('set_page',
+    {
+        detail: {
+            page: index,
+        }
+    })
+    return event
+}
+
 export class MenuBuilder
 {
     constructor()
@@ -35,19 +46,13 @@ export class MenuBuilder
         let menu_div = document.createElement("div");
         menu_div.id = `menu-item-${index}`;
         menu_div.classList.add("menu-item");
+
         menu_div.onclick = () =>
         {
-            const event = new CustomEvent('set_page',
-            {
-                detail: {
-                    page: index,
-                }
-            })
-
-            menu_div.dispatchEvent(event);
+            menu_div.dispatchEvent(menu_click_event(index));
             this.set_active_menu_item(menu_div)
-
         }
+
         menu_div.append(menu_text);
         return menu_div;
     }
