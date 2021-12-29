@@ -46,7 +46,7 @@ class EventStrategy
     }
     set_page = (num) =>
     {
-        this.book_interface.set_page();
+        this.book_interface.set_page(num);
     }
 }
 
@@ -113,6 +113,12 @@ export const CreatePageEventListeners = (strategy) =>
         .addEventListener("click",
             (event) => {strategy.next_page()},
             false);
+
+    document
+        .addEventListener("set_page",
+            (event) => {
+                strategy.set_page(event.detail.page)
+            }, true)
 
 
 }
