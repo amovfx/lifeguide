@@ -101,7 +101,8 @@ export const CreatePageEventListeners = (strategy) =>
         (event) => {strategy.down_event(event)},
         false);
 
-    document.getElementById("page").addEventListener(strategy.event_name_up,
+    document.getElementById("page")
+        .addEventListener(strategy.event_name_up,
         (event) => {strategy.up_event(event)},
         false);
 
