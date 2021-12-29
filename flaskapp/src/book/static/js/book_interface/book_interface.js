@@ -15,10 +15,9 @@ function mod(n, m) {
 //rename this book
 export class CBookInterface
 {
-    constructor(book)
+    constructor()
     {
         Logger.info("Constructing lifeguide interface");
-        this.book = book;
         this.Bookmark = new CBookmark();
     }
 
@@ -44,7 +43,7 @@ export class CBookInterface
         }
 
     }
-    goto_page(page_num)
+    set_page(page_num)
     {
         this.Bookmark.set_page_number(page_num);
         this.set_page_data(page_num);

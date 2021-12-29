@@ -2,22 +2,19 @@
 
 
 //build resolver to return data
-import {Data_Resolver,DOMAINS} from "../data_resolver/data_resolver";
+import {CDataResolver,DOMAINS} from "../data_resolver/data_resolver";
 import Logger from "js-logger";
 
 export class Page // page
 {
     constructor(data_resolver, data)
     {
-        let title = Object.keys(data)[0];
-        let split_title = title.split(".");
-        this.set_title(split_title[0]);
-        this.set_page_num(parseInt(split_title[1]));
+        this.set_page_num(data);
 
         //create a resolver, it would be nice to
-        this.resolver = new Data_Resolver();
+        this.resolver = new CDataResolver();
         this.resolver.set_domain(data_resolver.get_domain())
-        this.resolver.set_route(data[title]);
+        this.resolver.set_route(`/book/content/${data}`);
 
     }
 
@@ -87,7 +84,7 @@ export class PageManager
         this.Renderer = new HTMLRenderer();
     }
 
-    create_page(resolver, path)
+    create_page = (resolver, path) =>
     {
         let page = new Page(resolver, path);
         this.pages.push(page);
@@ -98,11 +95,11 @@ export class PageManager
         return this.pages;
     }
 
-    render(page_num) {
+    async render(page_num) {
         let page = this.pages[page_num];
 
-        page.async_load().then(() => {
-            this.Renderer.render(page).then(() => {Logger.info('page loaded')})
+        page.async_load().then((result) => {
+            this.Renderer.render(page);
         });
     }
 

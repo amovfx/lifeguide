@@ -1,9 +1,15 @@
 
 import {Page, PageManager} from "../page/page.js";
 import Logger from "js-logger";
-import {MenuManager} from "../menu_manager/menu_manager";
+import {MenuBuilder} from "../menu_manager/menu_manager";
+import {CBookmark} from "../bookmark/bookmark";
+import {DELTA} from "../book_interface/book_interface";
 
-export class BookFactory
+function mod(n, m) {
+    return ((n % m) + m) % m;
+}
+
+export class CBookFactory
 {
     constructor(book_class)
     {
@@ -14,62 +20,63 @@ export class BookFactory
 
     make_book = async (resolver) =>
     {
-
-
-
         return resolver.async_load().then((result) =>
         {
             //build menu and create book at the same time
             let page_manager = new PageManager();
-            let menu_manager = new MenuManager();
-            Logger.info(`Making book: ${result}`)
-            const iterate = (obj, category) =>
+            let menu_builder = new MenuBuilder();
+            const iterate = (table_of_contents, category) =>
             {
-                console.log(obj)
-
-                Object.keys(obj).forEach((key) =>
+                Object.keys(table_of_contents).forEach((chapter) =>
                 {
-                    let category = menu_manager.create_menu_category(key, category);
-                    let value = obj[key];
-                    Logger.info(`key: ${key} value: ${value}`)
-                    if (Array.isArray(value))
+                    let new_category_element = menu_builder.create_menu_category(chapter, category);
+                    category.append(new_category_element);
+                    if (Array.isArray(table_of_contents[chapter]))
                     {
-                        obj[key].forEach((item) => {
-                            if (!Array.isArray(item))
+                        table_of_contents[chapter].forEach((page_data) => {
+                            if (!Array.isArray(page_data))
                             {
-                                Logger.info(`recursing on: ${typeof item}`)
-                                iterate(item, category);
+                                iterate(page_data, new_category_element);
                             }
                             else
                             {
+                                let page_num = page_data[0];
+                                let page_title = page_data[1];
 
-                                let i = item[0];
-                                Logger.info(`Creating page from: ${i}`);
-                                let p = item[1];
-                                Logger.info(`Item: ${i}, Path: ${p}`);
-                                page_manager.create_page(resolver, p);
-                                let menu_item = menu_manager.create_menu_element(p);
-                                category.append(menu_item);
+                                page_manager.create_page(resolver, page_num);
+                                let menu_item = menu_builder.create_menu_element(page_title, page_num);
+                                new_category_element.append(menu_item);
+                                if (page_num === 0)
+                                {
+                                    menu_builder.set_active_menu_item(new_category_element);
+                                }
                             }
                         })
                     }
-
                 })
             }
-            iterate(result, menu_manager.sidebar_element);
-            return new this.book_class(page_manager, menu_manager)
+            iterate(result, menu_builder.sidebar_element);
+            return new this.book_class(page_manager, menu_builder)
 
         })
     }
 }
 
-export class Book
+export class CBook
 {
-    constructor(page_manager, menu_manager)
+    constructor(pageman, menuman)
     {
-        Logger.info("Constructing Book.");
-        this.page_manager = page_manager;
-        this.menu_manager = menu_manager;
+        this.PageManager = pageman;
+        this.MenuManager = menuman;
+
+        this.page_count = this.PageManager.pages.length
+
+        //this listens to the events that menu manager broadcasts
+        document.addEventListener('set_page', (e) =>
+        {
+            this.set_page(e.detail.page);
+        })
+
     }
     get_title()
     {
@@ -81,33 +88,15 @@ export class Book
         this.title = title;
     }
 
-    get_pages()
+    get_page_count()
     {
-        return this.pages;
+        return this.page_count;
     }
 
-    set_page = (page_num) =>
+    set_page(page_num)
     {
-        this.menu_manager.set_active_menu_item(page_num);
-        this.page_manager.render(page_num);
+        page_num = mod(page_num, this.get_page_count());
+        this.MenuManager.set_active_menu_item_by_index(page_num);
+        this.PageManager.render(page_num);
     }
-
-    set_table_of_contents = (table_of_contents) =>
-    {
-        this.table_of_contents = table_of_contents;
-    }
-
-    get_table_of_contents()
-    {
-        return this.table_of_contents;
-    }
-
-    get_page(id)
-    {
-        if (this.pages !== undefined)
-        {
-            return this.pages[id];
-        }
-    }
-
 }

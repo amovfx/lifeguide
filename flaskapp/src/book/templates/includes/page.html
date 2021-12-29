@@ -33,11 +33,11 @@
 
 
 <script defer>
-    var book_interface = new main.CBook_Interface();
+    var book_interface = new main.BookInterface();
     main.makeEventListeners(book_interface);
 
-    const book_data = new main.CDataResolver.Local_Resolver();
-    const book_factory = new main.CBook_Factory(main.CBook)
+    const book_data = new main.DataResolver.Local_Resolver();
+    const book_factory = new main.BookFactory(main.Book)
 
     book_factory.make_book(book_data).then((book) =>
         {

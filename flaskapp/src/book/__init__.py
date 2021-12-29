@@ -6,7 +6,7 @@ import pathlib
 
 from ..utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 
-
+counter = 0
 def path_to_category_name(file_path):
     branch_name = file_path.split(os.sep)[-1]
     if "_" in branch_name:
@@ -53,7 +53,7 @@ def get_sorted_content(root):
         else:
             return 0
 
-    def build_book_menu(file_path, counter=0, menu=defaultdict(list)):
+    def build_book_menu(file_path, menu=defaultdict(list)):
         """
 
         This builds the book data structure
@@ -61,6 +61,8 @@ def get_sorted_content(root):
         :param menu:
         :return:
         """
+
+        global counter
 
         def pairing(a, b):
             """
@@ -88,10 +90,10 @@ def get_sorted_content(root):
         dirs.sort()
         for dir in dirs:
             branch = defaultdict(list)
-            build_book_menu(os.path.join(file_path, dir), counter, branch)
+            build_book_menu(os.path.join(file_path, dir), branch)
             menu[branch_name].append(branch)
 
-    build_book_menu(root, counter=0, menu=menu)
+    build_book_menu(root, menu=menu)
     menu = json.loads(json.dumps(dict(menu)))
     return menu, pages
 

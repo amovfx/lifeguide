@@ -42,10 +42,6 @@ def book_contents():
 
     return jsonify(book_bp.menu)
 
-@book_bp.get("/content/")
-def book_pages():
-    return jsonify(book_bp.pages)
-
 @book_bp.get("/content/", defaults={"page_num": 0})
 @book_bp.get("/content/<page_num>")
 def page_content(page_num):

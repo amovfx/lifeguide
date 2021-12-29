@@ -1,5 +1,5 @@
 
-import {BookInterface} from "../book_interface/book_interface.js";
+import {CBookInterface} from "../book_interface/book_interface.js";
 import Logger from "js-logger";
 import {DELTA} from "../book_interface/book_interface.js";
 import {Book} from "../book/book" ;
@@ -14,7 +14,7 @@ class CEventStrategy
         this.event_name_up = event_name_up;
         this.data_swipe_element_clicked = false;
 
-        if (Book_Interface instanceof BookInterface)
+        if (Book_Interface instanceof CBookInterface)
         {
             this.book_interface = Book_Interface;
         }
@@ -92,7 +92,7 @@ export class CEventStrategyMobile extends CEventStrategy
     }
 }
 
-export const CreatePageEventListeners = (strategy) =>
+export const FCreatePageEventListeners = (strategy) =>
 {
     Logger.info("Adding event listeners");
 

@@ -2,14 +2,7 @@ import {Page, PageManager} from "../page/page";
 import {Book} from "../book/book";
 import Logger from "js-logger";
 
-
-function format_title(title)
-{
-    let formatted_title = title.replace('_',' ');
-    let capitalized_title = formatted_title.charAt(0).toUpperCase() + formatted_title.slice(1)
-    return capitalized_title;
-}
-
+//split out into menu builder and manager
 export class MenuBuilder
 {
     constructor()
@@ -22,7 +15,6 @@ export class MenuBuilder
 
     create_menu_category(name, category=this.sidebar_element)
     {
-        Logger.info(`Creating menu category : ${name}`)
         let category_text = document.createElement("span");
         category_text.innerHTML = name;
 
@@ -37,39 +29,44 @@ export class MenuBuilder
 
     create_menu_element(name, index)
     {
-        Logger.info(`Creating menu element : ${name}`)
         let menu_text = document.createElement("p");
         menu_text.innerHTML = name;
 
         let menu_div = document.createElement("div");
+        menu_div.id = `menu-item-${index}`;
         menu_div.classList.add("menu-item");
         menu_div.onclick = () =>
         {
-            Logger.info(`Custom event: ${index}`);
             const event = new CustomEvent('set_page',
             {
                 detail: {
                     page: index,
                 }
             })
+
             menu_div.dispatchEvent(event);
+            this.set_active_menu_item(menu_div)
+
         }
         menu_div.append(menu_text);
-
         return menu_div;
     }
 
-    set_active_menu_item(page_num)
+    set_active_menu_item = (menu_element) =>
     {
 
         if (this.last_item !== undefined)
         {
             this.last_item.classList.toggle("menu-active");
         }
-        let menu_item = this.sidebar_element.children[page_num];
-        menu_item.classList.toggle("menu-active");
-        this.last_item = menu_item;
-        Logger.info("Bufddfdsfsd refresh");
+        menu_element.classList.toggle("menu-active");
+        this.last_item = menu_element;
+    }
+    set_active_menu_item_by_index = (index) =>
+    {
+        let element = document.getElementById(`menu-item-${index}`);
+        Logger.info(`Element is: ${element}`);
+        this.set_active_menu_item(element);
     }
 
 }

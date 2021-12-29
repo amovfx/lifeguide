@@ -99,7 +99,7 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
             )
         return bp_name
 
-    @lru_cache(maxsize=16)
+
     def webpacked_url_for(self, endpoint, **values):
         """
 
