@@ -4,7 +4,7 @@ import Logger from "js-logger";
 export const PAGE_COOKIE_NAME = "page";
 export const ACCEPT_COOKIES = "acceptCookies";
 
-export class Bookmark
+export class CBookmark
 {
 
     constructor()
