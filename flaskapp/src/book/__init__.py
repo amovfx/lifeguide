@@ -6,7 +6,41 @@ import pathlib
 
 from ..utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 
-counter = 0
+
+def path_to_category_name(file_path):
+    branch_name = file_path.split(os.sep)[-1]
+    if "_" in branch_name:
+        branch_name = branch_name.split("_")[-1]
+    return branch_name.capitalize()
+
+
+def path_to_menu_item_name(file_path):
+    """
+    Converts a file path to a menu name.
+    /blah/blah/index.01.md -> Index
+    doesnt/matter/blah/blah/super_cool_file.01.md -> Super Cool File
+    :param file_path:
+        string of file path
+    :return:
+        string
+    """
+    name = pathlib.Path(file_path).name.split(".")[0]
+
+    if "_" in name:
+        split_name = name.split("_")
+        joined_name = ""
+        for item in split_name:
+            if len(joined_name) > 0:
+                joined_name += " "
+            joined_name += item.capitalize()
+        name = joined_name
+
+    else:
+        name = name.capitalize()
+    return name
+
+
+
 def get_sorted_content(root):
 
     pages = []
@@ -19,38 +53,45 @@ def get_sorted_content(root):
         else:
             return 0
 
-    def build_book_menu(path, menu=defaultdict(list)):
-        global counter
-        path, dirs, files = next(os.walk(path))
+    def build_book_menu(file_path, counter=0, menu=defaultdict(list)):
+        """
 
-        def title(file_path):
-            name = pathlib.Path(file_path).name.split(".")[0]
-            if "_" in name:
-                split_name = name.split("_")
-                name = " ".join(map(str.capitalize, split_name))
-
-            else:
-                name = name.capitalize()
-            return name
+        This builds the book data structure
+        :param file_path:
+        :param menu:
+        :return:
+        """
 
         def pairing(a, b):
-            return [a + counter, title(b)]
+            """
 
-        branch_name = path.split(os.sep)[-1]
+            This creates the relevant data for our book.
+            We need the page number for js to call a flask route
+            and the title for the menu entry.
+
+            :param a:
+            :param b:
+            :return:
+            """
+            return [a + counter, path_to_menu_item_name(b)]
+
+        file_path, dirs, files = next(os.walk(file_path))
+
+        branch_name = path_to_category_name(file_path)
         if files:
             files.sort(key=item_sort)
             sorted_files = list(starmap(pairing, enumerate(files)))
             counter += len(files)
-            pages.extend(list(map(lambda x: os.path.join(path, x), files)))
+            pages.extend(list(map(lambda x: os.path.join(file_path, x), files)))
             menu[branch_name].extend(sorted_files)
 
         dirs.sort()
         for dir in dirs:
             branch = defaultdict(list)
-            build_book_menu(os.path.join(path, dir), branch)
+            build_book_menu(os.path.join(file_path, dir), counter, branch)
             menu[branch_name].append(branch)
 
-    build_book_menu(root, menu)
+    build_book_menu(root, counter=0, menu=menu)
     menu = json.loads(json.dumps(dict(menu)))
     return menu, pages
 
