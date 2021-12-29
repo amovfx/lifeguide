@@ -35,7 +35,7 @@ class CEventStrategy
             this.data_swipe_element_clicked = event_target !== undefined;
     }
 
-    //these high jack delta constant to turn the page.
+
     //these are click events.
     next_page = () =>
     {
