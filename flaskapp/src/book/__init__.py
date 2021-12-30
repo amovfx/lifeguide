@@ -8,10 +8,13 @@ from ..utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 
 counter = 0
 def path_to_category_name(file_path):
+    print(file_path)
     branch_name = file_path.split(os.sep)[-1]
-    if "_" in branch_name:
-        branch_name = branch_name.split("_")[-1]
-    return branch_name.capitalize()
+    print(branch_name)
+    split_name = branch_name.split("_")
+    split_name = map(str.capitalize, split_name)
+
+    return (" ").join(split_name)
 
 
 def path_to_menu_item_name(file_path):

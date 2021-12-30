@@ -49,6 +49,7 @@ div.menu-cat span
     padding-left: 5px;
     font-size: 20px;
     font-weight: bolder;
+    color: rgba(0, 0, 0, 0.53);
 }
 
 .menu-item p
