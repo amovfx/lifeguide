@@ -71,8 +71,12 @@ def page_content(page_num):
                                                  static_path="/book.static")
 
         md_template_string = markdown(template_string)
-        response = jsonify(md_template_string)
-        print (response)
         return jsonify(md_template_string)
     else:
-        return render_template("illustration.html", illustration=file)
+        static_folder = Path(__file__).parent
+        illustration_path = Path(file).relative_to(static_folder).as_posix()
+
+        jpg_template = render_template("illustration.html", illustration=illustration_path)
+        response = jsonify(jpg_template)
+        print(response)
+        return response
