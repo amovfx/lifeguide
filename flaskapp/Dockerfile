@@ -6,7 +6,7 @@ RUN apt-get update && \
 #RUN apt install python-dev clang libffi libffi-dev
 # Set the working directory to /app_factory
 
-# Copy the current directory menu_manager into the container at /app_factory
+# Copy the current directory into the container at /app_factory
 
 COPY ./requirements.txt /requirements.txt
 
