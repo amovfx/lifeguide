@@ -97,7 +97,6 @@ export class PageManager
 
     async render(page_num) {
         let page = this.pages[page_num];
-
         page.async_load().then((result) => {
             this.Renderer.render(page);
         });

@@ -18,8 +18,6 @@ export class CBookmark
         this.page_num = undefined;
     }
 
-    accept_cookines
-
     set_page_number = (page) =>
     {
         if (hasAcceptedCookies())
@@ -32,10 +30,18 @@ export class CBookmark
 
     get_page_number = () =>
     {
-        if ((hasAcceptedCookies()) && (this.page_num === undefined))
+        if (hasAcceptedCookies())
         {
-            this.page_num = Cookies.get(PAGE_COOKIE_NAME);
+            if (this.page_num === undefined)
+            {
+                this.page_num = 0;
+            }
+            else
+            {
+                this.page_num = Cookies.get(PAGE_COOKIE_NAME)
+            }
         }
+
         return this.page_num;
 
     }

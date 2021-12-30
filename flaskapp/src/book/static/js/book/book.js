@@ -1,7 +1,7 @@
 
 import {Page, PageManager} from "../page/page.js";
 import Logger from "js-logger";
-import {SideBarBuilder} from "../sidebar_manager/sidebar_manager";
+import {SideBarBuilder} from "../sidebar_builder/sidebar_builder";
 import {CBookmark} from "../bookmark/bookmark";
 import {DELTA} from "../book_interface/book_interface";
 

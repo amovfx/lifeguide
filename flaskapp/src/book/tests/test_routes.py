@@ -114,11 +114,11 @@ class TestRoutes(TestBaseCase):
     def test_book_menu(self):
         """
 
-        Test for testing lifeguide table of sidebar_manager route.
+        Test for testing lifeguide table of sidebar_builder route.
 
         :param value:
 
         """
-        response = self.client.get("/book/sidebar_manager", content_type="json")
+        response = self.client.get("/book/sidebar_builder", content_type="json")
         self.assertIn("lifeguide", json.loads(response.data))
 

@@ -59,7 +59,6 @@ export class SideBarBuilder
 
     set_active_menu_item = (menu_element) =>
     {
-
         if (this.last_item !== undefined)
         {
             this.last_item.classList.toggle("menu-active");
@@ -71,7 +70,9 @@ export class SideBarBuilder
     {
         let element = document.getElementById(`menu-item-${index}`);
         Logger.info(`Element is: ${element}`);
-        this.set_active_menu_item(element);
+
+        if (element !== null) this.set_active_menu_item(element);
+
     }
 
 }
