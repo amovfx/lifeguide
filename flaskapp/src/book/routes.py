@@ -30,11 +30,11 @@ def cover():
     """
     return render_template("book_page.html", page_count=len(book_bp.files))
 
-@book_bp.get("/menu_manager")
+@book_bp.get("/sidebar_manager")
 def book_contents():
     """
 
-    Return a books' table of menu_manager
+    Return a books' table of sidebar_manager
 
     """
     #todo: fix what I'm doing to the menu

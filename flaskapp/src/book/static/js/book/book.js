@@ -1,7 +1,7 @@
 
 import {Page, PageManager} from "../page/page.js";
 import Logger from "js-logger";
-import {MenuBuilder} from "../menu_manager/menu_manager";
+import {SideBarBuilder} from "../sidebar_manager/sidebar_manager";
 import {CBookmark} from "../bookmark/bookmark";
 import {DELTA} from "../book_interface/book_interface";
 
@@ -24,7 +24,7 @@ export class CBookFactory
         {
             //build menu and create book at the same time
             let page_manager = new PageManager();
-            let menu_builder = new MenuBuilder();
+            let menu_builder = new SideBarBuilder();
             const iterate = (table_of_contents, category) =>
             {
                 Object.keys(table_of_contents).forEach((chapter) =>

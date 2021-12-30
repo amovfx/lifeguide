@@ -1,7 +1,7 @@
 import Logger from "js-logger";
 import {CBookmark} from "../bookmark/bookmark";
 
-import {buildMenu, MenuBuilder} from "../menu_manager/menu_manager";
+import {buildMenu, SideBarBuilder} from "../sidebar_manager/sidebar_manager";
 
 
 export const DELTA = 6;

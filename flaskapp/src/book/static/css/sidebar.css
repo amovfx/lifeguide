@@ -43,17 +43,18 @@
   background-color: #ffaa00;
   margin: 6px 0;
 }
-.menu-cat
+div.menu-cat span
 {
     position: relative;
-    padding-left: 15px;
-    font-size: 15px;
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-.menu-item
+.menu-item p
 {
-    font-size: 10px;
-    padding-left: 15px;
+    font-size: 15px;
+    padding-left: 10px;
 }
 
 .menu-item:hover

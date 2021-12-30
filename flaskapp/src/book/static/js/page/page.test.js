@@ -1,5 +1,5 @@
 
-import Table_of_Contents from "./menu_manager/menu_manager";
+import Table_of_Contents from "./sidebar_manager/sidebar_manager";
 
 
 const axios = require('axios').default;

@@ -14,7 +14,7 @@ export class CDataResolver
     {
         let local_resolver = new CDataResolver()
         local_resolver.set_domain(DOMAINS.LOCAL);
-        local_resolver.set_route('/book/menu_manager');
+        local_resolver.set_route('/book/sidebar_manager');
         return local_resolver;
     }
 
@@ -30,7 +30,7 @@ export class CDataResolver
     {
         let web2_resolver = new CDataResolver();
         web2_resolver.set_domain(DOMAINS.WEB2);
-        web2_resolver.set_route('/lifeguide/menu_manager');
+        web2_resolver.set_route('/lifeguide/sidebar_manager');
         return web2_resolver;
     }
 

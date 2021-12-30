@@ -14,7 +14,7 @@ function menu_click_event(index)
     return event
 }
 
-export class MenuBuilder
+export class SideBarBuilder
 {
     constructor()
     {

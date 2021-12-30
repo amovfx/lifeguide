@@ -11,7 +11,7 @@ describe("Testing centralized Data_resolverModule", () => {
         it ("Getters", () => {
             let local_resolver = CDataResolver.Local_Resolver();
             expect(local_resolver.get_domain()).toBe(DOMAINS.LOCAL);
-            expect(local_resolver.get_route()).toBe(('/lifeguide/menu_manager'))
+            expect(local_resolver.get_route()).toBe(('/lifeguide/sidebar_manager'))
         })
 
         it ("Setters", () => {
@@ -48,7 +48,7 @@ describe("Testing centralized Data_resolverModule", () => {
         it("Getters", () => {
             let web2_resolver = CDataResolver.Web2_Resolver();
             expect(web2_resolver.get_domain()).toBe('https://kaizens.guide');
-            expect(web2_resolver.get_route()).toBe('/lifeguide/menu_manager')
+            expect(web2_resolver.get_route()).toBe('/lifeguide/sidebar_manager')
         })
 
         it("Loading", async () => {
