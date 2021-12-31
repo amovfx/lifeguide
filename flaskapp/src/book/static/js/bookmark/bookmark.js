@@ -28,20 +28,17 @@ export class CBookmark
 
     }
 
-    get_page_number = () =>
-    {
-        if (hasAcceptedCookies())
+    get_page_number = () => {
+        if (this.page_num === undefined)
         {
-            if (this.page_num === undefined)
-            {
-                this.page_num = 0;
+            if (hasAcceptedCookies()) {
+                this.page_num = Cookies.get(PAGE_COOKIE_NAME)
             }
             else
             {
-                this.page_num = Cookies.get(PAGE_COOKIE_NAME)
+                this.page_num = 0;
             }
         }
-
         return this.page_num;
 
     }
