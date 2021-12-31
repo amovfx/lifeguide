@@ -1,5 +1,7 @@
 # Autonomy
 
+![alt text]({{ url_for(static_path, filename='/content/images/A_climbing_Ape.jpg') }})
+
 Autonomy is about having the ability to make your own decisions. It is to define your life as a result of your actions, 
 values, feelings and desires. 
 It is to self-determine.

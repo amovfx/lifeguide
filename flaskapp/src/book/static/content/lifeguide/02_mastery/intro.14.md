@@ -1,5 +1,7 @@
 # Mastery
 
+![alt text]({{ url_for(static_path, filename='/content/images/A_master_Ape.jpg') }})
+
 This is the end of Part 1: Autonomy. We have covered how to analyze yourself so that you can get a 
 baseline understanding of where you are right now, and we covered the autonomous mindset and how to develop it. 
 Now, let’s discuss how to master different aspects of life.

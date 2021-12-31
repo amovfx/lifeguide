@@ -1,5 +1,7 @@
 # Purpose
 
+![alt text]({{ url_for(static_path, filename='/content/images/A_helpful_Ape.jpg') }})
+
 The basis of life is freedom. The purpose of life is the joy of creating our own reality. And the result of life 
 is expansion of who we are as human beings. But one of the most important aspects of our purpose is having uplifting, positive relationships with others.
 Imagine, for a moment, what life would be like if you were the only one left on planet earth. All of earth’s 
