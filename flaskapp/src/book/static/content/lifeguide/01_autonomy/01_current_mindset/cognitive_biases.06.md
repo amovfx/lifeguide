@@ -10,6 +10,8 @@ paleolithic era, but we advanced rapidly and changed our environment from which 
 
 Understand these and free yourself from them. There are a lot. Wikipedia is an excellent resource for learning about them.
 
+![alt text]({{ url_for(static_path, filename='/content/images/cognitive-bias-1070.jpg') }})
+
 The anti-vaxxers during COVID-19 are a prime example of a group of people led astray by social media exploiting 
 cognitive biases.
 
@@ -27,4 +29,5 @@ In and many places in the world, the anti-vaxxers have filled up the hospitals. 
 If we do not understand cognitive biases, the ones that do control ous and the social media algorithms absolutely understand
 cognitive biases. Social media algorithms exploit cognitive biases and train viewing habits to maximize profit.
 
-![alt text]({{ url_for(static_path, filename='/content/images/cognitive-bias-1070.jpg') }})
+Once we get a good grip on these, we can start building up new habits in ourselves to build the best possible life we can.
+
