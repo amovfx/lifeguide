@@ -2,13 +2,20 @@
 
 There are two different types of motivation. Intrinsic and extrinsic.
 
-Intrinsic motivation is doing an activity for its inherit satisfaction. It is when you do something because it is fun and/or challenging to please your creativity.
+Intrinsic motivation is doing an activity for its inherit satisfaction. 
+It is when we do something because it is fun and/or challenging to please our creativity. A hobby.
 
-Extrinsic motivation is reward-driven behavior. It is when you do something for praise, money, power, sex, social status or knowledge.
+Extrinsic motivation is reward-driven behavior. It is when we do something for praise, money, power, sex, social status or knowledge.
 
-It is important to realize the link between intrinsic and extrinsic motivations. Extrinsic rewards kill intrinsic motivation. This discovery came from seperating two groups of children that liked to draw. The researchers paid one group and not the other to draw for one hour. After the hour was complete, the researchers told both groups to stop. The paid group put all their pencils down. The unpaid group continued to draw.
+It is important to realize the link between intrinsic and extrinsic motivations. 
+**Extrinsic rewards kill intrinsic motivation.** This discovery came from separating two groups of children that liked to draw. 
+The researchers paid one group and not the other to draw for one hour. After the hour was complete, 
+the researchers told both groups to stop. The paid group put all their pencils down. The unpaid group continued to draw.
 
-Your intrinsic motivators are stronger than your extrinsic motivators. Be aware of your situation and make sure you don't lose track of what you love to do. Make sure you are satisfying your intrinsic motivators before your extrinsic.
+Our intrinsic motivators are stronger than our extrinsic motivators. 
+Let's be aware of our situation, making sure we don't lose track of what we love to do or have our intrinsic motivation
+smothered by extrinsic motivation. 
+We must make sure we are prioritizing our intrinsic motivators before our extrinsic ones.
 
 ###Resources
 
