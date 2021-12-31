@@ -1,17 +1,26 @@
 # Nutrition
 
-Nutrition is such a huge topic and there are many different “experts” who think that they have all the answers. The only problem is that everyone has a different body, and we each react to different types of nutrition. No one can tell you that they have the one-size-fits-all diet that will guarantee you better health. Your body is different than almost anyone else. You know your body best. Do your research to find out what is best for you and follow your gut instinct. 
-Nutrition drives sleep, energy levels, your immune system, and longevity. Here are some nutrition tips:
+Nutrition is such a huge topic and there are many different “experts” who think that they have all the answers. 
+The problem is that everyone has a different body, and we each react to different types of nutrition. 
+No one can tell you that they have the one-size-fits-all diet that will guarantee better health. Each body is different.
+You know your body best. If you are seeking outside counsel, make sure that your nutrition advisor has a Bachelor of Science.
+Nutrition is a science.
+
+Nutrition drives sleep, energy levels, your immune system, and longevity. Here are some easy nutrition tips:
+
+ * Eat like an adult.
+ * Eat whole foods, reduced the amount of processed foods, especially processed sugars like high-fructose corn syrup.
+ * If it is junk food, ask yourself why you are putting junk into your body.
+ * Get a variety of fresh fruits and vegetables. Try and reach ten a day.
+
 Understand your blood sugar and how the body stores fat to help make better choices. Low Glycemic foods regulate blood sugar better.
-Circadian rhythm primes your body to eat at certain times. We are primed to eat at certain parts of the day and don’t like to be stuffed before bed. We become more resistant to insulin as the day goes on.
-You don’t have to eat breakfast food for breakfast. Healthier dinner meals are just fine.
-If you would like to make a change, start small and slowly like any other habit.
-Replace unhealthy foods with healthy foods.
-Soy and broccoli have genistein which is proven to boost your cancer-fighting defense system which stops blood flow to tumors.
-Cocoa helps regenerate stem cells. Cocoa is high in flavanols.
-Fruit, sauerkraut, and cheese help maintain healthy gut bacteria.
-Mushrooms and olive oil help your immune system fight everything from colds to cancer.
-Do your research! Follow your gut instinct as to what is good for you. You are unique and you need to take time to figure out what works best for you. 
+Circadian rhythm primes your body to eat at certain times. We are primed to eat at certain parts of the day and don’t 
+like to be stuffed before bed. We become more resistant to insulin as the day goes on.
+
+If you would like to make a change, start small and slowly like any other habit. Replace unhealthy foods with healthy foods.
+
+
+Nutrition experts have Science degrees!
 
 
 #Resources
