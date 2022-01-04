@@ -1,4 +1,4 @@
-## Trust
+# Trust
 
 The Webster dictionary describes trust as the “assured reliance on the character, ability, strength, or truth of someone or something.” Trust is  the confidence you have in someone. It is one of the most important qualities that you or any entity such as a business can have. Without trust, a business will collapse over time. And if others don’t trust you, your life will suffer in almost every manner.
 The author Stephen M. Covey (the son of Stephen R. Covey) wrote a good book titled, “The Speed of Trust.” In his book, he explains how trust has a direct impact on the economics of any business, and individuals too. So, it’s important to cultivate trust in yourself first. In other words, if you say you’re going to do something, even if it is only for you, then do it. Consider your current commitments before you make new ones. 

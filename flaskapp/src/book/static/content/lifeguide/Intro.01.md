@@ -33,11 +33,18 @@ It is time for humanity to stop shitting where we eat. Responsibility comes befo
 
 My motivation for this book is to uplift as many people possible so we can navigate this change together. 
 I am tremendously optimistic about our future. The extrinsic threat of climate change is a golden opportunity for humanity. 
-We will unite behind singluar purpose of making ourselves and the planet better. 
+We will unite behind singular purpose of making ourselves and the planet better. 
+
+
 
 The Autonomy, Mastery and Purpose formula has me waking up everyday excited and going to bed feeling accomplished.
 
 Let us begin this journey with the most simple and important steps, how to change your mindset so that you can have a 
 strong foundation to create the life you really want.
+
+The structure of this book is as follows, I set the context of the book through a brief history of history and an objective
+look at humanity and our environment. This is so we can understand the context of what skills that we need to develop
+to thrive in our current environment and the future. You want to prepare now for where you are going to be. This is the
+book to show you how to do it.
 
 

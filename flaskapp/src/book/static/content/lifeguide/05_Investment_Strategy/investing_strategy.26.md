@@ -1,6 +1,11 @@
 # My Investment strategies
 
-I have had a 80% return year over year since 2012.
+I have had a 80% return year over year since 2012. For 2021 I'm up over 500%.
+A word of caution, what worked in the past, doesn't garantee to work in the present.
+The world is always changing and I wrote this book to share the skills to help people strategically position 
+themselves for the future.
+
+
 I formulate a strategy based off of knowledge of history, psychology and technology.
 The internet has allowed people to connect and cooperate in new ways that has
 brought massive disruption to major industries. This would be expected if we look at history. 
@@ -15,10 +20,10 @@ As histroy progressed, we developed new ways of storeing and disseminating data.
 
 The printing press, radio, tv, computers, databases, internet, blogs like instagram and facebook. All have had monumental transformations upon our civilization.
 
-Now we are at another one, as anyone reading understands, the computing and internet disrupted almost every industrial sectors, all except one industry.
+Now we are at another one, as anyone reads understands, the computing and internet disrupted almost every industrial sectors, all except one industry.
 Finance. The internet was missing a key piece of the puzzle which would enable it to disrupt the finance and regulatory industries.
 It was impossible to send money through the internet without a trusted third party. If you wanted to send money, you had to use a bank. This is because banks
-are in control of a process called settlement. Settelment is the process that balances two seperate ledgers. This maintains
+are in control of a process called settlement. Settlement is the process that balances two seperate ledgers. This maintains
 a stable monetary supply so the economy doesn't blow up.
 
 Bitcoin is what solved this problem. It is the first time we are enabled to do settlement without a third party.

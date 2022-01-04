@@ -6,6 +6,13 @@ intertwine to give humanity far lower costs in production, increase global acces
 You could also see these as additional layers in our communications internet. This has been made possible by an exponential drop
 in the price of computation.
 
+We have a vastly stronger collective memory now and a immutable decentralized ledger. This should enable us to break
+the cycle of the narssicitic generation and the 100 year cycles we subject ourselves too. 
+
+The idea of this book is to enable as many people as possible to benefit from the upcoming upswing to get into positions
+to benefit future generations and break our generational cycle with a stronger and globally accessible collective memory.
+
+
 ###Monetary Internet
 
 The monetary internet was made possible by bitcoin. At it's heart, bitcoin is an algorithmic solution to settlement long thought

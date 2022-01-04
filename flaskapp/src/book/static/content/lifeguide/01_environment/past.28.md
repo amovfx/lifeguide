@@ -1,5 +1,66 @@
 # Our history
 
+There is a famous saying, history doesn't always repeat, but it sure does rhyme. 
+What I hope to show is there is a pattern in the evolution of our collective memory that revolves around
+our data storage capabilities. When I look back in history, I view it in the context of our collective record keeping 
+capabilities.  Our collective memory is what controls the present, and enables us to build a better future.
+
+#The beginnings of civilization
+
+For most of our history, our collective memory and essential information was passed down through stories. The power
+of the story helped us understand our world to navigate it better.
+
+I think everyone would agree that the human memory is quite falible, as these storys transfer from elder to elder,
+they can easily be modified for the next generation. In that situation, The power the elders have over the young is 
+near absolute.
+
+This was the way things were done for about 170 000 years. About 10 000 years ago, modern anthropomorphic humans
+migrated from Africa into the regious of modern Iran, Syria and Turkey. In these regions we began farming.
+From farming, as people traded, we needed to keep track of who owes what good to who. So we invented counting. This 
+would be the first instance in modern set theory. You had big baskets of stuff, and small baskets of stuff.
+The first evidence of this is something called proto-cuniform. Cells with Pictures with dots, to denominate the
+amount of goods. As absurd as this sounds, one of the first inventions humans ever made was the spreadsheet.
+From counting, came writing. Cuniform, which then evolved to clay packets for contracts, which then evolved to 
+cuniform. Cuniform is called script. You can't write poetry with it, but you sure could do some accounting.
+
+From this, once we have the ability to account, we can now trade and our first civilizations are born from a need
+to settle ownership of these records. Today, writing and counting is something everyone is expected to learn,
+then, Writing is a highly paid profession reserved for the nobility. From this invention, humanity blossomed from
+nomadic tribes to an agrarian civilization. It increased our capability to specialize.
+
+
+
+#The renaissance
+
+The renaissance was a period where cultures started to mix. Where classical philosphy, literature and art were promoted.
+During this time, information proliferated due to the printing press. The new invention that super charged our
+record keeping capabilites and birthed a beuracracy.
+
+Also, double entry accounting was invented in northern Italy. This innovation to the ledger that was used since
+the beginning of our civilization spawned Capitalism and our entire civilization reorganized. Giving birth to industrial 
+revolutions.
+
+#Industrial Revolutions
+
+Another we want to understand about our past is industrial revolutions. It is when there is a convergence of three 
+industrial sectors, energy, transport, and communications. 
+
+Economic historians are in agreement that the onset of the Industrial Revolution is the most important event in the history 
+of humanity since the domestication of animals and plants.[15]
+
+Domesticated Animal power, the wheel, and the invention of writing.
+
+Steam and water power, the train, and the telegraph.
+
+Oil, automobiles and planes, and the telephone.
+
+Nuclear, rockets, sattelite communications
+
+Which brings us to the present of Renewables, self-driving cars and drones, and the internet.
+
+
+
+
 When you think about how fast human civilization has been evolving, it’s rather mind-boggling. Not too long ago, there was no internet. No one had a “smart” phone which has enough computing power to rival the best computers on the planet just 15 to 20 years ago. 
 We couldn’t connect with other people in other lands without traveling there. And Google was just a funny-sounding word…
 It wasn’t long ago that we were trading beads for feathers with one another. Most of our evolutionary time that man has been in existence was spent in the nomadic period.

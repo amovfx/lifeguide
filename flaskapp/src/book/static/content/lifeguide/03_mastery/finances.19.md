@@ -41,6 +41,14 @@ There is no way that this eBook can do that topic
 justice because it’s such a big one. When we invest our time into this topic, identifying subject-matter experts is a skill in itself.
 You need to make sure you don't succumb to your cognitive biases discussed earlier. Like nutrition, this area is rife with charlatans.
 
+### The concept of enough.
+
+The thing that I caution the most is to make a target of what will be enough to live humbly and pursue your interests
+to build things that could benefit others. It is very easy to fall into the trap of wanting more, I almost fell into
+it myself. It is tempting. Once you reach a certain threshold, you will start to learn of the things that money can't buy.
+Then your sense of value will shift. Please don't fall into the trap that caught so many people to destroy our planet.
+
+It is 
 
 ### Resources:
 The psychology of money.
