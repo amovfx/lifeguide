@@ -8,9 +8,7 @@ from ..utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 
 counter = 0
 def path_to_category_name(file_path):
-    print(file_path)
     branch_name = file_path.split(os.sep)[-1]
-    print(branch_name)
     split_name = branch_name.split("_")
     split_name = map(str.capitalize, split_name)
 
