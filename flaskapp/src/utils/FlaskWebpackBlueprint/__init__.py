@@ -120,7 +120,7 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         folder_path = pathlib.Path(
             self.app.blueprints[bp_name].static_folder + self.dist_folder
         )
-        paths = list(folder_path.glob("*.js"))
+        paths = list(folder_path.glob("*.[js][css]"))
         js_file_name = pathlib.Path(filename).stem
         packed_js_file = [
             path
