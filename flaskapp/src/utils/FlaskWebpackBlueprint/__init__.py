@@ -99,7 +99,6 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
             )
         return bp_name
 
-
     def webpacked_url_for(self, endpoint, **values):
         """
 
@@ -114,23 +113,25 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         filename = values.get("filename")
         validate_filename_arg(filename)
 
-        #validate endpoint
+        # validate endpoint
         bp_name = self.get_bp_name_from_endpoint(endpoint)
+        if not (bp_name in self.app.blueprints):
+            raise ValueError(f"{bp_name} is not a registered blueprpint.")
 
         folder_path = pathlib.Path(
             self.app.blueprints[bp_name].static_folder + self.dist_folder
         )
         paths = list(folder_path.glob("*.[js][css]"))
-        js_file_name = pathlib.Path(filename).stem
-        packed_js_file = [
+        asset_filename = pathlib.Path(filename).stem
+        minified_files = [
             path
             for path in paths
-            if path.is_file() and path.name.startswith(js_file_name)
+            if path.is_file() and path.name.startswith(asset_filename)
         ]
-        if not packed_js_file:
+        if not minified_files:
             raise FileNotFoundError(
-                f"{js_file_name}.[md5hash].js not found in {folder_path.as_posix()}"
+                f"{asset_filename}.[md5hash].js not found in {folder_path.as_posix()}"
             )
 
-        js_file_name = pathlib.Path(self.dist_folder) / packed_js_file[0].name
-        return url_for(endpoint, filename=js_file_name.as_posix())
+        asset_filename = pathlib.Path(self.dist_folder) / minified_files[0].name
+        return url_for(endpoint, filename=asset_filename.as_posix())
