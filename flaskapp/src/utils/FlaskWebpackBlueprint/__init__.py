@@ -157,7 +157,7 @@ class FlaskWebpackedBlueprint(object):
         print("Recalculating hash_file_map")
         static_files = static_folder.rglob("*.*.*s")
 
-        return { strip_hash_from_filename(v): v.relative_to(static_folder.parent) for v in static_files }
+        return {strip_hash_from_filename(v): v.relative_to(static_folder.parent) for v in static_files}
 
     @lru_cache(2) # this needs to match the amount of directories in the dist folder, gross
     def reset_get_hash_file_map_cache(self, mtime: float) -> None:
@@ -201,7 +201,6 @@ class FlaskWebpackedBlueprint(object):
         :param values:
         :return:
         """
-        # validate filename
         filename = values.get("filename")
 
         validate_filename_arg(filename)
