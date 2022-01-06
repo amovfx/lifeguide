@@ -5,5 +5,6 @@ echo "Poopy"
 
 cd /flask_data/src/book/static/js/
 npm install
+npm run packcss
 npm run packjs
 ls /flask_data/src/book/static/dist
