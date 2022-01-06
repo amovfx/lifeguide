@@ -1,4 +1,4 @@
- # The present
+#The present
 
 
 The present as of this writting is Janurary 2022. We are in what generational theory would call the end of an-unwinding. Or the start
@@ -36,11 +36,13 @@ and writing across the internet. Prosumers trade their goods and services global
 So this book is meant to enable you to position yourself
 to gain as much as you can in order to help others. 
 
-# The rigged game
+###The rigged game
 
-The blob is a informal term of a group of lobbyists 
+The blob is an informal term of a group of lobbyists and congressinal staffers that work 
 
 # Resources
+
+[The blob](https://www.businessinsider.com/the-secret-banking-blob-on-capitol-hill-that-destroys-the-possibility-of-financial-reform-2010-2)
 
 Zero marginal cost society - Jeremy Rifkin.
 
