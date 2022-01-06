@@ -1,14 +1,20 @@
 from flask import Blueprint, url_for
 from functools import lru_cache
+from datetime import datetime, timezone
 import pathlib
+import re
 import subprocess as sp
+
+
+def remove_hash(x):
+    return x.suffix[1:] + "/" + x.stem.split(".")[0] + x.suffix
 
 
 def validate_filename_arg(filename):
     if not filename:
         raise ValueError("filename is not an argument.")
 
-    if not (filename.endswith("js") and filename.startswith("js")):
+    if not re.match(r"^((js|css).*\.(js|css)$)", filename):
         raise ValueError(
             f"webpacked_bp_url_for_js filename: {filename} does not start or end with 'js'."
         )
@@ -71,7 +77,7 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         :param app:
         """
         self.app = app
-        self.dist_folder = "/dist"
+        self.dist_folder = "/dist/"
 
         if app is not None:
             self.init_app(app)
@@ -99,11 +105,45 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
             )
         return bp_name
 
+    def get_static_folder(self, endpoint):
+        bp_name = self.get_bp_name_from_endpoint(endpoint)
+        if not (bp_name in self.app.blueprints):
+            raise ValueError(f"{bp_name} is not a registered blueprpint.")
+
+        return self.app.blueprints[bp_name].static_folder
+
+    @lru_cache(1)
+    def get_hash_file_map(self, static_folder):
+        print("Recalculating hash_file_map")
+        folder_path = pathlib.Path(static_folder + self.dist_folder)
+        static_files = folder_path.rglob("*.*.*s")
+        return {remove_hash(v): v.relative_to(static_folder) for v in static_files}
+
+    @lru_cache(2)
+    def check_mtime(self, mtime):
+        self.get_hash_file_map.cache_clear()
+        return None
+
+    def validate_cache(self, static_folder):
+        """
+
+        Check over dist sub folders
+
+        :param static_folder:
+        :return:
+        """
+        folders = pathlib.Path(static_folder + self.dist_folder).glob("*s")
+        for folder in folders:
+            self.check_mtime(folder.stat().st_mtime)
+
     def webpacked_url_for(self, endpoint, **values):
         """
 
         This function builds a map between the entry file for your js file
         and the webpacked file.
+
+        THis should be modified to check the directorys modified time
+        to invalidate the cache.
 
         :param endpoint:
         :param values:
@@ -111,27 +151,12 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         """
         # validate filename
         filename = values.get("filename")
+
         validate_filename_arg(filename)
 
-        # validate endpoint
-        bp_name = self.get_bp_name_from_endpoint(endpoint)
-        if not (bp_name in self.app.blueprints):
-            raise ValueError(f"{bp_name} is not a registered blueprpint.")
+        static_folder = self.get_static_folder(endpoint)
+        self.validate_cache(static_folder)
 
-        folder_path = pathlib.Path(
-            self.app.blueprints[bp_name].static_folder + self.dist_folder
-        )
-        paths = list(folder_path.glob("*.[js][css]"))
-        asset_filename = pathlib.Path(filename).stem
-        minified_files = [
-            path
-            for path in paths
-            if path.is_file() and path.name.startswith(asset_filename)
-        ]
-        if not minified_files:
-            raise FileNotFoundError(
-                f"{asset_filename}.[md5hash].js not found in {folder_path.as_posix()}"
-            )
+        file_map = self.get_hash_file_map(static_folder)
 
-        asset_filename = pathlib.Path(self.dist_folder) / minified_files[0].name
-        return url_for(endpoint, filename=asset_filename.as_posix())
+        return url_for(endpoint, filename=file_map[filename].as_posix())
