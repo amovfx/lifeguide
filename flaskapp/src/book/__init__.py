@@ -7,12 +7,6 @@ import pathlib
 from ..utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 
 counter = 0
-def path_to_category_name(file_path):
-    branch_name = file_path.split(os.sep)[-1]
-    split_name = branch_name.split("_")
-    split_name = map(str.capitalize, split_name)
-
-    return (" ").join(split_name)
 
 
 def path_to_menu_item_name(file_path):
@@ -26,11 +20,12 @@ def path_to_menu_item_name(file_path):
         string
     """
     name = pathlib.Path(file_path).name.split(".")[0]
+    print (name)
 
     if "_" in name:
         split_name = name.split("_")
         joined_name = ""
-        for item in split_name:
+        for item in split_name[1:]:
             if len(joined_name) > 0:
                 joined_name += " "
             joined_name += item.capitalize()
@@ -80,7 +75,7 @@ def get_sorted_content(root):
 
         file_path, dirs, files = next(os.walk(file_path))
 
-        branch_name = path_to_category_name(file_path)
+        branch_name = path_to_menu_item_name(file_path)
         if files:
             files.sort(key=item_sort)
             sorted_files = list(starmap(pairing, enumerate(files)))
