@@ -1,16 +1,39 @@
+"""
+
+Jinja template for handling js and css files to aid in cache busting
+from webpacked js and css files.
+
+"""
+
 from flask import Blueprint, url_for
+
 from functools import lru_cache
-from datetime import datetime, timezone
 import pathlib
 import re
-import subprocess as sp
 
 
-def remove_hash(x):
+def strip_hash_from_filename(x):
+    """
+
+    Removes the hash from the filename.
+    filename.12345asdfg.ext -> filename.ext
+
+    :param x:
+    :return:
+    """
+
     return x.suffix[1:] + "/" + x.stem.split(".")[0] + x.suffix
 
 
 def validate_filename_arg(filename):
+    """
+
+    Validate the file name, make sure only js and css files are processed.
+
+    :param filename:
+    :return:
+
+    """
     if not filename:
         raise ValueError("filename is not an argument.")
 
@@ -21,23 +44,8 @@ def validate_filename_arg(filename):
 
 
 class FlaskWebpackedBlueprint(object):
-    webpack_config = """
-const path = require("path");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
-
-module.exports = {
-mode: "production",
-entry : "./main.js",
-output: {
-    filename: "[name].[contenthash].js",
-    path: path.resolve(__dirname, "../dist/")
-},
-plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
-}
-    """
-
     @classmethod
-    def create_ES6_blueprint(cls, name, file_name=__name__, js_dir="js"):
+    def create_blueprint(cls, name, file_name=__name__, js_dir="js"):
         """
         Create a blueprint and run webpack on relevant js files.
         This handles the ES6 modules by calling webpack as a subprocess.
@@ -73,11 +81,12 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
     def __init__(self, app=None):
         """
 
-        Initialize and mutate
+        Initialize and mutate the app
+
         :param app:
         """
         self.app = app
-        self.dist_folder = "/dist/"
+        self.dist_folder = "dist"  # hardcoded and gross
 
         if app is not None:
             self.init_app(app)
@@ -86,45 +95,87 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         """
 
         Mutate the app_factory
+
         :param app:
         :return:
         """
         self.app = app
         app.add_template_global(self.webpacked_url_for)
 
-    def get_bp_name_from_endpoint(self, endpoint):
+    def _get_bp_name_from_endpoint(self, endpoint) -> str:
+        """
+
+        Get the blueprint name from the endpoint.
+
+        :param endpoint:
+        :return:
+            blueprint name
+        """
         if not "." in endpoint:
             raise ValueError(
-                f"webpacked_bp_url_for_js endpoint: {endpoint} doesn't look like it is pointint to a blueprint."
+                f"Webpacked_bp_url_for_js endpoint: {endpoint} doesn't look like it is pointint to a blueprint."
             )
 
         bp_name, _ = endpoint.split(".")
         if not (self.app.blueprints[bp_name].is_webpacked):
             raise ValueError(
-                f"f{self.app.blueprints[bp_name]} has not been webpacked. "
+                f"f{self.app.blueprints[bp_name]} has not been been created by \
+                 FlaskWebPackedBlueprint.create_blueprint class method.. "
             )
+
         return bp_name
 
-    def get_static_folder(self, endpoint):
-        bp_name = self.get_bp_name_from_endpoint(endpoint)
+    def get_static_folder(self, endpoint: str) -> pathlib.Path:
+        """
+
+        Gets the static folder from the endpoint.
+
+        :param endpoint:
+        :return:
+            static dist folder pathlib.Path
+        """
+        bp_name = self._get_bp_name_from_endpoint(endpoint)
         if not (bp_name in self.app.blueprints):
             raise ValueError(f"{bp_name} is not a registered blueprpint.")
 
-        return self.app.blueprints[bp_name].static_folder
+        return pathlib.Path(self.app.blueprints[bp_name].static_folder) / pathlib.Path(self.dist_folder)
+
 
     @lru_cache(1)
-    def get_hash_file_map(self, static_folder):
-        print("Recalculating hash_file_map")
-        folder_path = pathlib.Path(static_folder + self.dist_folder)
-        static_files = folder_path.rglob("*.*.*s")
-        return {remove_hash(v): v.relative_to(static_folder) for v in static_files}
+    def get_minified_file_map(self, static_folder: pathlib.Path) -> dict:
+        """
 
-    @lru_cache(2)
-    def check_mtime(self, mtime):
-        self.get_hash_file_map.cache_clear()
+        This function is cached to avoid disk reads. This only should fire
+        if the contents of the dist files have changed from a webpack.
+
+        :param static_folder:
+            str of the static folder.
+        :return:
+            dict of { file.(js|css) : file.[md5hash].(js|css)
+        """
+
+        print("Recalculating hash_file_map")
+        static_files = static_folder.rglob("*.*.*s")
+
+        return { strip_hash_from_filename(v): v.relative_to(static_folder.parent) for v in static_files }
+
+    @lru_cache(2) # this needs to match the amount of directories in the dist folder, gross
+    def reset_get_hash_file_map_cache(self, mtime: float) -> None:
+        """
+
+        If cache holds a different modified time, we want to clear the cache
+        of the get_hash_file_map function.
+
+        :param mtime:
+            folders modified time
+        :return:
+            None
+
+        """
+        self.get_minified_file_map.cache_clear()
         return None
 
-    def validate_cache(self, static_folder):
+    def validate_cache(self, static_folder: pathlib.Path):
         """
 
         Check over dist sub folders
@@ -132,11 +183,12 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         :param static_folder:
         :return:
         """
-        folders = pathlib.Path(static_folder + self.dist_folder).glob("*s")
-        for folder in folders:
-            self.check_mtime(folder.stat().st_mtime)
 
-    def webpacked_url_for(self, endpoint, **values):
+        for folder in static_folder.iterdir():
+            if not folder.stem.startswith('.'): #skip hidden folders
+                self.reset_get_hash_file_map_cache(folder.stat().st_mtime)
+
+    def webpacked_url_for(self, endpoint: str, **values) -> str:
         """
 
         This function builds a map between the entry file for your js file
@@ -155,8 +207,9 @@ plugins: [new CleanWebpackPlugin.CleanWebpackPlugin()]
         validate_filename_arg(filename)
 
         static_folder = self.get_static_folder(endpoint)
+
         self.validate_cache(static_folder)
 
-        file_map = self.get_hash_file_map(static_folder)
+        file_map = self.get_minified_file_map(static_folder)
 
         return url_for(endpoint, filename=file_map[filename].as_posix())
