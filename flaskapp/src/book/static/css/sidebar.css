@@ -48,8 +48,10 @@
 .menu-cat
 {
     padding-left: 10px;
-
-
+    padding-bottom: 10px;
+    display:flex;
+    justify-content: stretch;
+    flex-direction: column;
 }
 div.menu-cat span
 {
@@ -73,14 +75,16 @@ div.category-depth-2 span
     border: 15px;
     border-color: white;
     display: flex;
-    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .menu-item p
 {
     font-size: 15px;
     padding-left: 10px;
-    vertical-align: middle;
+    display: flex;
+    margin-bottom:0;
 
 
 }
