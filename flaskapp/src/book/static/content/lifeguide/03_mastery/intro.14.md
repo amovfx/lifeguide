@@ -1,6 +1,6 @@
 # Mastery
 
-![alt text]({{ url_for(static_path, filename='/content/images/A_master_Ape_small.jpg') }})
+<img class=illustration src={{ url_for(static_path, filename='/content/images/A_master_Ape_small.jpg') }}></img>
 
 In part 1, autonomy, we have covered how to analyze yourself to get an accurate picture of ourselves and what to develop.
 In this part, mastery, we talk about the tools to help build ourselves up to achieve the life we want.

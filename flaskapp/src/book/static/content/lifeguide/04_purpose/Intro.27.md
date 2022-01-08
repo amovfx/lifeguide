@@ -1,6 +1,7 @@
 # Purpose
 
-![alt text]({{ url_for(static_path, filename='/content/images/A_helpful_ape_small.jpg') }})
+
+<img class=illustration src={{ url_for(static_path, filename='/content/images/A_helpful_ape_small.jpg') }}></img>
 
 The basis of life is freedom. The purpose of life is the joy of creating our own reality. And the result of life 
 is expansion of who we are as human beings. But one of the most important aspects of our purpose is having uplifting, positive relationships with others.
