@@ -24,7 +24,7 @@ export class SideBarBuilder
 
     }
 
-    create_menu_category(name, category=this.sidebar_element, depth)
+    create_menu_category(name, depth, category=this.sidebar_element, )
     {
         let category_text = document.createElement("span");
         category_text.innerHTML = name;

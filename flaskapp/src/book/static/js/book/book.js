@@ -30,7 +30,7 @@ export class CBookFactory
             {
                 Object.keys(table_of_contents).forEach((chapter) =>
                 {
-                    let new_category_element = menu_builder.create_menu_category(chapter, category, depth);
+                    let new_category_element = menu_builder.create_menu_category(chapter, depth, category);
                     category.append(new_category_element);
                     if (Array.isArray(table_of_contents[chapter]))
                     {
