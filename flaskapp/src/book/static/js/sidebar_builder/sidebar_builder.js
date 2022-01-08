@@ -24,13 +24,14 @@ export class SideBarBuilder
 
     }
 
-    create_menu_category(name, category=this.sidebar_element)
+    create_menu_category(name, category=this.sidebar_element, depth)
     {
         let category_text = document.createElement("span");
         category_text.innerHTML = name;
 
         let category_div = document.createElement("div");
         category_div.classList.add("menu-cat");
+        category_div.classList.add(`category-depth-${depth}`)
         category_div.append(category_text);
 
         category.append(category_div);

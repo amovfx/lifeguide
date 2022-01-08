@@ -25,18 +25,19 @@ export class CBookFactory
             //build menu and create book at the same time
             let page_manager = new PageManager();
             let menu_builder = new SideBarBuilder();
-            const iterate = (table_of_contents, category) =>
+
+            const iterate = (table_of_contents, category, depth) =>
             {
                 Object.keys(table_of_contents).forEach((chapter) =>
                 {
-                    let new_category_element = menu_builder.create_menu_category(chapter, category);
+                    let new_category_element = menu_builder.create_menu_category(chapter, category, depth);
                     category.append(new_category_element);
                     if (Array.isArray(table_of_contents[chapter]))
                     {
                         table_of_contents[chapter].forEach((page_data) => {
                             if (!Array.isArray(page_data))
                             {
-                                iterate(page_data, new_category_element);
+                                iterate(page_data, new_category_element, depth+1);
                             }
                             else
                             {
@@ -55,7 +56,7 @@ export class CBookFactory
                     }
                 })
             }
-            iterate(result, menu_builder.sidebar_element);
+            iterate(result, menu_builder.sidebar_element,0);
             return new this.book_class(page_manager, menu_builder)
 
         })
