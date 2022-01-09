@@ -101,7 +101,7 @@ def page_content(page_num):
     if pathlib.Path(file).suffix == '.md':
         with open(book_bp.files[page_num], "r", encoding="utf-8") as md_file:
             text = md_file.read()
-        print(text)
+
         template_string = render_template_string(text,
                                                  static_path="/book.static")
 
@@ -113,5 +113,4 @@ def page_content(page_num):
 
         jpg_template = render_template(get_digested_html("illustration.html"), illustration=illustration_path)
         response = jsonify(jpg_template)
-        print(response)
         return response
