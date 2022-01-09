@@ -9,6 +9,7 @@ services:
       volumes:
         - ./webpack/pack_assets.sh:/pack_assets.sh:Z
         - ./flaskapp/:/flask_data
+        - ./webpack/digest_html.py:/digest_html.py:Z
       command: /bin/bash -c "./pack_assets.sh"
 
   flask:
