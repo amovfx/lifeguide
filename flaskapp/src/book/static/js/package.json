@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "packjs": "webpack --config webpack.config.js",
-    "packcss": "webpack --config webpack.css.js",
-    "packhtml": "webpack --config webpack.html.js"
+    "packcss": "webpack --config webpack.css.js"
   },
   "keywords": [],
   "author": "",
