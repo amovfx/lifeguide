@@ -2,6 +2,7 @@ const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 const Cleaner = new CleanWebpackPlugin.CleanWebpackPlugin()
+const process = require("process");
 
 module.exports = {
     mode: "production",
@@ -12,7 +13,7 @@ module.exports = {
     },
     output: {
         filename: "[name].[contenthash].js",
-        path: path.resolve(__dirname, "../dist/js/"),
+        path: path.resolve(__dirname, `../js/${process.env.DIGEST_FOLDER_NAME}`),
         library: "[name]"
     },
     plugins: [Cleaner],

@@ -9,3 +9,4 @@ npm run packcss
 npm run packjs
 
 cd /flask_data/src/book/templates
+python3 /digest_html.py

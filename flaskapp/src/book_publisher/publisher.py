@@ -50,5 +50,5 @@ class Publisher:
 
     def publish_contents(self):
         pass
-        #publish the list of sidebar_manager
+        #publish the list of sidebar_builder
 

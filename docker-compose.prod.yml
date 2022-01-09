@@ -4,6 +4,8 @@ services:
   webpack:
       build: ./webpack
       container_name: webpack
+      environment:
+        DIGEST_FOLDER_NAME: _dist
       volumes:
         - ./webpack/pack_assets.sh:/pack_assets.sh:Z
         - ./flaskapp/:/flask_data

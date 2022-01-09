@@ -8,8 +8,14 @@ from webpacked js and css files.
 from flask import Blueprint, url_for
 
 from functools import lru_cache
+import os
 import pathlib
 import re
+
+if not (DIGEST_FOLDER_NAME := os.environ.get("DIGEST_FOLDER_NAME")):
+    raise EnvironmentError("DIGEST_FOLDER_NAME environment var not set")
+
+print(DIGEST_FOLDER_NAME)
 
 
 def strip_hash_from_filename(x):
@@ -125,7 +131,7 @@ class FlaskWebpackedBlueprint(object):
 
         return bp_name
 
-    def get_static_folder(self, endpoint: str) -> pathlib.Path:
+    def get_static_resource_folder(self, endpoint: str, ext: str) -> pathlib.Path:
         """
 
         Gets the static folder from the endpoint.
@@ -138,7 +144,7 @@ class FlaskWebpackedBlueprint(object):
         if not (bp_name in self.app.blueprints):
             raise ValueError(f"{bp_name} is not a registered blueprpint.")
 
-        return pathlib.Path(self.app.blueprints[bp_name].static_folder) / pathlib.Path(self.dist_folder)
+        return pathlib.Path(self.app.blueprints[bp_name].static_folder) / ext
 
 
     @lru_cache(1)
@@ -202,10 +208,11 @@ class FlaskWebpackedBlueprint(object):
         :return:
         """
         filename = values.get("filename")
+        ext = filename.split(os.sep)[0]
 
         validate_filename_arg(filename)
 
-        static_folder = self.get_static_folder(endpoint)
+        static_folder = self.get_static_resource_folder(endpoint, ext)
 
         self.validate_cache(static_folder)
 

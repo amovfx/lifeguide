@@ -4,9 +4,12 @@ services:
   webpack:
       build: ./webpack
       container_name: webpack
+      environment:
+        DIGEST_FOLDER_NAME: _dist
       volumes:
         - ./webpack/pack_assets.sh:/pack_assets.sh:Z
         - ./flaskapp/:/flask_data
+        - ./webpack/digest_html.py:/digest_html.py:Z
       command: /bin/bash -c "./pack_assets.sh"
 
   flask:
@@ -17,6 +20,7 @@ services:
         APP_NAME: FlaskBookApp
         FLASK_DEBUG: 1
         FLASK_ENV: "development"
+        DIGEST_FOLDER_NAME: _dist
       expose:
         - 8080
       volumes:

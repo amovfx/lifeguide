@@ -4,6 +4,7 @@ Routes for book_bp
 
 """
 from functools import lru_cache
+import os
 import pathlib
 
 
@@ -16,6 +17,9 @@ from flask import (
 
 
 from flask_cors import cross_origin
+
+if not (DIGEST_FOLDER_NAME := os.environ.get("DIGEST_FOLDER_NAME")):
+    raise EnvironmentError("DIGEST_FOLDER_NAME environment var not set")
 
 from flask_misaka import markdown
 from . import book_bp
@@ -40,8 +44,7 @@ def get_digested_template_map(folder):
     return template_map
 
 def get_digested_html(html: str):
-    template_path = pathlib.Path(book_bp.root_path) / pathlib.Path(book_bp.template_folder) / 'dist'
-    print(template_path)
+    template_path = pathlib.Path(book_bp.root_path) / pathlib.Path(book_bp.template_folder) / DIGEST_FOLDER_NAME
     validate_cache(template_path)
     digested_templates = get_digested_template_map(template_path)
 

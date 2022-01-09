@@ -48,6 +48,7 @@ export class SideBarBuilder
         menu_div.id = `menu-item-${index}`;
         menu_div.classList.add("menu-item");
 
+        //todo: this needs to be optimized to read from a data attribute so there is one single function.
         menu_div.onclick = () =>
         {
             menu_div.dispatchEvent(menu_click_event(index));

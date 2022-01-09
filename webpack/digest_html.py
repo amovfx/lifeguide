@@ -5,12 +5,15 @@ Quick utility to copy html files for cache busting.
 """
 
 import hashlib
+import os
 import pathlib
 import shutil
 
 
 CWD = pathlib.Path.cwd()
 
+if not (DIGEST_FOLDER_NAME := os.environ.get("DIGEST_FOLDER_NAME")):
+    raise EnvironmentError("DIGEST_FOLDER_NAME environment var not set")
 
 def clean_old_files(ext: str = "html"):
     """
@@ -19,7 +22,8 @@ def clean_old_files(ext: str = "html"):
 
     :return:
     """
-    dist_path = CWD / "dist"
+    dist_path = CWD / DIGEST_FOLDER_NAME
+    dist_path.mkdir(parents=True, exist_ok=True)
     for file in dist_path.rglob(f"*{ext}"):
         file.unlink()
 
@@ -76,7 +80,7 @@ def digested_file_output_path(file: pathlib.Path) -> pathlib.Path:
     :param file:
     :return:
     """
-    return CWD / "dist" / hashed_filename(file)
+    return CWD / DIGEST_FOLDER_NAME / hashed_filename(file)
 
 
 def write_digested_file(file: pathlib.Path):
@@ -98,7 +102,7 @@ def main():
     and copy them appending hash in the extension.
 
     """
-
+    print("Digesting html files.....")
     clean_old_files()
     for file in get_files():
         write_digested_file(file)
