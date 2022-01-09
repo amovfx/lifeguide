@@ -24,10 +24,11 @@ def path_to_menu_item_name(file_path):
     if "_" in name:
         split_name = name.split("_")
         joined_name = ""
-        for item in split_name[1:]:
+        for item in split_name:
             if len(joined_name) > 0:
                 joined_name += " "
-            joined_name += item.capitalize()
+            if item.isalpha():
+                joined_name += item.capitalize()
         name = joined_name
 
     else:
