@@ -7,3 +7,5 @@ cd /flask_data/src/book/static/js/
 npm install
 npm run packcss
 npm run packjs
+
+cd /flask_data/src/book/templates

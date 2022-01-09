@@ -20,7 +20,6 @@ def path_to_menu_item_name(file_path):
         string
     """
     name = pathlib.Path(file_path).name.split(".")[0]
-    print (name)
 
     if "_" in name:
         split_name = name.split("_")
