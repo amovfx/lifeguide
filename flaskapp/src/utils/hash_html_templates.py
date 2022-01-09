@@ -3,13 +3,15 @@
 Quick utility to copy html files for cache busting.
 
 """
+
 import hashlib
 import pathlib
 import shutil
 
 CWD = pathlib.Path.cwd()
 
-def clean_old_files():
+
+def clean_old_files(ext: str = "html"):
     """
 
     Remove old html files created by this file.
@@ -17,21 +19,21 @@ def clean_old_files():
     :return:
     """
     dist_path = CWD / "dist"
-    for file in dist_path.rglob("*html"):
+    for file in dist_path.rglob(f"*{ext}"):
         file.unlink()
 
 
-def get_files(ext="html") -> list[pathlib.Path]:
+def get_files(ext: str = "html") -> list[pathlib.Path]:
     """
 
-    Get a recursive glob of all html files in a working directory.
+    Get a recursive glob of all files in a working directory.
 
     :return:
     """
     files = list(pathlib.Path(CWD).rglob(f"*{ext}"))
 
     if not len(files):
-        raise FileNotFoundError(f"No html files found in {CWD}")
+        raise FileNotFoundError(f"No {ext} files found in {CWD}")
     return files
 
 
@@ -58,7 +60,7 @@ def hashed_filename(file: pathlib.Path) -> str:
     create a file name of format filename.[md5hash].[ext]
 
     :param file:
-        pathlib.Path object of an html file
+        pathlib.Path object of a file
     :return:
     """
     path = ".".join([file.stem, generate_digest(file)]) + file.suffix
@@ -68,7 +70,8 @@ def hashed_filename(file: pathlib.Path) -> str:
 def digested_file_output_path(file: pathlib.Path) -> pathlib.Path:
     """
 
-    this is out outputpath
+    Build output path for digested file.
+
     :param file:
     :return:
     """
@@ -78,10 +81,11 @@ def digested_file_output_path(file: pathlib.Path) -> pathlib.Path:
 def write_digested_file(file: pathlib.Path):
     """
 
-    Write file.html to file.[md5hash].html
+    Write file.html to file.[md5hash].html.
 
     :param file:
-    :return:
+        pathlib.Path object of a file
+
     """
     shutil.copy2(file, digested_file_output_path(file))
 
@@ -89,10 +93,9 @@ def write_digested_file(file: pathlib.Path):
 def main():
     """
 
-    Get all html files in all sub directories in current working directory
-    and copy them to fiels with the hash in the extension.
+    Get all files in all sub directories in current working directory
+    and copy them appending hash in the extension.
 
-    :return:
     """
 
     clean_old_files()
