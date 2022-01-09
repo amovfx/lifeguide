@@ -21,7 +21,7 @@ def clean_old_files():
         file.unlink()
 
 
-def get_files(ext="html"):
+def get_files(ext="html") -> list[pathlib.Path]:
     """
 
     Get a recursive glob of all html files in a working directory.
