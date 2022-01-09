@@ -20,6 +20,7 @@ services:
       APP_NAME: FlaskBookApp
       FLASK_DEBUG: 0
       FLASK_ENV: "production"
+      DIGEST_FOLDER_NAME: _dist
     expose:
       - 8080
     volumes:
