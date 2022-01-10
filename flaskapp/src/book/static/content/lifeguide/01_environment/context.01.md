@@ -1,4 +1,4 @@
-
+﻿
 #Understanding our environment
 
 ### Our cognitive realm
@@ -16,8 +16,7 @@ are entities of a cognitive realm if you will.
 Governments don't objectively exist,
 we simply wrote down some rules, and everyone agreed to follow in a democracy, others are coerced through force. 
 Money is often people agreeing over an object that is fixed supply, fungible, divisible and portable. This journey
-has gone from sea shells, precious metals, paper and now database entries. Religions
-are really the same thing, people write a few things down and once enough people believe it, it becomes true. 
+has gone from sea shells, precious metals, paper and now database entries. Religions are really the same thing, people write a few things down and once enough people believe it, it becomes true. 
 A subjective reality is created for a large 
 group of people that serves their sense of belonging and purpose. Corporations, are another layer on top of governments, 
 they exist in the realm of 'legal fiction'.
