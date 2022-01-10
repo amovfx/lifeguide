@@ -120,5 +120,5 @@ class TestRoutes(TestBaseCase):
 
         """
         response = self.client.get("/book/sidebar_builder", content_type="json")
-        self.assertIn("lifeguide", json.loads(response.data))
+        self.assertIn("Lifeguide", json.loads(response.data))
 
