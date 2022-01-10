@@ -33,7 +33,7 @@ class TestBlueprint(TestBaseCase):
         self.assertTrue(book_bp.is_webpacked)
 
     def test_blueprint_data(self):
-        self.assertIn("lifeguide", book_bp.menu.keys() )
+        self.assertIn("Lifeguide", book_bp.menu.keys() )
 
 
 
