@@ -8,7 +8,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask_misaka import Misaka
 
-from ..utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
+from src.utils.FlaskWebpackBlueprint import FlaskWebpackedBlueprint
 
 from .cache import cache
 from .config import DevelopmentConfig, TestConfig, ProductionConfig
