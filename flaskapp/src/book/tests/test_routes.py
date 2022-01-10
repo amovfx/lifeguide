@@ -95,7 +95,7 @@ class TestRoutes(TestBaseCase):
             tests each page.
 
         """
-        response = self.client.get(f"/book/content/{value}", content_type="html/text")
+        response = self.client.get(f"/book/content/{value}", content_type="json")
         self.assertEqual(200, response.status_code)
 
     @idata(range(5))
@@ -107,7 +107,7 @@ class TestRoutes(TestBaseCase):
 
         """
         value += len(book_bp.files) + 1
-        response = self.client.get(f"/book/content/{value}", content_type="html/text")
+        response = self.client.get(f"/book/content/{value}", content_type="json")
         self.assertEqual(404, response.status_code)
 
 
