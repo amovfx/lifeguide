@@ -14,7 +14,7 @@ export class CDataResolver
     {
         let local_resolver = new CDataResolver()
         local_resolver.set_domain(DOMAINS.LOCAL);
-        local_resolver.set_route('/book/sidebar_builder');
+        local_resolver.set_route('/lifeguide/sidebar_builder');
         return local_resolver;
     }
 
