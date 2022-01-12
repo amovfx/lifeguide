@@ -5,7 +5,7 @@
 import {CDataResolver,DOMAINS} from "../data_resolver/data_resolver";
 import Logger from "js-logger";
 
-export class Page // page
+export class CPage // page
 {
     constructor(data_resolver, data)
     {
@@ -86,7 +86,7 @@ export class PageManager
 
     create_page = (resolver, path) =>
     {
-        let page = new Page(resolver, path);
+        let page = new CPage(resolver, path);
         this.pages.push(page);
     }
 

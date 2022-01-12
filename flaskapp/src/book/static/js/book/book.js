@@ -1,5 +1,5 @@
 
-import {Page, PageManager} from "../page/page.js";
+import {CPage, PageManager} from "../page/page.js";
 import Logger from "js-logger";
 import {SideBarBuilder} from "../sidebar_builder/sidebar_builder";
 import {CBookmark} from "../bookmark/bookmark";

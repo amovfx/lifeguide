@@ -8,6 +8,7 @@
     "packjs": "export DIGEST_FOLDER_NAME=_dist;webpack --config webpack.config.js",
     "packcss": "export DIGEST_FOLDER_NAME=_dist;webpack --config webpack.css.js"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -38,8 +39,10 @@
     "css-minimizer-webpack-plugin": "^3.3.1",
     "customize-cra": "^1.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest-fetch-mock": "^3.0.3",
     "js-cookie": "^3.0.1",
     "js-logger": "^1.6.1",
+    "jsdom": "^19.0.0",
     "mini-css-extract-plugin": "^2.4.5",
     "process": "^0.11.10",
     "webpack": "^5.64.4",

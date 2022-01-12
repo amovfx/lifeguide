@@ -1,4 +1,4 @@
-import {Page, PageManager} from "../page/page";
+import {CPage, PageManager} from "../page/page";
 import {Book} from "../book/book";
 import Logger from "js-logger";
 
