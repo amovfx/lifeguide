@@ -18,5 +18,3 @@ export const BookFactory = CBookFactory;
 export const Book = CBook;
 
 Logger.useDefaults()
-
-

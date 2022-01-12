@@ -7,9 +7,10 @@ import Logger from "js-logger";
 
 export class CPage // page
 {
-    constructor(data_resolver, data)
+    constructor(data_resolver, data, title)
     {
         this.set_page_num(data);
+        this.set_title(title)
 
         //create a resolver, it would be nice to
         this.resolver = new CDataResolver();
@@ -84,9 +85,9 @@ export class PageManager
         this.Renderer = new HTMLRenderer();
     }
 
-    create_page = (resolver, path) =>
+    create_page = (resolver, page_num, title) =>
     {
-        let page = new CPage(resolver, path);
+        let page = new CPage(resolver, page_num, title);
         this.pages.push(page);
     }
 

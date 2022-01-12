@@ -4,7 +4,7 @@ import Logger from "js-logger";
 export const PAGE_COOKIE_NAME = "page";
 export const ACCEPT_COOKIES = "acceptCookies";
 
-const hasAcceptedCookies = () =>
+export const hasAcceptedCookies = () =>
 {
     return (Cookies.get(ACCEPT_COOKIES) == "1")
 }

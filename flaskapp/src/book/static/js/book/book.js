@@ -44,7 +44,7 @@ export class CBookFactory
                                 let page_num = page_data[0];
                                 let page_title = page_data[1];
 
-                                page_manager.create_page(resolver, page_num);
+                                page_manager.create_page(resolver, page_num, page_title);
                                 let menu_item = menu_builder.create_menu_element(page_title, page_num);
                                 new_category_element.append(menu_item);
                                 if (page_num === 0)
