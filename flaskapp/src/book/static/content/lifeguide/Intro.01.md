@@ -2,7 +2,7 @@
 
 Dear Reader,
 
-You?re likely here because you know you?re capable of more in your life, and you?re searching for something to help elevate you to the next stage in your journey. 
+You're likely here because you know you're capable of more in your life, and you're searching for something to help elevate you to the next stage in your journey. 
 
 We?re all at different altitudes on the collective mountain of life. Some of us are halfway up. Many of us at the base, ready with our gear, tents, and food supplies, about to climb. Most of us can see the mountain in the distance and are deciding which path we should take to get there. 
 
@@ -15,7 +15,7 @@ All these authors helped me live a better life, and now I feel in a position to 
 I?ve structured this book to revolve around three key principles: Autonomy, Mastery, and Purpose
 
 
-* Autonomy is predominantly about getting your life under your control. Although I?m helping give you tools for your mountain summit, it?s up to you to work your physical, mental, and emotional body/mind. 
+* Autonomy is predominantly about getting your life under your control. Although I'm helping give you tools for your mountain summit, it?s up to you to work your physical, mental, and emotional body/mind. 
 * Mastery is about choosing what you want to learn in life and continuous improvement to become the best you can possibly be. Know that the early stages of mastery is foolery. Although experts seem so natural at something, they all had to start somewhere. You?re at the foot of the mountain of any pursuit before can start your ascent.
 * Purpose is about fulfilment. Once you master something, you can use your skills to help others. The result of this is a greater sense of satisfaction in your life.
 

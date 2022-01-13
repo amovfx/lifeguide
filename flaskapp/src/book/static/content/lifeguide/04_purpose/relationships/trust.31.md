@@ -14,18 +14,18 @@ According to Covey, for a business, 3 groups can apply trust: the customers, the
 Everyone and anyone has access to the universal asset of trust. Conducting yourself in a way that promotes trust will flourish in all your relationships, personal and business alike. Trust is a investment that pays serious dividends.
 Trust is one of the most powerful forms of motivation and inspiration. Trust is what people want. They respond to trust and thrive on it. This is why cultivating self-trust is critical. Do what you write down.
 Covey says that to develop great trust in yourself, you must have the four cores. Here they are:
-### 1) Integrity: 
+#### Integrity: 
 Integrity is about keeping your word and being honest with both yourself and others. It’s also about admitting when you get lucky and being humble in how you portray yourself. 
-### 2) Intent: 
+#### Intent: 
 Intent is about not having ulterior motives but having admirable ones instead. It’s about putting meaningful work above becoming rich. It’s about having positive pro-social motives and behavior.
-### 3) Capabilities:
+#### Capabilities:
 Capabilities are about being competent at what you do and being the kind of person who wants to develop and learn new skills even though you don’t have to. Not only will you be more confident, but others will feel more confident in you too. 
-### 4) Results:
+#### Results:
  Results are about building a track-record of deeds that you completed and were committed to. 
 
 
 
-##Digressions
+###Digressions
 
 Trust takes a long time to build and an instant to destroy, but it can also be repaired. When you do make a mistake, take responsibility, make a strong effort to repair the trust.
 A good idea is to over-repair. Go the distance to communicate how important a trusting relationship is to you.

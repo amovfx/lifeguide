@@ -19,7 +19,6 @@ Here are the crucial elements to building a productive team:
 Google conducted a two year study to find out the key attributes that make the best performing teams. 
 
  * Psychological saftey. People need to be able to take risks without feeling insecure or embarassed.
-
  * Dependability. Delivering high-quality work on time.
  * Structure and clarity. People need to understand their goals, roles and execution plans.
  * Meaning of work. The purpose of the work is important to everyone on the team.
