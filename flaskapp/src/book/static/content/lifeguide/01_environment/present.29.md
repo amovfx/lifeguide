@@ -64,6 +64,14 @@ Massive welath and income inequality.
 
 [US Wealth inequality](https://equitablegrowth.org/eight-graphs-that-tell-the-story-of-u-s-economic-inequality/)
 
+[Political Polarization](https://www.pewresearch.org/politics/2014/06/12/political-polarization-in-the-american-public/)
+
+[Media Consolidation](https://visual.ly/community/Infographics/entertainment/media-consolidation-illusion-choice)
+
+[Industrial Consolidation](https://www.capitalgroup.com/advisor/insights/articles/global-consolidation-5-charts.html)
+
+
+
 Zero marginal cost society - Jeremy Rifkin.
 
 The Empathic Civilization - Jeremy Rifkin.
