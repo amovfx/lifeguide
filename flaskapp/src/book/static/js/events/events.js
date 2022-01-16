@@ -74,9 +74,9 @@ export class CEventStrategyDesktop extends CEventStrategy
 
 export class CEventStrategyMobile extends CEventStrategy
 {
-    constructor(Book)
+    constructor(Book_Interface)
     {
-        super("touchstart", "touchend", Book);
+        super("touchstart", "touchend", Book_Interface);
     }
     down_event = (event) =>
     {
