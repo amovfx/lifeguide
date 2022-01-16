@@ -17,11 +17,8 @@ export class CBookFactory
 
     }
 
-    make_book = async (resolver) =>
+    assemble_book = (resolver, result) =>
     {
-        return resolver.async_load().then((result) =>
-        {
-            //build menu and create book at the same time
             let page_manager = new PageManager();
             let menu_builder = new SideBarBuilder();
 
@@ -55,8 +52,17 @@ export class CBookFactory
                     }
                 })
             }
+
             iterate(result, menu_builder.sidebar_element,0);
             return new this.book_class(page_manager, menu_builder)
+    }
+
+    make_book = async (resolver) =>
+    {
+        return resolver.async_load().then((result) =>
+        {
+            //build menu and create book at the same time
+            return this.assemble_book(resolver, result);
 
         })
     }
