@@ -15,6 +15,7 @@ The Great resignation is in full swing.
 
 As you read this, I'm sure it is now history.
 
+### Technological deflation
 
 To understand our present situation, we look at two things. The exponetial decrease in cost per computation and
 the proliferation of the internet.
@@ -38,11 +39,30 @@ to gain as much as you can in order to help others.
 
 ###The rigged game
 
-The blob is an informal term of a group of lobbyists and congressinal staffers that work 
+With technological deflation pushing costs down, business interests are incentivized to collude to keep the prices up.
+cabals are threatened and refuse to let go of the status quo.
+
+The blob is an informal term of a group of lobbyists and congressinal staffers that work to push their mutuall interests.
+
+Princeton study on legistlation bias.
+
+Massive welath and income inequality.
+
+
+
+
 
 # Resources
 
 [The blob](https://www.businessinsider.com/the-secret-banking-blob-on-capitol-hill-that-destroys-the-possibility-of-financial-reform-2010-2)
+
+[Testing Theories of American Politics: Elites, Interest Groups, and Average Citizens](https://www.cambridge.org/core/journals/perspectives-on-politics/article/testing-theories-of-american-politics-elites-interest-groups-and-average-citizens/62327F513959D0A304D4893B382B992B)
+
+[Income inequality](https://ourworldindata.org/income-inequality)
+
+[Wealth inequality](https://inequality.org/facts/wealth-inequality/)
+
+[US Wealth inequality](https://equitablegrowth.org/eight-graphs-that-tell-the-story-of-u-s-economic-inequality/)
 
 Zero marginal cost society - Jeremy Rifkin.
 
