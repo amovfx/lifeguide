@@ -28,11 +28,11 @@ urgent, but important” tasks and give them the daily attention that they need.
 book or learning a new skill or learning how to make money online or learning a new language, etc.  
 The premise of the ABCDE method is easy. “A” tasks are the highest priority, followed by “B,” then “C.” “D” 
 stands for “Delegate,” and “E” stands for “Eliminate.” Here is a more detailed description:
-
- * “A” tasks: Must do tasks that have major consequences if not completed.
- * “B” tasks: Should do tasks with mild consequences if not completed.
- * “C” tasks: Least important, nice to do tasks with no consequences.
- 
+<ul>
+    <li>"A" tasks: Must do tasks that have major consequences if not completed.</li>
+    <li>“B” tasks: Should do tasks with mild consequences if not completed.</li>
+    <li>“C” tasks: Least important, nice to do tasks with no consequences.</li>
+</ul>
 
  Within the “A” tasks, you can prioritize them using numbers starting with 1 being the top priority. So, 
 “A1” would be the highest priority. “A2” would be next and slightly lower priority than “A1,” and so on. 
