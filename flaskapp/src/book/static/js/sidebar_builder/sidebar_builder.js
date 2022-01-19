@@ -71,7 +71,6 @@ export class SideBarBuilder
     set_active_menu_item_by_index = (index) =>
     {
         let element = document.getElementById(`menu-item-${index}`);
-
         if (element !== null) this.set_active_menu_item(element);
 
     }
