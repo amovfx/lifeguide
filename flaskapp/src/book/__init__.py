@@ -94,7 +94,7 @@ def get_sorted_content(root):
     return menu, pages
 
 
-book_bp = FlaskWebpackedBlueprint.create_blueprint("/book", file_name=__name__)
+book_bp = FlaskWebpackedBlueprint.create_blueprint("/lifeguide", file_name=__name__)
 
 path = pathlib.Path(book_bp.static_folder) / "content/lifeguide"
 path = path.as_posix()

@@ -15,7 +15,7 @@ export class CPage // page
         //create a resolver, it would be nice to
         this.resolver = new CDataResolver();
         this.resolver.set_domain(data_resolver.get_domain())
-        this.resolver.set_route(`/book/content/${data}`);
+        this.resolver.set_route(`/lifeguide/content/${data}`);
 
     }
 

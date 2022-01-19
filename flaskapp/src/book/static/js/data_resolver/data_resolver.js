@@ -77,10 +77,12 @@ export class CDataResolver
         //add browser cache management here.
         if (this.route !== undefined)
         {
+
             let response = await fetch(`${this.domain}${this.route}`)
 
             if (response.status === 200)
             {
+
                 let data = await response.json();
 
                 return data;

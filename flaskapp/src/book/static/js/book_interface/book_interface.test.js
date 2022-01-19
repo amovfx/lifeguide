@@ -11,27 +11,25 @@ when(fn).calledWith(PAGE_COOKIE_NAME).mockReturnValue(5);
 Cookies.get = fn;
 
 
+
 describe("Book Interface", () => {
 
+    let Book;
     let BookInterface = new CBookInterface();
 
-    it("Initialize", () => {
-        expect(BookInterface).toBeInstanceOf(CBookInterface);
+    beforeAll(() => {
+        return new Promise(resolve => {
+        // Asynchronous task
+        // ...
+        resolve();
+        });
+    })
+
+    it("Initialize", async () => {
+        expect(Book).toBeDefined();
     })
 
     describe("Methods",  () => {
-
-        let Book;
-
-
-
-        beforeEach(() => {
-            return new Promise(resolve => {
-                Book = mock_book();
-                BookInterface.set_book(Book);
-            });
-
-        })
 
         it("set/get_book", () => {
             expect(BookInterface.get_book()).toBe(Book);

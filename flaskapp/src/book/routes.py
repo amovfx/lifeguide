@@ -74,7 +74,7 @@ def book_contents():
     """
     #todo: fix what I'm doing to the menu
 
-
+    print(book_bp.menu)
     return jsonify(book_bp.menu)
 
 @book_bp.get("/content/", defaults={"page_num": 0})
@@ -103,7 +103,7 @@ def page_content(page_num):
             text = md_file.read()
 
         template_string = render_template_string(text,
-                                                 static_path="/book.static")
+                                                 static_path="/lifeguide.static")
 
         md_template_string = markdown(template_string)
         return jsonify(md_template_string)
