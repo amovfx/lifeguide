@@ -1,4 +1,4 @@
-echo "Poopy"
+
 
 
 #https://github.com/devgeniem/docker-node-assets-builder/blob/master/node_install_and_build_webpack.sh
