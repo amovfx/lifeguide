@@ -54,7 +54,7 @@ def generate_digest(file: pathlib.Path) -> str:
     digest = None
 
     with open(file, "rb") as f:
-        digest = hashlib.md5(f.read()).hexdigest()
+        digest = hashlib.sha256(f.read()).hexdigest()
 
     return digest[:16]
 
