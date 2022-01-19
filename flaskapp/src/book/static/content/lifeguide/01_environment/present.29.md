@@ -1,52 +1,43 @@
 #The present
 
 
-The present as of this writting is Janurary 2022. We are in what generational theory would call the end of an-unwinding. Or the start
-of a crisis. In Nov 2019, JP Morgan Chase, Goldman Sachs and Citigroup received a 4.5 trillion dollar bailout
-from gambling on CDOs like the did in 2008. There is no mention this in any major news outlets.
+So where are we now?
 
-On Janurary 6th, an attempted insurection took place in the United States Congress.
+I wrote this in January 2022. We are in what generational theory would call “the end of an-unwinding.” Or, perhaps more accurately, the start of a crisis. In Nov 2019, JP Morgan Chase, Goldman Sachs, and Citigroup received a 4.5 trillion dollar bailout from gambling on CDOs like they did in 2008. There is no mention this in any major news outlets.
+
+On January 6th, an attempted insurrection took place in the United States Congress.
 
 Meme stocks have been shorted to the tune of 2000%. A compounding financial crisis many times the size of 2008.
 
-Covid Omicron variant is running rampany throughout the world filling hospitals.
+The COVID-19 crisis is still in full swing, and the less-deadly yet way more transmissible omicron variant of the illness is running rampant throughout the world, filling hospitals. We’re in the midst of a public health crisis, where there’s obesity, ill-health, and poor sleep wreaking havoc through our world. 
 
-The Great resignation is in full swing.
+The Great Resignation is in full swing. People no longer accept working in traditional jobs and are deep inside a meaning crisis. 
 
-As you read this, I'm sure it is now history.
+As you read this, I'm sure it is now history. Probably a flash in the pan, and the “new normal” as we define it will just be, well, normal. 
 
 ### Technological deflation
 
-To understand our present situation, we look at two things. The exponetial decrease in cost per computation and
-the proliferation of the internet.
+To understand our present situation, we must examine two things. 1) The exponential decrease in cost per computation, and 2) the proliferation of the internet.
 
-These two things has put massive technological deflationary pressure on goods and services. If you are my age,
-you remember the immense transformation that the internet had on the music and adverting industries.
+These two things have put significant technological deflationary pressure on goods and services. If you are my age [NEED YOU TO INSERT AGE], I’m sure you remember the immense transformation that the internet had on the music and adverting industries.
 
-This deflationary pressure comes from the automation of labor. In 2011, robot sales grew 43%. We are 
-witnessing cascading effects in the economy as humans are replaced and unemployment rises. 
-The economy demands a different set of skills
-that were needed in the past. This has caused a rise in populism and a shift in a way people consume and produce.
+This deflationary pressure comes from the automation of labor. In 2011, robot sales grew 43%. We are witnessing cascading effects in the economy as humans are replaced by robots causing rampant unemployment. The economy demands a different set of skills that were needed in the past. This has caused a rise in populism and a shift in a way people produce and consume.
 
-This is the age of the prosumer. Historically, the costs of producing and distributing something were too high
-for ordinary people. The production was centralized to a hand full of large conglomerates and companies. 
-The internet has eliminated that barrier. Today, more than a third of the world's population distributes their own photots, art, films, music
+This is the age of the prosumer. Historically, the costs of producing and distributing something were too high for ordinary people. The production was centralized to a handful of large conglomerates and companies. The internet has eliminated that barrier. Today, more than a third of the world's population distributes their own photos, art, films, music,
 and writing across the internet. Prosumers trade their goods and services globally or give them away for free.
 
- If we are looking to the future, we know that the uplift is next.
-So this book is meant to enable you to position yourself
-to gain as much as you can in order to help others. 
+If we look into the future, we know that the uplift is next.
+This book will help put you in pole position to deal with the next shift resulting from our industrial revolution. In this pivotal role, you’ll be able to gain as much as you can in order to help others. 
 
 ###The rigged game
 
-With technological deflation pushing costs down, business interests are incentivized to collude to keep the prices up.
-cabals are threatened and refuse to let go of the status quo.
+With technological deflation pushing costs down, business interests are incentivized to collude to keep the prices up. Cabals are threatened and refuse to let go of the status quo.
 
-The blob is an informal term of a group of lobbyists and congressinal staffers that work to push their mutuall interests.
+The blob is an informal term of a group of lobbyists and congressional staffers that work to push their mutual interests.
 
-Princeton study on legistlation bias.
+Princeton study on legislation bias.
 
-Massive welath and income inequality.
+Massive wealth and income inequality.
 
 
 
