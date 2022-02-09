@@ -1,16 +1,16 @@
-# Cognitive Biases
+ï»¿# Cognitive Biases
 
 Understanding our cognitive biases is essential to healthy functioning. First, we must learn what they are, then we can attribute our behavior to them.
 
 After, we can identify external sources that aim to exploit our biases to gain undue influence and power over us. 
 
-This is the most important step in taking your life under your control. You must protect yourself from these external forces.
+This is the most important step in taking your life under your control. You must protect yourself from these external forces. And you need to do more than wear a tin-foil hat and think the government has alien-technology thatâ€™s reading your mind and transporting your thoughts to a celestial television station. 
 
 Cognitive biases lead to perceptual distortion, inaccurate judgement, and illogical interpretation. They lead to overly subjective interpretations of the world and leave little to no space of our objective reality. 
 
-Cognitive biases evolved to kept us alive and thriving in the palaeolithic era, but we advanced rapidly and changed our environment. The problem with modernity and our modern world in general is that we still have the same primitive brains from over 100,000 years ago. Although we have more technology and skills to carry us through this different landscape, we’re still subject to the same biases and errors in thinking and judgement. 
+Cognitive biases evolved to kept us alive and thriving in the palaeolithic era, but we advanced rapidly and changed our environment. The problem with modernity and our modern world in general is that we still have the same primitive brains from over 100,000 years ago. Although we have more technology and skills to carry us through our lives, weâ€™re still subject to the same biases and errors in thinking and judgement. 
 
-Understand these cognitive biases and you can free yourself from them. Trust me, we all have a lot of them—and they are imprinting their influence on us all the time.
+Understand these cognitive biases and you can free yourself from them. Trust me, we all have a lot of them and theyâ€™re imprinting their influence on us all the time.
 
 So be vigilant! Wikipedia is an excellent resource for learning about them.
 
@@ -18,18 +18,16 @@ So be vigilant! Wikipedia is an excellent resource for learning about them.
 
 The anti-vaxxers during COVID-19 are a prime example of a group of people led astray by social media exploiting cognitive biases.
 
-They often ignore the obviously negative situation of what’s going on(in something called the Ostrich effect). They refuse to plan for or react to a disaster that has never happened before (Normalcy bias). They ignore the fact hospitals are full (base rate neglect). They feed off each other's social media opinions which creates an availability cascade. 
-(Confirmation bias, conformity bias).
+They often ignore the obviously negative situation of whatâ€™s going on (in something called the Ostrich effect). They refuse to plan for or react to a disaster that has never happened before (Normalcy bias). They ignore the fact hospitals are full (base rate neglect). They feed off each other's social media opinions which creates an availability cascade 
+(confirmation bias, conformity bias).
 
-Many people overestimate their ability to filter information, and they are unaware of their own biases. The people who are so assured of themselves and have little doubt about their views tend to be prime examples of the Dunning-Kruger effect (where the ignorant think they’re right, and the intelligent doubt themselves).
+Many people overestimate their ability to filter information, and they are unaware of their own biases. The people who are so assured of themselves and have little doubt about their views tend to be prime examples of the Dunning-Kruger effect (where the ignorant think theyâ€™re right, and the intelligent doubt themselves).
 
-When some catch COVID-19 and are intubated, they still deny COVID exists (Conservatism bias). Anti-vaxxers believe ivermectin will save them (Optimism bias). If they are confronted with this, they double down in their position (Backfire-effect).
-
-What can be said about climate change deniers?
+When some catch COVID-19 and are intubated, they still deny COVID exists (Conservatism bias). Anti-vaxxers believe ivermectin will save them (Optimism bias). If they are confronted with information to the contrary, they double down in their position (Backfire-effect).
 
 In many places in the world, the anti-vaxxers have filled up the hospitals. Their cognitive biases are literally killing them.
 
-If we do not understand cognitive biases, the ones that do control ours and the social media algorithms absolutely understand cognitive biases. Social media algorithms exploit cognitive biases and train viewing habits to maximize profit.
+If we do not understand cognitive biases, the ones that do control ours and the social media algorithms absolutely do. Social media algorithms exploit cognitive biases and train viewing habits to maximize profit.
 
 Once we get a good grip on these, we can start building up new habits in ourselves to build the best possible life we can.
 
