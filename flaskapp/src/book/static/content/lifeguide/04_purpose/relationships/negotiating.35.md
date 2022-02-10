@@ -16,7 +16,7 @@ Here are 7 key points from his book:
 
 ### 1) Use active listening 
 
-Most of us don’t know how to listen. We listen for what we want to hear and filter out the rest. Not only that, but we tend to think more about what we are going to say next rather than really listen. Active listening is having no filter, with the intent of really understanding what the other side is saying, and more importantly, feeling. 
+Most of us don’t know how to listen. We listen for what we want to hear and filter out the rest. Not only that, but we tend to think more about what we are going to say next rather than really listen. Active listening when you really understand what the speaker is saying, and more importantly, feeling. When you active listen, you can say back to the speaker what they said but in different words to show you’ve understood it.
 
 ### 2) Be a mirror
 
@@ -29,6 +29,7 @@ Label what the other person feels when you think you know how they are feeling. 
 “It seems like….”
 “It sounds like…”
 “So is it true that…”
+
 Then, if the other person accuses you of telling them how they feel, with these “tentative" statements, you can say, “Well, I didn’t say that you felt that way. What I said was that it seemed like you felt that way.” 
 
 ### 4) Beware of “Yes”—Master “No”
@@ -49,4 +50,4 @@ To negotiate effectively, you must be willing to walk away from the deal. Don’
 
 ###Resources
 
-Never split the difference - Chris Voss
+Never Split the Difference - Chris Voss

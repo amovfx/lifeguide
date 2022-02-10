@@ -3,6 +3,8 @@
 Being able to work well with others on a team is a valuable ability to have. It’s one of the top things a company looks for in an employee. But it’s also a desire for employees who understand that working with a good, 
 strong team reaps many rewards. 
 
+It’s also helpful if you work for yourself because you might need a team around you that you can delegate work to.
+
 The Deloitte Millennial Survey of 2016 showed that for millennials, working with a strong team where there’s active encouragement of ideas amongst employees, free-flowing communication, mutual support, respect, and tolerance would be enough to make them want to stay on the job. 
 
 Here are the crucial elements to building a productive team:
@@ -11,7 +13,7 @@ Here are the crucial elements to building a productive team:
 
  * Ideas: A trusting and respectful team environment can help foster creative ideas. A team must feel comfortable with one another to brainstorm effectively to solve problems. No one should feel like their ideas will be shot down, for they then may be afraid to propose a solution that may be the best solution. The best brainstorming ideas come from high-functioning teams.
 
- * Support: Members should be glad to share information and knowledge that they have with others, because this creates a synergistic effect. Team members should be happy to help one another, and a spirit of comradery and connection is created. The result is high productivity from the team and high satisfaction from the members.
+ * Support: Members should be glad to share information and knowledge that they have with others, because this creates a synergistic effect. Team members should be happy to help one another, to foster a spirit of comradery and connection. The result is high productivity from the team and high satisfaction from the members.
 
 Google conducted a two-year study to find out the key attributes that make the best performing teams. Here are some of their results:
 
@@ -24,7 +26,8 @@ Google conducted a two-year study to find out the key attributes that make the b
 We’re here to cooperate. It’s us in our natural state. Perfect teamwork and you have the world in the palm of your hand, and help others have the same, too!
 
 #Resources
-Seven habits of highly effective people
+
+Seven Habits of Highly Effective People
 
 Deloitte Millennial Survey of 2016
 

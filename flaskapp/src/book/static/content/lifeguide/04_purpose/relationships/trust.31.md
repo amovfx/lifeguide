@@ -16,16 +16,16 @@ But by the same token, not having trust can have the opposite effect. Think abou
 
 Lesson 2: You must first trust yourself; trust is similar to confidence.
 
-Trust must start with yourself. If you don’t believe in yourself, then how do you expect others to? So, build trust in yourself. Keep your word to yourself. If you commit to doing something, do it. If you are over-committed on things, you have a problem, and you’re jeopardizing your trust. For example, if you commit to working out 3 times a week, then do it. It’s for your own good anyway. 
+Trust must start with yourself. If you don’t believe in yourself, then how do you expect others to? So, build trust in yourself. Keep your word to yourself. If you commit to doing something, do it. If you are over-committed on things, you have a problem, and you’re jeopardizing your trust. For example, if you commit to working out 3 times a week, then do it. When you do what you set out to do, you will build greater trust with yourself and lead a better life.
 
 Lesson 3: For business, try to develop societal trust through contribution.
 
 According to Covey, for a business, three groups can apply trust: the customers, the employees, and society. The Rodney King LA riots in 1992 highlighted that not a single McDonald's was ransacked or destroyed. At the time, society deemed McDonald’s trustworthy. McDonald’s had a history of giving free cups of coffee to the homeless, had literacy programs, jobs for the less privileged, and gave basketballs to teenagers so they could shoot hoops in their community. 
 
-Everyone has access to the universal asset of trust. Conducting yourself in a way that promotes trust will flourish in all your relationships, personal and business alike. Trust is an investment that pays serious dividends.
+Everyone has access to the universal asset of trust. Conducting yourself in a way that promotes trust will flourish in all your relationships—personal and business alike. Trust is an investment that pays serious dividends.
 
 Trust is one of the most powerful forms of motivation and inspiration. Trust is what people want. They respond to trust and thrive on it. Therefore, cultivating self-trust is critical. Do what you write down.
-Covey says that, to develop great trust in yourself, you must have the four cores. Here they are:
+Covey says that, to develop great trust in yourself, you must have the four cores. They are:
 
 #### 1) Integrity
 
@@ -42,7 +42,6 @@ Capabilities are about being competent at what you do and being the kind of pers
 #### 4) Results
 
 Results are about building a track-record of deeds that you completed and were committed to. 
-
 
 
 ###Digressions
