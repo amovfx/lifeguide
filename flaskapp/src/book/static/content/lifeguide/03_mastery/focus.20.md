@@ -1,6 +1,6 @@
 ﻿# Focus and discipline
 
-Time is our most valuable resource. It’s so valuable that companies spend a lot of advertising to get your attention, which takes up your time.
+Time is our most valuable resource. It’s so valuable that companies spend a lot of advertising to get your attention, to takes up your time.
 
 Time is even harder to come by because we live in a world of perpetual distraction, and we use social media sites that are designed to be addictive (and they’re very good at addicting us). 
 
@@ -31,17 +31,16 @@ In another important article in the New York Times entitled “Brain, Interrupte
 But here’s the essential point they make…
 
 It takes 25 minutes to regain focus after a distraction!
-This is why getting distracted is so frustrating to those of us who experience it. We know how detrimental it is to progress, but many others have a hard time understanding why. Now, we can tell them why! 
-To be mentally present, we must avoid distractions.
+Therefore, getting distracted is so frustrating to those of us who experience it. We know how detrimental it is to progress, but many others have a hard time understanding why. Now, we can tell them why! To be mentally present, we must avoid distractions. Turn off your phone notifications. Tell people not to bother you until a certain time.
 
 We must also cultivate our attention spans again. We’re used to everything being instant. The internet is now warp-speed. It used to take minutes to load up a page on a dial-up connection. We can order things online and sometimes get them delivered in four hours. Delayed gratification is almost a thing of the past. So, we’ve got to train our brains. 
 
 ### Why Distractions Win
 
 Here’s the real problem according to the above-noted research… 
-Distractions trigger our fight or flight response. We can’t help it. It is the natural reaction of our brains to danger. So, when you hear a loud, unfamiliar noise, our brains say something like, “This book we are working on is not important! This loud noise could be dangerous!” Or “This software program that we are working on isn’t as important as what could be a potential threat to our very existence!” 
+Distractions trigger our fight or flight response. We can’t help it. It is the natural reaction of our brains to danger. So, when you hear a loud, unfamiliar noise, our brains say something like, “This book we are writing on isn’t important right now! This loud noise could be dangerous!” Or “This software program that we are working on isn’t as important as what could be a potential threat to our very existence!” 
 
-It doesn't matter if the distraction is a noise or a co-worker/employee entering our cubicle/office with a Question. A distraction is a distraction, and it will take you 25 minutes to get back on track! What a waste of productivity… 
+It doesn't matter if the distraction is a noise or a co-worker/employee entering our cubicle/office with a question. A distraction is a distraction, and it will take you 25 minutes to get back on track! What a waste of productivity… 
 
 This fight or flight response is programmed into us for our survival’s sake. There are times when this primal part of our brains could save our lives. If there was an explosion, or if you smelled smoke or heard a crash in the other room because your cat knocked over a pot of boiling water, it warrants your attention…
 
@@ -51,7 +50,7 @@ What else is important to know about our brains?
 
 ### Brain Focus Hacks
 
-This brain of ours, when in a regular schedule sleep pattern, handles difficult tasks best in the late morning, from about 10 am to noon. After that, we are susceptible to distraction from noon to about 4 pm. So, schedule your toughest tasks for the day in the late morning time and take a break or just go for a walk in the afternoon if you can.
+Our brains, when they’re in a regular schedule sleep pattern, handles difficult tasks best in the late morning, from about 10 AM to noon. After that, we are susceptible to distraction from noon to about 4 PM. So, schedule your toughest tasks for the day in the late morning time and take a break or just go for a walk in the afternoon if you can.
 
 Write down the specific goal that you want to accomplish, preferably the night before, and then work on it in the morning. 
 
@@ -63,17 +62,17 @@ Then, let the train of thought that got you off track leave your thoughts by con
 
 To focus better, exercise in the form of yoga is excellent too. It helps you concentrate on every part of your body as well as your breathing. Meditation is a great way to get more grounded so that you don’t get distracted so easily. 
 
-Therefore, the first step is awareness. Start monitoring how many times you get distracted in your day, so you know if it’s a problem or not. 
+Therefore, the first step is awareness. Start monitoring how many times you get distracted in your day, and start to understand the scale of the problem. 
 
 Some think that the goal should be to work 8 hours straight without any interruption, but studies have shown that at around 20 to 25 minutes of straight work, most of us need a mental break. 
 
 The need for a break gave rise to the new idea that it’s best to work for 25 minutes and then take a 5-minute break. Of course, do what you think is best for you. Add or subtract the time limits to suit yourself best. 
 
-You can even get apps that will help you stay focused. They can come in the form of timers and help hold your attention span accountable. However, the most important thing is to recognize when you’re distracted, followed by an action. 
+You can even get apps that will help you stay focused. They can come in the form of timers and help hold your attention span accountable. However, the most important thing is to recognize when you’re distracted, followed by an action that’ll help mitigate the distraction. 
 
-If it is a boss, a co-worker, a friend, or a family member who interrupts you too much, kindly explain to them to not disturb you unless necessary. You could even tell them that you work in 25-minute increments and ask them to not disturb you during that time.
+If a boss, a co-worker, a friend, or a family member who interrupts you too much, kindly explain to them to not disturb you unless necessary. You could even tell them that you work in 25-minute increments and ask them to not disturb you during that time.
  
-And if it is your email, Facebook, Twitter, YouTube, or any other social media app that is the problem, take steps to limit your engagement with them. Set aside a specific time to use them and don’t let them interrupt you when you’re working on an important task. You control your social media, not the other way around.
+And if it is your email, Facebook, Twitter, YouTube, or any other social media app that’s the problem, take steps to limit your engagement with them. Set aside a specific time to use them and don’t let them interrupt you when you’re working on an important task. You control your social media, not the other way around.
 
 The good news is that the more that you work to master focus, the easier it will become. It is like anything else – the more your exercise your focus 'muscle', the stronger it gets. 
 
@@ -89,9 +88,9 @@ https://observer.com/2017/02/science-stay-focused-psychology-slow-habits-chewing
 
 Daniel Pink When
 
-Flow by
+Flow by Mihaly Csikszentmihalyi
 
-THe organized mind
+The organized mind
 
 [Stengthen Focus](https://www.psychologytoday.com/us/blog/the-brain-and-emotional-intelligence/201310/the-four-basic-moves-strengthen-focus)
 

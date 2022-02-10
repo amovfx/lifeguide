@@ -1,19 +1,19 @@
-# Data Management
+ï»¿# Data Management
 
-Today's world overloads us with emails, social media, messages, video calls, and all the rest. These interrupt flow and makes us less productive. Anyone that says they can properly multitask are deceiving themselves. You cannot multitask, only switch tasks (and perhaps they can do this rapidly). However, when you task switch, you run the risk of doing two or more things sub-optimally than if you just focused on one. 
+Today's world overloads us with emails, social media, messages, video calls, and all the rest. These interrupt flow and makes us less productive. Anyone that says they can properly multitask are deceiving themselves. You cannot multitask, only engage in task-switching (some people just do this rapidly enough they think theyâ€™re multitasking). However, when you task switch, you run the risk of doing two or more things sub-optimally than if you just focused on one. 
  
-Remember: we can only have so many things held in our mind at once. Ensuring we focus properly gives us more mental energy for the most demanding and creative work. Make it an aim to focus on single tasks. If you’re easily distracted, you should work on attention-optimizing exercises, like meditation. The more you train your attention muscle, the more it’ll grow. 
+Remember: we can only have so many things held in our mind at once. Ensuring we focus properly gives us more mental energy for the most demanding and creative work. Make it an aim to focus on single tasks. If youâ€™re easily distracted, you should work on attention-optimizing exercises, like meditation. The more you train your attention muscle, the more itâ€™ll grow. 
 
 To maximize creativity, get all your ideas and plans out of your head and down on paper. Being aware of your job goals and current tasks will enable you to make good decisions about the work to come. These tactics help you prepare for difficulties and interruptions ahead of time.
 Being well organized allows you to achieve more in less time.
 
-This is a balancing act; you don't want to over do it to the point it's keeping you from making progress on your creative ambitions.
+This is a balancing act; you don't want to overdo it to the point it's keeping you from making progress on your creative ambitions.
 
 To achieve your long-term goals, translate them into short term action steps. Once you get good at this, you can spread these ideas to your team to improve communication. Natural planning clarifies the goals and next concrete steps of your projects. 
 
 Instead of dealing to-do lists, maintain a calendar and a next action lists. "Waiting for" lists can be very helpful when you work with other people. All ideas with potential future relevance should go to the someday lists, like learning languages, taking trips, ect.
 
-For more of these tactics, let’s turn to David Allen, a productivity consultant.
+For more of these tactics, letâ€™s turn to David Allen, a productivity consultant.
 
 ###Tactics
 
@@ -25,7 +25,7 @@ Learn to love them if you don't already.
 
 If you split time between work and home for your job, make sure your workspaces at work and home are identical. 
 
-Capture your tasks, ideas ,and reminders in trusted external collections tools.
+Capture your tasks, ideas, and reminders in trusted external collections tools that are digitized. Then, you can see everything you need to see at work or at home. If you write it down with pen and paper, itâ€™ll get confusing. 
 
 Clarify: empty all your external collection tools weekly. Purge your system once a year from your system becoming a bloated mess.
 
@@ -39,8 +39,8 @@ Organize: empty your collection tools and put things in the right place.
  * A calendar is for time specific or date specific actions or information.
  * Next action lists are where all your to-dos end up. Split these lists up based on contexts.
  * If something is not actionable but you may need to do something about it, put it on the someday list.
- * Interesting information that’ll be useful later should go onto a reference material list.
- * Keep track of your current projects and always insist on clear next actions. Review these lists every week and make sure that each project has a clear concrete next step.
+ * Interesting information thatâ€™ll be useful later should go onto a reference material list.
+ * Keep track of your current projects and always insist on clear next actions. Review these lists every week and make sure that each project has a clear and concrete next step.
  * Make your next actions as specific as possible.
 
 #### Prioritizing
@@ -54,8 +54,10 @@ Ask yourself the following questions.
  * What do I have energy for?
  * Which task is my highest priority?
 
+Manage your data. Make lists. Live better.
+
 ##Resources
 
-Getting things done by David Allen.
+Getting Things Done by David Allen.
 
 When Daniel Pink

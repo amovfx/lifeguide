@@ -12,13 +12,13 @@ First, to gain financial mastery, we must get into the habit of paying ourselves
 
 Also, once you get a nest egg in place, get a safety net which will reduce your fear and allow you to take risks. If you don’t save while you earn, you’ll never be able to get your money to work for you. Start with saving 1% of your gross income and increase it from there. If you already do this, do more.
 
-Practice saving more and spending less. Understanding your motivators will help you identify if you are spending for a reason that’s beneficial to your long term future.
+Practice saving more and spending less. Understanding your motivators will help you identify if you are spending for a reason that’s beneficial to your long-term future.
 
 To motivate ourselves to save, think about what we value. Is it travel? Is it financial independence? 
 
 Visualize already having what you want, then start working to make it come true. 
 
-When it comes to financial goals, you don’t have to try to figure out exactly what it is you want to do with it. You can even guess what your goals should be and then fine-tune the goal as you go. Your goals are not set in stone. 
+When it comes to financial goals, you don’t have to try to figure out exactly what it is you want to do with it straight away. You can even guess what your goals should be and then fine-tune the goal as you go. Your goals are not set in stone. 
 
 It’s essential you know where you currently are financially. Assess your current financial situation by making a balance sheet of assets and liabilities. You might be surprised by how much you really have that’s wrapped up in material goods. 
 
@@ -33,33 +33,33 @@ For example, if your highest interest credit card is 25% and you have a savings 
 
 Pay that off first and do your best to never carry a balance on high-interest credit cards. Always pay off the debt you have which has the highest amount of interest first. Do this and you’ll save yourself a lot of trouble.
 
-Once you become financially stable, you can move onto focusing on investing.
+Once you become financially stable, you can then focus on investing.
 
-There is no way that this eBook can do that topic justice because it’s such a big one. When we invest our time into this topic, identifying subject-matter experts is a skill in itself.
+There is no way that the Life Guide—being a brief guide—can do investing justice because it’s a complex topic. When we invest our time into this topic, identifying subject-matter experts is a skill in itself. Do some research into investing. 
 
-You need to make sure you don't succumb to your cognitive biases discussed earlier. Like nutrition, this area is rife with charlatans. If someone tells you they can make you rich fast, and all you have to do is give them money… then they’re likely a charlatan. There are plenty of channels on YouTube that criticize so-called financial gurus.
+You need to make sure you don't succumb to your cognitive biases discussed earlier. Like nutrition, this the investing sector is rife with charlatans. If someone tells you they can make you rich fast, and all you have to do is give them money… then they’re likely a charlatan. There are plenty of channels on YouTube that criticize so-called financial gurus. Keep your wits about you.
 
 If it sounds good to be true, it probably is. 
 
 ### The concept of enough.
 
-The thing that I caution the most is to make a target of what will be enough to live humbly and pursue your interests to build things that could benefit others. It is very easy to fall into the trap of wanting more, I almost fell into it myself. It is tempting. Once you reach a certain threshold, you will start to learn of the things that money can't buy.
+The thing that I caution the most is to make a target of what will be enough to live humbly and pursue your interests to build things that could benefit others. It’s too easy to fall into the trap of wanting more. It is tempting. Once you reach a certain threshold, you will start to realize all the things that money can't buy.
 
-If your aim is just to keep making more money, you’ll never have an end goal in sight. You’ll be like the squabbling billionaires in competition to become the richest person on the planet, and forget about principles and ethics to win that contest. 
+If your aim is just to keep making more money, you’ll never have an end goal in sight. You’ll be like the squabbling billionaires in competition to become the richest person on the planet, and forget about principles and ethics to win that banal contest. 
 
 It’s the same if you keep wanting more stuff. Before you buy that new t-shirt, ask yourself: “Do I really need this?” and then, “Will this really make me happy?” The problem with the materialist societies many of us live in is that one purchase leads to another. It’s never ending.
 
-When we think of the things money can’t buy: happiness, fulfilment, family, friends, experiences. Sure, money is helpful to achieve certain means (you have to pay for children), so it’s not bad in and of itself. It’s just not an end goal. 
+Think of things that money can’t by, and see if your money making goals are clashing with them—happiness, fulfilment, family, friends, experiences. Sure, money is helpful to achieve certain means (you have to pay for children), so it’s not bad in and of itself. It’s just not an end goal. 
 
 Please don't fall into the trap that caught so many people to destroy our planet.
 
 
 ### Resources:
-The psychology of money.
+The Psychology of Money.
 
-The wealthy barber
+The Wealthy Barber
 
-[Mr Money Mustache reading list](https://www.mrmoneymustache.com/the-mmm-reading-list/)
+[Mr Money Moustache reading list](https://www.mrmoneymustache.com/the-mmm-reading-list/)
 
 
 
