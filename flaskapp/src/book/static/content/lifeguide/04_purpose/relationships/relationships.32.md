@@ -41,12 +41,12 @@ Don’t complain, condemn, or criticize because you’ll never get the result yo
 
 In addition, the book has a section about “Six Ways to Make People Like You.” They are: 
 
- * 1) Become genuinely interested in others.
- * 2) Smile. Smiling makes others feel great, and it works for you too.
- * 3) Remember people’s names. A person’s name, to that person, is the most important word in all languages. Try to memorize people’s names and use them. It’ll help you in every social situation (including negotiations).
- * 4) Be a good listener. We’ve already discussed this. Many times, people want a good listener and don’t want the entertainment of your side of the conversation. You must care about what other people have to say to be a good listener. One tip I learned is to work out (or ask) if someone is on the communications channel or solutions channel. Sometimes people want to discuss something without advice, and sometimes people want advice. Work out which one is which. 
- * 5) Talk to others about their interests. Take a genuine interest in them. That’s how to make it into their heart. It makes them feel valued and you get to learn something new. Everybody wins. 
- * 6) Make the others feel important—and do it genuinely. Allow them to talk about themselves. Treat others the way you want to be treated. (Also, treat yourself like you’d treat your best friend, pet, or partner—with high value, dignity, caring, and respect.)
+ * Become genuinely interested in others.
+ * Smile. Smiling makes others feel great, and it works for you too.
+ * Remember people’s names. A person’s name, to that person, is the most important word in all languages. Try to memorize people’s names and use them. It’ll help you in every social situation (including negotiations).
+ * Be a good listener. We’ve already discussed this. Many times, people want a good listener and don’t want the entertainment of your side of the conversation. You must care about what other people have to say to be a good listener. One tip I learned is to work out (or ask) if someone is on the communications channel or solutions channel. Sometimes people want to discuss something without advice, and sometimes people want advice. Work out which one is which. 
+ * Talk to others about their interests. Take a genuine interest in them. That’s how to make it into their heart. It makes them feel valued and you get to learn something new. Everybody wins. 
+ * Make the others feel important—and do it genuinely. Allow them to talk about themselves. Treat others the way you want to be treated. (Also, treat yourself like you’d treat your best friend, pet, or partner—with high value, dignity, caring, and respect.)
 
 There are many other words of wisdom from the book such as avoid arguing because even if we win, we still lose. Don’t ever flat-out tell someone that they are wrong because it will insult their pride and offend them. 
 If you are wrong, admit it emphatically and quickly. Be friendly from the start, even if you feel upset. There’s no need to let your ego get in the way.

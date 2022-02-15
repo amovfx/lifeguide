@@ -2,29 +2,29 @@
 
 Dear Reader,
 
-You're likely here because you know you're capable of achieving more in your life, and you're searching for something that’ll help elevate you to the next stage in your journey. 
+You're likely here because you know you're capable of achieving more in your life, and you're searching for something that'll help elevate you to the next stage in your journey. 
 
-We’re all at different altitudes on the collective mountain of life. Some of us are halfway up. Others are at the base, ready with our gear, tents, and food supplies, about to climb. Most of us can see the mountain in the distance and are deciding which path we should take to get there. 
+We're all at different altitudes on the collective mountain of life. Some of us are halfway up. Others are at the base, ready with our gear, tents, and food supplies, about to climb. Most of us can see the mountain in the distance and are deciding which path we should take to get there. 
 
-I know I’m on the mountain, but I know I’m no way near the peak. I’m not even sure that it’s possible to even get there. But I know we should aim for the peak, and that the climb itself is fundamental to our growth as humans.
+I know I'm on the mountain, but I know I'm no way near the peak. I'm not even sure that it's possible to even get there. But I know we should aim for the peak, and that the climb itself is fundamental to our growth as humans.
 
 On my way up my proverbial mountain, I aimed to read and apply the knowledge of at least 100 self-help books. Once I did this, I decided it was a time to condense the best information and turn it into a guidebook for all you mountaineers of life. 
 
 The Life Guide is a summary of the techniques I learned from these books that resonated with me most. 
 
-I’ve structured the Life Guide to revolve around three key principles: Autonomy, Mastery, and Purpose.
+I've structured the Life Guide to revolve around three key principles: Autonomy, Mastery, and Purpose.
 
-* Autonomy is predominantly about getting control over your life. Although I'm helping give you the necessary tools for your mountain climb, it’s up to you to work your physical, mental, and emotional body/mind by climbing yourself. 
+* Autonomy is predominantly about getting control over your life. Although I'm helping give you the necessary tools for your mountain climb, it's up to you to work your physical, mental, and emotional body/mind by climbing yourself. 
 
-* Mastery is about choosing what you want to learn in life and continuous improvement to become the best you can possibly be. Know that the early stages of mastery is foolery. Although experts seem so natural at something, they all had to start at the beginning. Remember, you’re at the base of the mountain (or on the path to the mountain!) of any pursuit before you start your ascent.
+* Mastery is about choosing what you want to learn in life and continuous improvement to become the best you can possibly be. Know that the early stages of mastery is foolery. Although experts seem so natural at something, they all had to start at the beginning. Remember, you're at the base of the mountain (or on the path to the mountain!) of any pursuit before you start your ascent.
 
-* Purpose is about fulfilment. Fulfilment can come about once you master something, and you continue to apply yourself to that mastery. Once you master something, you can use your skills to help others—giving you purpose. 
+* Purpose is about fulfilment. Fulfilment can come about once you master something, and you continue to apply yourself to that mastery. Once you master something, you can use your skills to help others giving you purpose. 
 
 During my 31st year on this planet, I was fortunate enough to reach financial independence. Since 2012, my investments have averaged a 90% return year after year.
 
 I have a few strengths that have helped me along my own mountain journey. I have a decent understanding of history, psychology, economics, and technology. I use the past the understand the present and predict the future (this comes in handy with investing!). I use psychology to understand human motives, including my own. I use my technology knowledge to stay on top of digital trends and keep my eyes peeled for new opportunities. 
 
-Success—or our personal view of the peak of the mountain—are subjective. My view of success is heavily influenced by evolutionary psychology. Understanding the evolution of humans is as helpful as trying to understand how we interact in today’s digital world—because everything is linked to what came before it.
+Success—or our personal view of the peak of the mountain—are subjective. My view of success is heavily influenced by evolutionary psychology. Understanding the evolution of humans is as helpful as trying to understand how we interact in today's digital world—because everything is linked to what came before it.
 
 
 Let’s go over some facts. The fossil record goes back 178 million years. The average mammalian species lives a million years before evolving or going extinct.

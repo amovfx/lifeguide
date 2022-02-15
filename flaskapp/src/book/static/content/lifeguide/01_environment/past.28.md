@@ -50,8 +50,8 @@ When you think about how fast human civilization has been evolving, it’s mind-
 
 If we think about the scale of how long life has been on this planet—approximately 3.5 billion years—it was essentially seconds ago that we humans were trading beads for feathers with one another. Nearly all of our evolutionary time was spent in the nomadic period.
 
-The power of abstraction—including counting, writing, and creating vast systems—allows us to cooperate with one another, but we have a problem: Big Tech. Large, powerful tech companies are causing much more harm than good on this planet, mostly by suppressing information. For example, the whistle blower and ex-Google employee Zach Vorhies went public with information about how Google blacklists websites. [ANDREW: WHAT IS THE DAMAGE OF THIS? WHAT SORT OF WEBSITES DO THEY BLACKLIST? WHAT’S THE NET NEGATIVE?] In short, the power over information these Big Tech companies allows them to corrupt. 
-
+The power of abstraction—including counting, writing, and creating vast systems—allows
+us to cooperate with one another.
 But how did we get here? And what does the future hold for us? 
 Let’s quickly look at how we started, the three industrial revolutions, before diving deep into the fourth one. 
 

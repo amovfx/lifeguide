@@ -6,13 +6,28 @@ modifying and retesting them; and finally communicating the results."
 Sternberg has proposed that creativity has five components: expertise, 
 imaginative thinking skills; a venturesome personality; intrinsic motivation; and a creative environment that sparks, supports, and refines creative ideas.
 
-In the book Creativity: Flow and the Psychology of Discovery and Invention, psychologist Mihaly Csikszentmihalyi defines creative people as: [ANDREW: IS THE FOLLOWING A QUOTE? IF SO, NEEDS QUOTATION MARKS] People who seem stimulating, interesting, and have a variety of unusual thoughts. People who perceive the world with a fresh perspective, have insightful ideas, and make important personal discoveries. These individuals make creative discoveries that are generally known only to them.
+In the book Creativity: Flow and the Psychology of Discovery and Invention, 
+psychologist Mihaly Csikszentmihalyi defines creative people as:
+"People who seem stimulating, interesting, and have a variety of unusual thoughts. 
+People who perceive the world with a fresh perspective, have insightful ideas, 
+and make important personal discoveries. 
+These individuals make creative discoveries that are generally known only to them."
 
-Inventors and artists such as Thomas Edison and Pablo Picasso would fall into Csikszentmihalyi’s creative person category, but they made great creative achievements that become known to the entire world. Creatives embrace contradictions. They relish the creative thought it takes to ponder conflict in the world. They prefer to challenge tradition, traditional thought, and the idea that something must be done a certain way because that’s the way it’s always been done. Creative thinkers with a purpose are constantly looking for new, innovative ways to solve old problems. They are process improvement seekers and conquerors. 
+Inventors and artists such as Thomas Edison and Pablo Picasso would fall into Csikszentmihalyi’s creative person category,
+but they made great creative achievements that become known to the entire world. 
+Creatives embrace contradictions. They relish the creative thought it takes to 
+ponder conflict in the world. They prefer to challenge tradition, traditional 
+thought, and the idea that something must be done a certain way because that’s the 
+way it’s always been done. Creative thinkers with a purpose are constantly looking 
+for new, innovative ways to solve old problems. They are process improvement seekers 
+and conquerors. 
 
-Creative people allow their work to create the plan, rather than force a plan upon their work. The passion that they have for their work drives them to become masters. They often become almost obsessed with their 
+Creative people allow their work to create the plan, rather than force a plan upon their 
+work. The passion that they have for their work drives them to become masters.
+They often become almost obsessed with their 
 creative experience to the point where they call it a “rage to master.”  
-Creatives engage their work with passion and are constantly looking to solve problems, including ones in their personal creative pursuits. 
+Creatives engage their work with passion and are constantly looking to solve problems, 
+including ones in their personal creative pursuits. 
 
 Creative people love new experiences. They engage, explore, and learn from the unfamiliar, both physically and mentally. This drives neuroplasticity and satisfies their creative nature. However, creatives are always on the search for answers and therefore constantly create new questions. In one sense, they have insatiable curiosity. However, by nature, creative people are sensitive and perceptive. 
 
@@ -68,5 +83,5 @@ Misfortune and problems are now our opportunities. Be curious. Be creative.
 
 [History of Creativity](https://simonton.faculty.ucdavis.edu/wp-content/uploads/sites/243/2015/08/HistoryCreativity.pdf)
 
-[The psychology of creativity] (https://www.psychologytoday.com/us/blog/boundless/201907/the-psychology-creativity)
+[The psychology of creativity](https://www.psychologytoday.com/us/blog/boundless/201907/the-psychology-creativity)
 

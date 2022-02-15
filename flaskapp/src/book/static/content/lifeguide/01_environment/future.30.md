@@ -29,7 +29,12 @@ Self-driving cars are already among us, but they’re not yet widespread or at t
 
 Therefore, the delivery of physical goods will drop further for producers as goods deliveries will be entirely automated and, likely, even faster than they are now.  
 
-Currently, one of our biggest problems in our supply chains is storage. Warehouses are owned by individual suppliers and not even full. Trucks are 60% full. The energy internet will optimize this and ensure no space is wasted. 
+Currently, one of our biggest problems in our supply chains is storage. 
+Warehouses are owned by individual suppliers and not even full. 
+Trucks are 60% full. The logistics internet will optimize this and ensure no space is wasted.
+This is going to take a mental leap, but blockchain technology allows that warehouse space to 
+own it's self. As products are tracked by blockchain's token, filling up one of those spaces,
+becomes as easy as sending a payment.
 
 ###Material Internet
 

@@ -1,11 +1,10 @@
 ﻿# Autonomy
 
-
 <img class=illustration src={{ url_for(static_path, filename='/content/images/A_climbing_Ape_small.jpg') }}></img>
 
 Autonomy is to have the ability to make your own decisions. It is to define your life by your actions, values, feelings, and desires. 
 
-In short, autonomy is to self-determine, to carve your own path through life�s thicket.
+In short, autonomy is to self-determine, to carve your own path through life's thicket.
 
 Being objective about oneself is an important characteristic of the autonomous person. Getting autonomy is much more of an inside job that and outside one.
 
@@ -19,9 +18,16 @@ Once you do this, you can start to identify your motivations, cognitive biases, 
 
 If you understand your weaknesses better, you’ll prevent external sources from manipulating you. Think of it like this: If you take control of your health by eating well, exercising, and sleeping properly, you are far less likely going to have to rely on getting medical care and medication to ailments. You’re taking control of yourself right now and ensuring your chances of having to rely on medicine are lower. 
 
-If you take the lot of humanity's problems such as climate change, the COVID-19 pandemic, or dying monetary systems, they all boil down to a similar point—a small group of people psychologically manipulating the majority. [ANDREW: WHAT DO YOU MEAN HERE? PLEASE ELABORATE. HOW DOES COVID-19 BOIL DOWN TO MANIPULATION?]
+If you take the lot of humanity's problems such as climate change, the effecacy of Covid-19 vaccines, 
+or dying monetary systems, they all boil down to a similar point—a small group of 
+people psychologically manipulating the majority.
 
-The first step is understanding the difference between fixed and growth-oriented mindsets. Once we understand these, we can become better versions of ourselves. If we keep getting better, we will be able to master ourselves.
+That manipulation starts with the abstract constructs we talked about earlier. 
+Naritives get built and served us that aren't in our best interest. Developing our critical thinking skills helps defend against
+propaganda.
+The first step is understanding the difference between fixed and growth-oriented mindsets. 
+Once we understand these, we can become better versions of ourselves. 
+If we keep getting better, we will be able to master ourselves.
 
 Once we master ourselves, we can master our environment.
 

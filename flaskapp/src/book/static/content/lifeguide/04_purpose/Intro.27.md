@@ -22,7 +22,7 @@ It is our relationship to others where you create your own meaning. For a meanin
 
 But none of that matters without relationships. 
 
-And now, for this last and final part regarding “Purpose,” we’re going to cover every aspect there is regarding purpose and its deep interconnection to relationships. 
+And now, for this last and final part regarding “Purpose,” we’re going to cover every aspect there is regarding purpose and its deep interconnection to relationships. We are evolved to cooperate.
 
 
 ### Resources

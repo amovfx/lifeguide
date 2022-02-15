@@ -1,5 +1,6 @@
 ﻿# Motivation
 
+
 There are two different types of motivation: 1) Intrinsic and 2) extrinsic.
 
 Intrinsic motivation is doing an activity for its inherit satisfaction. 

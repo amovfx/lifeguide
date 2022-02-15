@@ -55,7 +55,7 @@ So, before we decide to buy it, we need to understand that bitcoin is a data tra
 When our first internet was created, it started out as ethernet. Ethernet is a broadcast network, it doesn’t scale, and every node on the network communicates with every other node when a request is made. So, our early internet had scaling issues much like Bitcoin does with its seven transactions per second capacity.
 
 To get around the ethernets scalability issues, TCP/IP was made as a routing layer which underpins our modern internet today. Bitcoin's scalability is being addressed in the same fashion. The lightning network
-is a routing protocol for Bitcoin. It enables near-free, instant transactions, with approximately 3.2 million tps (ANDREW: WHAT DOES TPS MEAN? EXPLAIN TO LAYPERSON (ME)).
+is a routing protocol for Bitcoin. It enables near-free, instant transactions, with approximately 3.2 million transactions per second
 
 Current Lightning Stats.
 

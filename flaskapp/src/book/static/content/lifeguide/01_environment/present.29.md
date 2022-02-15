@@ -1,13 +1,12 @@
 ﻿#The present
 
-
 So where are we now?
 
 We are in what generational theory would call ‘the end of an unwinding.’ Or, perhaps more accurately, the start of a crisis. In November 2019, JP Morgan Chase, Goldman Sachs, and Citigroup received a 4.5 trillion-dollar bailout from gambling on CDOs, just like they did in 2008. There was no mention this in any major news outlets.
 
 On January 6th, an attempted insurrection took place in the United States Congress.
 
-Meme stocks have been shorted to the tune of 2000%. A compounding financial crisis many times the size of 2008.
+Various stocks, like gamestop, have been shorted to the tune of 2000%. A compounding financial crisis many times the size of 2008.
 
 The COVID-19 crisis is still in full swing, and the less-deadly yet way more transmissible omicron variant of the illness is running rampant throughout the world, increasing case numbers and filling hospital beds. We’re in the midst of a public health crisis, and a deadly cocktail of obesity, sedentary lifestyles, drunk and alcohol abuse, poor diets, and poor sleep are wreaking havoc through our world. 
 

@@ -18,12 +18,6 @@ The idea comes from the book “Eat that Frog!” by Brian Tracy. But novelist M
 Productivity gurus like Brian Tracy used this idea to apply it to tasks. 
 To apply it, you should start your day with your most urgent, difficult task first. When you complete that one, do the next one that is the most urgent or highest priority. 
 
-However, understand that there’s a difference between urgent and important. 
-
-Some things are urgent but not important, and some things are not urgent, but important. It’s essential to discern between the two. [ANDREW: WHAT IS THE DIFFERENCE BETWEEN THE TWO? PLEASE EXPLAIN] Once you’ve done this, start with your most urgent tasks, then make work on your most important yet NOT urgent tasks. 
-
-You need to focus more on the “not urgent, but important” tasks and give them the daily attention that they need. An example of these types of tasks would be writing your book, learning a new skill, learning how to make money online, or learning a new language. Anything that’s going to improve your life quality can fit into this category.  
-
 The premise of the ABCDE method is easy. “A” tasks are the highest priority, followed by “B,” then “C.” “D” stands for “Delegate,” and “E” stands for “Eliminate.” Here is a more detailed description:
 
 <ul>

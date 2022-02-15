@@ -1,5 +1,6 @@
 ﻿# Introspection
 
+
 To begin our journey and become more introspective, we must be able to acknowledge our shortcomings. It may seem counterproductive that we were discussing objectivity before and now we’ve got to look inwards and be more subjective. Remember that without an understanding of your own subjectivities, objectivity is impossible.
 
 Psychometrics are a great way begin our journey into ourselves. Let me start by saying that psychometric testing isn’t really the be all and end all our personality. Although it’s not 100% accurate, it can still help us understand our behaviours better. I suggest you take one, and see which of the results resonate with you.

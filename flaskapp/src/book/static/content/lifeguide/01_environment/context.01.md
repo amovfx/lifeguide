@@ -49,39 +49,32 @@ So, to start, we must all accept that we’re playing the same game. But to play
  
 ### Generational Theory
 
-[ACTION ITEM FOR ANDREW: This part is lifted from Wikipedia. Could you paraphrase how you want to say it, then I can go in and edit? Needs to be in your voice.]
+“Hard times create strong men, strong men create good times, 
+good times create weak men, and weak men create hard times.” 
+The quote, from a postapocalyptic novel by the author G. Michael Hopf, 
+sums up a stunningly pervasive cyclical vision of history.
 
-The Strauss–Howe generational theory, devised by William Strauss and Neil Howe, describes a theorized recurring generation cycle in American and global history. According to the theory, historical events are associated 
-with recurring generational personas (archetypes). Each generational persona unleashes a new era (a turning), lasting around 20–25 years, in which a new social, political, and economic climate (mood) exists. Each 25-year cycle are part of a larger cyclical (a "saeculum"—a long human life, which usually spans between 80 and 100 years, although some saecula have lasted longer). The theory states that a crisis recurs in American history after every saeculum, which is followed by a recovery (high). During this recovery, institutions and communitarian values are strong. Ultimately, succeeding generational archetypes attack and weaken institutions in the name of autonomy and individualism, which eventually creates a tumultuous political environment that ripens conditions for another crisis.
+This is elaborated upon by William Strauss and Niel Howe that describe a theory
+of a generational cycle in American and global history.
 
-Strauss and Howe laid the groundwork for their theory in their 1991 book, ‘Generations,’ which discusses the history of the United States as a series of generational biographies going back to 1584.[1] In their 1997 book, ‘The Fourth Turning,’ the authors expanded the theory to focus on a fourfold cycle of generational types and recurring mood eras[2] to describe the history of the United States, including the Thirteen Colonies and their British antecedents. However, the authors have also examined generational trends elsewhere in the world and described similar cycles in several developed countries.[3]
+They make a generational persona, called an archetype. Each one, starts a new era, which they 
+call a turning, a 20-25 year period where a new socail, political and economic climate mood
+emerges. There are four of these periods in a saeculum, a long human life, between 80-100 years.
 
-Academic response to the theory has been mixed. Some applaud Strauss and Howe for their "bold and imaginative thesis" and others criticize it for being overly-deterministic, unfalsifiable, and unsupported by rigorous evidence.[4][5][6][7][8] Strauss–Howe generational theory has also been 
-described by some historians and journalists as pseudoscientific.[6][9][10] "kooky",[11] and "an elaborate 
-historical horoscope that will never withstand scholarly scrutiny."[12][13][14] Academic criticism has focused on 
-the lack of rigorous empirical evidence for their claims,[15] and the authors' view that generational groupings are more powerful than other social groupings such as economic class, race, sex, religion, and political parties.[16]
+At the end of every saeculum, there is a crisis, whih is then followed by a recovery.
+It is a cycle between individualism and collectivism. The recovery insutituional and communal 
+strength grow, the following archetype weaken these in the name of autonomy and
+individualism which fosters the climate for another cycle.
 
-Strauss and Howe define a social generation as the aggregate of all people born over a span of roughly twenty years or about the length of one phase of life: childhood, young adulthood, midlife, and old age. Generations are identified (from first birthyear to last) by looking for cohort groups of this length that share three criteria. First, members of a generation share what the authors call an age location in history: they encounter key historical events and social trends while occupying the same phase of life. In this view, members of a generation are shaped in lasting ways by the eras they encounter as children and young adults and they share certain common beliefs and behaviors. Aware of the experiences and traits that they share with their peers, members of a generation would also share a sense of common perceived membership in that generation.[34]
+The acedemic review is mixed its lauded as a creative viewpoint and others criticize it for being overly-deterministic, 
+unfalsifiable, and unsupported by rigorous evidence. It's hard to measure a claim that
+a generational social grouping is stronger than a grouping for economic class, race, sex, religion, and political parties.
 
-Missionary Generation	Prophet (Idealist)	1860–1882 (23)	1st Turning: High: Reconstruction, Gilded Age	1865–1886 (21)
-Lost Generation	Nomad (Reactive)	1883–1900 (18)	2nd Turning: Awakening: Missionary Awakening/Progressive Era	1886–1908 (22)
-G.I. Generation	Hero (Civic)	1901–1924 (24)	3rd Turning: Unraveling: World War I, Roaring Twenties, Prohibition	1908–1929 (21)
-Silent Generation	Artist (Adaptive)	1925–1942 (18)	4th Turning: Crisis: Great Depression, World War II	1929–1946 (17)
-Millennial Saeculum (76 years)
-Baby Boom Generation	Prophet (Idealist)	1943–1960 (18)[81]	1st Turning: High: American High	1946–1964 (18)
-13th Generation[c]	Nomad (Reactive)	1961–1981 (21)	2nd Turning: Awakening: Consciousness Revolution, Fourth Great Awakening	1964–1984 (20)
-Millennial Generation[d]	Hero (Civic)	1982–2004 (23)	3rd Turning: Unraveling: Neoliberalism/Culture Wars, Tech Bubble, 9/11	1984–2007 (23)
-Homeland Generation[e]	Artist (Adaptive)	2005–present (16)	4th Turning: Crisis: War on Terror,[f] Great Recession, COVID-19 pandemic/recession[82]	2008–present (13)
+In short, our collective memory doesn't go past 100 years. The pandemic is a perfect example. ALl the people that lived the lessons
+of the Spanish Flu in the 1920s are dead. They aren't around to tell their great great grand children how badly they screwed up.
+They did the same dumb shit like antimask parties.
+The parallels are absolutley stunning. “History Doesn't Repeat Itself, but It Often Rhymes” --Mark Twain
 
-
-What’s great about this, according to these guys, is that we’re about to encounter a high. Something that I call Renaissance 2.0. I'm sure you
-can see how the generational theory has a very strong influence (((((NOTE FROM NATHAN:::: INFLUENCE ON WHAT?))))))
-
-So how did we get here? Let’s take a look at our past to understand our present.
-
-To do this effectively, we must turn to logic and reason.
-
-Then, we must look to our past and understand how we developed. 
 Once we know our history, we gain context for the present, and once we connect the two, we can spot large trends and position us accordingly.
 
 
