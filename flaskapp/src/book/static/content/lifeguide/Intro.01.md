@@ -1,8 +1,10 @@
-# Welcome to the Life Guide!
+ï»¿# Welcome to the Life Guide!
 
 Dear Reader,
 
 You're likely here because you know you're capable of achieving more in your life, and you're searching for something that'll help elevate you to the next stage in your journey. 
+
+Welcome to the Life Guide, where youâ€™ll learn to summit the mountain of the self.
 
 We're all at different altitudes on the collective mountain of life. Some of us are halfway up. Others are at the base, ready with our gear, tents, and food supplies, about to climb. Most of us can see the mountain in the distance and are deciding which path we should take to get there. 
 
@@ -16,60 +18,60 @@ I've structured the Life Guide to revolve around three key principles: Autonomy,
 
 * Autonomy is predominantly about getting control over your life. Although I'm helping give you the necessary tools for your mountain climb, it's up to you to work your physical, mental, and emotional body/mind by climbing yourself. 
 
-* Mastery is about choosing what you want to learn in life and continuous improvement to become the best you can possibly be. Know that the early stages of mastery is foolery. Although experts seem so natural at something, they all had to start at the beginning. Remember, you're at the base of the mountain (or on the path to the mountain!) of any pursuit before you start your ascent.
+* Mastery is about choosing what you want to learn in life and continuous improvement to become the best you can possibly be. Know that the first stage of mastery is foolery. Although experts seem to be natural and effortless at something, they all had to start at the beginning. 
 
 * Purpose is about fulfilment. Fulfilment can come about once you master something, and you continue to apply yourself to that mastery. Once you master something, you can use your skills to help others giving you purpose. 
 
 During my 31st year on this planet, I was fortunate enough to reach financial independence. Since 2012, my investments have averaged a 90% return year after year.
 
-I have a few strengths that have helped me along my own mountain journey. I have a decent understanding of history, psychology, economics, and technology. I use the past the understand the present and predict the future (this comes in handy with investing!). I use psychology to understand human motives, including my own. I use my technology knowledge to stay on top of digital trends and keep my eyes peeled for new opportunities. 
+I have a few strengths that have helped me climb the proverbial mountain. I have a decent understanding of history, psychology, economics, and technology. I use the past the understand the present and predict the future (this especially comes in handy with investing!). I use psychology to understand human motives, including my own. I use my technology knowledge to stay on top of digital trends and keep my eyes peeled for new opportunities. 
 
-Success—or our personal view of the peak of the mountain—are subjective. My view of success is heavily influenced by evolutionary psychology. Understanding the evolution of humans is as helpful as trying to understand how we interact in today's digital world—because everything is linked to what came before it.
+Successâ€”or our personal view of the peak of the mountainâ€”is subjective. My view of success is heavily influenced by evolutionary psychology. Understanding the evolution of humans is as helpful as trying to understand how we interact in today's digital world because everything is linked to what came before it.
 
 
-Let’s go over some facts. The fossil record goes back 178 million years. The average mammalian species lives a million years before evolving or going extinct.
+Letâ€™s go over some facts. The fossil record goes back 178 million years. The average mammalian species lives a million years before evolving or going extinct.
  
-We, humans, are 200,000 years old. And we’re essentially an orphaned teenager. There isn't a parent civilization to guide us away from serious self-harm and perhaps even total destruction. We’re navigating these mountains without the serious mentorship we could do with. 
+We, humans, are 200,000 years old. And weâ€™re essentially an orphaned teenager. There isn't a parent civilization to guide us away from serious self-harm and perhaps destruction. Weâ€™re navigating these mountain paths without the serious mentorship we could do with. 
 
-We spent about 188,000 years as nomadic tribes. Evolution rewarded survival to those that learned something that helped the group. This gave birth to a tit-for-tat system of communication that’s rife in our modern world (even if we struggle to see it—it’s there). 
+We spent about 188,000 years as nomadic tribes. Evolution rewarded survival to those that learned something that helped the group. This gave birth to a tit-for-tat system of communication thatâ€™s rife in our modern world (even if we struggle to see it, itâ€™s there). 
 
-In our evolutionary past, if we shared some of our hunted food with another member of our tribe who didn’t have any, what did you think they were they were more likely to do when they had food and we didn’t have any? That’s right—share it. 
+In our evolutionary past, if we shared some of our hunted food with another member of our tribe who didnâ€™t have any, what do you think they were more likely to do when they had food and we didnâ€™t have any? Share it. 
 
-However, the point is that it felt good to share in the first place, to not expect anything in return. Tit-for-tat isn’t necessarily calculated, but there’s something innate within us that want to ‘return the favour.’ 
+However, letâ€™s think about the fact it felt good to share in the first place, to not expect anything in return. Tit-for-tat isnâ€™t necessarily calculatedâ€”thereâ€™s something innate within us that wants to return the favour. 
 
-This biological system reinforced pro-social behavior over approximately 400 generations. That’s why it feels good when we do charitable work, or buy a homeless person a meal. And we do these without expecting anything in return, and just because it feels good.
+This biological system reinforced pro-social behavior over approximately 400 generations. Thatâ€™s why it feels good when we do charitable work. And we do these without expecting anything in return, and just because it feels good.
 
-Humans have even come up with beliefs such as karma, which could be an evolutionary overhang from the tit-for-tat system. In short, karma is you get back what you give—the luck you get according to your actions. 
+Humans have even come up with beliefs such as karma, which could be an evolutionary overhang from the tit-for-tat system. In short, karma is you get back what you giveâ€”the luck you get according to your actions. 
 
-It’s important to live a life of service. Why? When we don’t serve others, we’re far more likely to suffer from anxiety or depression. If we are to climb past people on the mountain and ignore their suffering, we’re not going to feel good. If we only focus on our own journey, we’re not adhering to one of the Life Guide’s principles: help others. 
+Itâ€™s essential to live a life of service. Why? Because when we donâ€™t serve others, weâ€™re far more likely to suffer from anxiety, depression, or other negative afflictions. If we are to climb past people on the mountain and ignore their suffering, weâ€™re not going to make people feel good, and we wonâ€™t feel good ourselves. 
 
 Currently, humanity is going through a communications, transport, and energy revolution. Technological growth is compoundable. In the 4th century BC, humans invented the wheel. In a mere couple of thousand and a half years, we can now view the earth from the outside, communicate instantaneously across the planet, and get cooked food whenever we want by tapping on a glass screen from our modern-day caves (AKA, a house).
 
 When communications, transport, and energy technologies converge, an industrial revolution happens. These revolutions cause our civilization to reorganize drastically.
 
-The future is a place of accelerated change. The internet will continue to expand into new industrial sectors (communications), cars will drive themselves (transport), and we’ll transition to a distributed green energy network (energy). 
+The future is a place of accelerated change. The internet will continue to expand into new industrial sectors (communications), cars will drive themselves (transport), and weâ€™ll transition to a distributed green energy network (energy). 
 
-Humanity-technologically-speaking at least, will continue to advance despite depleted resources, dying economies, and climate change. 
+Humanity, technologically speaking at least, will continue to advance despite depleted resources, dying economies, and climate change. 
 
-But it’s not all doom and gloom. After all, those are opportunities for us to grow as a species, and to ascend the mountain of positive change. But we must act, and act now. 
+But itâ€™s not all doom and gloom. After all, those are opportunities for us to grow as a species, and to ascend the mountain of positive change. But we must act, and act now. 
 
-It’s time for humanity to stop shitting where we eat. Responsibility comes before freedom. So let’s start eating our vegetables rather than glutting ourselves to death on ice cream. 
+Itâ€™s time for humanity to stop shitting where we eat. Responsibility comes before freedom. So, letâ€™s start eating our vegetables rather than glutting ourselves to death on ice cream, and make sure we use the toilet when we need to go.
 
-I wrote this book to uplift as many people as possible so we can navigate our next technological shift together. I want to help you up the mountain, as it’s how we’ll survive. 
+I wrote the Life Guide to uplift as many people as possible so we can navigate our next technological shift together. I want to help you up the mountain, as itâ€™s the only way our weâ€™ll thrive. 
 
-Don’t get me wrong, I’m tremendously optimistic about our future—it’s one of the reasons I’ve written the Life Guide, because I believe in our collective goodness. If I was a pessimist, I wouldn’t have bothered.
+Donâ€™t get me wrong, Iâ€™m tremendously optimistic about our future. Itâ€™s one of the reasons that I wrote the Life Guide; I believe in our collective goodness. 
 
-The extrinsic threat of climate change is a golden opportunity for humanity. Because it’s something bigger than ourselves, we’ll unite behind our singular purpose treat ourselves and the planet with the deserved respect and dignity. 
+The extrinsic threat of climate change is a golden opportunity for humanity. Because itâ€™s something bigger than ourselves, weâ€™ll unite behind our singular purpose treat ourselves and the planet with the deserved respect and dignity. 
 
-I wake up every day with the Autonomy, Mastery, and Purpose formula on my mind. I spring out of bed excited and go to bed with a deep sense of accomplishment. It’s my desire to help you feel the same so we can all make our world a better place.
+I wake up every day with the Autonomy, Mastery, and Purpose formula on my mind. I spring out of bed excited and go to bed with a deep sense of accomplishment. Itâ€™s my desire to help you feel the same so we can all make our world a better place.
 
-Let us begin this journey with the simplest and most essential steps: how to change your mindset so that you can get to the mountain and climb it to achieve the life you really want.
+Let us begin this journey with the simplest and most essential steps: how to change your mindset so that you can get to the mountain and climb it to achieve the life you truly want from life.
 
 This book starts out with a brief look at history, and a more objective assessment of humanity and our ancestral environment(s). From here, we can understand the context of what skills we need to develop so we can thrive in the now and in our future environment.
 
-It’s essential you start preparing for where you’re going to be in the future now. Things are about to change so rapidly and not being ahead of the curve will be at your peril. 
+Itâ€™s essential you start preparing your future course now. Things are about to change so rapidly and not being ahead of the curve will be at your peril. 
 
-So go get your climbing boots, tents, and food supplies. The Life Guide is going to help teach you how to climb the mountain of what’s to come. 
+So go get your climbing boots, tents, and food supplies. The Life Guide is going to help teach you how to climb the mountain of whatâ€™s to come. 
 
 Ready? Ascend! 
 
