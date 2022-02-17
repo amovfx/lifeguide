@@ -10,9 +10,9 @@ According to research psychologist Sarah Schnitker, patience comes in three main
  * Life hardship patience
  * Interpersonal patience
 
-A daily hassle event would be something like getting stuck in morning traffic. It can make us feel impatient, nervous we’re not going to get somewhere on time. Impatience doesn’t get us to our destination any quicker. It’s better to use the time productively—put on an audiobook or a podcast.
+A daily hassle event would be something like getting stuck in morning traffic. It can make us feel impatient, and perhaps even nervous we’re not going to get somewhere on time. However, impatience doesn’t get us to our destination any quicker. In fact, it could make us drive more recklessly and dangerously. It’s better to use the time productively—put on an audiobook or a podcast.
 
-A life hardship event would be something like losing our jobs or a cancer diagnosis. These are more challenging because they permeate through every part of our day-to-day living and even when on a different task lurk in the background. 
+A life hardship event would be something like losing our jobs or getting a cancer diagnosis. These are more challenging because they permeate through every part of our day-to-day living and may lurk in the background even if we’re focused on a task.
 
 An interpersonal hardship event is between two or more people. A parent teaching their son or daughter how to drive is an interpersonal event.
 Both sides need patience, the parent to be a good teacher, and the son/daughter to be a good student. 
@@ -23,7 +23,7 @@ When we feel impatient and we feel like lashing out, stop and acknowledge it. It
 
 The more you practice patience, the better at it you will become. One way to cultivate patience is to breathe slowly and deeply. Before you respond to something that’s making you feel impatient, take one, long breath through your nose. Hold it for a few seconds. Then say your piece. 
 
-If you are at your limit, remove yourself from the conversation or situation. Make it clear that whatever situation needs addressing you will do so when calm. This will be far more effective than addressing when you feel at the end of your patience, when you’re far more likely to say things in that state you want to take back later.
+If you are at your limit, remove yourself from the conversation or situation. Make it clear that whatever situation needs addressing you will do so when calm. This will be far more effective than addressing the issue when you feel at the end of your patience, when you’re far more likely to say things in that state you want to take back later.
 
 Additionally, there are exercises for patience like meditation and yoga. Go on YouTube and find ones that suit you. A daily practice will help your patience to no end.
 
@@ -31,9 +31,9 @@ Being patient with others doesn’t mean that we should be passive and never sta
 
 There are times when it is appropriate to speak up and show your displeasure. 
 
-Get yourself into as calm of a place as you can when you do speak up.  
+Get yourself into as calm of a place as you can when you do speak up. But you can still be assertive, just don’t tilt into aggression. You don’t want to make other people feel defensive, otherwise they’re unlikely to be open to your point of view.
 
-A lot of people struggle giving up what they want right now, for what they want the most. It's our choice of whom we want to be. Be patient, and know that the rewards will come. 
+Be patient and know that the rewards of will come your way. 
 
 ###Resources
 Emotional Freedom
