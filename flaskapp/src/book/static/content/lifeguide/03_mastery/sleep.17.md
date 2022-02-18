@@ -2,9 +2,9 @@
 
 We need good sleep to perform at our highest capacity. Sleep deprivation deprives the brain’s glucose content. This starves the areas necessary for problem-solving and high-level thinking.
 
-Lack of sleep is at pandemic levels, and it’s especially bad in the US. One survey found that the average night of sleep in the US was under six hours in 2019. Considering we all need an average of eight hours of sleep a night, this is alarming.
+Sleeplessness is at pandemic levels in our modern world. One survey found that the average night of sleep in the US was under six hours in 2019. Considering we all need an average of eight hours of sleep a night, this fact is alarming.
 
-A lack of sleep is dangerous. Those who are sleep deprived are more likely to get into car accidents, get injured playing sports, perform work tasks at lower levels, eat more unhealthily, be more like to suffer from anxiety and depression, have shortened telomeres (which indicates aging). 
+A lack of sleep affects performance negative at best and is dangerous at worst. Those who are sleep deprived are more likely to get into car accidents, injured playing sports, perform work tasks at sub-optimal levels, eat more unhealthily, be more likely to suffer from anxiety and depression, and have shortened telomeres (which indicates aging). 
 
 Here are some sleep tips so you can benefit from nature’s superpower:
 
@@ -13,13 +13,14 @@ Here are some sleep tips so you can benefit from nature’s superpower:
  * Go to bed at the same time within 30 minutes every night. This regulates our internal bio-clock. 
  * Do not work in the bedroom or look at your phone or watch TV in bed.
  * Get up early—we evolved to be active during the day.
- * 10 pm and 2 pm is when we have our peak production from melatonin and other hormones.
+ * Know that between 10 pm and 2 pm is when we have our peak production from melatonin and other hormones.
  * Caffeine has a half-life of 8 hours. You need to flush it before you can rest. Therefore, if you want caffeine, only have it in the morning.
  * Alcohol and marijuana prevent you from entering REM sleep, the stage responsible for memory processing. Cut entirely or at least limit your alcohol and marijuana intake. 
  * Magnesium optimizes blood pressure, relaxes muscles, balances blood sugar levels, calms the nervous system, and is responsible for 300 biochemical reactions in your body. Consider a supplement, but always speak to your doctor first. 
- * Meditate.
- * Make where you sleep a sanctuary of peace. No lights or distractions. English Ivy is the best air-filtering plant. “Mother in Law’s tongue” converts Co2 to oxygen at night.
- * Seek out professionals over doing your own research and succumbing to confirmation bias.
+ * Meditate-it’s a great way to train your mind for calmness.
+ * Make where you sleep a sanctuary of peace. No lights or distractions. 
+ * English Ivy is the best air-filtering plant. “Mother in Law’s tongue” converts Co2 to oxygen at night. Consider putting one of these plants in your bedroom.
+ * Seek out professional help to optimize your sleep.
 
 Do you have good sleep practices? Which ones can you implement to have a better and fresher life?
 
