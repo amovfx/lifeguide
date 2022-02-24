@@ -16,11 +16,11 @@ Here are 7 key points from his book:
 
 ### 1) Use active listening 
 
-Most of us don’t know how to listen. We listen for what we want to hear and filter out the rest. Not only that, but we tend to think more about what we are going to say next rather than really listen. Active listening when you really understand what the speaker is saying, and more importantly, feeling. When you active listen, you can say back to the speaker what they said but in different words to show you’ve understood it.
+Most of us don’t know how to listen. We listen for what we want to hear and filter out the rest. Not only that, but we tend to think more about what we are going to say next rather than really listen. Active listening when you really understand what the speaker is saying, and more importantly, feeling. When you engage in active listening, you can say back to the speaker what they said but in different words to show you’ve understood it.
 
 ### 2) Be a mirror
 
-Being a mirror to what the other person is saying is about repeating the last three words or the last three most important words from the other person. You can also repurpose what they’re saying and repeat it back to them to see if you have understood them properly. Also, mimicking their body language, tone of voice, and inflection helps you to connect and relate to them better. Feeling what someone else is feeling is called neural resonance. 
+Being a mirror to what the other person is saying is about repeating the last three words or the last three most important words from the other person. Also, mimicking their body language, tone, and inflection helps you to connect and relate to them better. Feeling what someone else is feeling is called neural resonance. 
 
 ### 3) Don’t feel their pain; label it
 

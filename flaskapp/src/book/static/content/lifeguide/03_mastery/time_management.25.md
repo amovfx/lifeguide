@@ -1,11 +1,11 @@
 ﻿# Time management
 
 
-### The Most Precious Resource
+### Time is The Most Precious Resource
 
-As previously mentioned, our most important resource is your time. We can't buy it back, and we don't know how much of it we have. One thing we do know is that none of us have very much time at all. 
+As previously mentioned, our most important resource is time. We can't buy it back, and we don't know how much of it we have. One thing we do know is that none of us have very much time at all. 
 
-I recommend you put a price tag on your time. Write it down and put it somewhere you can see it regularly. Even if that means placing this tag in multiple spots. Once you’ve done this, you’ll have a reminder to gauge if what you are doing is worth that amount.
+I recommend you put a price tag on your time. Write it down and put it somewhere you can see it regularly. Even if that means placing it in multiple spots. Once you’ve done this, you’ll have a reminder to gauge if what you are doing is worth that amount.
 
 We want to make sure we use this very limited resource wisely and invest it accordingly. This book is about is turning your time into skills, so you can turn those skills into more free time. To reach a world-class level in a discipline takes about 10,000 hours of focused practice. The sooner we start practicing, the better.
 
@@ -16,9 +16,9 @@ The ABCDE method prioritizes our tasks.
 The idea comes from the book “Eat that Frog!” by Brian Tracy. But novelist Mark Twain came up with that catchy phrase to mean that if you ate a frog first thing in the morning, everything you did after that point would be easy. 
 
 Productivity gurus like Brian Tracy used this idea to apply it to tasks. 
-To apply it, you should start your day with your most urgent, difficult task first. When you complete that one, do the next one that is the most urgent or highest priority. 
+To apply it, you should start your day with your most urgent, difficult task first. When you complete that one, do one that is the second most urgent. 
 
-The premise of the ABCDE method is easy. “A” tasks are the highest priority, followed by “B,” then “C.” “D” stands for “Delegate,” and “E” stands for “Eliminate.” Here is a more detailed description:
+The premise of the ABCDE method is easy. “A” tasks are the highest priority, followed by “B,” “C.” “D” stands for “Delegate,” and “E” stands for “Eliminate.” Here is a more detailed description:
 
 <ul>
     <li>"A" tasks: Must do tasks that have major consequences if not completed.</li>

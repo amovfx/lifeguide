@@ -11,18 +11,15 @@ At first, you may enjoy it! But quickly, you would become very lonely and realiz
 
 The point is that relationships are a fundamental aspect of our lives. Arguably, they’re the most important just after health. 
 
-When you engage with friends, family, and your community, you satisfy the deep desire that we all have to connect with others. Close relationships are vital for your self-expression, happiness, and growth.
+When you engage with friends, family, and your community, you satisfy the deep desire that we all must connect with our fellow human. Close relationships are vital for your self-expression, happiness, and growth.
 
 To create a fulfilling, purposeful life, strive to create the greatest possible happiness for the largest number of people. Lead by excellence and nurture the virtues that’ll lead you to being the best possible person you can be. 
 
-Purpose lifts the morale of those around you and pushes humanity forward. Use your vision to guide humanity into unknown territory. Doing good things for other people without expecting anything in return feels good.
-Discover your purpose in life through having unified goals and the resolve to put them into action. 
+Purpose lifts the morale of those around you and pushes humanity forward. Use your vision to guide humanity into positive, unknown territory. Doing good things for other people without expecting anything in return feels good. Discover your purpose in life through having unified goals and ensure you have the resolve to put them into action. 
 
-It is our relationship to others where you create your own meaning. For a meaningful purpose, you must understand your world. You’ll want to understand where we came from, who you are, where we are, and where we’re going. 
+It is our relationship to others where you create your own meaning. For a meaningful purpose, you must understand your world. You’ll want to understand where we came from, who you are, where we are, and where you, and we, are going. 
 
-But none of that matters without relationships. 
-
-And now, for this last and final part regarding “Purpose,” we’re going to cover every aspect there is regarding purpose and its deep interconnection to relationships. We are evolved to cooperate.
+For this last and final part of the Life Guide, we’re going to cover every aspect there is regarding purpose and its deep interconnection to relationships. We are evolved to cooperate, so let’s get cooperating. 
 
 
 ### Resources

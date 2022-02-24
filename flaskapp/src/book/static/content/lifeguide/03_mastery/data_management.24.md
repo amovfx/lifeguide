@@ -1,6 +1,6 @@
 ﻿# Data Management
 
-Today's world overloads us with emails, social media, messages, video calls, and all the rest. These interrupt flow and makes us less productive. Anyone that says they can properly multitask are deceiving themselves. You cannot multitask, only engage in task-switching (some people just do this rapidly enough they think they’re multitasking). However, when you task switch, you run the risk of doing two or more things sub-optimally than if you just focused on one. 
+In today’s world we’re overloaded with emails, social media notifications, messages, video calls, and plenty of other things. These interrupt flow and makes us less productive. Anyone who says they can properly multitask are deceiving themselves. You cannot multitask, only engage in task-switching (some people just do this rapidly enough they think they’re multitasking). However, when you task switch, you run the risk of doing two or more things sub-optimally than if you just focused on one. 
  
 Remember: we can only have so many things held in our mind at once. Ensuring we focus properly gives us more mental energy for the most demanding and creative work. Make it an aim to focus on single tasks. If you’re easily distracted, you should work on attention-optimizing exercises, like meditation. The more you train your attention muscle, the more it’ll grow. 
 
@@ -33,8 +33,8 @@ Organize: empty your collection tools and put things in the right place.
 
 #### List-Fu
  
- * If something takes more than one action it is a project. It goes on the projects list.
- * If something is a single action that you can delegate, it should go on a waiting for list.
+ * If something takes more than one action it is a project, and it goes on the ‘projects list.’
+ * If something is a single action that you can delegate, it should go on a ‘waiting for’ list.
  * A single action that you defer it goes onto the calendar or onto a next action list.
  * A calendar is for time specific or date specific actions or information.
  * Next action lists are where all your to-dos end up. Split these lists up based on contexts.

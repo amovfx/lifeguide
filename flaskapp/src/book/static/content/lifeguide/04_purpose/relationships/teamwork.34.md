@@ -23,7 +23,7 @@ Google conducted a two-year study to find out the key attributes that make the b
  * Meaning of work. The purpose of the work is important to everyone on the team.
  * Impact of work. Making a positive difference on the lives of others is what gives us meaning.
 
-We’re here to cooperate. It’s us in our natural state. Perfect teamwork and you have the world in the palm of your hand, and help others have the same, too!
+We’re here to cooperate. It’s us in our natural state. Perfect teamwork and you have the world in the palm of your hand. You can also help others have the same, too!
 
 #Resources
 

@@ -4,7 +4,7 @@ Indulge me for a minute, because I know a thing or two about investing.
 
 I’ve had a 80% return year after year since 2012. For 2021, I'm up over 500%.
 
-A word of caution, what worked in the past, doesn’t mean it will work in the present. 
+A word of caution, what worked in the past won’t necessarily work in the present. 
 
 The world is always changing and I’m using this book to share the skills to help people strategically position themselves in the future.
 
@@ -26,7 +26,7 @@ Now we are at another the dawn of another transformation to our civilization. Th
 
 At first, it was impossible to send money through the internet without a trusted third party. If you wanted to send money, you had to use a bank. This is because banks are in control of a process called settlement. Settlement is the process that balances two separate ledgers. This maintains a stable monetary supply, so the economy doesn't blow up.
 
-However, this problem was solved by the invention of the cryptocurrency, Bitcoin. It is the first time we are enabled to do settlement without a third party.
+However, this problem was solved by the invention of the cryptocurrency, Bitcoin. This invention was the first time we are enabled to undertake settlement without a third party.
 
 So, when we examine history, we can see a significant shift in how we organize when we discover a new way to record data.
 
@@ -54,16 +54,16 @@ So, before we decide to buy it, we need to understand that bitcoin is a data tra
 
 When our first internet was created, it started out as ethernet. Ethernet is a broadcast network, it doesn’t scale, and every node on the network communicates with every other node when a request is made. So, our early internet had scaling issues much like Bitcoin does with its seven transactions per second capacity.
 
-To get around the ethernets scalability issues, TCP/IP was made as a routing layer which underpins our modern internet today. Bitcoin's scalability is being addressed in the same fashion. The lightning network
-is a routing protocol for Bitcoin. It enables near-free, instant transactions, with approximately 3.2 million transactions per second
-
-Current Lightning Stats.
+To get around the ethernet’s scalability issues, TCP/IP was made as a routing layer which underpins our modern internet today. Bitcoin's scalability is being addressed in the same fashion. The lightning network
+is a routing protocol for Bitcoin. It enables near-free, instant transactions, with approximately 3.2 million transactions per second currently being undertaken.
 
 A problem with assessing Bitcoin’s value is that it’s commonly perceived as a currency or a commodity. These are abstractions of utility. 
 
-##Explain what a currency is. 
+##What values and opportunities does Bitcoin bring? 
 
-When we look at Bitcoin as a network, we can start to understand what value and opportunities it brings to humanity. We can now do commerce without a trusted third party. That’s the entire financial sector. Bitcoin will be making short work of our largest most profitable industry that has ever existed and has enabled our way of life through global commerce and trade. If that isn't enough, it’s introduced competition to the nation states with their central banks for monetary policy.
+When we look at Bitcoin as a network, we can start to understand what value and opportunities it brings to humanity. We can now do commerce without a trusted third party. That’s the entire financial sector. 
+
+Bitcoin will be making short work of our largest most profitable industry that has ever existed and has enabled our way of life through global commerce and trade. If that isn't enough, it’s introduced competition to the nation states with their central banks for monetary policy.
 
 The next thing we should look at is how Bitcoin revolutionizes computing. The lightning network is an internet. Data can be packaged with payments. This allows the disruption of the FANGM. Cloud computing and storage can now be decentralized through protocols like IPFS, and data can remain private—its use bought and sold by the individual through micro
 payments. A new market of digital property is enabled. Atomic Swaps roll up the entire forex market which we are seeing with strike app.
