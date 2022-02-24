@@ -1,107 +1,80 @@
-
+﻿
 #Understanding our environment
 
 ### Our cognitive realm
-As we have identified our skills that we want to develop in ourselves. We want to use them to understand our objective reality.
 
-We go through life, and everyone wants to tell us the narrative of the world. Various religions compete for memebers
-by offering a different story that ties people to community to appeal to our sense of belonging.
+Now we’ve identified the skills that we want to develop in ourselves, we must learn how to use them to understand our objective reality.
 
-So much of the world we know, simply live on our collective imagination. Abstract concepts are constructed to help us organize
-and coordinate. This is the super power of humans. To form a collective narrative that enables cooperation across vast 
-distances.
+By objective reality, I mean what’s true (what we can identify as a fact). This is different than our subjective reality—the world inside our heads.
 
-Governments, money, religions, corporations are all abstractions from our collective consciousness. They
-are entities of a cognitive realm if you will.
-Governments don't objectively exist,
-we simply wrote down some rules, and everyone agreed to follow in a democracy, others are coerced through force. 
-Money is often people agreeing over an object that is fixed supply, fungible, divisible and portable. This journey
-has gone from sea shells, precious metals, paper and now database entries. Religions
-are really the same thing, people write a few things down and once enough people believe it, it becomes true. 
-A subjective reality is created for a large 
-group of people that serves their sense of belonging and purpose. Corporations, are another layer on top of governments, 
-they exist in the realm of 'legal fiction'.
-We created a document called the articles of incorporation to spawn a corporation.
+As we climb the mountain of life, we find people and groups everywhere who want to tell us what the world’s—and the universe’s—true nature is. 
 
-If everyone suddenly disappeared, the governments, their political parties, currencies, religions and corporations no 
-longer exist.
+Let’s look at religion as an example. Various religions are in competition with other religions—they’re trying to sell their perspective. Each religion attempts to tie people to community to appeal to their sense of belonging. How? By hijacking our natural inclination to believe ‘there’s something bigger than us.’ They may also say there’s a grand (or divine) plan to the universe, and that everything happens for a reason. This is often to make us feel better, to disregard the chaotic nature of the universe and find a way to impose our will on it. They may also promise life after death.
 
+Religion, if you’ll allow me to be reductionist for a second, is a person or a bunch of people who wrote a few things down that affected culture and human belief long term. In short, when enough people believe it, it becomes psychologically true for them, but not objectively true. 
 
-Due to their nature of existing on our collective imagination, they require a high degree of trust. Trust is one of the 
-most powerful attributes we have. Our entire civilization is rooted in it.The 
-governments and the religions are only as strong as people believe them to be. When the trust starts to deteriorate,
-those institutions start to falter. Furthermore, the requirement of trust in the positions are absolutely magnetic
-to the most corrupt and self-serving people in our society. A vicious feedback loop ensues.
+Much of the world exists in our collective imagination. In other words, we’ve internalized our perceptions of the world and built ideas out of them which remain externally formless (though we could argue that the way neurons fire across synapses could be considered a form). We built out abstract concepts which help us organize and coordinate. This is the superpower of humans—we can form collective narratives and turn them into missions and cooperate across vast distances to achieve them.
 
-For the majority of our history, these collective cognitive conjurations have mostly served us well, and increased our prosperity, provided
-security, and provided a means to cooperate. We are now at 8 billion people and facing a wide array of seemingly intractable problems.
-It looks like trust doesn't scale.
-We are evolved to lie because lying can drive group cohesion and is a useful tool for climbing the ladder.
-We are also evolved to believe the lie. They hide us from the truth of the brutal violent world that we evolved from.
+Governments, money, religions, and corporations are all abstractions that spring from the well of our collective consciousness. They’re also ways that we try to impose order on our environment through the use of systems. The problem with systems made up of humans? They’re imperfect. Therefore, it’s essential to get a more objective understanding of the world, so we can make the best possible decisions.
 
-It is the glue of the institutions that exist on our collective cognition. 
+Governments don't objectively exist, humans just wrote down some rules and knew a system was needed to maintain them. As we form naturally into hierarchies, we try to solve larger problems—like existing and cooperating in a nation as a collective—using hierarchies as part of the solution. But hierarchies can be more in the realm of orderly or more in the realm of chaos. They can be democratically established or established through force, breeding authoritarianism. 
 
-This may sound dire, but I hope to convey the opposite. We own these insitutions, if we can work together, we can reshape
-them to properly serve us. Or, now with the power of the internet, we can just replace them and build our own.
+Money is often people agreeing over an object that is in fixed supply, fungible, divisible, and portable. Our journey with ‘money’ has gone from seashells, precious metals, paper, all the way to the now—database entries. 
 
-Regardless, of our spiritual guides, we all live in one shared objective reality. Where we came from before and where we go after 
-doesn't matter. We are all playing the same game and we have to learn the rules.
+We create a subjective reality for a large group of people that serves their sense of belonging and purpose through government. Corporations are another layer on top of governments, and they exist in the realm of 'legal fiction.' Let’s get reductionist again: all we need to do is create a document called the articles of incorporation to spawn a corporation. Wham! Now we understand the abstract basics of a business/enterprise. 
 
+If everyone suddenly disappeared, the governments, their political parties, currencies, religions, and corporations no longer exist. 
+
+Due to their nature of existing in our collective imagination, governments, corporations, and the like require a high degree of trust. Trust is one of the most powerful traits we humans have. Our entire civilization is rooted in trust. It happens on the micro scale all the way up to the macro scale. The governments and the religions are only as strong as people believe them to be. When the trust starts to deteriorate, those institutions start to falter. 
+
+One problem is that the requirement of trust in the positions high up in the hierarchical food-chain is that it attracts the most corrupt and self-serving people in our society. The result is often a vicious feedback loop. Untrustworthy people operating in previously trustworthy entities. This leads to chaos. 
+
+For most of our history, these collective cognitive conjurations have served us well for the most part, increased our prosperity, provided
+security, and allowed us to cooperate. It’s given rise to—historically speaking, at least—relatively peaceful civilizations. 
+
+Our current population is 8 billion people. We are facing a wide array of seemingly intractable problems.
+
+But what can we do about the propensity for low levels of trust?
+
+Unfortunately, we have evolved to lie because lying can drive group cohesion and is a useful tool for climbing the proverbial mountain. If we lie that we are in control of ourselves, other people tend to flock to us because they feel out of control. The problem is, when people collectively project their insecurities about lack of control onto someone who acts secure about their control—that individual doesn’t notice the shadow character that forms behind them, strengthens, and takes on its own personality. The individual with the large shadow acts out this personality without knowledge of it. 
+
+So, one of the huge problems are that we also evolved to believe the lie. People we follow often hide the truth of the violent world that we evolved from. Think about it—how often do you hear politicians or religious leaders say, “I don’t know, to be honest,” as a truthful response rather than a deceitful one?
+
+Lies are the glue of institutions that exist on our collective cognition. Or so it would seem.
+
+This may sound dire, but I hope to ensure that the opposite ensues. Each one of us owns these institutions—they belong to me and you. If we work together, we can reshape them to properly serve us. Alternatively, with the power of the internet, we can just replace them and build our own.
+
+No matter what some of our spiritual guides say, we only have one objective reality, but we come at that reality from an infinity of subjective ones. That’s the nuance we need to grasp if we’re to move forward. It’s not an either/or situation. It’s a both/and situation. We must grasp our subjectivities and act with objectivity as the goal. 
+
+So, to start, we must all accept that we’re playing the same game. But to play properly, we’ve got to learn the rules.
+ 
 ### Generational Theory
 
-The Strauss–Howe generational theory, devised by William Strauss and Neil Howe, describes a theorized recurring 
-generation cycle in American history and global history. According to the theory, historical events are associated 
-with recurring generational personas (archetypes). Each generational persona unleashes a new era (called a turning) 
-lasting around 20–25 years, in which a new social, political, and economic climate (mood) exists. They are part of a 
-larger cyclical "saeculum" (a long human life, which usually spans between 80 and 100 years, although some saecula 
-have lasted longer). The theory states that a crisis recurs in American history after every saeculum, 
-which is followed by a recovery (high). During this recovery, institutions and communitarian values are strong. 
-Ultimately, succeeding generational archetypes attack and weaken institutions in the name of autonomy and individualism, 
-which eventually creates a tumultuous political environment that ripens conditions for another crisis.
+“Hard times create strong men, strong men create good times, 
+good times create weak men, and weak men create hard times.” 
+The quote, from a postapocalyptic novel by the author G. Michael Hopf, 
+sums up a stunningly pervasive cyclical vision of history.
 
-Strauss and Howe laid the groundwork for their theory in their 1991 book Generations, which discusses the history 
-of the United States as a series of generational biographies going back to 1584.[1] In their 1997 book The Fourth 
-Turning, the authors expanded the theory to focus on a fourfold cycle of generational types and recurring mood eras[2] 
-to describe the history of the United States, including the Thirteen Colonies and their British antecedents. However, 
-the authors have also examined generational trends elsewhere in the world and described similar cycles in several 
-developed countries.[3]
+This is elaborated upon by William Strauss and Niel Howe that describe a theory of a generational cycle in American and global history.
 
-Academic response to the theory has been mixed—some applauding Strauss and Howe for their "bold and imaginative thesis" 
-and others criticizing the theory as being overly-deterministic, unfalsifiable, 
-and unsupported by rigorous evidence,[4][5][6][7][8] Strauss–Howe generational theory has also been 
-described by some historians and journalists as pseudoscientific.[6][9][10] "kooky",[11] and "an elaborate 
-historical horoscope that will never withstand scholarly scrutiny."[12][13][14] Academic criticism has focused on 
-the lack of rigorous empirical evidence for their claims,[15] and the authors' view that generational groupings are 
-more powerful than other social groupings such as economic class, race, sex, religion, and political parties.[16]
+They make a generational persona, called an archetype. Each archetype starts a new era, which they call a turning, a 20–25 year period where a new social, political and economic climate emerges. There are four of these periods in a saeculum, a long human life, between 80-100 years.
 
-Strauss and Howe define a social generation as the aggregate of all people born over a span of roughly twenty years or about the length of one phase of life: childhood, young adulthood, midlife, and old age. Generations are identified (from first birthyear to last) by looking for cohort groups of this length that share three criteria. First, members of a generation share what the authors call an age location in history: they encounter key historical events and social trends while occupying the same phase of life. In this view, members of a generation are shaped in lasting ways by the eras they encounter as children and young adults and they share certain common beliefs and behaviors. Aware of the experiences and traits that they share with their peers, members of a generation would also share a sense of common perceived membership in that generation.[34]
+At the end of every saeculum, there is a crisis, which is then followed by a recovery. It’s a cycle between individualism and collectivism. When the institutional and communal strength grows, the following archetype weakens these in the name of autonomy and individualism which fosters the climate for another cycle.
 
-Missionary Generation	Prophet (Idealist)	1860–1882 (23)	1st Turning: High: Reconstruction, Gilded Age	1865–1886 (21)
-Lost Generation	Nomad (Reactive)	1883–1900 (18)	2nd Turning: Awakening: Missionary Awakening/Progressive Era	1886–1908 (22)
-G.I. Generation	Hero (Civic)	1901–1924 (24)	3rd Turning: Unraveling: World War I, Roaring Twenties, Prohibition	1908–1929 (21)
-Silent Generation	Artist (Adaptive)	1925–1942 (18)	4th Turning: Crisis: Great Depression, World War II	1929–1946 (17)
-Millennial Saeculum (76 years)
-Baby Boom Generation	Prophet (Idealist)	1943–1960 (18)[81]	1st Turning: High: American High	1946–1964 (18)
-13th Generation[c]	Nomad (Reactive)	1961–1981 (21)	2nd Turning: Awakening: Consciousness Revolution, Fourth Great Awakening	1964–1984 (20)
-Millennial Generation[d]	Hero (Civic)	1982–2004 (23)	3rd Turning: Unraveling: Neoliberalism/Culture Wars, Tech Bubble, 9/11	1984–2007 (23)
-Homeland Generation[e]	Artist (Adaptive)	2005–present (16)	4th Turning: Crisis: War on Terror,[f] Great Recession, COVID-19 pandemic/recession[82]	2008–present (13)
+The academic review is mixed. The cycle is lauded as a creative viewpoint to some, and others criticize it for being overly-deterministic,  unfalsifiable, and unsupported by rigorous evidence. It's hard to measure a claim that a generational social grouping is stronger than a grouping for economic class, race, sex, religion, and political parties.
 
+In short, our collective memory doesn't go past 100 years. The COVID-19 pandemic is a perfect case study. All the people that lived the lessons
+of the Spanish Flu in the 1920s are dead. They aren't around to tell their great great grandchildren how badly they screwed up. They did much of the same dumb shit the anti-mask parties did. The parallels are stunning. Like Mark Twain once quipped, “History Doesn't Repeat Itself, but It Often Rhymes.”
 
-Whats great about this, according to these guys, we are coming up to a high. Something that I call Renesaince 2.0. I'm sure you
-can see how the generational theory has a very strong influence 
+Once we know our history, we gain context for the present, and once we connect the two, we can spot large trends and position us accordingly.
 
-So how did we get here? Lets take a look at our past to understand our present.
 
 ###Resources
 
-The fourth turning
+The Fourth Turning
 
-Homo Spaiens.
+Homo Sapiens
 
 
 
-In order to do this effectively, we must turn to logic and reason.
 
-Then we must look to our past and understand how we developed. 
-Once we know our history, we gain context for the present, once we connect the two, we can spot large trends
-and position us accordingly.

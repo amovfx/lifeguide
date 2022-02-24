@@ -1,16 +1,13 @@
-#Psychometric testing
+﻿#Psychometric testing
 
-Psychometric testing is a fancy way of saying “personality test.” As stated earlier, 
-it’s full-blown pseudoscience. Yet, what they do give insight into is a wide variety of personality 
-traits and behaviors. When we do these tests, we can recognize our behavior better. 
- In turn, we can recognize when specific emotions cause specific reactions. Take 
-all these tests with a grain of salt. **Your personality is not fixed at birth, and you can change anything about yourself that you want to.**
-There are a variety of tests that you can do to learn more about yourself.
+Psychometric testing is a fancy way of saying “personality test.” I think psychometric testing is mainly pseudoscientific. However, psychometrics do get something right: they showcase a wide variety of personality traits and behaviours. When we do these tests, we can read these traits and behaviours and see which ones resonate with us. 
 
-These following tests measure personality attributes. Ideal for dating sites and corporations training communication and teamwork
-that want to generate vectors for machine learning models. 
-Even though they are a bit like reading a horoscope, we 
-can use these to gain insight into our strengths and weaknesses.
-You can search for tests like the “Ocean Model”, RHETI or Meyers Briggs. 
+In turn, we can recognize when specific emotions within us cause specific reactions. When we realize these emotions, we can better control them, and get better control over our reactions. 
 
-Keep in mind, **personality is not fixed**, it is fluid, and you can shape yourself into whom you want to be.
+Take all these tests with a grain of salt, but pick and choose what resonates with you most. The more you take of these tests, the more you may learn about yourself. Rather than seeing the personality categories as an exact fit of everything you are, use your own discretion. If something doesn’t sound like you at all, and you’ve deeply considered the possibility that it’s a behaviour you have that you’re unaware of, then discard it.
+
+There are a variety of tests that you can do to learn more about yourself. These following tests measure personality attributes. Even though they’re a bit like reading a horoscope, we can use these tests to gain insight into our strengths and weaknesses. You can search for tests like the Ocean Model, RHETI, or Meyers Briggs on the internet.  
+
+The most important thing to remember is personality is not fixed. It's fluid and changes with time.
+
+You get to choose who you want to be. You also get to choose if psychometrics are for you or not!
